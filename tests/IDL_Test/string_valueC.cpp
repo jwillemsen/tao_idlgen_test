@@ -23,13 +23,14 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "string_valueC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Value_TypeCode_Static.h"
 #include "tao/AnyTypeCode/TypeCode_Value_Field.h"
@@ -44,7 +45,7 @@
 #include "string_valueC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_include_test_StringTest[] =
   {
@@ -70,7 +71,7 @@ namespace include_test
   ::CORBA::TypeCode_ptr const _tc_StringTest = std::addressof(_tao_tc_include_test_StringTest);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:50
 
 
 
@@ -105,7 +106,7 @@ include_test::StringTest::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::include_test::StringTest *> (v);
 }
 
-const char *
+char const *
 include_test::StringTest::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -194,7 +195,7 @@ include_test::StringTest::_tao_unmarshal (
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
 
 
 
@@ -212,7 +213,7 @@ include_test::StringTest_init::_downcast (::CORBA::ValueFactoryBase *v)
   return dynamic_cast<::include_test::StringTest_init *> (v);
 }
 
-const char*
+char const *
 include_test::StringTest_init::tao_repository_id ()
 {
   return ::include_test::StringTest::_tao_obv_static_repository_id ();
@@ -229,7 +230,7 @@ include_test::StringTest_init::create_for_unmarshal ()
   return ret_val;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:41
 
 OBV_include_test::StringTest::StringTest (
     ::CORBA::StringValue * _tao_init_my_string_value)
@@ -267,7 +268,7 @@ OBV_include_test::StringTest::_tao_unmarshal__include_test_StringTest (TAO_Input
   return _tao_unmarshal_state (strm, ci);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:425
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:422
 
 /// Accessor to set the member.
 void
@@ -284,7 +285,7 @@ OBV_include_test::StringTest::my_string_value () const
   return this->_pd_my_string_value.in ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:44
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:42
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -344,7 +345,7 @@ operator<<= (
 
 ::CORBA::Boolean
 operator>>= (
-    const ::CORBA::Any &_tao_any,
+    ::CORBA::Any const &_tao_any,
     include_test::StringTest *&_tao_elem)
 {
   return
@@ -361,7 +362,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:500
 
 
 
@@ -388,7 +389,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:57
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -418,7 +419,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:187
 
 ::CORBA::Boolean
 OBV_include_test::StringTest::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const

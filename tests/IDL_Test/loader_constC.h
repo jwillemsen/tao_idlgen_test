@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_LOADER_CONSTC_QXN5BU_H_
-#define _TAO_IDL_LOADER_CONSTC_QXN5BU_H_
+#ifndef _TAO_IDL_LOADER_CONSTC_KDW4SO_H_
+#define _TAO_IDL_LOADER_CONSTC_KDW4SO_H_
 
 #include /**/ "ace/pre.h"
 
@@ -113,7 +113,7 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:152
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -128,12 +128,12 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace Plesk
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_constant/constant_ch.cpp:34
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_constant/constant_ch.cpp:32
 
   
 
@@ -141,12 +141,12 @@ namespace Plesk
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module Plesk
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -157,7 +157,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -184,7 +184,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -198,7 +198,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "loader_constC.inl"

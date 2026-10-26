@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_ARRAY_ONLYC_2R1GWY_H_
-#define _TAO_IDL_ARRAY_ONLYC_2R1GWY_H_
+#ifndef _TAO_IDL_ARRAY_ONLYC_8HIKBK_H_
+#define _TAO_IDL_ARRAY_ONLYC_8HIKBK_H_
 
 #include /**/ "ace/pre.h"
 
@@ -63,24 +63,21 @@
 
 
 
-typedef ::CORBA::Char TEST_TYPE[10];
-typedef ::CORBA::Char TEST_TYPE_slice;
+using TEST_TYPE = ::CORBA::Char[10];
+using TEST_TYPE_slice = ::CORBA::Char;
 struct TEST_TYPE_tag {};
 
 
-typedef
+using TEST_TYPE_var = 
   TAO_FixedArray_Var_T<
       TEST_TYPE,
       TEST_TYPE_slice,
       TEST_TYPE_tag
-    >
-  TEST_TYPE_var;
+    >;
 
-typedef
-  TEST_TYPE
-  TEST_TYPE_out;
+  using TEST_TYPE_out = TEST_TYPE;
 
-typedef TAO_Array_Forany_T<TEST_TYPE, TEST_TYPE_slice, TEST_TYPE_tag> TEST_TYPE_forany;
+using TEST_TYPE_forany = TAO_Array_Forany_T<TEST_TYPE, TEST_TYPE_slice, TEST_TYPE_tag>;
 
 TAO_IDL_TEST_STUB_Export TEST_TYPE_slice *TEST_TYPE_alloc ();
 
@@ -90,7 +87,7 @@ TAO_IDL_TEST_STUB_Export TEST_TYPE_slice *TEST_TYPE_dup (const TEST_TYPE_slice *
 
 TAO_IDL_TEST_STUB_Export void TEST_TYPE_copy (TEST_TYPE_slice *_tao_to, const TEST_TYPE_slice *_tao_from);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -101,7 +98,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -139,7 +136,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -169,7 +166,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_ch.cpp:98
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_ch.cpp:96
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -180,7 +177,7 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, ::TEST_TYP
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "array_onlyC.inl"

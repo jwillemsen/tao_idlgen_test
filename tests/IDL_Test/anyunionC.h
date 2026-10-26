@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_ANYUNIONC_U1V95T_H_
-#define _TAO_IDL_ANYUNIONC_U1V95T_H_
+#ifndef _TAO_IDL_ANYUNIONC_YHEAAZ_H_
+#define _TAO_IDL_ANYUNIONC_YHEAAZ_H_
 
 #include /**/ "ace/pre.h"
 
@@ -70,13 +70,13 @@ enum AnyUnionEnum
   ANYUNIONENUM2
 };
 
-typedef AnyUnionEnum &AnyUnionEnum_out;
+using AnyUnionEnum_out = AnyUnionEnum &;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AnyUnionEnum;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
 
 
@@ -88,19 +88,19 @@ class TAO_IDL_TEST_STUB_Export MyAnyUnion
 {
 public:
   MyAnyUnion ();
-  MyAnyUnion (const MyAnyUnion &);
+  MyAnyUnion (MyAnyUnion const &);
   ~MyAnyUnion ();
 
-  MyAnyUnion &operator= (const MyAnyUnion &);
+  MyAnyUnion &operator= (MyAnyUnion const &);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
   
 
   void _d (AnyUnionEnum);
   AnyUnionEnum _d () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
   
   using _var_type = MyAnyUnion_var;
@@ -108,15 +108,15 @@ public:
 
   static void _tao_any_destructor (void *);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
   
 
-  void my_any (const ::CORBA::Any &);
-  const ::CORBA::Any &my_any () const;
+  void my_any (::CORBA::Any const &);
+  ::CORBA::Any const &my_any () const;
   ::CORBA::Any &my_any ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
   
 
@@ -129,7 +129,7 @@ private:
   {
     _tao_union_storage () {}
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
     
     ::CORBA::Any *my_any_;
@@ -139,11 +139,11 @@ private:
   void _reset ();
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_MyAnyUnion;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -154,7 +154,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -176,7 +176,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:889
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:890
 
   
 
@@ -190,7 +190,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -209,7 +209,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -238,21 +238,21 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const MyAnyUnion &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, MyAnyUnion const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, MyAnyUnion*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const MyAnyUnion *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, MyAnyUnion const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_ch.cpp:33
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_ch.cpp:31
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -264,19 +264,19 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const MyAnyUnion &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, MyAnyUnion const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, MyAnyUnion &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "anyunionC.inl"

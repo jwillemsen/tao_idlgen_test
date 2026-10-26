@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -45,20 +45,20 @@ hello::hello (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 AMH_helloExceptionHolder::AMH_helloExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 AMH_helloExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:anvil.com/AMH_helloExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -80,7 +80,7 @@ AMI_helloHandler::AMI_helloHandler (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -102,20 +102,20 @@ goodbye::goodbye (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 AMH_goodbyeExceptionHolder::AMH_goodbyeExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 AMH_goodbyeExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:anvil.com/AMH_goodbyeExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -137,7 +137,7 @@ AMI_goodbyeHandler::AMI_goodbyeHandler (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -159,20 +159,20 @@ salutation::sayonara::sayonara (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 salutation::AMH_sayonaraExceptionHolder::AMH_sayonaraExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 salutation::AMH_sayonaraExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:hammer.com/salutation/AMH_sayonaraExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -194,7 +194,7 @@ salutation::AMI_sayonaraHandler::AMI_sayonaraHandler (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -216,20 +216,20 @@ ciao::ciao (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 AMH_ciaoExceptionHolder::AMH_ciaoExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 AMH_ciaoExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:anvil.com/AMH_ciaoExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -251,7 +251,7 @@ AMI_ciaoHandler::AMI_ciaoHandler (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -273,20 +273,20 @@ aloha::aloha (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 AMH_alohaExceptionHolder::AMH_alohaExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 AMH_alohaExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:anvil.com/AMH_alohaExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 

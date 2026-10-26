@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -45,20 +45,20 @@ foo::bar::fooBar::fooBar (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 foo::bar::AMH_fooBarExceptionHolder::AMH_fooBarExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 foo::bar::AMH_fooBarExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:foo/bar/AMH_fooBarExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 

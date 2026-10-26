@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_BUG_3819_REGRESSIONC_Y5A8RX_H_
-#define _TAO_IDL_BUG_3819_REGRESSIONC_Y5A8RX_H_
+#ifndef _TAO_IDL_BUG_3819_REGRESSIONC_LY8IS3_H_
+#define _TAO_IDL_BUG_3819_REGRESSIONC_LY8IS3_H_
 
 #include /**/ "ace/pre.h"
 
@@ -60,17 +60,17 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace orange
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
   namespace apple
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:563
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:557
 
     
 
@@ -83,7 +83,7 @@ namespace orange
 
 #endif /* end #if !defined */
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:563
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:557
 
     
 
@@ -96,7 +96,7 @@ namespace orange
 
 #endif /* end #if !defined */
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
     
 
@@ -104,7 +104,7 @@ namespace orange
 #define _ORANGE_APPLE_BAR__VAR_OUT_CH_
 
     class AMI_BarHandler;
-    typedef AMI_BarHandler *AMI_BarHandler_ptr;
+    using AMI_BarHandler_ptr = AMI_BarHandler *;
 
     class Bar;
     using Bar_ptr = Bar*;
@@ -113,7 +113,7 @@ namespace orange
 
 #endif /* end #if !defined */
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
     
 
@@ -121,7 +121,7 @@ namespace orange
 #define _ORANGE_APPLE_BAR__VAR_OUT_CH_
 
     class AMI_BarHandler;
-    typedef AMI_BarHandler *AMI_BarHandler_ptr;
+    using AMI_BarHandler_ptr = AMI_BarHandler *;
 
     class Bar;
     using Bar_ptr = Bar*;
@@ -132,19 +132,19 @@ namespace orange
   
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
   
   } // module orange::apple
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module orange
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -155,7 +155,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -177,7 +177,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -199,7 +199,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -221,7 +221,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -241,7 +241,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -266,19 +266,19 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/obv_module.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/obv_module.cpp:41
 
 namespace OBV_orange
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/obv_module.cpp:43
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/obv_module.cpp:41
 
   namespace apple
   {
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -346,7 +346,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/any_op_ch.cpp:54
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/any_op_ch.cpp:52
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -360,7 +360,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/any_op_ch.cpp:54
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/any_op_ch.cpp:52
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -374,7 +374,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/any_op_ch.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/any_op_ch.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -388,7 +388,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/any_op_ch.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/any_op_ch.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -402,7 +402,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:452
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:446
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -416,7 +416,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/cdr_op_ch.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/cdr_op_ch.cpp:63
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -428,7 +428,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:452
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:446
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -442,7 +442,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/cdr_op_ch.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype_fwd/cdr_op_ch.cpp:63
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -454,7 +454,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/cdr_op_ch.cpp:46
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/cdr_op_ch.cpp:44
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -466,7 +466,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/cdr_op_ch.cpp:46
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface_fwd/cdr_op_ch.cpp:44
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -478,7 +478,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "Bug_3819_RegressionC.inl"

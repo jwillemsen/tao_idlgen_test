@@ -500,7 +500,7 @@ TAO::Array_Traits<OldArray::A_rmatrix_forany>::alloc ()
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -522,20 +522,20 @@ OldArray::A_i::A_i (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 OldArray::AMH_A_iExceptionHolder::AMH_A_iExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 OldArray::AMH_A_iExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:OldArray/AMH_A_iExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 

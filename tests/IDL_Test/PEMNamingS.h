@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_PEMNAMINGS_YMURDQ_H_
-#define _TAO_IDL_PEMNAMINGS_YMURDQ_H_
+#ifndef _TAO_IDL_PEMNAMINGS_MMTZGA_H_
+#define _TAO_IDL_PEMNAMINGS_MMTZGA_H_
 
 #include /**/ "ace/pre.h"
 
@@ -53,7 +53,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -64,7 +64,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:889
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:890
 
   
 
@@ -78,7 +78,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:931
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:932
 
   
 
@@ -92,7 +92,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:671
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:672
 
   
 
@@ -106,7 +106,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:931
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:932
 
   
 
@@ -120,7 +120,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -139,7 +139,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -160,7 +160,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -184,22 +184,22 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
 namespace POA_Plesk
 {
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
   namespace Naming
   {
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
     class AMH_ObjectResolver;
-    typedef AMH_ObjectResolver *AMH_ObjectResolver_ptr;
+    using AMH_ObjectResolver_ptr = AMH_ObjectResolver *;
 
     class TAO_IDL_TEST_STUB_Export AMH_ObjectResolver
       : public virtual PortableServer::ServantBase
@@ -222,7 +222,7 @@ namespace POA_Plesk
 
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
     static void resolve_skel (
         TAO_ServerRequest &_tao_req,
@@ -236,7 +236,7 @@ namespace POA_Plesk
       ) = 0;
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
     static void resolve_sc_skel (
         TAO_ServerRequest &_tao_req,
@@ -254,12 +254,12 @@ namespace POA_Plesk
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class ObjectResolver;
-  typedef ObjectResolver *ObjectResolver_ptr;
+  using ObjectResolver_ptr = ObjectResolver *;
 
   class _TAO_ObjectResolver_Direct_Proxy_Impl;
 
@@ -271,9 +271,9 @@ namespace POA_Plesk
   
   public:
     /// Useful for template programming.
-    typedef ::Plesk::Naming::ObjectResolver _stub_type;
-    typedef ::Plesk::Naming::ObjectResolver_ptr _stub_ptr_type;
-    typedef ::Plesk::Naming::ObjectResolver_var _stub_var_type;
+    using _stub_type = ::Plesk::Naming::ObjectResolver;
+    using _stub_ptr_type = ::Plesk::Naming::ObjectResolver_ptr;
+    using _stub_var_type = ::Plesk::Naming::ObjectResolver_var;
 
     ObjectResolver (const ObjectResolver& rhs) = default;
     virtual ~ObjectResolver () = default;
@@ -288,7 +288,7 @@ namespace POA_Plesk
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual ::CORBA::Object_ptr resolve (
       const char * service_type,
@@ -299,7 +299,7 @@ namespace POA_Plesk
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual ::CORBA::Object_ptr resolve_sc (
       const char * service_type,
@@ -325,14 +325,14 @@ namespace POA_Plesk
   public:
     virtual ~_TAO_ObjectResolver_Direct_Proxy_Impl ();
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve (
       TAO_Abstract_ServantBase *servant, TAO::Argument **args);
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve_sc (
@@ -346,10 +346,10 @@ namespace POA_Plesk
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
   class TAO_AMH_ObjectResolverResponseHandler;
-  typedef TAO_AMH_ObjectResolverResponseHandler *TAO_AMH_ObjectResolverResponseHandler_ptr;
+  using TAO_AMH_ObjectResolverResponseHandler_ptr = TAO_AMH_ObjectResolverResponseHandler *;
 
   class TAO_IDL_TEST_STUB_Export TAO_AMH_ObjectResolverResponseHandler
     : public TAO_AMH_Response_Handler,
@@ -359,24 +359,24 @@ namespace POA_Plesk
     TAO_AMH_ObjectResolverResponseHandler () = default;
     virtual ~TAO_AMH_ObjectResolverResponseHandler () = default;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
     void resolve (
       ::CORBA::Object_ptr return_value,
       ::Plesk::TObjectID sc_id) override;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
     void resolve_excep (
       ::Plesk::Naming::AMH_ObjectResolverExceptionHolder * holder) override;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
     void resolve_sc (
       ::CORBA::Object_ptr return_value,
       ::Plesk::TObjectID sc_id) override;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
     void resolve_sc_excep (
       ::Plesk::Naming::AMH_ObjectResolverExceptionHolder * holder) override;
@@ -384,12 +384,12 @@ namespace POA_Plesk
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class AMI_ObjectResolverHandler;
-  typedef AMI_ObjectResolverHandler *AMI_ObjectResolverHandler_ptr;
+  using AMI_ObjectResolverHandler_ptr = AMI_ObjectResolverHandler *;
 
   class _TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl;
 
@@ -401,9 +401,9 @@ namespace POA_Plesk
   
   public:
     /// Useful for template programming.
-    typedef ::Plesk::Naming::AMI_ObjectResolverHandler _stub_type;
-    typedef ::Plesk::Naming::AMI_ObjectResolverHandler_ptr _stub_ptr_type;
-    typedef ::Plesk::Naming::AMI_ObjectResolverHandler_var _stub_var_type;
+    using _stub_type = ::Plesk::Naming::AMI_ObjectResolverHandler;
+    using _stub_ptr_type = ::Plesk::Naming::AMI_ObjectResolverHandler_ptr;
+    using _stub_var_type = ::Plesk::Naming::AMI_ObjectResolverHandler_var;
 
     AMI_ObjectResolverHandler (const AMI_ObjectResolverHandler& rhs) = default;
     virtual ~AMI_ObjectResolverHandler () = default;
@@ -418,7 +418,7 @@ namespace POA_Plesk
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void resolve (
       ::CORBA::Object_ptr ami_return_val,
@@ -429,7 +429,7 @@ namespace POA_Plesk
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void resolve_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -439,7 +439,7 @@ namespace POA_Plesk
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void resolve_sc (
       ::CORBA::Object_ptr ami_return_val,
@@ -450,7 +450,7 @@ namespace POA_Plesk
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void resolve_sc_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -475,28 +475,28 @@ namespace POA_Plesk
   public:
     virtual ~_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl ();
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve (
       TAO_Abstract_ServantBase *servant, TAO::Argument **args);
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve_excep (
       TAO_Abstract_ServantBase *servant, TAO::Argument **args);
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve_sc (
       TAO_Abstract_ServantBase *servant, TAO::Argument **args);
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
     static void
     resolve_sc_excep (
@@ -512,13 +512,13 @@ namespace POA_Plesk
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module Plesk::Naming
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module Plesk
 

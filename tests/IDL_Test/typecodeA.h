@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:767
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
 
-#ifndef _TAO_IDL_TYPECODEA_SQ2LFD_H_
-#define _TAO_IDL_TYPECODEA_SQ2LFD_H_
+#ifndef _TAO_IDL_TYPECODEA_WQ5TLD_H_
+#define _TAO_IDL_TYPECODEA_WQ5TLD_H_
 
 #include /**/ "ace/pre.h"
 
@@ -59,18 +59,18 @@
 #include "tao/AnyTypeCode/WrongTransactionA.h"
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:41
 
 namespace MyModule
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_TypeCodeList;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:68
 
 
 } // module MyModule
@@ -78,7 +78,7 @@ namespace MyModule
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_ch.cpp:46
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_ch.cpp:44
 
 
 
@@ -86,9 +86,9 @@ namespace MyModule
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const ::MyModule::TypeCodeList &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, ::MyModule::TypeCodeList const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, ::MyModule::TypeCodeList*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const ::MyModule::TypeCodeList *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, ::MyModule::TypeCodeList const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 

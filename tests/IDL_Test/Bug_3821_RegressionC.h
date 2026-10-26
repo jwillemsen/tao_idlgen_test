@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_BUG_3821_REGRESSIONC_RI8SM2_H_
-#define _TAO_IDL_BUG_3821_REGRESSIONC_RI8SM2_H_
+#ifndef _TAO_IDL_BUG_3821_REGRESSIONC_C6JI8D_H_
+#define _TAO_IDL_BUG_3821_REGRESSIONC_C6JI8D_H_
 
 #include /**/ "ace/pre.h"
 
@@ -60,7 +60,7 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace test
 {
@@ -74,13 +74,13 @@ namespace test
     Enum3
   };
 
-  typedef Enumeration &Enumeration_out;
+  using Enumeration_out = Enumeration &;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_Enumeration;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -92,19 +92,19 @@ namespace test
   {
   public:
     UnionAllCovered_EnumerationDiscriminant ();
-    UnionAllCovered_EnumerationDiscriminant (const UnionAllCovered_EnumerationDiscriminant &);
+    UnionAllCovered_EnumerationDiscriminant (UnionAllCovered_EnumerationDiscriminant const &);
     ~UnionAllCovered_EnumerationDiscriminant ();
 
-    UnionAllCovered_EnumerationDiscriminant &operator= (const UnionAllCovered_EnumerationDiscriminant &);
+    UnionAllCovered_EnumerationDiscriminant &operator= (UnionAllCovered_EnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCovered_EnumerationDiscriminant_var;
@@ -112,28 +112,28 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum3 ( ::CORBA::Long);
     ::CORBA::Long e_enum3 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -146,17 +146,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum3_;
@@ -166,11 +166,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_EnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -182,19 +182,19 @@ namespace test
   {
   public:
     UnionAllCoveredWithDefault_EnumerationDiscriminant ();
-    UnionAllCoveredWithDefault_EnumerationDiscriminant (const UnionAllCoveredWithDefault_EnumerationDiscriminant &);
+    UnionAllCoveredWithDefault_EnumerationDiscriminant (UnionAllCoveredWithDefault_EnumerationDiscriminant const &);
     ~UnionAllCoveredWithDefault_EnumerationDiscriminant ();
 
-    UnionAllCoveredWithDefault_EnumerationDiscriminant &operator= (const UnionAllCoveredWithDefault_EnumerationDiscriminant &);
+    UnionAllCoveredWithDefault_EnumerationDiscriminant &operator= (UnionAllCoveredWithDefault_EnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCoveredWithDefault_EnumerationDiscriminant_var;
@@ -202,21 +202,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -230,17 +230,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -250,11 +250,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCoveredWithDefault_EnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -266,19 +266,19 @@ namespace test
   {
   public:
     UnionWithDefault_EnumerationDiscriminant ();
-    UnionWithDefault_EnumerationDiscriminant (const UnionWithDefault_EnumerationDiscriminant &);
+    UnionWithDefault_EnumerationDiscriminant (UnionWithDefault_EnumerationDiscriminant const &);
     ~UnionWithDefault_EnumerationDiscriminant ();
 
-    UnionWithDefault_EnumerationDiscriminant &operator= (const UnionWithDefault_EnumerationDiscriminant &);
+    UnionWithDefault_EnumerationDiscriminant &operator= (UnionWithDefault_EnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithDefault_EnumerationDiscriminant_var;
@@ -286,21 +286,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -314,17 +314,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -334,11 +334,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_EnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -350,19 +350,19 @@ namespace test
   {
   public:
     UnionWithImplicitDefault_EnumerationDiscriminant ();
-    UnionWithImplicitDefault_EnumerationDiscriminant (const UnionWithImplicitDefault_EnumerationDiscriminant &);
+    UnionWithImplicitDefault_EnumerationDiscriminant (UnionWithImplicitDefault_EnumerationDiscriminant const &);
     ~UnionWithImplicitDefault_EnumerationDiscriminant ();
 
-    UnionWithImplicitDefault_EnumerationDiscriminant &operator= (const UnionWithImplicitDefault_EnumerationDiscriminant &);
+    UnionWithImplicitDefault_EnumerationDiscriminant &operator= (UnionWithImplicitDefault_EnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithImplicitDefault_EnumerationDiscriminant_var;
@@ -370,21 +370,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -397,12 +397,12 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
@@ -412,20 +412,20 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_EnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typedef/typedef_ch.cpp:284
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typedef/typedef_ch.cpp:278
 
-  typedef Enumeration TypedefedEnumeration;
-  typedef Enumeration_out TypedefedEnumeration_out;
+  using TypedefedEnumeration = Enumeration;
+  using TypedefedEnumeration_out = Enumeration_out;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_TypedefedEnumeration;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -437,19 +437,19 @@ namespace test
   {
   public:
     UnionAllCovered_TypedefedEnumerationDiscriminant ();
-    UnionAllCovered_TypedefedEnumerationDiscriminant (const UnionAllCovered_TypedefedEnumerationDiscriminant &);
+    UnionAllCovered_TypedefedEnumerationDiscriminant (UnionAllCovered_TypedefedEnumerationDiscriminant const &);
     ~UnionAllCovered_TypedefedEnumerationDiscriminant ();
 
-    UnionAllCovered_TypedefedEnumerationDiscriminant &operator= (const UnionAllCovered_TypedefedEnumerationDiscriminant &);
+    UnionAllCovered_TypedefedEnumerationDiscriminant &operator= (UnionAllCovered_TypedefedEnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCovered_TypedefedEnumerationDiscriminant_var;
@@ -457,28 +457,28 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum3 ( ::CORBA::Long);
     ::CORBA::Long e_enum3 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -491,17 +491,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum3_;
@@ -511,11 +511,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_TypedefedEnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -527,19 +527,19 @@ namespace test
   {
   public:
     UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant ();
-    UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant (const UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &);
+    UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant (UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &);
     ~UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant ();
 
-    UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &operator= (const UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &);
+    UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &operator= (UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant_var;
@@ -547,21 +547,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -575,17 +575,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -595,11 +595,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -611,19 +611,19 @@ namespace test
   {
   public:
     UnionWithDefault_TypedefedEnumerationDiscriminant ();
-    UnionWithDefault_TypedefedEnumerationDiscriminant (const UnionWithDefault_TypedefedEnumerationDiscriminant &);
+    UnionWithDefault_TypedefedEnumerationDiscriminant (UnionWithDefault_TypedefedEnumerationDiscriminant const &);
     ~UnionWithDefault_TypedefedEnumerationDiscriminant ();
 
-    UnionWithDefault_TypedefedEnumerationDiscriminant &operator= (const UnionWithDefault_TypedefedEnumerationDiscriminant &);
+    UnionWithDefault_TypedefedEnumerationDiscriminant &operator= (UnionWithDefault_TypedefedEnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithDefault_TypedefedEnumerationDiscriminant_var;
@@ -631,21 +631,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -659,17 +659,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -679,11 +679,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_TypedefedEnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -695,19 +695,19 @@ namespace test
   {
   public:
     UnionWithImplicitDefault_TypedefedEnumerationDiscriminant ();
-    UnionWithImplicitDefault_TypedefedEnumerationDiscriminant (const UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &);
+    UnionWithImplicitDefault_TypedefedEnumerationDiscriminant (UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &);
     ~UnionWithImplicitDefault_TypedefedEnumerationDiscriminant ();
 
-    UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &operator= (const UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &);
+    UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &operator= (UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:66
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:64
 
     
 
     void _d (test::Enumeration);
     test::Enumeration _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithImplicitDefault_TypedefedEnumerationDiscriminant_var;
@@ -715,21 +715,21 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum1 ( ::CORBA::Long);
     ::CORBA::Long e_enum1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_enum2 ( ::CORBA::Long);
     ::CORBA::Long e_enum2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -742,12 +742,12 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_enum2_;
@@ -757,11 +757,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -773,19 +773,19 @@ namespace test
   {
   public:
     UnionAllCovered_BooleanDiscriminant ();
-    UnionAllCovered_BooleanDiscriminant (const UnionAllCovered_BooleanDiscriminant &);
+    UnionAllCovered_BooleanDiscriminant (UnionAllCovered_BooleanDiscriminant const &);
     ~UnionAllCovered_BooleanDiscriminant ();
 
-    UnionAllCovered_BooleanDiscriminant &operator= (const UnionAllCovered_BooleanDiscriminant &);
+    UnionAllCovered_BooleanDiscriminant &operator= (UnionAllCovered_BooleanDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Boolean);
     ::CORBA::Boolean _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCovered_BooleanDiscriminant_var;
@@ -793,14 +793,14 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_true ( ::CORBA::Long);
     ::CORBA::Long e_true () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -814,12 +814,12 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_true_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_false_;
@@ -829,11 +829,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_BooleanDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -845,19 +845,19 @@ namespace test
   {
   public:
     UnionWithDefault_BooleanDiscriminant ();
-    UnionWithDefault_BooleanDiscriminant (const UnionWithDefault_BooleanDiscriminant &);
+    UnionWithDefault_BooleanDiscriminant (UnionWithDefault_BooleanDiscriminant const &);
     ~UnionWithDefault_BooleanDiscriminant ();
 
-    UnionWithDefault_BooleanDiscriminant &operator= (const UnionWithDefault_BooleanDiscriminant &);
+    UnionWithDefault_BooleanDiscriminant &operator= (UnionWithDefault_BooleanDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Boolean);
     ::CORBA::Boolean _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithDefault_BooleanDiscriminant_var;
@@ -865,14 +865,14 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_true ( ::CORBA::Long);
     ::CORBA::Long e_true () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -886,12 +886,12 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_true_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -901,11 +901,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_BooleanDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -917,19 +917,19 @@ namespace test
   {
   public:
     UnionWithImplicitDefault_BooleanDiscriminant ();
-    UnionWithImplicitDefault_BooleanDiscriminant (const UnionWithImplicitDefault_BooleanDiscriminant &);
+    UnionWithImplicitDefault_BooleanDiscriminant (UnionWithImplicitDefault_BooleanDiscriminant const &);
     ~UnionWithImplicitDefault_BooleanDiscriminant ();
 
-    UnionWithImplicitDefault_BooleanDiscriminant &operator= (const UnionWithImplicitDefault_BooleanDiscriminant &);
+    UnionWithImplicitDefault_BooleanDiscriminant &operator= (UnionWithImplicitDefault_BooleanDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Boolean);
     ::CORBA::Boolean _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithImplicitDefault_BooleanDiscriminant_var;
@@ -937,14 +937,14 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_true ( ::CORBA::Long);
     ::CORBA::Long e_true () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -957,7 +957,7 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_true_;
@@ -967,11 +967,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_BooleanDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -983,19 +983,19 @@ namespace test
   {
   public:
     UnionAllCovered_CharDiscriminant ();
-    UnionAllCovered_CharDiscriminant (const UnionAllCovered_CharDiscriminant &);
+    UnionAllCovered_CharDiscriminant (UnionAllCovered_CharDiscriminant const &);
     ~UnionAllCovered_CharDiscriminant ();
 
-    UnionAllCovered_CharDiscriminant &operator= (const UnionAllCovered_CharDiscriminant &);
+    UnionAllCovered_CharDiscriminant &operator= (UnionAllCovered_CharDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Char);
     ::CORBA::Char _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionAllCovered_CharDiscriminant_var;
@@ -1003,7 +1003,7 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -1017,7 +1017,7 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_chars_;
@@ -1027,11 +1027,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_CharDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -1043,19 +1043,19 @@ namespace test
   {
   public:
     UnionWithDefault_CharDiscriminant ();
-    UnionWithDefault_CharDiscriminant (const UnionWithDefault_CharDiscriminant &);
+    UnionWithDefault_CharDiscriminant (UnionWithDefault_CharDiscriminant const &);
     ~UnionWithDefault_CharDiscriminant ();
 
-    UnionWithDefault_CharDiscriminant &operator= (const UnionWithDefault_CharDiscriminant &);
+    UnionWithDefault_CharDiscriminant &operator= (UnionWithDefault_CharDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Char);
     ::CORBA::Char _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithDefault_CharDiscriminant_var;
@@ -1063,14 +1063,14 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_chars ( ::CORBA::Long);
     ::CORBA::Long e_chars () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -1084,12 +1084,12 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_chars_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -1099,11 +1099,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_CharDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -1115,19 +1115,19 @@ namespace test
   {
   public:
     UnionWithImplicitDefault_CharDiscriminant ();
-    UnionWithImplicitDefault_CharDiscriminant (const UnionWithImplicitDefault_CharDiscriminant &);
+    UnionWithImplicitDefault_CharDiscriminant (UnionWithImplicitDefault_CharDiscriminant const &);
     ~UnionWithImplicitDefault_CharDiscriminant ();
 
-    UnionWithImplicitDefault_CharDiscriminant &operator= (const UnionWithImplicitDefault_CharDiscriminant &);
+    UnionWithImplicitDefault_CharDiscriminant &operator= (UnionWithImplicitDefault_CharDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Char);
     ::CORBA::Char _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithImplicitDefault_CharDiscriminant_var;
@@ -1135,14 +1135,14 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_chars ( ::CORBA::Long);
     ::CORBA::Long e_chars () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -1155,7 +1155,7 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_chars_;
@@ -1165,11 +1165,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_CharDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -1181,19 +1181,19 @@ namespace test
   {
   public:
     UnionWithDefault_LongDiscriminant ();
-    UnionWithDefault_LongDiscriminant (const UnionWithDefault_LongDiscriminant &);
+    UnionWithDefault_LongDiscriminant (UnionWithDefault_LongDiscriminant const &);
     ~UnionWithDefault_LongDiscriminant ();
 
-    UnionWithDefault_LongDiscriminant &operator= (const UnionWithDefault_LongDiscriminant &);
+    UnionWithDefault_LongDiscriminant &operator= (UnionWithDefault_LongDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Long);
     ::CORBA::Long _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithDefault_LongDiscriminant_var;
@@ -1201,28 +1201,28 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case1 ( ::CORBA::Long);
     ::CORBA::Long e_case1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case2 ( ::CORBA::Long);
     ::CORBA::Long e_case2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case3 ( ::CORBA::Long);
     ::CORBA::Long e_case3 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
@@ -1236,22 +1236,22 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case3_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_def_;
@@ -1261,11 +1261,11 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_LongDiscriminant;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:231
 
   
 
@@ -1277,19 +1277,19 @@ namespace test
   {
   public:
     UnionWithImplicitDefault_LongDiscriminant ();
-    UnionWithImplicitDefault_LongDiscriminant (const UnionWithImplicitDefault_LongDiscriminant &);
+    UnionWithImplicitDefault_LongDiscriminant (UnionWithImplicitDefault_LongDiscriminant const &);
     ~UnionWithImplicitDefault_LongDiscriminant ();
 
-    UnionWithImplicitDefault_LongDiscriminant &operator= (const UnionWithImplicitDefault_LongDiscriminant &);
+    UnionWithImplicitDefault_LongDiscriminant &operator= (UnionWithImplicitDefault_LongDiscriminant const &);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:98
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
     
 
     void _d ( ::CORBA::Long);
     ::CORBA::Long _d () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = UnionWithImplicitDefault_LongDiscriminant_var;
@@ -1297,28 +1297,28 @@ namespace test
 
     static void _tao_any_destructor (void *);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case1 ( ::CORBA::Long);
     ::CORBA::Long e_case1 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case2 ( ::CORBA::Long);
     ::CORBA::Long e_case2 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:440
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:438
 
     
 
     void e_case3 ( ::CORBA::Long);
     ::CORBA::Long e_case3 () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:120
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
     
 
@@ -1331,17 +1331,17 @@ namespace test
     {
       _tao_union_storage () {}
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case1_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case2_;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:369
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:367
 
       
       ::CORBA::Long e_case3_;
@@ -1351,18 +1351,18 @@ namespace test
     void _reset ();
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_LongDiscriminant;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module test
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -1373,7 +1373,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -1395,7 +1395,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:889
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:890
 
   
 
@@ -1409,7 +1409,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1423,7 +1423,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1437,7 +1437,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1451,7 +1451,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1465,7 +1465,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1479,7 +1479,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1493,7 +1493,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1507,7 +1507,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1521,7 +1521,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1535,7 +1535,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1549,7 +1549,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1563,7 +1563,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1577,7 +1577,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1591,7 +1591,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1605,7 +1605,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1619,7 +1619,7 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1041
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1042
 
   
 
@@ -1638,7 +1638,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -1667,231 +1667,231 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCovered_EnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_EnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_EnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCovered_EnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCovered_EnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCoveredWithDefault_EnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCoveredWithDefault_EnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCoveredWithDefault_EnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCoveredWithDefault_EnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithDefault_EnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_EnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_EnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithDefault_EnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithDefault_EnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithImplicitDefault_EnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_EnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_EnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithImplicitDefault_EnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithImplicitDefault_EnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCovered_TypedefedEnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_TypedefedEnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_TypedefedEnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCovered_TypedefedEnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCovered_TypedefedEnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithDefault_TypedefedEnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_TypedefedEnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_TypedefedEnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithDefault_TypedefedEnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithDefault_TypedefedEnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCovered_BooleanDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_BooleanDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_BooleanDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCovered_BooleanDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCovered_BooleanDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithDefault_BooleanDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_BooleanDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_BooleanDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithDefault_BooleanDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithDefault_BooleanDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithImplicitDefault_BooleanDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_BooleanDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_BooleanDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithImplicitDefault_BooleanDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithImplicitDefault_BooleanDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionAllCovered_CharDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_CharDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionAllCovered_CharDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionAllCovered_CharDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionAllCovered_CharDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithDefault_CharDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_CharDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_CharDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithDefault_CharDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithDefault_CharDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithImplicitDefault_CharDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_CharDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_CharDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithImplicitDefault_CharDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithImplicitDefault_CharDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithDefault_LongDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_LongDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithDefault_LongDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithDefault_LongDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithDefault_LongDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:36
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_ch.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const test::UnionWithImplicitDefault_LongDiscriminant &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_LongDiscriminant const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, test::UnionWithImplicitDefault_LongDiscriminant*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const test::UnionWithImplicitDefault_LongDiscriminant *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, test::UnionWithImplicitDefault_LongDiscriminant const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_ch.cpp:33
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_ch.cpp:31
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1903,199 +1903,199 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCovered_EnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCovered_EnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCovered_EnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCoveredWithDefault_EnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCoveredWithDefault_EnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithDefault_EnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithDefault_EnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithDefault_EnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithImplicitDefault_EnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithImplicitDefault_EnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithImplicitDefault_EnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCovered_TypedefedEnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCovered_TypedefedEnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCovered_TypedefedEnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithDefault_TypedefedEnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithDefault_TypedefedEnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithDefault_TypedefedEnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCovered_BooleanDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCovered_BooleanDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCovered_BooleanDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithDefault_BooleanDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithDefault_BooleanDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithDefault_BooleanDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithImplicitDefault_BooleanDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithImplicitDefault_BooleanDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithImplicitDefault_BooleanDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionAllCovered_CharDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionAllCovered_CharDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionAllCovered_CharDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithDefault_CharDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithDefault_CharDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithDefault_CharDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithImplicitDefault_CharDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithImplicitDefault_CharDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithImplicitDefault_CharDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithDefault_LongDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithDefault_LongDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithDefault_LongDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_ch.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const test::UnionWithImplicitDefault_LongDiscriminant &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, test::UnionWithImplicitDefault_LongDiscriminant const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, test::UnionWithImplicitDefault_LongDiscriminant &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "Bug_3821_RegressionC.inl"

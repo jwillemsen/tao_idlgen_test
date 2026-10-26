@@ -25,13 +25,13 @@
 #include <memory>
 #include <new>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:33
 
 // *************************************************************
 // Inline operations for union OldUnion::Foo
 // *************************************************************
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:302
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:300
 
 
 
@@ -73,7 +73,7 @@ OldUnion::Foo::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:606
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
 
 // Accessor to set the member.
 ACE_INLINE
@@ -99,12 +99,12 @@ OldUnion::Foo::x () const
   return this->u_.x_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1121
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
 
 /// Accessor to set the member.
 ACE_INLINE
 void
-OldUnion::Foo::y (const OldUnion::Bar &val)
+OldUnion::Foo::y (OldUnion::Bar const &val)
 {
   // Set the discriminant value.
   this->_reset ();
@@ -114,7 +114,7 @@ OldUnion::Foo::y (const OldUnion::Bar &val)
 
 // Readonly get method.
 ACE_INLINE
-const OldUnion::Bar &
+OldUnion::Bar const &
 OldUnion::Foo::y () const
 {
   if (_tao_member_index (this->disc_) != 1UL)
@@ -136,7 +136,7 @@ OldUnion::Foo::y ()
   return this->u_.y_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:606
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
 
 // Accessor to set the member.
 ACE_INLINE
@@ -162,13 +162,13 @@ OldUnion::Foo::z () const
   return this->u_.z_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:33
 
 // *************************************************************
 // Inline operations for union OldUnion::Foo2
 // *************************************************************
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:302
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:300
 
 ACE_INLINE
 void
@@ -216,7 +216,7 @@ OldUnion::Foo2::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:606
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
 
 // Accessor to set the member.
 ACE_INLINE
@@ -242,12 +242,12 @@ OldUnion::Foo2::x () const
   return this->u_.x_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1294
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1292
 
 // Accessor to set the member.
 ACE_INLINE
 void
-OldUnion::Foo2::y (const OldUnion::Foo &val)
+OldUnion::Foo2::y (OldUnion::Foo const &val)
 {
   // Set the discriminant value.
   this->_reset ();
@@ -260,7 +260,7 @@ OldUnion::Foo2::y (const OldUnion::Foo &val)
 
 // Readonly get method.
 ACE_INLINE
-const OldUnion::Foo &
+OldUnion::Foo const &
 OldUnion::Foo2::y () const
 {
   if (_tao_member_index (this->disc_) != 1UL)
@@ -282,7 +282,7 @@ OldUnion::Foo2::y ()
   return *this->u_.y_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -304,20 +304,20 @@ OldUnion::a::a (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 OldUnion::AMH_aExceptionHolder::AMH_aExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 OldUnion::AMH_aExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:OldUnion/AMH_aExceptionHolder:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 

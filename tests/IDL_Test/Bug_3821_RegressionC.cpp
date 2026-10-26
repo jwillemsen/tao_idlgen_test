@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_3821_RegressionC.h"
@@ -31,6 +31,7 @@
 #include <new>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Struct_TypeCode_Static.h"
@@ -78,7 +79,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_Enumeration = std::addressof(_tao_tc_test_Enumeration);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -87,7 +88,7 @@ test::UnionAllCovered_EnumerationDiscriminant::UnionAllCovered_EnumerationDiscri
   this->disc_ = (test::Enumeration) -1;
 }
 
-test::UnionAllCovered_EnumerationDiscriminant::UnionAllCovered_EnumerationDiscriminant (const ::test::UnionAllCovered_EnumerationDiscriminant &u)
+test::UnionAllCovered_EnumerationDiscriminant::UnionAllCovered_EnumerationDiscriminant (::test::UnionAllCovered_EnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -125,7 +126,7 @@ void test::UnionAllCovered_EnumerationDiscriminant::_tao_any_destructor (void *_
 }
 
 test::UnionAllCovered_EnumerationDiscriminant &
-test::UnionAllCovered_EnumerationDiscriminant::operator= (const ::test::UnionAllCovered_EnumerationDiscriminant &u)
+test::UnionAllCovered_EnumerationDiscriminant::operator= (::test::UnionAllCovered_EnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -160,7 +161,7 @@ void test::UnionAllCovered_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -191,7 +192,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_EnumerationDiscriminant = std::addressof(_tao_tc_test_UnionAllCovered_EnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -201,7 +202,7 @@ test::UnionAllCoveredWithDefault_EnumerationDiscriminant::UnionAllCoveredWithDef
   this->u_.e_def_ = {};
 }
 
-test::UnionAllCoveredWithDefault_EnumerationDiscriminant::UnionAllCoveredWithDefault_EnumerationDiscriminant (const ::test::UnionAllCoveredWithDefault_EnumerationDiscriminant &u)
+test::UnionAllCoveredWithDefault_EnumerationDiscriminant::UnionAllCoveredWithDefault_EnumerationDiscriminant (::test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -239,7 +240,7 @@ void test::UnionAllCoveredWithDefault_EnumerationDiscriminant::_tao_any_destruct
 }
 
 test::UnionAllCoveredWithDefault_EnumerationDiscriminant &
-test::UnionAllCoveredWithDefault_EnumerationDiscriminant::operator= (const ::test::UnionAllCoveredWithDefault_EnumerationDiscriminant &u)
+test::UnionAllCoveredWithDefault_EnumerationDiscriminant::operator= (::test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -274,7 +275,7 @@ void test::UnionAllCoveredWithDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -305,7 +306,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCoveredWithDefault_EnumerationDiscriminant = std::addressof(_tao_tc_test_UnionAllCoveredWithDefault_EnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -315,7 +316,7 @@ test::UnionWithDefault_EnumerationDiscriminant::UnionWithDefault_EnumerationDisc
   this->u_.e_def_ = {};
 }
 
-test::UnionWithDefault_EnumerationDiscriminant::UnionWithDefault_EnumerationDiscriminant (const ::test::UnionWithDefault_EnumerationDiscriminant &u)
+test::UnionWithDefault_EnumerationDiscriminant::UnionWithDefault_EnumerationDiscriminant (::test::UnionWithDefault_EnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -353,7 +354,7 @@ void test::UnionWithDefault_EnumerationDiscriminant::_tao_any_destructor (void *
 }
 
 test::UnionWithDefault_EnumerationDiscriminant &
-test::UnionWithDefault_EnumerationDiscriminant::operator= (const ::test::UnionWithDefault_EnumerationDiscriminant &u)
+test::UnionWithDefault_EnumerationDiscriminant::operator= (::test::UnionWithDefault_EnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -388,7 +389,7 @@ void test::UnionWithDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -419,7 +420,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_EnumerationDiscriminant = std::addressof(_tao_tc_test_UnionWithDefault_EnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -428,7 +429,7 @@ test::UnionWithImplicitDefault_EnumerationDiscriminant::UnionWithImplicitDefault
   this->disc_ = test::Enum3;
 }
 
-test::UnionWithImplicitDefault_EnumerationDiscriminant::UnionWithImplicitDefault_EnumerationDiscriminant (const ::test::UnionWithImplicitDefault_EnumerationDiscriminant &u)
+test::UnionWithImplicitDefault_EnumerationDiscriminant::UnionWithImplicitDefault_EnumerationDiscriminant (::test::UnionWithImplicitDefault_EnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -461,7 +462,7 @@ void test::UnionWithImplicitDefault_EnumerationDiscriminant::_tao_any_destructor
 }
 
 test::UnionWithImplicitDefault_EnumerationDiscriminant &
-test::UnionWithImplicitDefault_EnumerationDiscriminant::operator= (const ::test::UnionWithImplicitDefault_EnumerationDiscriminant &u)
+test::UnionWithImplicitDefault_EnumerationDiscriminant::operator= (::test::UnionWithImplicitDefault_EnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -491,7 +492,7 @@ void test::UnionWithImplicitDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -537,7 +538,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_TypedefedEnumeration = std::addressof(_tao_tc_test_TypedefedEnumeration);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -546,7 +547,7 @@ test::UnionAllCovered_TypedefedEnumerationDiscriminant::UnionAllCovered_Typedefe
   this->disc_ = (test::Enumeration) -1;
 }
 
-test::UnionAllCovered_TypedefedEnumerationDiscriminant::UnionAllCovered_TypedefedEnumerationDiscriminant (const ::test::UnionAllCovered_TypedefedEnumerationDiscriminant &u)
+test::UnionAllCovered_TypedefedEnumerationDiscriminant::UnionAllCovered_TypedefedEnumerationDiscriminant (::test::UnionAllCovered_TypedefedEnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -584,7 +585,7 @@ void test::UnionAllCovered_TypedefedEnumerationDiscriminant::_tao_any_destructor
 }
 
 test::UnionAllCovered_TypedefedEnumerationDiscriminant &
-test::UnionAllCovered_TypedefedEnumerationDiscriminant::operator= (const ::test::UnionAllCovered_TypedefedEnumerationDiscriminant &u)
+test::UnionAllCovered_TypedefedEnumerationDiscriminant::operator= (::test::UnionAllCovered_TypedefedEnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -619,7 +620,7 @@ void test::UnionAllCovered_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -650,7 +651,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_TypedefedEnumerationDiscriminant = std::addressof(_tao_tc_test_UnionAllCovered_TypedefedEnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -660,7 +661,7 @@ test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::UnionAllCover
   this->u_.e_def_ = {};
 }
 
-test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant (const ::test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant (::test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -698,7 +699,7 @@ void test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::_tao_any
 }
 
 test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &
-test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::operator= (const ::test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::operator= (::test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -733,7 +734,7 @@ void test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::_reset (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -764,7 +765,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant = std::addressof(_tao_tc_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -774,7 +775,7 @@ test::UnionWithDefault_TypedefedEnumerationDiscriminant::UnionWithDefault_Typede
   this->u_.e_def_ = {};
 }
 
-test::UnionWithDefault_TypedefedEnumerationDiscriminant::UnionWithDefault_TypedefedEnumerationDiscriminant (const ::test::UnionWithDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionWithDefault_TypedefedEnumerationDiscriminant::UnionWithDefault_TypedefedEnumerationDiscriminant (::test::UnionWithDefault_TypedefedEnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -812,7 +813,7 @@ void test::UnionWithDefault_TypedefedEnumerationDiscriminant::_tao_any_destructo
 }
 
 test::UnionWithDefault_TypedefedEnumerationDiscriminant &
-test::UnionWithDefault_TypedefedEnumerationDiscriminant::operator= (const ::test::UnionWithDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionWithDefault_TypedefedEnumerationDiscriminant::operator= (::test::UnionWithDefault_TypedefedEnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -847,7 +848,7 @@ void test::UnionWithDefault_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -878,7 +879,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_TypedefedEnumerationDiscriminant = std::addressof(_tao_tc_test_UnionWithDefault_TypedefedEnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -887,7 +888,7 @@ test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::UnionWithImplic
   this->disc_ = test::Enum3;
 }
 
-test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant (const ::test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant (::test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -920,7 +921,7 @@ void test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::_tao_any_d
 }
 
 test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &
-test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::operator= (const ::test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &u)
+test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::operator= (::test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -950,7 +951,7 @@ void test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -979,7 +980,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant = std::addressof(_tao_tc_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -989,7 +990,7 @@ test::UnionAllCovered_BooleanDiscriminant::UnionAllCovered_BooleanDiscriminant (
   this->u_.e_true_ = {};
 }
 
-test::UnionAllCovered_BooleanDiscriminant::UnionAllCovered_BooleanDiscriminant (const ::test::UnionAllCovered_BooleanDiscriminant &u)
+test::UnionAllCovered_BooleanDiscriminant::UnionAllCovered_BooleanDiscriminant (::test::UnionAllCovered_BooleanDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1022,7 +1023,7 @@ void test::UnionAllCovered_BooleanDiscriminant::_tao_any_destructor (void *_tao_
 }
 
 test::UnionAllCovered_BooleanDiscriminant &
-test::UnionAllCovered_BooleanDiscriminant::operator= (const ::test::UnionAllCovered_BooleanDiscriminant &u)
+test::UnionAllCovered_BooleanDiscriminant::operator= (::test::UnionAllCovered_BooleanDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1052,7 +1053,7 @@ void test::UnionAllCovered_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_BooleanDiscriminant__1 (false, "e_false", &CORBA::_tc_long);
@@ -1081,7 +1082,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_BooleanDiscriminant = std::addressof(_tao_tc_test_UnionAllCovered_BooleanDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1091,7 +1092,7 @@ test::UnionWithDefault_BooleanDiscriminant::UnionWithDefault_BooleanDiscriminant
   this->u_.e_def_ = {};
 }
 
-test::UnionWithDefault_BooleanDiscriminant::UnionWithDefault_BooleanDiscriminant (const ::test::UnionWithDefault_BooleanDiscriminant &u)
+test::UnionWithDefault_BooleanDiscriminant::UnionWithDefault_BooleanDiscriminant (::test::UnionWithDefault_BooleanDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1124,7 +1125,7 @@ void test::UnionWithDefault_BooleanDiscriminant::_tao_any_destructor (void *_tao
 }
 
 test::UnionWithDefault_BooleanDiscriminant &
-test::UnionWithDefault_BooleanDiscriminant::operator= (const ::test::UnionWithDefault_BooleanDiscriminant &u)
+test::UnionWithDefault_BooleanDiscriminant::operator= (::test::UnionWithDefault_BooleanDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1154,7 +1155,7 @@ void test::UnionWithDefault_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_BooleanDiscriminant__1 (false, "e_def", &CORBA::_tc_long);
@@ -1183,7 +1184,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_BooleanDiscriminant = std::addressof(_tao_tc_test_UnionWithDefault_BooleanDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1192,7 +1193,7 @@ test::UnionWithImplicitDefault_BooleanDiscriminant::UnionWithImplicitDefault_Boo
   this->disc_ = false;
 }
 
-test::UnionWithImplicitDefault_BooleanDiscriminant::UnionWithImplicitDefault_BooleanDiscriminant (const ::test::UnionWithImplicitDefault_BooleanDiscriminant &u)
+test::UnionWithImplicitDefault_BooleanDiscriminant::UnionWithImplicitDefault_BooleanDiscriminant (::test::UnionWithImplicitDefault_BooleanDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1220,7 +1221,7 @@ void test::UnionWithImplicitDefault_BooleanDiscriminant::_tao_any_destructor (vo
 }
 
 test::UnionWithImplicitDefault_BooleanDiscriminant &
-test::UnionWithImplicitDefault_BooleanDiscriminant::operator= (const ::test::UnionWithImplicitDefault_BooleanDiscriminant &u)
+test::UnionWithImplicitDefault_BooleanDiscriminant::operator= (::test::UnionWithImplicitDefault_BooleanDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1245,7 +1246,7 @@ void test::UnionWithImplicitDefault_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 
@@ -1272,7 +1273,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_BooleanDiscriminant = std::addressof(_tao_tc_test_UnionWithImplicitDefault_BooleanDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1282,7 +1283,7 @@ test::UnionAllCovered_CharDiscriminant::UnionAllCovered_CharDiscriminant ()
   this->u_.e_chars_ = {};
 }
 
-test::UnionAllCovered_CharDiscriminant::UnionAllCovered_CharDiscriminant (const ::test::UnionAllCovered_CharDiscriminant &u)
+test::UnionAllCovered_CharDiscriminant::UnionAllCovered_CharDiscriminant (::test::UnionAllCovered_CharDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1310,7 +1311,7 @@ void test::UnionAllCovered_CharDiscriminant::_tao_any_destructor (void *_tao_voi
 }
 
 test::UnionAllCovered_CharDiscriminant &
-test::UnionAllCovered_CharDiscriminant::operator= (const ::test::UnionAllCovered_CharDiscriminant &u)
+test::UnionAllCovered_CharDiscriminant::operator= (::test::UnionAllCovered_CharDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1335,7 +1336,7 @@ void test::UnionAllCovered_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -1872,7 +1873,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionAllCovered_CharDiscriminant = std::addressof(_tao_tc_test_UnionAllCovered_CharDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1882,7 +1883,7 @@ test::UnionWithDefault_CharDiscriminant::UnionWithDefault_CharDiscriminant ()
   this->u_.e_def_ = {};
 }
 
-test::UnionWithDefault_CharDiscriminant::UnionWithDefault_CharDiscriminant (const ::test::UnionWithDefault_CharDiscriminant &u)
+test::UnionWithDefault_CharDiscriminant::UnionWithDefault_CharDiscriminant (::test::UnionWithDefault_CharDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1915,7 +1916,7 @@ void test::UnionWithDefault_CharDiscriminant::_tao_any_destructor (void *_tao_vo
 }
 
 test::UnionWithDefault_CharDiscriminant &
-test::UnionWithDefault_CharDiscriminant::operator= (const ::test::UnionWithDefault_CharDiscriminant &u)
+test::UnionWithDefault_CharDiscriminant::operator= (::test::UnionWithDefault_CharDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1945,7 +1946,7 @@ void test::UnionWithDefault_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -1988,7 +1989,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_CharDiscriminant = std::addressof(_tao_tc_test_UnionWithDefault_CharDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1997,7 +1998,7 @@ test::UnionWithImplicitDefault_CharDiscriminant::UnionWithImplicitDefault_CharDi
   this->disc_ = '\10';
 }
 
-test::UnionWithImplicitDefault_CharDiscriminant::UnionWithImplicitDefault_CharDiscriminant (const ::test::UnionWithImplicitDefault_CharDiscriminant &u)
+test::UnionWithImplicitDefault_CharDiscriminant::UnionWithImplicitDefault_CharDiscriminant (::test::UnionWithImplicitDefault_CharDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2025,7 +2026,7 @@ void test::UnionWithImplicitDefault_CharDiscriminant::_tao_any_destructor (void 
 }
 
 test::UnionWithImplicitDefault_CharDiscriminant &
-test::UnionWithImplicitDefault_CharDiscriminant::operator= (const ::test::UnionWithImplicitDefault_CharDiscriminant &u)
+test::UnionWithImplicitDefault_CharDiscriminant::operator= (::test::UnionWithImplicitDefault_CharDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2050,7 +2051,7 @@ void test::UnionWithImplicitDefault_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -2091,7 +2092,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_CharDiscriminant = std::addressof(_tao_tc_test_UnionWithImplicitDefault_CharDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2101,7 +2102,7 @@ test::UnionWithDefault_LongDiscriminant::UnionWithDefault_LongDiscriminant ()
   this->u_.e_def_ = {};
 }
 
-test::UnionWithDefault_LongDiscriminant::UnionWithDefault_LongDiscriminant (const ::test::UnionWithDefault_LongDiscriminant &u)
+test::UnionWithDefault_LongDiscriminant::UnionWithDefault_LongDiscriminant (::test::UnionWithDefault_LongDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2144,7 +2145,7 @@ void test::UnionWithDefault_LongDiscriminant::_tao_any_destructor (void *_tao_vo
 }
 
 test::UnionWithDefault_LongDiscriminant &
-test::UnionWithDefault_LongDiscriminant::operator= (const ::test::UnionWithDefault_LongDiscriminant &u)
+test::UnionWithDefault_LongDiscriminant::operator= (::test::UnionWithDefault_LongDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2184,7 +2185,7 @@ void test::UnionWithDefault_LongDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_LongDiscriminant__0 (1, "e_case1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_LongDiscriminant__1 (2, "e_case2", &CORBA::_tc_long);
@@ -2217,7 +2218,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithDefault_LongDiscriminant = std::addressof(_tao_tc_test_UnionWithDefault_LongDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2226,7 +2227,7 @@ test::UnionWithImplicitDefault_LongDiscriminant::UnionWithImplicitDefault_LongDi
   this->disc_ = -2147483647;
 }
 
-test::UnionWithImplicitDefault_LongDiscriminant::UnionWithImplicitDefault_LongDiscriminant (const ::test::UnionWithImplicitDefault_LongDiscriminant &u)
+test::UnionWithImplicitDefault_LongDiscriminant::UnionWithImplicitDefault_LongDiscriminant (::test::UnionWithImplicitDefault_LongDiscriminant const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2264,7 +2265,7 @@ void test::UnionWithImplicitDefault_LongDiscriminant::_tao_any_destructor (void 
 }
 
 test::UnionWithImplicitDefault_LongDiscriminant &
-test::UnionWithImplicitDefault_LongDiscriminant::operator= (const ::test::UnionWithImplicitDefault_LongDiscriminant &u)
+test::UnionWithImplicitDefault_LongDiscriminant::operator= (::test::UnionWithImplicitDefault_LongDiscriminant const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2299,7 +2300,7 @@ void test::UnionWithImplicitDefault_LongDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_LongDiscriminant__0 (1, "e_case1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_LongDiscriminant__1 (2, "e_case2", &CORBA::_tc_long);
@@ -2330,7 +2331,7 @@ namespace test
   ::CORBA::TypeCode_ptr const _tc_UnionWithImplicitDefault_LongDiscriminant = std::addressof(_tao_tc_test_UnionWithImplicitDefault_LongDiscriminant);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2367,7 +2368,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2382,7 +2383,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_EnumerationDiscriminant &_tao_elem)
+  test::UnionAllCovered_EnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCovered_EnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2405,8 +2406,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_EnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCovered_EnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCovered_EnumerationDiscriminant>::extract (
     _tao_any,
@@ -2419,7 +2420,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2434,7 +2435,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCoveredWithDefault_EnumerationDiscriminant &_tao_elem)
+  test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCoveredWithDefault_EnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2457,8 +2458,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCoveredWithDefault_EnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCoveredWithDefault_EnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCoveredWithDefault_EnumerationDiscriminant>::extract (
     _tao_any,
@@ -2471,7 +2472,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2486,7 +2487,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_EnumerationDiscriminant &_tao_elem)
+  test::UnionWithDefault_EnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithDefault_EnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2509,8 +2510,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_EnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithDefault_EnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithDefault_EnumerationDiscriminant>::extract (
     _tao_any,
@@ -2523,7 +2524,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2538,7 +2539,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_EnumerationDiscriminant &_tao_elem)
+  test::UnionWithImplicitDefault_EnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_EnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2561,8 +2562,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_EnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithImplicitDefault_EnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_EnumerationDiscriminant>::extract (
     _tao_any,
@@ -2575,7 +2576,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2590,7 +2591,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_TypedefedEnumerationDiscriminant &_tao_elem)
+  test::UnionAllCovered_TypedefedEnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCovered_TypedefedEnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2613,8 +2614,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_TypedefedEnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCovered_TypedefedEnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCovered_TypedefedEnumerationDiscriminant>::extract (
     _tao_any,
@@ -2627,7 +2628,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2642,7 +2643,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &_tao_elem)
+  test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2665,8 +2666,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant>::extract (
     _tao_any,
@@ -2679,7 +2680,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2694,7 +2695,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_TypedefedEnumerationDiscriminant &_tao_elem)
+  test::UnionWithDefault_TypedefedEnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithDefault_TypedefedEnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2717,8 +2718,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_TypedefedEnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithDefault_TypedefedEnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithDefault_TypedefedEnumerationDiscriminant>::extract (
     _tao_any,
@@ -2731,7 +2732,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2746,7 +2747,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &_tao_elem)
+  test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant>::insert_copy (
     _tao_any,
@@ -2769,8 +2770,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant>::extract (
     _tao_any,
@@ -2783,7 +2784,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2798,7 +2799,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_BooleanDiscriminant &_tao_elem)
+  test::UnionAllCovered_BooleanDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCovered_BooleanDiscriminant>::insert_copy (
     _tao_any,
@@ -2821,8 +2822,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_BooleanDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCovered_BooleanDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCovered_BooleanDiscriminant>::extract (
     _tao_any,
@@ -2835,7 +2836,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2850,7 +2851,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_BooleanDiscriminant &_tao_elem)
+  test::UnionWithDefault_BooleanDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithDefault_BooleanDiscriminant>::insert_copy (
     _tao_any,
@@ -2873,8 +2874,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_BooleanDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithDefault_BooleanDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithDefault_BooleanDiscriminant>::extract (
     _tao_any,
@@ -2887,7 +2888,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2902,7 +2903,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_BooleanDiscriminant &_tao_elem)
+  test::UnionWithImplicitDefault_BooleanDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_BooleanDiscriminant>::insert_copy (
     _tao_any,
@@ -2925,8 +2926,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_BooleanDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithImplicitDefault_BooleanDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_BooleanDiscriminant>::extract (
     _tao_any,
@@ -2939,7 +2940,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2954,7 +2955,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_CharDiscriminant &_tao_elem)
+  test::UnionAllCovered_CharDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionAllCovered_CharDiscriminant>::insert_copy (
     _tao_any,
@@ -2977,8 +2978,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionAllCovered_CharDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionAllCovered_CharDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionAllCovered_CharDiscriminant>::extract (
     _tao_any,
@@ -2991,7 +2992,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3006,7 +3007,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_CharDiscriminant &_tao_elem)
+  test::UnionWithDefault_CharDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithDefault_CharDiscriminant>::insert_copy (
     _tao_any,
@@ -3029,8 +3030,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_CharDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithDefault_CharDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithDefault_CharDiscriminant>::extract (
     _tao_any,
@@ -3043,7 +3044,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3058,7 +3059,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_CharDiscriminant &_tao_elem)
+  test::UnionWithImplicitDefault_CharDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_CharDiscriminant>::insert_copy (
     _tao_any,
@@ -3081,8 +3082,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_CharDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithImplicitDefault_CharDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_CharDiscriminant>::extract (
     _tao_any,
@@ -3095,7 +3096,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3110,7 +3111,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_LongDiscriminant &_tao_elem)
+  test::UnionWithDefault_LongDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithDefault_LongDiscriminant>::insert_copy (
     _tao_any,
@@ -3133,8 +3134,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithDefault_LongDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithDefault_LongDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithDefault_LongDiscriminant>::extract (
     _tao_any,
@@ -3147,7 +3148,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3162,7 +3163,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_LongDiscriminant &_tao_elem)
+  test::UnionWithImplicitDefault_LongDiscriminant const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_LongDiscriminant>::insert_copy (
     _tao_any,
@@ -3185,8 +3186,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const test::UnionWithImplicitDefault_LongDiscriminant *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  test::UnionWithImplicitDefault_LongDiscriminant const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<test::UnionWithImplicitDefault_LongDiscriminant>::extract (
     _tao_any,
@@ -3226,14 +3227,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCovered_EnumerationDiscriminant &_tao_union)
+    test::UnionAllCovered_EnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3327,14 +3328,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCoveredWithDefault_EnumerationDiscriminant &_tao_union)
+    test::UnionAllCoveredWithDefault_EnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3423,14 +3424,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithDefault_EnumerationDiscriminant &_tao_union)
+    test::UnionWithDefault_EnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3517,14 +3518,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithImplicitDefault_EnumerationDiscriminant &_tao_union)
+    test::UnionWithImplicitDefault_EnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3602,14 +3603,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCovered_TypedefedEnumerationDiscriminant &_tao_union)
+    test::UnionAllCovered_TypedefedEnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3703,14 +3704,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant &_tao_union)
+    test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3799,14 +3800,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithDefault_TypedefedEnumerationDiscriminant &_tao_union)
+    test::UnionWithDefault_TypedefedEnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3893,14 +3894,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant &_tao_union)
+    test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -3978,14 +3979,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCovered_BooleanDiscriminant &_tao_union)
+    test::UnionAllCovered_BooleanDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4050,14 +4051,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithDefault_BooleanDiscriminant &_tao_union)
+    test::UnionWithDefault_BooleanDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4122,14 +4123,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithImplicitDefault_BooleanDiscriminant &_tao_union)
+    test::UnionWithImplicitDefault_BooleanDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4183,14 +4184,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionAllCovered_CharDiscriminant &_tao_union)
+    test::UnionAllCovered_CharDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_char tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4757,14 +4758,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithDefault_CharDiscriminant &_tao_union)
+    test::UnionWithDefault_CharDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_char tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4851,14 +4852,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithImplicitDefault_CharDiscriminant &_tao_union)
+    test::UnionWithImplicitDefault_CharDiscriminant const &_tao_union)
 {
   ::ACE_OutputCDR::from_char tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -4936,14 +4937,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithDefault_LongDiscriminant &_tao_union)
+    test::UnionWithDefault_LongDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -5046,14 +5047,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const test::UnionWithImplicitDefault_LongDiscriminant &_tao_union)
+    test::UnionWithImplicitDefault_LongDiscriminant const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {

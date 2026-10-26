@@ -25,37 +25,37 @@
 #include <memory>
 #include <new>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 MyValueType::MyValueType ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 MyValueType::_tao_obv_static_repository_id ()
 {
   return "IDL:MyValueType:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 DefaultInitializedValue::DefaultInitializedValue ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 DefaultInitializedValue::_tao_obv_static_repository_id ()
 {
   return "IDL:DefaultInitializedValue:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:33
 
 // *************************************************************
 // Inline operations for union MyValueTypeUnion
 // *************************************************************
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:195
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:193
 
 ACE_INLINE
 void
@@ -103,7 +103,7 @@ MyValueTypeUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:526
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:524
 
 // Accessor to set the member.
 ACE_INLINE
@@ -114,7 +114,7 @@ MyValueTypeUnion::symbol_val (MyValueType *val)
   this->_reset ();
   this->disc_ = ::SYMBOL_TYPE2;
   ::CORBA::add_ref (val);
-  typedef MyValueType_var OBJECT_FIELD;
+  using OBJECT_FIELD = MyValueType_var;
   ACE_NEW (
       this->u_.symbol_val_,
       OBJECT_FIELD (val)
@@ -133,85 +133,85 @@ MyValueTypeUnion::symbol_val () const
   return this->u_.symbol_val_->in ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 RecValueType::RecValueType ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 RecValueType::_tao_obv_static_repository_id ()
 {
   return "IDL:RecValueType:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 GetsDeprecatedMember::GetsDeprecatedMember ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 GetsDeprecatedMember::_tao_obv_static_repository_id ()
 {
   return "IDL:GetsDeprecatedMember:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 X_VALUETYPE::AXXX::AXXX ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 X_VALUETYPE::AXXX::_tao_obv_static_repository_id ()
 {
   return "IDL:X_VALUETYPE/AXXX:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 X_VALUETYPE::BXXX::BXXX ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 X_VALUETYPE::BXXX::_tao_obv_static_repository_id ()
 {
   return "IDL:X_VALUETYPE/BXXX:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 ModSelection::SelectionDefns::Criterion::Criterion ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 ModSelection::SelectionDefns::Criterion::_tao_obv_static_repository_id ()
 {
   return "IDL:ModSelection/SelectionDefns/Criterion:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 ModSelection::SelectionDefns::CriterionExpr::CriterionExpr ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 ModSelection::SelectionDefns::CriterionExpr::_tao_obv_static_repository_id ()
 {
   return "IDL:ModSelection/SelectionDefns/CriterionExpr:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:33
 
 // *************************************************************
 // Inline operations for union ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr
 // *************************************************************
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:302
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:300
 
 ACE_INLINE
 void
@@ -251,7 +251,7 @@ ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:917
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -267,7 +267,7 @@ ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriteri
 // Accessor to set the member.
 ACE_INLINE
 void
-ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriterionInfos (const char *val)
+ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriterionInfos (char const *val)
 {
   // Set the discriminant value.
   this->_reset ();
@@ -279,7 +279,7 @@ ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriteri
 /// Accessor to set the member.
 ACE_INLINE
 void
-ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriterionInfos (const ::CORBA::String_var &val)
+ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriterionInfos (::CORBA::String_var const &val)
 {
   // Set the discriminant value.
   this->_reset ();
@@ -290,7 +290,7 @@ ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriteri
 }
 
 ACE_INLINE
-const char *
+char const *
 ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::theRightCriterionInfos () const // get method
 {
   if (_tao_member_index (this->disc_) != 0UL)

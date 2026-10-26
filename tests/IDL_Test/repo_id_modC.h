@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_REPO_ID_MODC_UBUDG4_H_
-#define _TAO_IDL_REPO_ID_MODC_UBUDG4_H_
+#ifndef _TAO_IDL_REPO_ID_MODC_FITMAO_H_
+#define _TAO_IDL_REPO_ID_MODC_FITMAO_H_
 
 #include /**/ "ace/pre.h"
 
@@ -58,12 +58,12 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace gleep
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
   
 
@@ -71,7 +71,7 @@ namespace gleep
 #define _GLEEP_SCHMOOZE__VAR_OUT_CH_
 
   class AMI_schmoozeHandler;
-  typedef AMI_schmoozeHandler *AMI_schmoozeHandler_ptr;
+  using AMI_schmoozeHandler_ptr = AMI_schmoozeHandler *;
 
   class schmooze;
   using schmooze_ptr = schmooze*;
@@ -82,7 +82,7 @@ namespace gleep
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
   
 
@@ -91,7 +91,7 @@ namespace gleep
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     using _ptr_type = schmooze_ptr;
     using _var_type = schmooze_var;
@@ -110,7 +110,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
     
 
@@ -138,17 +138,17 @@ namespace gleep
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module gleep
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace gleep
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
   
 
@@ -156,7 +156,7 @@ namespace gleep
 #define _GLEEP_SCHMEER__VAR_OUT_CH_
 
   class AMI_schmeerHandler;
-  typedef AMI_schmeerHandler *AMI_schmeerHandler_ptr;
+  using AMI_schmeerHandler_ptr = AMI_schmeerHandler *;
 
   class schmeer;
   using schmeer_ptr = schmeer*;
@@ -167,7 +167,7 @@ namespace gleep
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
   
 
@@ -176,7 +176,7 @@ namespace gleep
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     using _ptr_type = schmeer_ptr;
     using _var_type = schmeer_var;
@@ -195,7 +195,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
     
 
@@ -223,17 +223,17 @@ namespace gleep
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module gleep
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace gleep
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
   
 
@@ -241,7 +241,7 @@ namespace gleep
 #define _GLEEP_SCHLEMIEL__VAR_OUT_CH_
 
   class AMI_schlemielHandler;
-  typedef AMI_schlemielHandler *AMI_schlemielHandler_ptr;
+  using AMI_schlemielHandler_ptr = AMI_schlemielHandler *;
 
   class schlemiel;
   using schlemiel_ptr = schlemiel*;
@@ -252,7 +252,7 @@ namespace gleep
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
   
 
@@ -261,7 +261,7 @@ namespace gleep
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     using _ptr_type = schlemiel_ptr;
     using _var_type = schlemiel_var;
@@ -280,7 +280,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
     
 
@@ -308,17 +308,17 @@ namespace gleep
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module gleep
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace gleep
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
   
 
@@ -326,7 +326,7 @@ namespace gleep
 #define _GLEEP_SPILKIS__VAR_OUT_CH_
 
   class AMI_spilkisHandler;
-  typedef AMI_spilkisHandler *AMI_spilkisHandler_ptr;
+  using AMI_spilkisHandler_ptr = AMI_spilkisHandler *;
 
   class spilkis;
   using spilkis_ptr = spilkis*;
@@ -337,7 +337,7 @@ namespace gleep
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
   
 
@@ -346,7 +346,7 @@ namespace gleep
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     using _ptr_type = spilkis_ptr;
     using _var_type = spilkis_var;
@@ -365,7 +365,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
     
 
@@ -391,12 +391,12 @@ namespace gleep
     spilkis &operator= (spilkis &&) = delete;
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
   namespace floop
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
     
 
@@ -404,7 +404,7 @@ namespace gleep
 #define _GLEEP_FLOOP_SCHMUCK__VAR_OUT_CH_
 
     class AMI_schmuckHandler;
-    typedef AMI_schmuckHandler *AMI_schmuckHandler_ptr;
+    using AMI_schmuckHandler_ptr = AMI_schmuckHandler *;
 
     class schmuck;
     using schmuck_ptr = schmuck*;
@@ -415,7 +415,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
     
 
@@ -424,7 +424,7 @@ namespace gleep
     {
     public:
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
       using _ptr_type = schmuck_ptr;
       using _var_type = schmuck_var;
@@ -443,7 +443,7 @@ namespace gleep
 
       
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
       
 
@@ -469,7 +469,7 @@ namespace gleep
       schmuck &operator= (schmuck &&) = delete;
     };
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
     
 
@@ -477,7 +477,7 @@ namespace gleep
 #define _GLEEP_FLOOP_SCHMENDRICK__VAR_OUT_CH_
 
     class AMI_schmendrickHandler;
-    typedef AMI_schmendrickHandler *AMI_schmendrickHandler_ptr;
+    using AMI_schmendrickHandler_ptr = AMI_schmendrickHandler *;
 
     class schmendrick;
     using schmendrick_ptr = schmendrick*;
@@ -488,7 +488,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
     
 
@@ -497,7 +497,7 @@ namespace gleep
     {
     public:
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
       using _ptr_type = schmendrick_ptr;
       using _var_type = schmendrick_var;
@@ -516,7 +516,7 @@ namespace gleep
 
       
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
       
 
@@ -542,12 +542,12 @@ namespace gleep
       schmendrick &operator= (schmendrick &&) = delete;
     };
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
     namespace verklempt
     {
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
       
 
@@ -555,7 +555,7 @@ namespace gleep
 #define _GLEEP_FLOOP_VERKLEMPT_SCHLEMAZEL__VAR_OUT_CH_
 
       class AMI_schlemazelHandler;
-      typedef AMI_schlemazelHandler *AMI_schlemazelHandler_ptr;
+      using AMI_schlemazelHandler_ptr = AMI_schlemazelHandler *;
 
       class schlemazel;
       using schlemazel_ptr = schlemazel*;
@@ -566,7 +566,7 @@ namespace gleep
 
       
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
       
 
@@ -575,7 +575,7 @@ namespace gleep
       {
       public:
         // TAO_IDL - Generated from
-        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
         using _ptr_type = schlemazel_ptr;
         using _var_type = schlemazel_var;
@@ -594,7 +594,7 @@ namespace gleep
 
         
         // TAO_IDL - Generated from
-        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
         
 
@@ -622,19 +622,19 @@ namespace gleep
     
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
     
     } // module gleep::floop::verklempt
   
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
   
   } // module gleep::floop
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
 
   
 
@@ -642,7 +642,7 @@ namespace gleep
 #define _GLEEP_SCHMEGEGGING__VAR_OUT_CH_
 
   class AMI_schmegeggingHandler;
-  typedef AMI_schmegeggingHandler *AMI_schmegeggingHandler_ptr;
+  using AMI_schmegeggingHandler_ptr = AMI_schmegeggingHandler *;
 
   class schmegegging;
   using schmegegging_ptr = schmegegging*;
@@ -653,7 +653,7 @@ namespace gleep
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
   
 
@@ -662,7 +662,7 @@ namespace gleep
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     using _ptr_type = schmegegging_ptr;
     using _var_type = schmegegging_var;
@@ -681,7 +681,7 @@ namespace gleep
 
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
     
 
@@ -709,12 +709,12 @@ namespace gleep
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module gleep
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -725,7 +725,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -752,7 +752,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -878,7 +878,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "repo_id_modC.inl"

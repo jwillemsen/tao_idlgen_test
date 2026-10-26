@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_AMI_TESTS_I6CQCR_H_
-#define _TAO_IDL_AMI_TESTS_I6CQCR_H_
+#ifndef _TAO_IDL_AMI_TESTS_ZUVVL2_H_
+#define _TAO_IDL_AMI_TESTS_ZUVVL2_H_
 
 #include /**/ "ace/pre.h"
 
@@ -50,7 +50,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -61,7 +61,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -82,7 +82,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -101,7 +101,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -120,7 +120,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -139,7 +139,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -163,7 +163,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
 namespace POA_A
 {
@@ -171,12 +171,12 @@ namespace POA_A
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class AMI_Test;
-  typedef AMI_Test *AMI_Test_ptr;
+  using AMI_Test_ptr = AMI_Test *;
 
   class  AMI_Test
     : public virtual PortableServer::ServantBase
@@ -186,9 +186,9 @@ namespace POA_A
   
   public:
     /// Useful for template programming.
-    typedef ::A::AMI_Test _stub_type;
-    typedef ::A::AMI_Test_ptr _stub_ptr_type;
-    typedef ::A::AMI_Test_var _stub_var_type;
+    using _stub_type = ::A::AMI_Test;
+    using _stub_ptr_type = ::A::AMI_Test_ptr;
+    using _stub_var_type = ::A::AMI_Test_var;
 
     AMI_Test (const AMI_Test& rhs) = default;
     virtual ~AMI_Test () = default;
@@ -203,7 +203,7 @@ namespace POA_A
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual ::CORBA::Long foo (
       ::CORBA::Long_out out_l,
@@ -215,7 +215,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual ::CORBA::Long yadda () = 0;
 
@@ -224,7 +224,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void yadda (
       ::CORBA::Long yadda) = 0;
@@ -234,7 +234,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void shutdown () = 0;
 
@@ -243,7 +243,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void inout_arg_test (
       char *& str) = 0;
@@ -256,12 +256,12 @@ namespace POA_A
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class AMI_AMI_TestHandler;
-  typedef AMI_AMI_TestHandler *AMI_AMI_TestHandler_ptr;
+  using AMI_AMI_TestHandler_ptr = AMI_AMI_TestHandler *;
 
   class  AMI_AMI_TestHandler
     : public virtual POA_Messaging::ReplyHandler
@@ -271,9 +271,9 @@ namespace POA_A
   
   public:
     /// Useful for template programming.
-    typedef ::A::AMI_AMI_TestHandler _stub_type;
-    typedef ::A::AMI_AMI_TestHandler_ptr _stub_ptr_type;
-    typedef ::A::AMI_AMI_TestHandler_var _stub_var_type;
+    using _stub_type = ::A::AMI_AMI_TestHandler;
+    using _stub_ptr_type = ::A::AMI_AMI_TestHandler_ptr;
+    using _stub_var_type = ::A::AMI_AMI_TestHandler_var;
 
     AMI_AMI_TestHandler (const AMI_AMI_TestHandler& rhs) = default;
     virtual ~AMI_AMI_TestHandler () = default;
@@ -288,7 +288,7 @@ namespace POA_A
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void foo (
       ::CORBA::Long ami_return_val,
@@ -299,7 +299,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void foo_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -309,7 +309,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void get_yadda (
       ::CORBA::Long ami_return_val) = 0;
@@ -319,7 +319,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void get_yadda_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -329,7 +329,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void set_yadda () = 0;
 
@@ -338,7 +338,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void set_yadda_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -348,7 +348,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void inout_arg_test (
       const char * str) = 0;
@@ -358,7 +358,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void inout_arg_test_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -371,12 +371,12 @@ namespace POA_A
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class Test_Child;
-  typedef Test_Child *Test_Child_ptr;
+  using Test_Child_ptr = Test_Child *;
 
   class  Test_Child
     : public virtual POA_A::AMI_Test
@@ -386,9 +386,9 @@ namespace POA_A
   
   public:
     /// Useful for template programming.
-    typedef ::A::Test_Child _stub_type;
-    typedef ::A::Test_Child_ptr _stub_ptr_type;
-    typedef ::A::Test_Child_var _stub_var_type;
+    using _stub_type = ::A::Test_Child;
+    using _stub_ptr_type = ::A::Test_Child_ptr;
+    using _stub_var_type = ::A::Test_Child_var;
 
     Test_Child (const Test_Child& rhs) = default;
     virtual ~Test_Child () = default;
@@ -403,7 +403,7 @@ namespace POA_A
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void child_op () = 0;
 
@@ -415,12 +415,12 @@ namespace POA_A
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class AMI_Test_ChildHandler;
-  typedef AMI_Test_ChildHandler *AMI_Test_ChildHandler_ptr;
+  using AMI_Test_ChildHandler_ptr = AMI_Test_ChildHandler *;
 
   class  AMI_Test_ChildHandler
     : public virtual POA_A::AMI_AMI_TestHandler
@@ -430,9 +430,9 @@ namespace POA_A
   
   public:
     /// Useful for template programming.
-    typedef ::A::AMI_Test_ChildHandler _stub_type;
-    typedef ::A::AMI_Test_ChildHandler_ptr _stub_ptr_type;
-    typedef ::A::AMI_Test_ChildHandler_var _stub_var_type;
+    using _stub_type = ::A::AMI_Test_ChildHandler;
+    using _stub_ptr_type = ::A::AMI_Test_ChildHandler_ptr;
+    using _stub_var_type = ::A::AMI_Test_ChildHandler_var;
 
     AMI_Test_ChildHandler (const AMI_Test_ChildHandler& rhs) = default;
     virtual ~AMI_Test_ChildHandler () = default;
@@ -447,7 +447,7 @@ namespace POA_A
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void child_op () = 0;
 
@@ -456,7 +456,7 @@ namespace POA_A
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void child_op_excep (
       ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -469,7 +469,7 @@ namespace POA_A
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module A
 

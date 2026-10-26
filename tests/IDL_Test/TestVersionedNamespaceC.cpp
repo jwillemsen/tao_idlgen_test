@@ -23,13 +23,14 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "TestVersionedNamespaceC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
 #include "tao/AnyTypeCode/String_TypeCode_Static.h"
@@ -48,7 +49,7 @@ BEGIN_USER_VERSIONED_NAMESPACE
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -78,7 +79,7 @@ namespace M1
   ::CORBA::TypeCode_ptr const _tc_S1 = std::addressof(_tao_tc_M1_S1);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:45
 
 
 
@@ -203,7 +204,7 @@ namespace M1
   ::CORBA::TypeCode_ptr const _tc_LI = std::addressof(_tao_tc_M1_LI);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_M1_V[] =
   {
@@ -231,7 +232,7 @@ namespace M1
   ::CORBA::TypeCode_ptr const _tc_V = std::addressof(_tao_tc_M1_V);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:50
 
 
 
@@ -274,7 +275,7 @@ M1::V::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::M1::V *> (v);
 }
 
-const char *
+char const *
 M1::V::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -354,7 +355,7 @@ M1::V::_tao_unmarshal (
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
 
 
 
@@ -372,7 +373,7 @@ M1::V_init::_downcast (::CORBA::ValueFactoryBase *v)
   return dynamic_cast<::M1::V_init *> (v);
 }
 
-const char*
+char const *
 M1::V_init::tao_repository_id ()
 {
   return ::M1::V::_tao_obv_static_repository_id ();
@@ -389,7 +390,7 @@ M1::V_init::create_for_unmarshal ()
   return ret_val;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:41
 
 OBV_M1::V::V (
     const char * _tao_init_valString,
@@ -419,7 +420,7 @@ OBV_M1::V::_copy_value ()
   return ret_val;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:825
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:822
 
 /// Accessor to set the member.
 void
@@ -430,7 +431,7 @@ OBV_M1::V::valString (char *val)
 
 /// Accessor to set the member.
 void
-OBV_M1::V::valString (const char *val)
+OBV_M1::V::valString (char const *val)
 {
   // Set the value.
   this->_pd_valString = ::CORBA::string_dup (val);
@@ -438,19 +439,19 @@ OBV_M1::V::valString (const char *val)
 
 /// Accessor to set the member.
 void
-OBV_M1::V::valString (const ::CORBA::String_var &val)
+OBV_M1::V::valString (::CORBA::String_var const &val)
 {
   ::CORBA::String_var valString_var = val;
   this->_pd_valString = valString_var._retn ();
 }
 
-const char *
+char const *
 OBV_M1::V::valString () const // get method
 {
   return this->_pd_valString;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:993
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:990
 
 /// Accessor to set the member.
 void
@@ -471,7 +472,7 @@ OBV_M1::V::valStruct ()
   return this->_pd_valStruct;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:284
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:281
 
 /// Accessor to set the member.
 void

@@ -27,13 +27,13 @@ BEGIN_USER_VERSIONED_NAMESPACE
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 M1::V::V ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 M1::V::_tao_obv_static_repository_id ()
 {
   return "IDL:M1/V:1.0";

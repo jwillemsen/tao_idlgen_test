@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_SIMPLE_TESTS_SKO015_H_
-#define _TAO_IDL_SIMPLE_TESTS_SKO015_H_
+#ifndef _TAO_IDL_SIMPLE_TESTS_VVS7KO_H_
+#define _TAO_IDL_SIMPLE_TESTS_VVS7KO_H_
 
 #include /**/ "ace/pre.h"
 
@@ -49,7 +49,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -60,7 +60,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -86,12 +86,12 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class POA_Simple_Server;
-typedef POA_Simple_Server *POA_Simple_Server_ptr;
+using POA_Simple_Server_ptr = POA_Simple_Server *;
 
 class  POA_Simple_Server
   : public virtual PortableServer::ServantBase
@@ -101,9 +101,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::Simple_Server _stub_type;
-  typedef ::Simple_Server_ptr _stub_ptr_type;
-  typedef ::Simple_Server_var _stub_var_type;
+  using _stub_type = ::Simple_Server;
+  using _stub_ptr_type = ::Simple_Server_ptr;
+  using _stub_var_type = ::Simple_Server_var;
 
   POA_Simple_Server (const POA_Simple_Server& rhs) = default;
   virtual ~POA_Simple_Server () = default;
@@ -118,7 +118,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual ::CORBA::Boolean print_status () = 0;
 
@@ -127,7 +127,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void shutdown () = 0;
 

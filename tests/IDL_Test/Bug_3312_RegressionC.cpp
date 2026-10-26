@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_3312_RegressionC.h"
@@ -31,6 +31,7 @@
 #include <new>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Struct_TypeCode_Static.h"
@@ -116,7 +117,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const CallMe::YourColorBaby::_tc_Val = std::addressof(_tao_tc_CallMe_YourColorBaby_Val);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -125,7 +126,7 @@ CallMe::YourColorBaby::YourColorBaby ()
   this->disc_ = (CallMe::YourColorBaby::ColorMe) -1;
 }
 
-CallMe::YourColorBaby::YourColorBaby (const ::CallMe::YourColorBaby &u)
+CallMe::YourColorBaby::YourColorBaby (::CallMe::YourColorBaby const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -159,7 +160,7 @@ void CallMe::YourColorBaby::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 CallMe::YourColorBaby &
-CallMe::YourColorBaby::operator= (const ::CallMe::YourColorBaby &u)
+CallMe::YourColorBaby::operator= (::CallMe::YourColorBaby const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -190,7 +191,7 @@ void CallMe::YourColorBaby::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CallMe::YourColorBaby::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourColorBaby__0 (CallMe::YourColorBaby::Red, "c_1", &CallMe::YourColorBaby::_tc_Val);
 static TAO::TypeCode::Case_T<CallMe::YourColorBaby::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourColorBaby__1 (CallMe::YourColorBaby::Blue, "c_2", &CORBA::_tc_long);
@@ -238,7 +239,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const CallMe::YourCar::_tc_ColorMe = std::addressof(_tao_tc_CallMe_YourCar_ColorMe);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -247,7 +248,7 @@ CallMe::YourCar::YourCar ()
   this->disc_ = (CallMe::YourCar::ColorMe) -1;
 }
 
-CallMe::YourCar::YourCar (const ::CallMe::YourCar &u)
+CallMe::YourCar::YourCar (::CallMe::YourCar const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -280,7 +281,7 @@ void CallMe::YourCar::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 CallMe::YourCar &
-CallMe::YourCar::operator= (const ::CallMe::YourCar &u)
+CallMe::YourCar::operator= (::CallMe::YourCar const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -310,7 +311,7 @@ void CallMe::YourCar::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CallMe::YourCar::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourCar__0 (CallMe::YourCar::Green, "c_1", &CORBA::_tc_short);
 static TAO::TypeCode::Case_T<CallMe::YourCar::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourCar__1 (CallMe::YourCar::Pink, "c_2", &CORBA::_tc_short);
@@ -339,7 +340,7 @@ namespace CallMe
   ::CORBA::TypeCode_ptr const _tc_YourCar = std::addressof(_tao_tc_CallMe_YourCar);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -376,7 +377,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -391,7 +392,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const CallMe::YourColorBaby &_tao_elem)
+  CallMe::YourColorBaby const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<CallMe::YourColorBaby>::insert_copy (
     _tao_any,
@@ -414,8 +415,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const CallMe::YourColorBaby *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  CallMe::YourColorBaby const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<CallMe::YourColorBaby>::extract (
     _tao_any,
@@ -428,7 +429,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -465,7 +466,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -502,7 +503,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -517,7 +518,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const CallMe::YourCar &_tao_elem)
+  CallMe::YourCar const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<CallMe::YourCar>::insert_copy (
     _tao_any,
@@ -540,8 +541,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const CallMe::YourCar *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  CallMe::YourCar const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<CallMe::YourCar>::extract (
     _tao_any,
@@ -554,7 +555,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -672,14 +673,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const CallMe::YourColorBaby &_tao_union)
+    CallMe::YourColorBaby const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -785,14 +786,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const CallMe::YourCar &_tao_union)
+    CallMe::YourCar const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_SEQUENCES_R4IISD_CPP_
-#define _TAO_IDL_SEQUENCES_R4IISD_CPP_
+#ifndef _TAO_IDL_SEQUENCES_1CYG1Z_CPP_
+#define _TAO_IDL_SEQUENCES_1CYG1Z_CPP_
 
 
 #include "sequenceS.h"

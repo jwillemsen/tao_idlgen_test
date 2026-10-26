@@ -23,13 +23,14 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_2583_RegressionC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
@@ -52,7 +53,7 @@
 #include "Bug_2583_RegressionC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:45
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -186,7 +187,7 @@ namespace Test
   ::CORBA::TypeCode_ptr const _tc_DynAny = std::addressof(_tao_tc_Test_DynAny);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -219,7 +220,7 @@ namespace Test
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 Test::NameDynAnyPair::_tao_any_destructor (
@@ -231,7 +232,7 @@ Test::NameDynAnyPair::_tao_any_destructor (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:104
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
 
 
 
@@ -265,7 +266,7 @@ void Test::NameDynAnyPairSeq::_tao_any_destructor (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:464
 
 
 #ifndef _TAO_TYPECODE_Test_NameDynAnyPairSeq_GUARD
@@ -311,7 +312,7 @@ namespace Test
   ::CORBA::TypeCode_ptr const _tc_NameDynAnyPairSeq = std::addressof(_tao_tc_Test_NameDynAnyPairSeq);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:35
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -428,7 +429,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::Test::NameDynAnyPair &_tao_elem)
+  ::Test::NameDynAnyPair const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::Test::NameDynAnyPair>::insert_copy (
     _tao_any,
@@ -451,8 +452,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::Test::NameDynAnyPair *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::Test::NameDynAnyPair const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::Test::NameDynAnyPair>::extract (
     _tao_any,
@@ -465,7 +466,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_cs.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_cs.cpp:41
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -497,7 +498,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::Test::NameDynAnyPairSeq &_tao_elem)
+  ::Test::NameDynAnyPairSeq const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::Test::NameDynAnyPairSeq>::insert_copy (
     _tao_any,
@@ -520,8 +521,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::Test::NameDynAnyPairSeq *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::Test::NameDynAnyPairSeq const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::Test::NameDynAnyPairSeq>::extract (
     _tao_any,

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_TYPECODEC_QRFEOU_H_
-#define _TAO_IDL_TYPECODEC_QRFEOU_H_
+#ifndef _TAO_IDL_TYPECODEC_I76QW0_H_
+#define _TAO_IDL_TYPECODEC_I76QW0_H_
 
 #include /**/ "ace/pre.h"
 
@@ -93,7 +93,7 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:152
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -108,14 +108,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
 
 namespace MyModule
 {
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:98
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
   
 
@@ -123,8 +123,8 @@ namespace MyModule
 #define _MYMODULE_TYPECODELIST_CH_
 
   class TypeCodeList;
-  typedef ::TAO_VarSeq_Var_T<TypeCodeList> TypeCodeList_var;
-  typedef ::TAO_Seq_Out_T<TypeCodeList> TypeCodeList_out;
+  using TypeCodeList_var = ::TAO_VarSeq_Var_T<TypeCodeList>;
+  using TypeCodeList_out = ::TAO_Seq_Out_T<TypeCodeList>;
   
 
   class TAO_IDL_TEST_STUB_Export TypeCodeList
@@ -136,20 +136,20 @@ namespace MyModule
   {
   public:
     TypeCodeList () = default;
-    TypeCodeList (::CORBA::ULong max);
+    explicit TypeCodeList (::CORBA::ULong max);
     TypeCodeList (
       ::CORBA::ULong max,
       ::CORBA::ULong length,
       ::CORBA::TypeCode_ptr* buffer,
       ::CORBA::Boolean release = false);
-    TypeCodeList (const TypeCodeList &) = default;
+    TypeCodeList (TypeCodeList const &) = default;
     TypeCodeList (TypeCodeList &&) = default;
-    TypeCodeList& operator= (const TypeCodeList &) = default;
+    TypeCodeList& operator= (TypeCodeList const &) = default;
     TypeCodeList& operator= (TypeCodeList &&) = default;
     virtual ~TypeCodeList () = default;
     
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
 
     
     using _var_type = TypeCodeList_var;
@@ -162,12 +162,12 @@ namespace MyModule
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
 
 } // module MyModule
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -178,7 +178,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -200,7 +200,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:671
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:672
 
   
 
@@ -219,7 +219,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
 
 
 
@@ -233,7 +233,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_ch.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_ch.cpp:62
 
 
 
@@ -244,7 +244,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const MyModule::TypeCodeList &_tao_sequence);
+    MyModule::TypeCodeList const &_tao_sequence);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (
     TAO_InputCDR &strm,
     MyModule::TypeCodeList &_tao_sequence);
@@ -255,7 +255,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_MyModule_TypeCodeList_H_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
 
 #if defined (__ACE_INLINE__)
 #include "typecodeC.inl"

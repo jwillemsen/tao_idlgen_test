@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "unionC.h"
@@ -31,6 +31,7 @@
 #include <new>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
@@ -77,7 +78,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DataType = std::addressof(_tao_tc_DataType);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -86,7 +87,7 @@ Data::Data ()
   this->disc_ = dtEmpty;
 }
 
-Data::Data (const ::Data &u)
+Data::Data (::Data const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -119,7 +120,7 @@ void Data::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 Data &
-Data::operator= (const ::Data &u)
+Data::operator= (::Data const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -149,7 +150,7 @@ void Data::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<DataType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Data__0 (::dtLong, "longData", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<DataType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Data__1 (::dtShort, "shortData", &CORBA::_tc_short);
@@ -214,7 +215,7 @@ namespace Necessary
   ::CORBA::TypeCode_ptr const _tc_Kind = std::addressof(_tao_tc_Necessary_Kind);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -224,7 +225,7 @@ Necessary::WhichResult::WhichResult ()
   this->u_.m_Unused_ = {};
 }
 
-Necessary::WhichResult::WhichResult (const ::Necessary::WhichResult &u)
+Necessary::WhichResult::WhichResult (::Necessary::WhichResult const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -257,7 +258,7 @@ void Necessary::WhichResult::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 Necessary::WhichResult &
-Necessary::WhichResult::operator= (const ::Necessary::WhichResult &u)
+Necessary::WhichResult::operator= (::Necessary::WhichResult const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -287,7 +288,7 @@ void Necessary::WhichResult::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<Necessary::Kind, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Necessary_WhichResult__0 (Necessary::e_Result, "m_Result", &Necessary::_tc_Result);
 static TAO::TypeCode::Case_T<Necessary::Kind, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Necessary_WhichResult__1 (Necessary::e_Unused, "m_Unused", &CORBA::_tc_long);
@@ -316,7 +317,7 @@ namespace Necessary
   ::CORBA::TypeCode_ptr const _tc_WhichResult = std::addressof(_tao_tc_Necessary_WhichResult);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -326,7 +327,7 @@ foo::foo ()
   this->u_.foo_iface_member_ = {};
 }
 
-foo::foo (const ::foo &u)
+foo::foo (::foo const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -364,7 +365,7 @@ void foo::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 foo &
-foo::operator= (const ::foo &u)
+foo::operator= (::foo const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -415,7 +416,7 @@ void foo::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Short, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_foo__0 (-3, "foo_str_member", &CORBA::_tc_string);
 static TAO::TypeCode::Case_T<CORBA::Short, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_foo__1 (4, "foo_str_member", &CORBA::_tc_string);
@@ -446,7 +447,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_foo = std::addressof(_tao_tc_foo);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -455,7 +456,7 @@ UnionDiscTest::BooleanUnion::BooleanUnion ()
   this->disc_ = false;
 }
 
-UnionDiscTest::BooleanUnion::BooleanUnion (const ::UnionDiscTest::BooleanUnion &u)
+UnionDiscTest::BooleanUnion::BooleanUnion (::UnionDiscTest::BooleanUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -483,7 +484,7 @@ void UnionDiscTest::BooleanUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 UnionDiscTest::BooleanUnion &
-UnionDiscTest::BooleanUnion::operator= (const ::UnionDiscTest::BooleanUnion &u)
+UnionDiscTest::BooleanUnion::operator= (::UnionDiscTest::BooleanUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -520,7 +521,7 @@ void UnionDiscTest::BooleanUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionDiscTest_BooleanUnion__0 (true, "value", &CORBA::_tc_string);
 
@@ -547,7 +548,7 @@ namespace UnionDiscTest
   ::CORBA::TypeCode_ptr const _tc_BooleanUnion = std::addressof(_tao_tc_UnionDiscTest_BooleanUnion);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -556,7 +557,7 @@ UnionDiscTest::CharUnion::CharUnion ()
   this->disc_ = '\0';
 }
 
-UnionDiscTest::CharUnion::CharUnion (const ::UnionDiscTest::CharUnion &u)
+UnionDiscTest::CharUnion::CharUnion (::UnionDiscTest::CharUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -584,7 +585,7 @@ void UnionDiscTest::CharUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 UnionDiscTest::CharUnion &
-UnionDiscTest::CharUnion::operator= (const ::UnionDiscTest::CharUnion &u)
+UnionDiscTest::CharUnion::operator= (::UnionDiscTest::CharUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -621,7 +622,7 @@ void UnionDiscTest::CharUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionDiscTest_CharUnion__0 ('a', "value", &CORBA::_tc_string);
 
@@ -648,7 +649,7 @@ namespace UnionDiscTest
   ::CORBA::TypeCode_ptr const _tc_CharUnion = std::addressof(_tao_tc_UnionDiscTest_CharUnion);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -657,7 +658,7 @@ AllBoolUnions::OneBranchT::OneBranchT ()
   this->disc_ = false;
 }
 
-AllBoolUnions::OneBranchT::OneBranchT (const ::AllBoolUnions::OneBranchT &u)
+AllBoolUnions::OneBranchT::OneBranchT (::AllBoolUnions::OneBranchT const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -685,7 +686,7 @@ void AllBoolUnions::OneBranchT::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchT &
-AllBoolUnions::OneBranchT::operator= (const ::AllBoolUnions::OneBranchT &u)
+AllBoolUnions::OneBranchT::operator= (::AllBoolUnions::OneBranchT const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -710,7 +711,7 @@ void AllBoolUnions::OneBranchT::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchT__0 (true, "val", &CORBA::_tc_octet);
 
@@ -737,7 +738,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchT = std::addressof(_tao_tc_AllBoolUnions_OneBranchT);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -746,7 +747,7 @@ AllBoolUnions::OneBranchF::OneBranchF ()
   this->disc_ = true;
 }
 
-AllBoolUnions::OneBranchF::OneBranchF (const ::AllBoolUnions::OneBranchF &u)
+AllBoolUnions::OneBranchF::OneBranchF (::AllBoolUnions::OneBranchF const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -774,7 +775,7 @@ void AllBoolUnions::OneBranchF::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchF &
-AllBoolUnions::OneBranchF::operator= (const ::AllBoolUnions::OneBranchF &u)
+AllBoolUnions::OneBranchF::operator= (::AllBoolUnions::OneBranchF const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -799,7 +800,7 @@ void AllBoolUnions::OneBranchF::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchF__0 (false, "val", &CORBA::_tc_octet);
 
@@ -826,7 +827,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchF = std::addressof(_tao_tc_AllBoolUnions_OneBranchF);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -836,7 +837,7 @@ AllBoolUnions::OneBranchD::OneBranchD ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchD::OneBranchD (const ::AllBoolUnions::OneBranchD &u)
+AllBoolUnions::OneBranchD::OneBranchD (::AllBoolUnions::OneBranchD const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -864,7 +865,7 @@ void AllBoolUnions::OneBranchD::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchD &
-AllBoolUnions::OneBranchD::operator= (const ::AllBoolUnions::OneBranchD &u)
+AllBoolUnions::OneBranchD::operator= (::AllBoolUnions::OneBranchD const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -889,7 +890,7 @@ void AllBoolUnions::OneBranchD::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchD__0 (false, "val", &CORBA::_tc_octet);
 
@@ -916,7 +917,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchD = std::addressof(_tao_tc_AllBoolUnions_OneBranchD);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -926,7 +927,7 @@ AllBoolUnions::OneBranchTF::OneBranchTF ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchTF::OneBranchTF (const ::AllBoolUnions::OneBranchTF &u)
+AllBoolUnions::OneBranchTF::OneBranchTF (::AllBoolUnions::OneBranchTF const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -954,7 +955,7 @@ void AllBoolUnions::OneBranchTF::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchTF &
-AllBoolUnions::OneBranchTF::operator= (const ::AllBoolUnions::OneBranchTF &u)
+AllBoolUnions::OneBranchTF::operator= (::AllBoolUnions::OneBranchTF const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -979,7 +980,7 @@ void AllBoolUnions::OneBranchTF::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchTF__0 (true, "val", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchTF__1 (false, "val", &CORBA::_tc_octet);
@@ -1008,7 +1009,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchTF = std::addressof(_tao_tc_AllBoolUnions_OneBranchTF);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1018,7 +1019,7 @@ AllBoolUnions::OneBranchFT::OneBranchFT ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchFT::OneBranchFT (const ::AllBoolUnions::OneBranchFT &u)
+AllBoolUnions::OneBranchFT::OneBranchFT (::AllBoolUnions::OneBranchFT const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1046,7 +1047,7 @@ void AllBoolUnions::OneBranchFT::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchFT &
-AllBoolUnions::OneBranchFT::operator= (const ::AllBoolUnions::OneBranchFT &u)
+AllBoolUnions::OneBranchFT::operator= (::AllBoolUnions::OneBranchFT const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1071,7 +1072,7 @@ void AllBoolUnions::OneBranchFT::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchFT__0 (false, "val", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchFT__1 (true, "val", &CORBA::_tc_octet);
@@ -1100,7 +1101,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchFT = std::addressof(_tao_tc_AllBoolUnions_OneBranchFT);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1110,7 +1111,7 @@ AllBoolUnions::OneBranchTD::OneBranchTD ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchTD::OneBranchTD (const ::AllBoolUnions::OneBranchTD &u)
+AllBoolUnions::OneBranchTD::OneBranchTD (::AllBoolUnions::OneBranchTD const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1138,7 +1139,7 @@ void AllBoolUnions::OneBranchTD::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchTD &
-AllBoolUnions::OneBranchTD::operator= (const ::AllBoolUnions::OneBranchTD &u)
+AllBoolUnions::OneBranchTD::operator= (::AllBoolUnions::OneBranchTD const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1163,7 +1164,7 @@ void AllBoolUnions::OneBranchTD::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchTD__0 (false, "val", &CORBA::_tc_octet);
 
@@ -1190,7 +1191,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchTD = std::addressof(_tao_tc_AllBoolUnions_OneBranchTD);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1200,7 +1201,7 @@ AllBoolUnions::OneBranchDT::OneBranchDT ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchDT::OneBranchDT (const ::AllBoolUnions::OneBranchDT &u)
+AllBoolUnions::OneBranchDT::OneBranchDT (::AllBoolUnions::OneBranchDT const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1228,7 +1229,7 @@ void AllBoolUnions::OneBranchDT::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchDT &
-AllBoolUnions::OneBranchDT::operator= (const ::AllBoolUnions::OneBranchDT &u)
+AllBoolUnions::OneBranchDT::operator= (::AllBoolUnions::OneBranchDT const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1253,7 +1254,7 @@ void AllBoolUnions::OneBranchDT::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchDT__0 (false, "val", &CORBA::_tc_octet);
 
@@ -1280,7 +1281,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchDT = std::addressof(_tao_tc_AllBoolUnions_OneBranchDT);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1290,7 +1291,7 @@ AllBoolUnions::OneBranchFD::OneBranchFD ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchFD::OneBranchFD (const ::AllBoolUnions::OneBranchFD &u)
+AllBoolUnions::OneBranchFD::OneBranchFD (::AllBoolUnions::OneBranchFD const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1318,7 +1319,7 @@ void AllBoolUnions::OneBranchFD::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchFD &
-AllBoolUnions::OneBranchFD::operator= (const ::AllBoolUnions::OneBranchFD &u)
+AllBoolUnions::OneBranchFD::operator= (::AllBoolUnions::OneBranchFD const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1343,7 +1344,7 @@ void AllBoolUnions::OneBranchFD::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchFD__0 (true, "val", &CORBA::_tc_octet);
 
@@ -1370,7 +1371,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchFD = std::addressof(_tao_tc_AllBoolUnions_OneBranchFD);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1380,7 +1381,7 @@ AllBoolUnions::OneBranchDF::OneBranchDF ()
   this->u_.val_ = {};
 }
 
-AllBoolUnions::OneBranchDF::OneBranchDF (const ::AllBoolUnions::OneBranchDF &u)
+AllBoolUnions::OneBranchDF::OneBranchDF (::AllBoolUnions::OneBranchDF const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1408,7 +1409,7 @@ void AllBoolUnions::OneBranchDF::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::OneBranchDF &
-AllBoolUnions::OneBranchDF::operator= (const ::AllBoolUnions::OneBranchDF &u)
+AllBoolUnions::OneBranchDF::operator= (::AllBoolUnions::OneBranchDF const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1433,7 +1434,7 @@ void AllBoolUnions::OneBranchDF::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_OneBranchDF__0 (true, "val", &CORBA::_tc_octet);
 
@@ -1460,7 +1461,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_OneBranchDF = std::addressof(_tao_tc_AllBoolUnions_OneBranchDF);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1470,7 +1471,7 @@ AllBoolUnions::TwoBranchesTF::TwoBranchesTF ()
   this->u_.val1_ = {};
 }
 
-AllBoolUnions::TwoBranchesTF::TwoBranchesTF (const ::AllBoolUnions::TwoBranchesTF &u)
+AllBoolUnions::TwoBranchesTF::TwoBranchesTF (::AllBoolUnions::TwoBranchesTF const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1503,7 +1504,7 @@ void AllBoolUnions::TwoBranchesTF::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesTF &
-AllBoolUnions::TwoBranchesTF::operator= (const ::AllBoolUnions::TwoBranchesTF &u)
+AllBoolUnions::TwoBranchesTF::operator= (::AllBoolUnions::TwoBranchesTF const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1533,7 +1534,7 @@ void AllBoolUnions::TwoBranchesTF::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesTF__0 (true, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesTF__1 (false, "val2", &CORBA::_tc_char);
@@ -1562,7 +1563,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_TwoBranchesTF = std::addressof(_tao_tc_AllBoolUnions_TwoBranchesTF);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1572,7 +1573,7 @@ AllBoolUnions::TwoBranchesFT::TwoBranchesFT ()
   this->u_.val1_ = {};
 }
 
-AllBoolUnions::TwoBranchesFT::TwoBranchesFT (const ::AllBoolUnions::TwoBranchesFT &u)
+AllBoolUnions::TwoBranchesFT::TwoBranchesFT (::AllBoolUnions::TwoBranchesFT const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1605,7 +1606,7 @@ void AllBoolUnions::TwoBranchesFT::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesFT &
-AllBoolUnions::TwoBranchesFT::operator= (const ::AllBoolUnions::TwoBranchesFT &u)
+AllBoolUnions::TwoBranchesFT::operator= (::AllBoolUnions::TwoBranchesFT const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1635,7 +1636,7 @@ void AllBoolUnions::TwoBranchesFT::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesFT__0 (false, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesFT__1 (true, "val2", &CORBA::_tc_char);
@@ -1664,7 +1665,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_TwoBranchesFT = std::addressof(_tao_tc_AllBoolUnions_TwoBranchesFT);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1674,7 +1675,7 @@ AllBoolUnions::TwoBranchesTD::TwoBranchesTD ()
   this->u_.val2_ = {};
 }
 
-AllBoolUnions::TwoBranchesTD::TwoBranchesTD (const ::AllBoolUnions::TwoBranchesTD &u)
+AllBoolUnions::TwoBranchesTD::TwoBranchesTD (::AllBoolUnions::TwoBranchesTD const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1707,7 +1708,7 @@ void AllBoolUnions::TwoBranchesTD::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesTD &
-AllBoolUnions::TwoBranchesTD::operator= (const ::AllBoolUnions::TwoBranchesTD &u)
+AllBoolUnions::TwoBranchesTD::operator= (::AllBoolUnions::TwoBranchesTD const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1737,7 +1738,7 @@ void AllBoolUnions::TwoBranchesTD::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesTD__0 (true, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesTD__1 (false, "val2", &CORBA::_tc_char);
@@ -1766,7 +1767,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_TwoBranchesTD = std::addressof(_tao_tc_AllBoolUnions_TwoBranchesTD);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1776,7 +1777,7 @@ AllBoolUnions::TwoBranchesDT::TwoBranchesDT ()
   this->u_.val1_ = {};
 }
 
-AllBoolUnions::TwoBranchesDT::TwoBranchesDT (const ::AllBoolUnions::TwoBranchesDT &u)
+AllBoolUnions::TwoBranchesDT::TwoBranchesDT (::AllBoolUnions::TwoBranchesDT const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1809,7 +1810,7 @@ void AllBoolUnions::TwoBranchesDT::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesDT &
-AllBoolUnions::TwoBranchesDT::operator= (const ::AllBoolUnions::TwoBranchesDT &u)
+AllBoolUnions::TwoBranchesDT::operator= (::AllBoolUnions::TwoBranchesDT const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1839,7 +1840,7 @@ void AllBoolUnions::TwoBranchesDT::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesDT__0 (false, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesDT__1 (true, "val2", &CORBA::_tc_char);
@@ -1868,7 +1869,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_TwoBranchesDT = std::addressof(_tao_tc_AllBoolUnions_TwoBranchesDT);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1878,7 +1879,7 @@ AllBoolUnions::TwoBranchesFD::TwoBranchesFD ()
   this->u_.val2_ = {};
 }
 
-AllBoolUnions::TwoBranchesFD::TwoBranchesFD (const ::AllBoolUnions::TwoBranchesFD &u)
+AllBoolUnions::TwoBranchesFD::TwoBranchesFD (::AllBoolUnions::TwoBranchesFD const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -1911,7 +1912,7 @@ void AllBoolUnions::TwoBranchesFD::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesFD &
-AllBoolUnions::TwoBranchesFD::operator= (const ::AllBoolUnions::TwoBranchesFD &u)
+AllBoolUnions::TwoBranchesFD::operator= (::AllBoolUnions::TwoBranchesFD const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -1941,7 +1942,7 @@ void AllBoolUnions::TwoBranchesFD::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesFD__0 (false, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesFD__1 (true, "val2", &CORBA::_tc_char);
@@ -1970,7 +1971,7 @@ namespace AllBoolUnions
   ::CORBA::TypeCode_ptr const _tc_TwoBranchesFD = std::addressof(_tao_tc_AllBoolUnions_TwoBranchesFD);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -1980,7 +1981,7 @@ AllBoolUnions::TwoBranchesDF::TwoBranchesDF ()
   this->u_.val1_ = {};
 }
 
-AllBoolUnions::TwoBranchesDF::TwoBranchesDF (const ::AllBoolUnions::TwoBranchesDF &u)
+AllBoolUnions::TwoBranchesDF::TwoBranchesDF (::AllBoolUnions::TwoBranchesDF const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2013,7 +2014,7 @@ void AllBoolUnions::TwoBranchesDF::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 AllBoolUnions::TwoBranchesDF &
-AllBoolUnions::TwoBranchesDF::operator= (const ::AllBoolUnions::TwoBranchesDF &u)
+AllBoolUnions::TwoBranchesDF::operator= (::AllBoolUnions::TwoBranchesDF const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2043,7 +2044,7 @@ void AllBoolUnions::TwoBranchesDF::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesDF__0 (true, "val1", &CORBA::_tc_octet);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_AllBoolUnions_TwoBranchesDF__1 (false, "val2", &CORBA::_tc_char);
@@ -2129,7 +2130,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_disc_outer = std::addressof(_tao_tc_disc_outer);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2138,7 +2139,7 @@ inner1::inner1 ()
   this->disc_ = (disc1) -1;
 }
 
-inner1::inner1 (const ::inner1 &u)
+inner1::inner1 (::inner1 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2171,7 +2172,7 @@ void inner1::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 inner1 &
-inner1::operator= (const ::inner1 &u)
+inner1::operator= (::inner1 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2201,7 +2202,7 @@ void inner1::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<disc1, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_inner1__0 (::one, "s", &CORBA::_tc_short);
 static TAO::TypeCode::Case_T<disc1, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_inner1__1 (::two, "l", &CORBA::_tc_long);
@@ -2226,7 +2227,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_inner1 = std::addressof(_tao_tc_inner1);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2235,7 +2236,7 @@ inner2::inner2 ()
   this->disc_ = (disc2) -1;
 }
 
-inner2::inner2 (const ::inner2 &u)
+inner2::inner2 (::inner2 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2268,7 +2269,7 @@ void inner2::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 inner2 &
-inner2::operator= (const ::inner2 &u)
+inner2::operator= (::inner2 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2298,7 +2299,7 @@ void inner2::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<disc2, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_inner2__0 (::a, "c", &CORBA::_tc_char);
 static TAO::TypeCode::Case_T<disc2, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_inner2__1 (::b, "lng", &CORBA::_tc_long);
@@ -2323,7 +2324,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_inner2 = std::addressof(_tao_tc_inner2);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2332,7 +2333,7 @@ outer::outer ()
   this->disc_ = (disc_outer) -1;
 }
 
-outer::outer (const ::outer &u)
+outer::outer (::outer const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2385,7 +2386,7 @@ void outer::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 outer &
-outer::operator= (const ::outer &u)
+outer::operator= (::outer const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2453,7 +2454,7 @@ void outer::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<disc_outer, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_outer__0 (::out1, "first", &_tc_inner1);
 static TAO::TypeCode::Case_T<disc_outer, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_outer__1 (::out2, "second", &_tc_inner2);
@@ -2501,7 +2502,7 @@ namespace UnionTest3
   ::CORBA::TypeCode_ptr const _tc_ValChoice = std::addressof(_tao_tc_UnionTest3_ValChoice);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2510,7 +2511,7 @@ UnionTest3::ValType::ValType ()
   this->disc_ = (UnionTest3::ValChoice) -1;
 }
 
-UnionTest3::ValType::ValType (const ::UnionTest3::ValType &u)
+UnionTest3::ValType::ValType (::UnionTest3::ValType const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2543,7 +2544,7 @@ void UnionTest3::ValType::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 UnionTest3::ValType &
-UnionTest3::ValType::operator= (const ::UnionTest3::ValType &u)
+UnionTest3::ValType::operator= (::UnionTest3::ValType const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2573,7 +2574,7 @@ void UnionTest3::ValType::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<UnionTest3::ValChoice, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionTest3_ValType__0 (UnionTest3::intVal, "integerValue", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<UnionTest3::ValChoice, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionTest3_ValType__1 (UnionTest3::realVal, "realValue", &CORBA::_tc_double);
@@ -2602,7 +2603,7 @@ namespace UnionTest3
   ::CORBA::TypeCode_ptr const _tc_ValType = std::addressof(_tao_tc_UnionTest3_ValType);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -2635,7 +2636,7 @@ namespace UnionTest3
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 UnionTest3::UpType::_tao_any_destructor (
@@ -2645,7 +2646,7 @@ UnionTest3::UpType::_tao_any_destructor (
   delete tmp;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -2678,7 +2679,7 @@ namespace UnionTest3
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 UnionTest3::DownType::_tao_any_destructor (
@@ -2711,7 +2712,7 @@ namespace UnionTest3
   ::CORBA::TypeCode_ptr const _tc_IndChoice = std::addressof(_tao_tc_UnionTest3_IndChoice);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2720,7 +2721,7 @@ UnionTest3::IndType::IndType ()
   this->disc_ = (UnionTest3::IndChoice) -1;
 }
 
-UnionTest3::IndType::IndType (const ::UnionTest3::IndType &u)
+UnionTest3::IndType::IndType (::UnionTest3::IndType const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2773,7 +2774,7 @@ void UnionTest3::IndType::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 UnionTest3::IndType &
-UnionTest3::IndType::operator= (const ::UnionTest3::IndType &u)
+UnionTest3::IndType::operator= (::UnionTest3::IndType const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -2841,7 +2842,7 @@ void UnionTest3::IndType::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<UnionTest3::IndChoice, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionTest3_IndType__0 (UnionTest3::up_Level, "up", &UnionTest3::_tc_UpType);
 static TAO::TypeCode::Case_T<UnionTest3::IndChoice, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_UnionTest3_IndType__1 (UnionTest3::down_Level, "down", &UnionTest3::_tc_DownType);
@@ -2906,7 +2907,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_ZType = std::addressof(_tao_tc_ZType);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -2934,7 +2935,7 @@ _tao_tc_X_Y (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 X::Y::_tao_any_destructor (
@@ -2944,7 +2945,7 @@ X::Y::_tao_any_destructor (
   delete tmp;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -2953,7 +2954,7 @@ X::Y::Z::Z ()
   this->disc_ = (ZType) -1;
 }
 
-X::Y::Z::Z (const ::X::Y::Z &u)
+X::Y::Z::Z (::X::Y::Z const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -2981,7 +2982,7 @@ void X::Y::Z::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 X::Y::Z &
-X::Y::Z::operator= (const ::X::Y::Z &u)
+X::Y::Z::operator= (::X::Y::Z const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3006,7 +3007,7 @@ void X::Y::Z::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<ZType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_X_Y_Z__0 (::Z_A, "a", &CORBA::_tc_long);
 
@@ -3029,7 +3030,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const X::Y::_tc_Z = std::addressof(_tao_tc_X_Y_Z);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3038,7 +3039,7 @@ X::X ()
   this->disc_ = (XType) -1;
 }
 
-X::X (const ::X &u)
+X::X (::X const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -3076,7 +3077,7 @@ void X::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 X &
-X::operator= (const ::X &u)
+X::operator= (::X const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3123,7 +3124,7 @@ void X::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<XType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_X__0 (::X_A, "a", &X::_tc_Y);
 
@@ -3166,7 +3167,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_FieldType = std::addressof(_tao_tc_FieldType);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3176,7 +3177,7 @@ FieldValue::FieldValue ()
   this->u_.defstr_ = {};
 }
 
-FieldValue::FieldValue (const ::FieldValue &u)
+FieldValue::FieldValue (::FieldValue const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -3209,7 +3210,7 @@ void FieldValue::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 FieldValue &
-FieldValue::operator= (const ::FieldValue &u)
+FieldValue::operator= (::FieldValue const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3257,7 +3258,7 @@ void FieldValue::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<FieldType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_FieldValue__0 (::FTYPE_CHAR, "strValue", &CORBA::_tc_string);
 static TAO::TypeCode::Case_T<FieldType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_FieldValue__1 (::FTYPE_VARCHAR, "strValue", &CORBA::_tc_string);
@@ -3284,7 +3285,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_FieldValue = std::addressof(_tao_tc_FieldValue);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -3312,7 +3313,7 @@ _tao_tc_Field (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 Field::_tao_any_destructor (
@@ -3360,7 +3361,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_TestTwoEnum = std::addressof(_tao_tc_TestTwoEnum);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3369,7 +3370,7 @@ TestUnion::TestUnion ()
   this->disc_ = -32768;
 }
 
-TestUnion::TestUnion (const ::TestUnion &u)
+TestUnion::TestUnion (::TestUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -3404,7 +3405,7 @@ void TestUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 TestUnion &
-TestUnion::operator= (const ::TestUnion &u)
+TestUnion::operator= (::TestUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3436,7 +3437,7 @@ void TestUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Short, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_TestUnion__0 (1, "oneEnum", &_tc_TestOneEnum);
 static TAO::TypeCode::Case_T<CORBA::Short, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_TestUnion__1 (2, "twoEnum", &_tc_TestTwoEnum);
@@ -3509,7 +3510,7 @@ U41_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_U41_GUARD
@@ -3605,7 +3606,7 @@ U42_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_U42_GUARD
@@ -3646,7 +3647,7 @@ static TAO::TypeCode::Alias<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U42 = std::addressof(_tao_tc_U42);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3655,7 +3656,7 @@ U85::U85 ()
   this->disc_ = -2147483647;
 }
 
-U85::U85 (const ::U85 &u)
+U85::U85 (::U85 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -3692,7 +3693,7 @@ void U85::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U85 &
-U85::operator= (const ::U85 &u)
+U85::operator= (::U85 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3744,15 +3745,15 @@ void U85::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U85__0 (1, "b_85_1", &_tc_U41);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U85__1 (2, "b_85_2", &_tc_U42);
@@ -3822,7 +3823,7 @@ UString_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_UString_GUARD
@@ -3863,7 +3864,7 @@ static TAO::TypeCode::Alias<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_UString = std::addressof(_tao_tc_UString);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3872,7 +3873,7 @@ U86::U86 ()
   this->disc_ = -2147483647;
 }
 
-U86::U86 (const ::U86 &u)
+U86::U86 (::U86 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -3905,7 +3906,7 @@ void U86::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U86 &
-U86::operator= (const ::U86 &u)
+U86::operator= (::U86 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -3949,7 +3950,7 @@ void U86::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U86__0 (1, "b_86_1", &CORBA::_tc_string);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U86__1 (2, "b_86_2", &CORBA::_tc_long);
@@ -3974,7 +3975,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U86 = std::addressof(_tao_tc_U86);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -3983,7 +3984,7 @@ U88::U88 ()
   this->disc_ = -2147483647;
 }
 
-U88::U88 (const ::U88 &u)
+U88::U88 (::U88 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4018,7 +4019,7 @@ void U88::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U88 &
-U88::operator= (const ::U88 &u)
+U88::operator= (::U88 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4064,11 +4065,11 @@ void U88::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U88__0 (1, "b_86_1", &_tc_UString);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U88__1 (2, "b_86_2", &CORBA::_tc_long);
@@ -4093,7 +4094,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U88 = std::addressof(_tao_tc_U88);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -4121,7 +4122,7 @@ _tao_tc_UBar (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:53
 
 void
 UBar::_tao_any_destructor (
@@ -4176,7 +4177,7 @@ UBarArray_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_UBarArray_GUARD
@@ -4217,7 +4218,7 @@ static TAO::TypeCode::Alias<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_UBarArray = std::addressof(_tao_tc_UBarArray);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4226,7 +4227,7 @@ U87::U87 ()
   this->disc_ = -2147483647;
 }
 
-U87::U87 (const ::U87 &u)
+U87::U87 (::U87 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4259,7 +4260,7 @@ void U87::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U87 &
-U87::operator= (const ::U87 &u)
+U87::operator= (::U87 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4289,7 +4290,7 @@ void U87::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U87__0 (1, "b_87_1", &_tc_UBar);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U87__1 (2, "b_87_2", &CORBA::_tc_long);
@@ -4314,7 +4315,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U87 = std::addressof(_tao_tc_U87);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4323,7 +4324,7 @@ U89::U89 ()
   this->disc_ = -2147483647;
 }
 
-U89::U89 (const ::U89 &u)
+U89::U89 (::U89 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4358,7 +4359,7 @@ void U89::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U89 &
-U89::operator= (const ::U89 &u)
+U89::operator= (::U89 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4404,11 +4405,11 @@ void U89::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U89__0 (1, "b_87_1", &_tc_UBarArray);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U89__1 (2, "b_87_2", &CORBA::_tc_long);
@@ -4497,7 +4498,7 @@ U90Array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_U90Array_GUARD
@@ -4538,7 +4539,7 @@ static TAO::TypeCode::Alias<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U90Array = std::addressof(_tao_tc_U90Array);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4547,7 +4548,7 @@ U91::U91 ()
   this->disc_ = -2147483647;
 }
 
-U91::U91 (const ::U91 &u)
+U91::U91 (::U91 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4582,7 +4583,7 @@ void U91::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U91 &
-U91::operator= (const ::U91 &u)
+U91::operator= (::U91 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4628,11 +4629,11 @@ void U91::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U91__0 (1, "b_91_1", &_tc_U90Array);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U91__1 (2, "b_92_2", &CORBA::_tc_long);
@@ -4657,7 +4658,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U91 = std::addressof(_tao_tc_U91);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4667,7 +4668,7 @@ U92::U92 ()
   ::new (std::addressof(this->u_.b_92_3_)) UBar;
 }
 
-U92::U92 (const ::U92 &u)
+U92::U92 (::U92 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4705,7 +4706,7 @@ void U92::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U92 &
-U92::operator= (const ::U92 &u)
+U92::operator= (::U92 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4740,7 +4741,7 @@ void U92::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U92__0 (1, "b_92_1", &_tc_UBar);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U92__1 (2, "b_92_2", &CORBA::_tc_long);
@@ -4767,7 +4768,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U92 = std::addressof(_tao_tc_U92);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4781,7 +4782,7 @@ U93::U93 ()
   }
 }
 
-U93::U93 (const ::U93 &u)
+U93::U93 (::U93 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4823,7 +4824,7 @@ void U93::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U93 &
-U93::operator= (const ::U93 &u)
+U93::operator= (::U93 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -4882,15 +4883,15 @@ void U93::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U93__0 (1, "b_93_1", &_tc_UBarArray);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U93__1 (2, "b_93_2", &CORBA::_tc_long);
@@ -4917,7 +4918,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_U93 = std::addressof(_tao_tc_U93);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -4931,7 +4932,7 @@ U94::U94 ()
   }
 }
 
-U94::U94 (const ::U94 &u)
+U94::U94 (::U94 const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -4973,7 +4974,7 @@ void U94::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 U94 &
-U94::operator= (const ::U94 &u)
+U94::operator= (::U94 const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5032,15 +5033,15 @@ void U94::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U94__0 (1, "b_94_1", &_tc_U90Array);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_U94__1 (2, "b_94_2", &CORBA::_tc_long);
@@ -5112,7 +5113,7 @@ DefaultInitializedLongArray_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 
 #ifndef _TAO_TYPECODE_DefaultInitializedLongArray_GUARD
@@ -5153,7 +5154,7 @@ static TAO::TypeCode::Alias<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedLongArray = std::addressof(_tao_tc_DefaultInitializedLongArray);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5163,7 +5164,7 @@ DefaultInitializedStructUnion::DefaultInitializedStructUnion ()
   ::new (std::addressof(this->u_.value_)) UBar;
 }
 
-DefaultInitializedStructUnion::DefaultInitializedStructUnion (const ::DefaultInitializedStructUnion &u)
+DefaultInitializedStructUnion::DefaultInitializedStructUnion (::DefaultInitializedStructUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5191,7 +5192,7 @@ void DefaultInitializedStructUnion::_tao_any_destructor (void *_tao_void_pointer
 }
 
 DefaultInitializedStructUnion &
-DefaultInitializedStructUnion::operator= (const ::DefaultInitializedStructUnion &u)
+DefaultInitializedStructUnion::operator= (::DefaultInitializedStructUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5216,7 +5217,7 @@ void DefaultInitializedStructUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedStructUnion__0 (false, "value", &_tc_UBar);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedStructUnion__1 (true, "value", &_tc_UBar);
@@ -5241,7 +5242,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedStructUnion = std::addressof(_tao_tc_DefaultInitializedStructUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5251,7 +5252,7 @@ DefaultInitializedBooleanUnion::DefaultInitializedBooleanUnion ()
   this->u_.value_ = {};
 }
 
-DefaultInitializedBooleanUnion::DefaultInitializedBooleanUnion (const ::DefaultInitializedBooleanUnion &u)
+DefaultInitializedBooleanUnion::DefaultInitializedBooleanUnion (::DefaultInitializedBooleanUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5279,7 +5280,7 @@ void DefaultInitializedBooleanUnion::_tao_any_destructor (void *_tao_void_pointe
 }
 
 DefaultInitializedBooleanUnion &
-DefaultInitializedBooleanUnion::operator= (const ::DefaultInitializedBooleanUnion &u)
+DefaultInitializedBooleanUnion::operator= (::DefaultInitializedBooleanUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5304,7 +5305,7 @@ void DefaultInitializedBooleanUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedBooleanUnion__0 (false, "value", &CORBA::_tc_boolean);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedBooleanUnion__1 (true, "value", &CORBA::_tc_boolean);
@@ -5329,7 +5330,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedBooleanUnion = std::addressof(_tao_tc_DefaultInitializedBooleanUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5339,7 +5340,7 @@ DefaultInitializedLongUnion::DefaultInitializedLongUnion ()
   this->u_.value_ = {};
 }
 
-DefaultInitializedLongUnion::DefaultInitializedLongUnion (const ::DefaultInitializedLongUnion &u)
+DefaultInitializedLongUnion::DefaultInitializedLongUnion (::DefaultInitializedLongUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5367,7 +5368,7 @@ void DefaultInitializedLongUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 DefaultInitializedLongUnion &
-DefaultInitializedLongUnion::operator= (const ::DefaultInitializedLongUnion &u)
+DefaultInitializedLongUnion::operator= (::DefaultInitializedLongUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5392,7 +5393,7 @@ void DefaultInitializedLongUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedLongUnion__0 (false, "value", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedLongUnion__1 (true, "value", &CORBA::_tc_long);
@@ -5417,7 +5418,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedLongUnion = std::addressof(_tao_tc_DefaultInitializedLongUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5427,7 +5428,7 @@ DefaultInitializedDoubleUnion::DefaultInitializedDoubleUnion ()
   this->u_.value_ = {};
 }
 
-DefaultInitializedDoubleUnion::DefaultInitializedDoubleUnion (const ::DefaultInitializedDoubleUnion &u)
+DefaultInitializedDoubleUnion::DefaultInitializedDoubleUnion (::DefaultInitializedDoubleUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5455,7 +5456,7 @@ void DefaultInitializedDoubleUnion::_tao_any_destructor (void *_tao_void_pointer
 }
 
 DefaultInitializedDoubleUnion &
-DefaultInitializedDoubleUnion::operator= (const ::DefaultInitializedDoubleUnion &u)
+DefaultInitializedDoubleUnion::operator= (::DefaultInitializedDoubleUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5480,7 +5481,7 @@ void DefaultInitializedDoubleUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedDoubleUnion__0 (false, "value", &CORBA::_tc_double);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedDoubleUnion__1 (true, "value", &CORBA::_tc_double);
@@ -5505,7 +5506,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedDoubleUnion = std::addressof(_tao_tc_DefaultInitializedDoubleUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5515,7 +5516,7 @@ DefaultInitializedEnumUnion::DefaultInitializedEnumUnion ()
   this->u_.value_ = {};
 }
 
-DefaultInitializedEnumUnion::DefaultInitializedEnumUnion (const ::DefaultInitializedEnumUnion &u)
+DefaultInitializedEnumUnion::DefaultInitializedEnumUnion (::DefaultInitializedEnumUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5544,7 +5545,7 @@ void DefaultInitializedEnumUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 DefaultInitializedEnumUnion &
-DefaultInitializedEnumUnion::operator= (const ::DefaultInitializedEnumUnion &u)
+DefaultInitializedEnumUnion::operator= (::DefaultInitializedEnumUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5570,7 +5571,7 @@ void DefaultInitializedEnumUnion::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedEnumUnion__0 (false, "value", &_tc_U90);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedEnumUnion__1 (true, "value", &_tc_U90);
@@ -5595,7 +5596,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedEnumUnion = std::addressof(_tao_tc_DefaultInitializedEnumUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5609,7 +5610,7 @@ DefaultInitializedArrayUnion::DefaultInitializedArrayUnion ()
   }
 }
 
-DefaultInitializedArrayUnion::DefaultInitializedArrayUnion (const ::DefaultInitializedArrayUnion &u)
+DefaultInitializedArrayUnion::DefaultInitializedArrayUnion (::DefaultInitializedArrayUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5639,7 +5640,7 @@ void DefaultInitializedArrayUnion::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 DefaultInitializedArrayUnion &
-DefaultInitializedArrayUnion::operator= (const ::DefaultInitializedArrayUnion &u)
+DefaultInitializedArrayUnion::operator= (::DefaultInitializedArrayUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5678,11 +5679,11 @@ void DefaultInitializedArrayUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:303
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedArrayUnion__0 (false, "value", &_tc_DefaultInitializedLongArray);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedArrayUnion__1 (true, "value", &_tc_DefaultInitializedLongArray);
@@ -5707,7 +5708,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_DefaultInitializedArrayUnion = std::addressof(_tao_tc_DefaultInitializedArrayUnion);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5717,7 +5718,7 @@ DefaultInitializedStringUnion::DefaultInitializedStringUnion ()
   this->u_.value_ = {};
 }
 
-DefaultInitializedStringUnion::DefaultInitializedStringUnion (const ::DefaultInitializedStringUnion &u)
+DefaultInitializedStringUnion::DefaultInitializedStringUnion (::DefaultInitializedStringUnion const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5745,7 +5746,7 @@ void DefaultInitializedStringUnion::_tao_any_destructor (void *_tao_void_pointer
 }
 
 DefaultInitializedStringUnion &
-DefaultInitializedStringUnion::operator= (const ::DefaultInitializedStringUnion &u)
+DefaultInitializedStringUnion::operator= (::DefaultInitializedStringUnion const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5782,7 +5783,7 @@ void DefaultInitializedStringUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedStringUnion__0 (false, "value", &CORBA::_tc_string);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_DefaultInitializedStringUnion__1 (true, "value", &CORBA::_tc_string);
@@ -5827,7 +5828,7 @@ static TAO::TypeCode::Enum<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_ResetDiscriminator = std::addressof(_tao_tc_ResetDiscriminator);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
 
 
 
@@ -5837,7 +5838,7 @@ ResetWithNoopBranches::ResetWithNoopBranches ()
   ::new (std::addressof(this->u_.struct_value_)) UBar;
 }
 
-ResetWithNoopBranches::ResetWithNoopBranches (const ::ResetWithNoopBranches &u)
+ResetWithNoopBranches::ResetWithNoopBranches (::ResetWithNoopBranches const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -5875,7 +5876,7 @@ void ResetWithNoopBranches::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 ResetWithNoopBranches &
-ResetWithNoopBranches::operator= (const ::ResetWithNoopBranches &u)
+ResetWithNoopBranches::operator= (::ResetWithNoopBranches const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -5926,7 +5927,7 @@ void ResetWithNoopBranches::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<ResetDiscriminator, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_ResetWithNoopBranches__0 (::RESET_STRING, "string_value", &CORBA::_tc_string);
 static TAO::TypeCode::Case_T<ResetDiscriminator, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_ResetWithNoopBranches__1 (::RESET_LONG, "long_value", &CORBA::_tc_long);
@@ -5953,7 +5954,7 @@ static TAO::TypeCode::Union<char const *,
   
 ::CORBA::TypeCode_ptr const _tc_ResetWithNoopBranches = std::addressof(_tao_tc_ResetWithNoopBranches);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -5990,7 +5991,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6005,7 +6006,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const Data &_tao_elem)
+  Data const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<Data>::insert_copy (
     _tao_any,
@@ -6028,8 +6029,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const Data *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  Data const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<Data>::extract (
     _tao_any,
@@ -6042,7 +6043,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6079,7 +6080,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6094,7 +6095,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const Necessary::WhichResult &_tao_elem)
+  Necessary::WhichResult const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<Necessary::WhichResult>::insert_copy (
     _tao_any,
@@ -6117,8 +6118,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const Necessary::WhichResult *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  Necessary::WhichResult const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<Necessary::WhichResult>::extract (
     _tao_any,
@@ -6131,7 +6132,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6146,7 +6147,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const foo &_tao_elem)
+  foo const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<foo>::insert_copy (
     _tao_any,
@@ -6169,8 +6170,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const foo *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  foo const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<foo>::extract (
     _tao_any,
@@ -6183,7 +6184,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6198,7 +6199,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const UnionDiscTest::BooleanUnion &_tao_elem)
+  UnionDiscTest::BooleanUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<UnionDiscTest::BooleanUnion>::insert_copy (
     _tao_any,
@@ -6221,8 +6222,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const UnionDiscTest::BooleanUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  UnionDiscTest::BooleanUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<UnionDiscTest::BooleanUnion>::extract (
     _tao_any,
@@ -6235,7 +6236,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6250,7 +6251,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const UnionDiscTest::CharUnion &_tao_elem)
+  UnionDiscTest::CharUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<UnionDiscTest::CharUnion>::insert_copy (
     _tao_any,
@@ -6273,8 +6274,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const UnionDiscTest::CharUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  UnionDiscTest::CharUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<UnionDiscTest::CharUnion>::extract (
     _tao_any,
@@ -6287,7 +6288,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6302,7 +6303,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchT &_tao_elem)
+  AllBoolUnions::OneBranchT const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchT>::insert_copy (
     _tao_any,
@@ -6325,8 +6326,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchT *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchT const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchT>::extract (
     _tao_any,
@@ -6339,7 +6340,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6354,7 +6355,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchF &_tao_elem)
+  AllBoolUnions::OneBranchF const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchF>::insert_copy (
     _tao_any,
@@ -6377,8 +6378,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchF *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchF const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchF>::extract (
     _tao_any,
@@ -6391,7 +6392,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6406,7 +6407,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchD &_tao_elem)
+  AllBoolUnions::OneBranchD const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchD>::insert_copy (
     _tao_any,
@@ -6429,8 +6430,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchD *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchD const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchD>::extract (
     _tao_any,
@@ -6443,7 +6444,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6458,7 +6459,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchTF &_tao_elem)
+  AllBoolUnions::OneBranchTF const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchTF>::insert_copy (
     _tao_any,
@@ -6481,8 +6482,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchTF *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchTF const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchTF>::extract (
     _tao_any,
@@ -6495,7 +6496,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6510,7 +6511,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchFT &_tao_elem)
+  AllBoolUnions::OneBranchFT const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchFT>::insert_copy (
     _tao_any,
@@ -6533,8 +6534,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchFT *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchFT const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchFT>::extract (
     _tao_any,
@@ -6547,7 +6548,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6562,7 +6563,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchTD &_tao_elem)
+  AllBoolUnions::OneBranchTD const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchTD>::insert_copy (
     _tao_any,
@@ -6585,8 +6586,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchTD *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchTD const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchTD>::extract (
     _tao_any,
@@ -6599,7 +6600,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6614,7 +6615,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchDT &_tao_elem)
+  AllBoolUnions::OneBranchDT const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchDT>::insert_copy (
     _tao_any,
@@ -6637,8 +6638,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchDT *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchDT const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchDT>::extract (
     _tao_any,
@@ -6651,7 +6652,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6666,7 +6667,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchFD &_tao_elem)
+  AllBoolUnions::OneBranchFD const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchFD>::insert_copy (
     _tao_any,
@@ -6689,8 +6690,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchFD *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchFD const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchFD>::extract (
     _tao_any,
@@ -6703,7 +6704,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6718,7 +6719,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchDF &_tao_elem)
+  AllBoolUnions::OneBranchDF const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchDF>::insert_copy (
     _tao_any,
@@ -6741,8 +6742,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::OneBranchDF *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::OneBranchDF const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::OneBranchDF>::extract (
     _tao_any,
@@ -6755,7 +6756,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6770,7 +6771,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesTF &_tao_elem)
+  AllBoolUnions::TwoBranchesTF const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesTF>::insert_copy (
     _tao_any,
@@ -6793,8 +6794,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesTF *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesTF const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesTF>::extract (
     _tao_any,
@@ -6807,7 +6808,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6822,7 +6823,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesFT &_tao_elem)
+  AllBoolUnions::TwoBranchesFT const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesFT>::insert_copy (
     _tao_any,
@@ -6845,8 +6846,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesFT *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesFT const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesFT>::extract (
     _tao_any,
@@ -6859,7 +6860,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6874,7 +6875,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesTD &_tao_elem)
+  AllBoolUnions::TwoBranchesTD const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesTD>::insert_copy (
     _tao_any,
@@ -6897,8 +6898,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesTD *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesTD const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesTD>::extract (
     _tao_any,
@@ -6911,7 +6912,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6926,7 +6927,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesDT &_tao_elem)
+  AllBoolUnions::TwoBranchesDT const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesDT>::insert_copy (
     _tao_any,
@@ -6949,8 +6950,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesDT *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesDT const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesDT>::extract (
     _tao_any,
@@ -6963,7 +6964,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -6978,7 +6979,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesFD &_tao_elem)
+  AllBoolUnions::TwoBranchesFD const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesFD>::insert_copy (
     _tao_any,
@@ -7001,8 +7002,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesFD *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesFD const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesFD>::extract (
     _tao_any,
@@ -7015,7 +7016,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7030,7 +7031,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesDF &_tao_elem)
+  AllBoolUnions::TwoBranchesDF const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesDF>::insert_copy (
     _tao_any,
@@ -7053,8 +7054,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const AllBoolUnions::TwoBranchesDF *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  AllBoolUnions::TwoBranchesDF const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<AllBoolUnions::TwoBranchesDF>::extract (
     _tao_any,
@@ -7067,7 +7068,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7104,7 +7105,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7141,7 +7142,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7178,7 +7179,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7193,7 +7194,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const inner1 &_tao_elem)
+  inner1 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<inner1>::insert_copy (
     _tao_any,
@@ -7216,8 +7217,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const inner1 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  inner1 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<inner1>::extract (
     _tao_any,
@@ -7230,7 +7231,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7245,7 +7246,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const inner2 &_tao_elem)
+  inner2 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<inner2>::insert_copy (
     _tao_any,
@@ -7268,8 +7269,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const inner2 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  inner2 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<inner2>::extract (
     _tao_any,
@@ -7282,7 +7283,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7297,7 +7298,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const outer &_tao_elem)
+  outer const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<outer>::insert_copy (
     _tao_any,
@@ -7320,8 +7321,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const outer *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  outer const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<outer>::extract (
     _tao_any,
@@ -7334,7 +7335,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7371,7 +7372,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7386,7 +7387,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const UnionTest3::ValType &_tao_elem)
+  UnionTest3::ValType const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<UnionTest3::ValType>::insert_copy (
     _tao_any,
@@ -7409,8 +7410,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const UnionTest3::ValType *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  UnionTest3::ValType const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<UnionTest3::ValType>::extract (
     _tao_any,
@@ -7432,7 +7433,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::UnionTest3::UpType &_tao_elem)
+  ::UnionTest3::UpType const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::UnionTest3::UpType>::insert_copy (
     _tao_any,
@@ -7455,8 +7456,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::UnionTest3::UpType *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::UnionTest3::UpType const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::UnionTest3::UpType>::extract (
     _tao_any,
@@ -7478,7 +7479,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::UnionTest3::DownType &_tao_elem)
+  ::UnionTest3::DownType const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::UnionTest3::DownType>::insert_copy (
     _tao_any,
@@ -7501,8 +7502,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::UnionTest3::DownType *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::UnionTest3::DownType const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::UnionTest3::DownType>::extract (
     _tao_any,
@@ -7515,7 +7516,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7552,7 +7553,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7567,7 +7568,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const UnionTest3::IndType &_tao_elem)
+  UnionTest3::IndType const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<UnionTest3::IndType>::insert_copy (
     _tao_any,
@@ -7590,8 +7591,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const UnionTest3::IndType *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  UnionTest3::IndType const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<UnionTest3::IndType>::extract (
     _tao_any,
@@ -7604,7 +7605,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7641,7 +7642,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7678,7 +7679,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7693,7 +7694,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const X &_tao_elem)
+  X const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<X>::insert_copy (
     _tao_any,
@@ -7716,8 +7717,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const X *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  X const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<X>::extract (
     _tao_any,
@@ -7730,7 +7731,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7767,7 +7768,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7782,7 +7783,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const FieldValue &_tao_elem)
+  FieldValue const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<FieldValue>::insert_copy (
     _tao_any,
@@ -7805,8 +7806,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const FieldValue *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  FieldValue const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<FieldValue>::extract (
     _tao_any,
@@ -7828,7 +7829,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::Field &_tao_elem)
+  ::Field const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::Field>::insert_copy (
     _tao_any,
@@ -7851,8 +7852,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::Field *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::Field const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::Field>::extract (
     _tao_any,
@@ -7865,7 +7866,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7902,7 +7903,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7939,7 +7940,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -7954,7 +7955,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const TestUnion &_tao_elem)
+  TestUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<TestUnion>::insert_copy (
     _tao_any,
@@ -7977,8 +7978,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const TestUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  TestUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<TestUnion>::extract (
     _tao_any,
@@ -8079,7 +8080,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8094,7 +8095,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U85 &_tao_elem)
+  U85 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U85>::insert_copy (
     _tao_any,
@@ -8117,8 +8118,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U85 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U85 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U85>::extract (
     _tao_any,
@@ -8175,7 +8176,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8190,7 +8191,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U86 &_tao_elem)
+  U86 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U86>::insert_copy (
     _tao_any,
@@ -8213,8 +8214,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U86 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U86 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U86>::extract (
     _tao_any,
@@ -8227,7 +8228,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8242,7 +8243,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U88 &_tao_elem)
+  U88 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U88>::insert_copy (
     _tao_any,
@@ -8265,8 +8266,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U88 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U88 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U88>::extract (
     _tao_any,
@@ -8288,7 +8289,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::UBar &_tao_elem)
+  ::UBar const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::UBar>::insert_copy (
     _tao_any,
@@ -8311,8 +8312,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::UBar *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::UBar const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::UBar>::extract (
     _tao_any,
@@ -8369,7 +8370,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8384,7 +8385,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U87 &_tao_elem)
+  U87 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U87>::insert_copy (
     _tao_any,
@@ -8407,8 +8408,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U87 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U87 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U87>::extract (
     _tao_any,
@@ -8421,7 +8422,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8436,7 +8437,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U89 &_tao_elem)
+  U89 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U89>::insert_copy (
     _tao_any,
@@ -8459,8 +8460,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U89 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U89 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U89>::extract (
     _tao_any,
@@ -8473,7 +8474,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8554,7 +8555,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8569,7 +8570,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U91 &_tao_elem)
+  U91 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U91>::insert_copy (
     _tao_any,
@@ -8592,8 +8593,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U91 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U91 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U91>::extract (
     _tao_any,
@@ -8606,7 +8607,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8621,7 +8622,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U92 &_tao_elem)
+  U92 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U92>::insert_copy (
     _tao_any,
@@ -8644,8 +8645,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U92 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U92 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U92>::extract (
     _tao_any,
@@ -8658,7 +8659,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8673,7 +8674,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U93 &_tao_elem)
+  U93 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U93>::insert_copy (
     _tao_any,
@@ -8696,8 +8697,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U93 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U93 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U93>::extract (
     _tao_any,
@@ -8710,7 +8711,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8725,7 +8726,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const U94 &_tao_elem)
+  U94 const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<U94>::insert_copy (
     _tao_any,
@@ -8748,8 +8749,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const U94 *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  U94 const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<U94>::extract (
     _tao_any,
@@ -8806,7 +8807,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8821,7 +8822,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedStructUnion &_tao_elem)
+  DefaultInitializedStructUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedStructUnion>::insert_copy (
     _tao_any,
@@ -8844,8 +8845,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedStructUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedStructUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedStructUnion>::extract (
     _tao_any,
@@ -8858,7 +8859,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8873,7 +8874,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedBooleanUnion &_tao_elem)
+  DefaultInitializedBooleanUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedBooleanUnion>::insert_copy (
     _tao_any,
@@ -8896,8 +8897,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedBooleanUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedBooleanUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedBooleanUnion>::extract (
     _tao_any,
@@ -8910,7 +8911,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8925,7 +8926,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedLongUnion &_tao_elem)
+  DefaultInitializedLongUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedLongUnion>::insert_copy (
     _tao_any,
@@ -8948,8 +8949,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedLongUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedLongUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedLongUnion>::extract (
     _tao_any,
@@ -8962,7 +8963,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -8977,7 +8978,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedDoubleUnion &_tao_elem)
+  DefaultInitializedDoubleUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedDoubleUnion>::insert_copy (
     _tao_any,
@@ -9000,8 +9001,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedDoubleUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedDoubleUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedDoubleUnion>::extract (
     _tao_any,
@@ -9014,7 +9015,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -9029,7 +9030,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedEnumUnion &_tao_elem)
+  DefaultInitializedEnumUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedEnumUnion>::insert_copy (
     _tao_any,
@@ -9052,8 +9053,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedEnumUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedEnumUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedEnumUnion>::extract (
     _tao_any,
@@ -9066,7 +9067,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -9081,7 +9082,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedArrayUnion &_tao_elem)
+  DefaultInitializedArrayUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedArrayUnion>::insert_copy (
     _tao_any,
@@ -9104,8 +9105,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedArrayUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedArrayUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedArrayUnion>::extract (
     _tao_any,
@@ -9118,7 +9119,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -9133,7 +9134,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const DefaultInitializedStringUnion &_tao_elem)
+  DefaultInitializedStringUnion const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<DefaultInitializedStringUnion>::insert_copy (
     _tao_any,
@@ -9156,8 +9157,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const DefaultInitializedStringUnion *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  DefaultInitializedStringUnion const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<DefaultInitializedStringUnion>::extract (
     _tao_any,
@@ -9170,7 +9171,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -9207,7 +9208,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -9222,7 +9223,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ResetWithNoopBranches &_tao_elem)
+  ResetWithNoopBranches const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<ResetWithNoopBranches>::insert_copy (
     _tao_any,
@@ -9245,8 +9246,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ResetWithNoopBranches *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ResetWithNoopBranches const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<ResetWithNoopBranches>::extract (
     _tao_any,
@@ -9286,14 +9287,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const Data &_tao_union)
+    Data const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -9398,14 +9399,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const Necessary::WhichResult &_tao_union)
+    Necessary::WhichResult const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -9476,14 +9477,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const foo &_tao_union)
+    foo const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -9574,14 +9575,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionDiscTest::BooleanUnion &_tao_union)
+    UnionDiscTest::BooleanUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9635,14 +9636,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionDiscTest::CharUnion &_tao_union)
+    UnionDiscTest::CharUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_char tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9706,14 +9707,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchT &_tao_union)
+    AllBoolUnions::OneBranchT const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9768,14 +9769,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchF &_tao_union)
+    AllBoolUnions::OneBranchF const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9830,14 +9831,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchD &_tao_union)
+    AllBoolUnions::OneBranchD const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9879,14 +9880,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchTF &_tao_union)
+    AllBoolUnions::OneBranchTF const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9928,14 +9929,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchFT &_tao_union)
+    AllBoolUnions::OneBranchFT const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -9977,14 +9978,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchTD &_tao_union)
+    AllBoolUnions::OneBranchTD const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10026,14 +10027,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchDT &_tao_union)
+    AllBoolUnions::OneBranchDT const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10075,14 +10076,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchFD &_tao_union)
+    AllBoolUnions::OneBranchFD const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10124,14 +10125,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::OneBranchDF &_tao_union)
+    AllBoolUnions::OneBranchDF const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10173,14 +10174,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesTF &_tao_union)
+    AllBoolUnions::TwoBranchesTF const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10247,14 +10248,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesFT &_tao_union)
+    AllBoolUnions::TwoBranchesFT const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10321,14 +10322,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesTD &_tao_union)
+    AllBoolUnions::TwoBranchesTD const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10395,14 +10396,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesDT &_tao_union)
+    AllBoolUnions::TwoBranchesDT const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10469,14 +10470,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesFD &_tao_union)
+    AllBoolUnions::TwoBranchesFD const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10543,14 +10544,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const AllBoolUnions::TwoBranchesDF &_tao_union)
+    AllBoolUnions::TwoBranchesDF const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -10698,14 +10699,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const inner1 &_tao_union)
+    inner1 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -10783,14 +10784,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const inner2 &_tao_union)
+    inner2 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -10869,14 +10870,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const outer &_tao_union)
+    outer const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -10983,14 +10984,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionTest3::ValType &_tao_union)
+    UnionTest3::ValType const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11068,14 +11069,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionTest3::UpType &_tao_aggregate)
+    UnionTest3::UpType const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.high) &&
@@ -11097,14 +11098,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionTest3::DownType &_tao_aggregate)
+    UnionTest3::DownType const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.high) &&
@@ -11153,14 +11154,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UnionTest3::IndType &_tao_union)
+    UnionTest3::IndType const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11292,14 +11293,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const X::Y::Z &_tao_union)
+    X::Y::Z const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11361,14 +11362,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const X::Y &_tao_aggregate)
+    X::Y const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.u) &&
@@ -11388,14 +11389,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const X &_tao_union)
+    X const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11484,14 +11485,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const FieldValue &_tao_union)
+    FieldValue const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11564,14 +11565,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const Field &_tao_aggregate)
+    Field const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.value) &&
@@ -11645,14 +11646,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const TestUnion &_tao_union)
+    TestUnion const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11732,7 +11733,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -11759,7 +11760,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -11786,14 +11787,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U85 &_tao_union)
+    U85 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -11883,7 +11884,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -11920,14 +11921,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U86 &_tao_union)
+    U86 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12005,14 +12006,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U88 &_tao_union)
+    U88 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12096,14 +12097,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:46
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const UBar &_tao_aggregate)
+    UBar const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.foo) &&
@@ -12123,7 +12124,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -12160,14 +12161,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U87 &_tao_union)
+    U87 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12245,14 +12246,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U89 &_tao_union)
+    U89 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12363,7 +12364,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -12400,14 +12401,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U91 &_tao_union)
+    U91 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12491,14 +12492,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U92 &_tao_union)
+    U92 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12585,14 +12586,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U93 &_tao_union)
+    U93 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12691,14 +12692,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const U94 &_tao_union)
+    U94 const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
@@ -12797,7 +12798,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:160
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -12824,14 +12825,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedStructUnion &_tao_union)
+    DefaultInitializedStructUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -12872,14 +12873,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedBooleanUnion &_tao_union)
+    DefaultInitializedBooleanUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -12921,14 +12922,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedLongUnion &_tao_union)
+    DefaultInitializedLongUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -12969,14 +12970,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedDoubleUnion &_tao_union)
+    DefaultInitializedDoubleUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -13017,14 +13018,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedEnumUnion &_tao_union)
+    DefaultInitializedEnumUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -13066,14 +13067,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedArrayUnion &_tao_union)
+    DefaultInitializedArrayUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -13120,14 +13121,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const DefaultInitializedStringUnion &_tao_union)
+    DefaultInitializedStringUnion const &_tao_union)
 {
   ::ACE_OutputCDR::from_boolean tmp (_tao_union._d ());
   if (!(strm << tmp))
@@ -13195,14 +13196,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:117
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const ResetWithNoopBranches &_tao_union)
+    ResetWithNoopBranches const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {

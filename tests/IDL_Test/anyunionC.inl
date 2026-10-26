@@ -25,13 +25,13 @@
 #include <memory>
 #include <new>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:35
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ci.cpp:33
 
 // *************************************************************
 // Inline operations for union MyAnyUnion
 // *************************************************************
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:195
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ci.cpp:193
 
 ACE_INLINE
 void
@@ -79,12 +79,12 @@ MyAnyUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:606
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
 
 // Accessor to set the member.
 ACE_INLINE
 void
-MyAnyUnion::my_any (const ::CORBA::Any & val)
+MyAnyUnion::my_any (::CORBA::Any const & val)
 {
   // Set the discriminant value.
   this->_reset ();
@@ -97,7 +97,7 @@ MyAnyUnion::my_any (const ::CORBA::Any & val)
 
 /// Retrieve the member.
 ACE_INLINE
-const ::CORBA::Any &
+::CORBA::Any const &
 MyAnyUnion::my_any () const
 {
   if (_tao_member_index (this->disc_) != 0UL)

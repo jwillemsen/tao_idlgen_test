@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_INHERITS_LGHM41_H_
-#define _TAO_IDL_INHERITS_LGHM41_H_
+#ifndef _TAO_IDL_INHERITS_GSC5G1_H_
+#define _TAO_IDL_INHERITS_GSC5G1_H_
 
 #include /**/ "ace/pre.h"
 
@@ -53,7 +53,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -64,7 +64,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -85,7 +85,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -104,7 +104,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -125,7 +125,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -144,7 +144,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -163,7 +163,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -184,7 +184,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -203,7 +203,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -222,7 +222,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -243,7 +243,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -262,7 +262,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -281,7 +281,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -302,7 +302,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -321,7 +321,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -340,7 +340,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -361,7 +361,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -385,16 +385,16 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
 namespace POA_OldInherit
 {
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
   class AMH_one;
-  typedef AMH_one *AMH_one_ptr;
+  using AMH_one_ptr = AMH_one *;
 
   class TAO_IDL_TEST_STUB_Export AMH_one
     : public virtual PortableServer::ServantBase
@@ -417,7 +417,7 @@ namespace POA_OldInherit
 
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
   static void op_one_skel (
       TAO_ServerRequest &_tao_req,
@@ -432,12 +432,12 @@ namespace POA_OldInherit
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class one;
-typedef one *one_ptr;
+using one_ptr = one *;
 
 class _TAO_one_Direct_Proxy_Impl;
 
@@ -449,9 +449,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::one _stub_type;
-  typedef ::OldInherit::one_ptr _stub_ptr_type;
-  typedef ::OldInherit::one_var _stub_var_type;
+  using _stub_type = ::OldInherit::one;
+  using _stub_ptr_type = ::OldInherit::one_ptr;
+  using _stub_var_type = ::OldInherit::one_var;
 
   one (const one& rhs) = default;
   virtual ~one () = default;
@@ -466,7 +466,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_one () = 0;
 
@@ -489,7 +489,7 @@ class TAO_IDL_TEST_STUB_Export _TAO_one_Direct_Proxy_Impl
 public:
   virtual ~_TAO_one_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_one (
@@ -503,10 +503,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_oneResponseHandler;
-typedef TAO_AMH_oneResponseHandler *TAO_AMH_oneResponseHandler_ptr;
+using TAO_AMH_oneResponseHandler_ptr = TAO_AMH_oneResponseHandler *;
 
 class TAO_IDL_TEST_STUB_Export TAO_AMH_oneResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -516,11 +516,11 @@ public:
   TAO_AMH_oneResponseHandler () = default;
   virtual ~TAO_AMH_oneResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_one () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_one_excep (
     ::OldInherit::AMH_oneExceptionHolder * holder) override;
@@ -528,12 +528,12 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class AMI_oneHandler;
-typedef AMI_oneHandler *AMI_oneHandler_ptr;
+using AMI_oneHandler_ptr = AMI_oneHandler *;
 
 class _TAO_AMI_oneHandler_Direct_Proxy_Impl;
 
@@ -545,9 +545,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::AMI_oneHandler _stub_type;
-  typedef ::OldInherit::AMI_oneHandler_ptr _stub_ptr_type;
-  typedef ::OldInherit::AMI_oneHandler_var _stub_var_type;
+  using _stub_type = ::OldInherit::AMI_oneHandler;
+  using _stub_ptr_type = ::OldInherit::AMI_oneHandler_ptr;
+  using _stub_var_type = ::OldInherit::AMI_oneHandler_var;
 
   AMI_oneHandler (const AMI_oneHandler& rhs) = default;
   virtual ~AMI_oneHandler () = default;
@@ -562,7 +562,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_one () = 0;
 
@@ -571,7 +571,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_one_excep (
     ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -596,14 +596,14 @@ class TAO_IDL_TEST_STUB_Export _TAO_AMI_oneHandler_Direct_Proxy_Impl
 public:
   virtual ~_TAO_AMI_oneHandler_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_one (
     TAO_Abstract_ServantBase *servant, TAO::Argument **args);
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_one_excep (
@@ -617,10 +617,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
 class AMH_two;
-typedef AMH_two *AMH_two_ptr;
+using AMH_two_ptr = AMH_two *;
 
 class TAO_IDL_TEST_STUB_Export AMH_two
   : public virtual POA_OldInherit::AMH_one
@@ -644,7 +644,7 @@ public:
 
 virtual const char* _interface_repository_id () const;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
 static void op_two_skel (
     TAO_ServerRequest &_tao_req,
@@ -659,12 +659,12 @@ virtual void op_two (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class two;
-typedef two *two_ptr;
+using two_ptr = two *;
 
 class _TAO_two_Direct_Proxy_Impl;
 
@@ -676,9 +676,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::two _stub_type;
-  typedef ::OldInherit::two_ptr _stub_ptr_type;
-  typedef ::OldInherit::two_var _stub_var_type;
+  using _stub_type = ::OldInherit::two;
+  using _stub_ptr_type = ::OldInherit::two_ptr;
+  using _stub_var_type = ::OldInherit::two_var;
 
   two (const two& rhs) = default;
   virtual ~two () = default;
@@ -693,7 +693,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_two () = 0;
 
@@ -717,7 +717,7 @@ class TAO_IDL_TEST_STUB_Export _TAO_two_Direct_Proxy_Impl
 public:
   virtual ~_TAO_two_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_two (
@@ -731,10 +731,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_twoResponseHandler;
-typedef TAO_AMH_twoResponseHandler *TAO_AMH_twoResponseHandler_ptr;
+using TAO_AMH_twoResponseHandler_ptr = TAO_AMH_twoResponseHandler *;
 
 class TAO_IDL_TEST_STUB_Export TAO_AMH_twoResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -744,11 +744,11 @@ public:
   TAO_AMH_twoResponseHandler () = default;
   virtual ~TAO_AMH_twoResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_two () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_two_excep (
     ::OldInherit::AMH_twoExceptionHolder * holder) override;
@@ -756,12 +756,12 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class AMI_twoHandler;
-typedef AMI_twoHandler *AMI_twoHandler_ptr;
+using AMI_twoHandler_ptr = AMI_twoHandler *;
 
 class _TAO_AMI_twoHandler_Direct_Proxy_Impl;
 
@@ -773,9 +773,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::AMI_twoHandler _stub_type;
-  typedef ::OldInherit::AMI_twoHandler_ptr _stub_ptr_type;
-  typedef ::OldInherit::AMI_twoHandler_var _stub_var_type;
+  using _stub_type = ::OldInherit::AMI_twoHandler;
+  using _stub_ptr_type = ::OldInherit::AMI_twoHandler_ptr;
+  using _stub_var_type = ::OldInherit::AMI_twoHandler_var;
 
   AMI_twoHandler (const AMI_twoHandler& rhs) = default;
   virtual ~AMI_twoHandler () = default;
@@ -790,7 +790,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_two () = 0;
 
@@ -799,7 +799,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_two_excep (
     ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -824,14 +824,14 @@ class TAO_IDL_TEST_STUB_Export _TAO_AMI_twoHandler_Direct_Proxy_Impl
 public:
   virtual ~_TAO_AMI_twoHandler_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_two (
     TAO_Abstract_ServantBase *servant, TAO::Argument **args);
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_two_excep (
@@ -845,10 +845,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
 class AMH_three;
-typedef AMH_three *AMH_three_ptr;
+using AMH_three_ptr = AMH_three *;
 
 class TAO_IDL_TEST_STUB_Export AMH_three
   : public virtual POA_OldInherit::AMH_one
@@ -872,7 +872,7 @@ public:
 
 virtual const char* _interface_repository_id () const;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
 static void op_three_skel (
     TAO_ServerRequest &_tao_req,
@@ -887,12 +887,12 @@ virtual void op_three (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class three;
-typedef three *three_ptr;
+using three_ptr = three *;
 
 class _TAO_three_Direct_Proxy_Impl;
 
@@ -904,9 +904,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::three _stub_type;
-  typedef ::OldInherit::three_ptr _stub_ptr_type;
-  typedef ::OldInherit::three_var _stub_var_type;
+  using _stub_type = ::OldInherit::three;
+  using _stub_ptr_type = ::OldInherit::three_ptr;
+  using _stub_var_type = ::OldInherit::three_var;
 
   three (const three& rhs) = default;
   virtual ~three () = default;
@@ -921,7 +921,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_three () = 0;
 
@@ -945,7 +945,7 @@ class TAO_IDL_TEST_STUB_Export _TAO_three_Direct_Proxy_Impl
 public:
   virtual ~_TAO_three_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_three (
@@ -959,10 +959,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_threeResponseHandler;
-typedef TAO_AMH_threeResponseHandler *TAO_AMH_threeResponseHandler_ptr;
+using TAO_AMH_threeResponseHandler_ptr = TAO_AMH_threeResponseHandler *;
 
 class TAO_IDL_TEST_STUB_Export TAO_AMH_threeResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -972,11 +972,11 @@ public:
   TAO_AMH_threeResponseHandler () = default;
   virtual ~TAO_AMH_threeResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_three () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_three_excep (
     ::OldInherit::AMH_threeExceptionHolder * holder) override;
@@ -984,12 +984,12 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class AMI_threeHandler;
-typedef AMI_threeHandler *AMI_threeHandler_ptr;
+using AMI_threeHandler_ptr = AMI_threeHandler *;
 
 class _TAO_AMI_threeHandler_Direct_Proxy_Impl;
 
@@ -1001,9 +1001,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::AMI_threeHandler _stub_type;
-  typedef ::OldInherit::AMI_threeHandler_ptr _stub_ptr_type;
-  typedef ::OldInherit::AMI_threeHandler_var _stub_var_type;
+  using _stub_type = ::OldInherit::AMI_threeHandler;
+  using _stub_ptr_type = ::OldInherit::AMI_threeHandler_ptr;
+  using _stub_var_type = ::OldInherit::AMI_threeHandler_var;
 
   AMI_threeHandler (const AMI_threeHandler& rhs) = default;
   virtual ~AMI_threeHandler () = default;
@@ -1018,7 +1018,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_three () = 0;
 
@@ -1027,7 +1027,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_three_excep (
     ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -1052,14 +1052,14 @@ class TAO_IDL_TEST_STUB_Export _TAO_AMI_threeHandler_Direct_Proxy_Impl
 public:
   virtual ~_TAO_AMI_threeHandler_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_three (
     TAO_Abstract_ServantBase *servant, TAO::Argument **args);
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_three_excep (
@@ -1073,10 +1073,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
 class AMH_four;
-typedef AMH_four *AMH_four_ptr;
+using AMH_four_ptr = AMH_four *;
 
 class TAO_IDL_TEST_STUB_Export AMH_four
   : public virtual POA_OldInherit::AMH_two
@@ -1101,7 +1101,7 @@ public:
 
 virtual const char* _interface_repository_id () const;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
 static void op_four_skel (
     TAO_ServerRequest &_tao_req,
@@ -1116,12 +1116,12 @@ virtual void op_four (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class four;
-typedef four *four_ptr;
+using four_ptr = four *;
 
 class _TAO_four_Direct_Proxy_Impl;
 
@@ -1134,9 +1134,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::four _stub_type;
-  typedef ::OldInherit::four_ptr _stub_ptr_type;
-  typedef ::OldInherit::four_var _stub_var_type;
+  using _stub_type = ::OldInherit::four;
+  using _stub_ptr_type = ::OldInherit::four_ptr;
+  using _stub_var_type = ::OldInherit::four_var;
 
   four (const four& rhs) = default;
   virtual ~four () = default;
@@ -1151,7 +1151,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_four () = 0;
 
@@ -1176,7 +1176,7 @@ class TAO_IDL_TEST_STUB_Export _TAO_four_Direct_Proxy_Impl
 public:
   virtual ~_TAO_four_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_four (
@@ -1190,10 +1190,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_fourResponseHandler;
-typedef TAO_AMH_fourResponseHandler *TAO_AMH_fourResponseHandler_ptr;
+using TAO_AMH_fourResponseHandler_ptr = TAO_AMH_fourResponseHandler *;
 
 class TAO_IDL_TEST_STUB_Export TAO_AMH_fourResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -1203,11 +1203,11 @@ public:
   TAO_AMH_fourResponseHandler () = default;
   virtual ~TAO_AMH_fourResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_four () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_four_excep (
     ::OldInherit::AMH_fourExceptionHolder * holder) override;
@@ -1215,12 +1215,12 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class AMI_fourHandler;
-typedef AMI_fourHandler *AMI_fourHandler_ptr;
+using AMI_fourHandler_ptr = AMI_fourHandler *;
 
 class _TAO_AMI_fourHandler_Direct_Proxy_Impl;
 
@@ -1233,9 +1233,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::AMI_fourHandler _stub_type;
-  typedef ::OldInherit::AMI_fourHandler_ptr _stub_ptr_type;
-  typedef ::OldInherit::AMI_fourHandler_var _stub_var_type;
+  using _stub_type = ::OldInherit::AMI_fourHandler;
+  using _stub_ptr_type = ::OldInherit::AMI_fourHandler_ptr;
+  using _stub_var_type = ::OldInherit::AMI_fourHandler_var;
 
   AMI_fourHandler (const AMI_fourHandler& rhs) = default;
   virtual ~AMI_fourHandler () = default;
@@ -1250,7 +1250,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_four () = 0;
 
@@ -1259,7 +1259,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_four_excep (
     ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -1285,14 +1285,14 @@ class TAO_IDL_TEST_STUB_Export _TAO_AMI_fourHandler_Direct_Proxy_Impl
 public:
   virtual ~_TAO_AMI_fourHandler_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_four (
     TAO_Abstract_ServantBase *servant, TAO::Argument **args);
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_four_excep (
@@ -1306,10 +1306,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
 class AMH_five;
-typedef AMH_five *AMH_five_ptr;
+using AMH_five_ptr = AMH_five *;
 
 class TAO_IDL_TEST_STUB_Export AMH_five
   : public virtual POA_OldInherit::AMH_four
@@ -1335,7 +1335,7 @@ public:
 
 virtual const char* _interface_repository_id () const;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
 static void op_five_skel (
     TAO_ServerRequest &_tao_req,
@@ -1350,12 +1350,12 @@ virtual void op_five (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class five;
-typedef five *five_ptr;
+using five_ptr = five *;
 
 class _TAO_five_Direct_Proxy_Impl;
 
@@ -1369,9 +1369,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::five _stub_type;
-  typedef ::OldInherit::five_ptr _stub_ptr_type;
-  typedef ::OldInherit::five_var _stub_var_type;
+  using _stub_type = ::OldInherit::five;
+  using _stub_ptr_type = ::OldInherit::five_ptr;
+  using _stub_var_type = ::OldInherit::five_var;
 
   five (const five& rhs) = default;
   virtual ~five () = default;
@@ -1386,7 +1386,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_five () = 0;
 
@@ -1412,7 +1412,7 @@ class TAO_IDL_TEST_STUB_Export _TAO_five_Direct_Proxy_Impl
 public:
   virtual ~_TAO_five_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_five (
@@ -1426,10 +1426,10 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_fiveResponseHandler;
-typedef TAO_AMH_fiveResponseHandler *TAO_AMH_fiveResponseHandler_ptr;
+using TAO_AMH_fiveResponseHandler_ptr = TAO_AMH_fiveResponseHandler *;
 
 class TAO_IDL_TEST_STUB_Export TAO_AMH_fiveResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -1439,11 +1439,11 @@ public:
   TAO_AMH_fiveResponseHandler () = default;
   virtual ~TAO_AMH_fiveResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_five () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void op_five_excep (
     ::OldInherit::AMH_fiveExceptionHolder * holder) override;
@@ -1451,12 +1451,12 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class AMI_fiveHandler;
-typedef AMI_fiveHandler *AMI_fiveHandler_ptr;
+using AMI_fiveHandler_ptr = AMI_fiveHandler *;
 
 class _TAO_AMI_fiveHandler_Direct_Proxy_Impl;
 
@@ -1470,9 +1470,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::OldInherit::AMI_fiveHandler _stub_type;
-  typedef ::OldInherit::AMI_fiveHandler_ptr _stub_ptr_type;
-  typedef ::OldInherit::AMI_fiveHandler_var _stub_var_type;
+  using _stub_type = ::OldInherit::AMI_fiveHandler;
+  using _stub_ptr_type = ::OldInherit::AMI_fiveHandler_ptr;
+  using _stub_var_type = ::OldInherit::AMI_fiveHandler_var;
 
   AMI_fiveHandler (const AMI_fiveHandler& rhs) = default;
   virtual ~AMI_fiveHandler () = default;
@@ -1487,7 +1487,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_five () = 0;
 
@@ -1496,7 +1496,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void op_five_excep (
     ::Messaging::ExceptionHolder * excep_holder) = 0;
@@ -1523,14 +1523,14 @@ class TAO_IDL_TEST_STUB_Export _TAO_AMI_fiveHandler_Direct_Proxy_Impl
 public:
   virtual ~_TAO_AMI_fiveHandler_Direct_Proxy_Impl ();
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_five (
     TAO_Abstract_ServantBase *servant, TAO::Argument **args);
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:25
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/proxy_impl_xh.cpp:23
 
   static void
   op_five_excep (
@@ -1546,7 +1546,7 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module OldInherit
 

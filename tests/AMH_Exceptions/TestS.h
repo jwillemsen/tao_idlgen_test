@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_TESTS_OEOQO1_H_
-#define _TAO_IDL_TESTS_OEOQO1_H_
+#ifndef _TAO_IDL_TESTS_RKI4LG_H_
+#define _TAO_IDL_TESTS_RKI4LG_H_
 
 #include /**/ "ace/pre.h"
 
@@ -50,7 +50,7 @@
 #include "tao/PortableServer/Servant_Base.h"
 #include "tao/Messaging/AMH_Response_Handler.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -61,7 +61,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -82,7 +82,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -101,7 +101,7 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:299
 
   
 
@@ -127,16 +127,16 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
 namespace POA_Test
 {
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:45
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:43
 
   class AMH_Roundtrip;
-  typedef AMH_Roundtrip *AMH_Roundtrip_ptr;
+  using AMH_Roundtrip_ptr = AMH_Roundtrip *;
 
   class  AMH_Roundtrip
     : public virtual PortableServer::ServantBase
@@ -159,7 +159,7 @@ namespace POA_Test
 
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
   static void test_method_skel (
       TAO_ServerRequest &_tao_req,
@@ -172,7 +172,7 @@ namespace POA_Test
     ) = 0;
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:126
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
   static void shutdown_skel (
       TAO_ServerRequest &_tao_req,
@@ -187,12 +187,12 @@ namespace POA_Test
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
 
 
 class Roundtrip;
-typedef Roundtrip *Roundtrip_ptr;
+using Roundtrip_ptr = Roundtrip *;
 
 class  Roundtrip
   : public virtual PortableServer::ServantBase
@@ -202,9 +202,9 @@ protected:
 
 public:
   /// Useful for template programming.
-  typedef ::Test::Roundtrip _stub_type;
-  typedef ::Test::Roundtrip_ptr _stub_ptr_type;
-  typedef ::Test::Roundtrip_var _stub_var_type;
+  using _stub_type = ::Test::Roundtrip;
+  using _stub_ptr_type = ::Test::Roundtrip_ptr;
+  using _stub_var_type = ::Test::Roundtrip_var;
 
   Roundtrip (const Roundtrip& rhs) = default;
   virtual ~Roundtrip () = default;
@@ -219,7 +219,7 @@ public:
   
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual ::Test::Timestamp test_method (
     ::Test::Timestamp send_time) = 0;
@@ -229,7 +229,7 @@ public:
       TAO::Portable_Server::Servant_Upcall *servant_upcall,
       TAO_ServantBase *servant);
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
   virtual void shutdown () = 0;
 
@@ -239,10 +239,10 @@ public:
       TAO_ServantBase *servant);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:47
 
 class TAO_AMH_RoundtripResponseHandler;
-typedef TAO_AMH_RoundtripResponseHandler *TAO_AMH_RoundtripResponseHandler_ptr;
+using TAO_AMH_RoundtripResponseHandler_ptr = TAO_AMH_RoundtripResponseHandler *;
 
 class  TAO_AMH_RoundtripResponseHandler
   : public TAO_AMH_Response_Handler,
@@ -252,21 +252,21 @@ public:
   TAO_AMH_RoundtripResponseHandler () = default;
   virtual ~TAO_AMH_RoundtripResponseHandler () = default;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void test_method (
     ::Test::Timestamp return_value) override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void test_method_excep (
     ::Test::AMH_RoundtripExceptionHolder * holder) override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void shutdown () override;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:59
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_sh.cpp:57
 
   void shutdown_excep (
     ::Test::AMH_RoundtripExceptionHolder * holder) override;
@@ -274,7 +274,7 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module Test
 

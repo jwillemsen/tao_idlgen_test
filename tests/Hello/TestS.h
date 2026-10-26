@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_TESTS_J1J3ZF_H_
-#define _TAO_IDL_TESTS_J1J3ZF_H_
+#ifndef _TAO_IDL_TESTS_BTHUD0_H_
+#define _TAO_IDL_TESTS_BTHUD0_H_
 
 #include /**/ "ace/pre.h"
 
@@ -45,7 +45,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
 
 
 
@@ -56,7 +56,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
 
   
 
@@ -80,7 +80,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
 namespace POA_Test
 {
@@ -88,12 +88,12 @@ namespace POA_Test
 
   
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
   
 
   class Hello;
-  typedef Hello *Hello_ptr;
+  using Hello_ptr = Hello *;
 
   class  Hello
     : public virtual PortableServer::ServantBase
@@ -103,9 +103,9 @@ namespace POA_Test
   
   public:
     /// Useful for template programming.
-    typedef ::Test::Hello _stub_type;
-    typedef ::Test::Hello_ptr _stub_ptr_type;
-    typedef ::Test::Hello_var _stub_var_type;
+    using _stub_type = ::Test::Hello;
+    using _stub_ptr_type = ::Test::Hello_ptr;
+    using _stub_var_type = ::Test::Hello_var;
 
     Hello (const Hello& rhs) = default;
     virtual ~Hello () = default;
@@ -120,7 +120,7 @@ namespace POA_Test
     
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual char * get_string () = 0;
 
@@ -129,7 +129,7 @@ namespace POA_Test
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
 
     virtual void shutdown () = 0;
 
@@ -141,7 +141,7 @@ namespace POA_Test
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 
 } // module Test
 

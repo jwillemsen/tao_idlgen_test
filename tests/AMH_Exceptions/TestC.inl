@@ -23,19 +23,19 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 Test::Red_Herring::Red_Herring ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 Test::Red_Herring::_tao_obv_static_repository_id ()
 {
   return "IDL:Test/Red_Herring:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:56
 
 
 
@@ -57,14 +57,14 @@ Test::Roundtrip::Roundtrip (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:40
 
 ACE_INLINE
 Test::AMH_RoundtripExceptionHolder::AMH_RoundtripExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 Test::AMH_RoundtripExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:Test/AMH_RoundtripExceptionHolder:1.0";
