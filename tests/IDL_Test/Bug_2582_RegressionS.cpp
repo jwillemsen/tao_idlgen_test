@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_BUG_2582_REGRESSIONS_0A357D_CPP_
-#define _TAO_IDL_BUG_2582_REGRESSIONS_0A357D_CPP_
+#ifndef _TAO_IDL_BUG_2582_REGRESSIONS_34H69H_CPP_
+#define _TAO_IDL_BUG_2582_REGRESSIONS_34H69H_CPP_
 
 
 #include "Bug_2582_RegressionS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_AMH_FieldDevice_T_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -252,7 +252,7 @@ const char* POA_AMH_FieldDevice_T::_interface_repository_id () const
   return "IDL:FieldDevice_T:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:104
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
 
 void
 POA_AMH_FieldDevice_T::_dispatch (
@@ -262,7 +262,7 @@ POA_AMH_FieldDevice_T::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
 
 FieldDevice_T*
 POA_AMH_FieldDevice_T::_this ()
@@ -279,7 +279,7 @@ POA_AMH_FieldDevice_T::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_FieldDevice_T_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -467,7 +467,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FieldDevice_T::getEncodingID_skel (
   TAO_ServerRequest & server_request,
@@ -541,7 +541,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FieldDevice_T::getEncoding_skel (
   TAO_ServerRequest & server_request,
@@ -641,7 +641,7 @@ POA_FieldDevice_T::_this ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_TAO_AMH_FieldDevice_TResponseHandler::getEncodingID (
@@ -659,7 +659,7 @@ POA_TAO_AMH_FieldDevice_TResponseHandler::getEncodingID (
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_TAO_AMH_FieldDevice_TResponseHandler::getEncodingID_excep (
@@ -675,7 +675,7 @@ POA_TAO_AMH_FieldDevice_TResponseHandler::getEncodingID_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_TAO_AMH_FieldDevice_TResponseHandler::getEncoding (
@@ -693,7 +693,7 @@ POA_TAO_AMH_FieldDevice_TResponseHandler::getEncoding (
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_TAO_AMH_FieldDevice_TResponseHandler::getEncoding_excep (
@@ -709,7 +709,7 @@ POA_TAO_AMH_FieldDevice_TResponseHandler::getEncoding_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_AMI_FieldDevice_THandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -944,7 +944,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_AMI_FieldDevice_THandler::getEncodingID_skel (
   TAO_ServerRequest & server_request,
@@ -1021,7 +1021,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_AMI_FieldDevice_THandler::getEncodingID_excep_skel (
   TAO_ServerRequest & server_request,
@@ -1098,7 +1098,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_AMI_FieldDevice_THandler::getEncoding_skel (
   TAO_ServerRequest & server_request,
@@ -1175,7 +1175,7 @@ private:
   TAO::Argument * const * const args_;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_AMI_FieldDevice_THandler::getEncoding_excep_skel (
   TAO_ServerRequest & server_request,

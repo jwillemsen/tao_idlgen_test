@@ -81,7 +81,7 @@ Data::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -107,7 +107,7 @@ Data::longData () const
   return this->u_.longData_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -179,7 +179,7 @@ Necessary::WhichResult::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -205,7 +205,7 @@ Necessary::WhichResult::m_Result () const
   return this->u_.m_Result_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -281,7 +281,7 @@ foo::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -330,7 +330,7 @@ foo::foo_str_member () const // get method
   return this->u_.foo_str_member_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -356,7 +356,7 @@ foo::foo_iface_member () const
   return this->u_.foo_iface_member_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -428,7 +428,7 @@ UnionDiscTest::BooleanUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -529,7 +529,7 @@ UnionDiscTest::CharUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -624,7 +624,7 @@ AllBoolUnions::OneBranchT::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -696,7 +696,7 @@ AllBoolUnions::OneBranchF::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -755,7 +755,7 @@ AllBoolUnions::OneBranchD::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -814,7 +814,7 @@ AllBoolUnions::OneBranchTF::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -873,7 +873,7 @@ AllBoolUnions::OneBranchFT::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -932,7 +932,7 @@ AllBoolUnions::OneBranchTD::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -991,7 +991,7 @@ AllBoolUnions::OneBranchDT::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1050,7 +1050,7 @@ AllBoolUnions::OneBranchFD::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1109,7 +1109,7 @@ AllBoolUnions::OneBranchDF::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1175,7 +1175,7 @@ AllBoolUnions::TwoBranchesTF::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1201,7 +1201,7 @@ AllBoolUnions::TwoBranchesTF::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1267,7 +1267,7 @@ AllBoolUnions::TwoBranchesFT::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1293,7 +1293,7 @@ AllBoolUnions::TwoBranchesFT::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1359,7 +1359,7 @@ AllBoolUnions::TwoBranchesTD::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1385,7 +1385,7 @@ AllBoolUnions::TwoBranchesTD::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1451,7 +1451,7 @@ AllBoolUnions::TwoBranchesDT::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1477,7 +1477,7 @@ AllBoolUnions::TwoBranchesDT::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1543,7 +1543,7 @@ AllBoolUnions::TwoBranchesFD::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1569,7 +1569,7 @@ AllBoolUnions::TwoBranchesFD::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1635,7 +1635,7 @@ AllBoolUnions::TwoBranchesDF::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1661,7 +1661,7 @@ AllBoolUnions::TwoBranchesDF::val1 () const
   return this->u_.val1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1743,7 +1743,7 @@ inner1::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1769,7 +1769,7 @@ inner1::s () const
   return this->u_.s_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1851,7 +1851,7 @@ inner2::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1877,7 +1877,7 @@ inner2::c () const
   return this->u_.c_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1959,7 +1959,7 @@ outer::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1292
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1295
 
 // Accessor to set the member.
 ACE_INLINE
@@ -1999,7 +1999,7 @@ outer::first ()
   return *this->u_.first_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1292
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1295
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2095,7 +2095,7 @@ UnionTest3::ValType::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2121,7 +2121,7 @@ UnionTest3::ValType::integerValue () const
   return this->u_.integerValue_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2203,7 +2203,7 @@ UnionTest3::IndType::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2243,7 +2243,7 @@ UnionTest3::IndType::up ()
   return *this->u_.up_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2391,7 +2391,7 @@ X::Y::Z::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2417,7 +2417,7 @@ X::Y::Z::a () const
   return this->u_.a_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2504,7 +2504,7 @@ FieldValue::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2553,7 +2553,7 @@ FieldValue::strValue () const // get method
   return this->u_.strValue_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2656,7 +2656,7 @@ TestUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:252
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:255
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2682,7 +2682,7 @@ TestUnion::oneEnum () const
   return this->u_.oneEnum_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:252
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:255
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -2708,7 +2708,7 @@ TestUnion::twoEnum () const
   return this->u_.twoEnum_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -2766,7 +2766,7 @@ TAO::Array_Traits<U41_forany>::alloc ()
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -2875,7 +2875,7 @@ U85::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2901,7 +2901,7 @@ U85::b_85_1 () const
   return this->u_.b_85_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -2927,7 +2927,7 @@ U85::b_85_2 () const
   return this->u_.b_85_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -3036,7 +3036,7 @@ U86::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -3085,7 +3085,7 @@ U86::b_86_1 () const // get method
   return this->u_.b_86_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3165,7 +3165,7 @@ U88::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3191,7 +3191,7 @@ U88::b_86_1 () const
   return this->u_.b_86_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3217,7 +3217,7 @@ U88::b_86_2 () const
   return this->u_.b_86_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -3326,7 +3326,7 @@ U87::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -3363,7 +3363,7 @@ U87::b_87_1 ()
   return this->u_.b_87_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3443,7 +3443,7 @@ U89::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3469,7 +3469,7 @@ U89::b_87_1 () const
   return this->u_.b_87_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3495,7 +3495,7 @@ U89::b_87_2 () const
   return this->u_.b_87_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -3604,7 +3604,7 @@ U91::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3630,7 +3630,7 @@ U91::b_91_1 () const
   return this->u_.b_91_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3704,7 +3704,7 @@ U92::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -3741,7 +3741,7 @@ U92::b_92_1 ()
   return this->u_.b_92_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3767,7 +3767,7 @@ U92::b_92_2 () const
   return this->u_.b_92_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -3852,7 +3852,7 @@ U93::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3878,7 +3878,7 @@ U93::b_93_1 () const
   return this->u_.b_93_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3904,7 +3904,7 @@ U93::b_93_2 () const
   return this->u_.b_93_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -3978,7 +3978,7 @@ U94::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4004,7 +4004,7 @@ U94::b_94_1 () const
   return this->u_.b_94_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4030,7 +4030,7 @@ U94::b_94_2 () const
   return this->u_.b_94_2_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4056,7 +4056,7 @@ U94::b_94_3 () const
   return this->u_.b_94_3_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:142
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ci.cpp:146
 
 
 
@@ -4144,7 +4144,7 @@ DefaultInitializedStructUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -4214,7 +4214,7 @@ DefaultInitializedBooleanUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4273,7 +4273,7 @@ DefaultInitializedLongUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4332,7 +4332,7 @@ DefaultInitializedDoubleUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4391,7 +4391,7 @@ DefaultInitializedEnumUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:252
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:255
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -4450,7 +4450,7 @@ DefaultInitializedArrayUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:179
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:182
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4509,7 +4509,7 @@ DefaultInitializedStringUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -4606,7 +4606,7 @@ ResetWithNoopBranches::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:915
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -4655,7 +4655,7 @@ ResetWithNoopBranches::string_value () const // get method
   return this->u_.string_value_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:604
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
 
 // Accessor to set the member.
 ACE_INLINE
@@ -4681,7 +4681,7 @@ ResetWithNoopBranches::long_value () const
   return this->u_.long_value_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1119
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:1122
 
 /// Accessor to set the member.
 ACE_INLINE

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_PARAMSS_7A7EP8_CPP_
-#define _TAO_IDL_PARAMSS_7A7EP8_CPP_
+#ifndef _TAO_IDL_PARAMSS_1GGMPB_CPP_
+#define _TAO_IDL_PARAMSS_1GGMPB_CPP_
 
 
 #include "paramsS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -223,7 +223,7 @@ const char* POA_foo::bar::AMH_fooBar::_interface_repository_id () const
   return "IDL:foo/bar/fooBar:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:104
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
 
 void
 POA_foo::bar::AMH_fooBar::_dispatch (
@@ -233,7 +233,7 @@ POA_foo::bar::AMH_fooBar::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
 
 foo::bar::fooBar*
 POA_foo::bar::AMH_fooBar::_this ()
@@ -250,7 +250,7 @@ POA_foo::bar::AMH_fooBar::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_foo_bar_fooBar_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -446,7 +446,7 @@ namespace POA_foo
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_foo::bar::fooBar::getDate_skel (
   TAO_ServerRequest & server_request,
@@ -552,7 +552,7 @@ POA_foo::bar::fooBar::_this ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate (
@@ -574,7 +574,7 @@ POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate (
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate_excep (
@@ -590,7 +590,7 @@ POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_foo_bar_AMI_fooBarHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -803,7 +803,7 @@ namespace POA_foo
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_foo::bar::AMI_fooBarHandler::getDate_skel (
   TAO_ServerRequest & server_request,
@@ -892,7 +892,7 @@ namespace POA_foo
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_foo::bar::AMI_fooBarHandler::getDate_excep_skel (
   TAO_ServerRequest & server_request,

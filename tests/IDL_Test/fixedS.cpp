@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_FIXEDS_JCLE16_CPP_
-#define _TAO_IDL_FIXEDS_JCLE16_CPP_
+#ifndef _TAO_IDL_FIXEDS_KO7EUE_CPP_
+#define _TAO_IDL_FIXEDS_KO7EUE_CPP_
 
 
 #include "fixedS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_FixedPoint_AMH_FixedOperations_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -283,7 +283,7 @@ const char* POA_FixedPoint::AMH_FixedOperations::_interface_repository_id () con
   return "IDL:FixedPoint/FixedOperations:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:104
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
 
 void
 POA_FixedPoint::AMH_FixedOperations::_dispatch (
@@ -293,7 +293,7 @@ POA_FixedPoint::AMH_FixedOperations::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
 
 FixedPoint::FixedOperations*
 POA_FixedPoint::AMH_FixedOperations::_this ()
@@ -310,7 +310,7 @@ POA_FixedPoint::AMH_FixedOperations::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_FixedPoint_FixedOperations_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -522,7 +522,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::FixedOperations::_get_rate_skel (
   TAO_ServerRequest & server_request,
@@ -601,7 +601,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::FixedOperations::_set_rate_skel (
   TAO_ServerRequest & server_request,
@@ -703,7 +703,7 @@ POA_FixedPoint::FixedOperations::_this ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::get_rate (
@@ -721,7 +721,7 @@ POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::get_rate (
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::get_rate_excep (
@@ -737,7 +737,7 @@ POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::get_rate_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::set_rate ()
@@ -748,7 +748,7 @@ POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::set_rate ()
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:74
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
 
 void
 POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::set_rate_excep (
@@ -764,7 +764,7 @@ POA_FixedPoint::TAO_AMH_FixedOperationsResponseHandler::set_rate_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
 
 class TAO_FixedPoint_AMI_FixedOperationsHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -1004,7 +1004,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::AMI_FixedOperationsHandler::get_rate_skel (
   TAO_ServerRequest & server_request,
@@ -1085,7 +1085,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::AMI_FixedOperationsHandler::get_rate_excep_skel (
   TAO_ServerRequest & server_request,
@@ -1153,7 +1153,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::AMI_FixedOperationsHandler::set_rate_skel (
   TAO_ServerRequest & server_request,
@@ -1230,7 +1230,7 @@ namespace POA_FixedPoint
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_FixedPoint::AMI_FixedOperationsHandler::set_rate_excep_skel (
   TAO_ServerRequest & server_request,

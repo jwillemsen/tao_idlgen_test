@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_LOADER_CONSTS_QZXGB4_CPP_
-#define _TAO_IDL_LOADER_CONSTS_QZXGB4_CPP_
+#ifndef _TAO_IDL_LOADER_CONSTS_3RCXT4_CPP_
+#define _TAO_IDL_LOADER_CONSTS_3RCXT4_CPP_
 
 
 #include "loader_constS.h"

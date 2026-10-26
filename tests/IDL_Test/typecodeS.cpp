@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_TYPECODES_Y99B83_CPP_
-#define _TAO_IDL_TYPECODES_Y99B83_CPP_
+#ifndef _TAO_IDL_TYPECODES_R9HFLR_CPP_
+#define _TAO_IDL_TYPECODES_R9HFLR_CPP_
 
 
 #include "typecodeS.h"

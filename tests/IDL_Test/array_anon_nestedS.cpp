@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
 
-#ifndef _TAO_IDL_ARRAY_ANON_NESTEDS_YY1RKZ_CPP_
-#define _TAO_IDL_ARRAY_ANON_NESTEDS_YY1RKZ_CPP_
+#ifndef _TAO_IDL_ARRAY_ANON_NESTEDS_6S6K7Q_CPP_
+#define _TAO_IDL_ARRAY_ANON_NESTEDS_6S6K7Q_CPP_
 
 
 #include "array_anon_nestedS.h"

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:729
 
-#ifndef _TAO_IDL_TYPECODEA_WQ5TLD_H_
-#define _TAO_IDL_TYPECODEA_WQ5TLD_H_
+#ifndef _TAO_IDL_TYPECODEA_KNYDO2_H_
+#define _TAO_IDL_TYPECODEA_KNYDO2_H_
 
 #include /**/ "ace/pre.h"
 

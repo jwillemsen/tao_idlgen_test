@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:729
 
-#ifndef _TAO_IDL_ARRAY_ONLYA_FFHR60_H_
-#define _TAO_IDL_ARRAY_ONLYA_FFHR60_H_
+#ifndef _TAO_IDL_ARRAY_ONLYA_SGSTUS_H_
+#define _TAO_IDL_ARRAY_ONLYA_SGSTUS_H_
 
 #include /**/ "ace/pre.h"
 
