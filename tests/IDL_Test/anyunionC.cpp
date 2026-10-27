@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "anyunionC.h"
@@ -70,7 +70,7 @@ static TAO::TypeCode::Enum<char const *,
     "AnyUnionEnum",
     _tao_enumerators_AnyUnionEnum,
     1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AnyUnionEnum = std::addressof(_tao_tc_AnyUnionEnum);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -155,7 +155,7 @@ void MyAnyUnion::_reset ()
 {
   switch (_tao_member_index (this->disc_))
   {
-    
+
     case 0UL:
     {
       delete this->u_.my_any_;
@@ -167,7 +167,7 @@ void MyAnyUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<AnyUnionEnum, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_MyAnyUnion__0 (::ANYUNIONENUM2, "my_any", &CORBA::_tc_any);
 
@@ -187,7 +187,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_MyAnyUnion,
     sizeof (_tao_cases_MyAnyUnion)/sizeof (_tao_cases_MyAnyUnion[0]),
     -1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_MyAnyUnion = std::addressof(_tao_tc_MyAnyUnion);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
@@ -293,12 +293,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<AnyUnionEnum> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -319,7 +319,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -345,7 +345,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)

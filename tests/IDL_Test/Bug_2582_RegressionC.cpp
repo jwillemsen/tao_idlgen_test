@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_2582_RegressionC.h"
@@ -70,10 +70,10 @@ static TAO::TypeCode::Enum<char const *,
     "EncodingID_T",
     _tao_enumerators_EncodingID_T,
     1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_EncodingID_T = std::addressof(_tao_tc_EncodingID_T);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -121,7 +121,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:EncodingID2_T:1.0",
     "EncodingID2_T",
     &_tc_EncodingID_T);
-  
+
 ::CORBA::TypeCode_ptr const _tc_EncodingID2_T = std::addressof(_tao_tc_EncodingID2_T);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -168,7 +168,7 @@ FieldDevice_T::getEncodingID ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::EncodingID_T>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -203,7 +203,7 @@ FieldDevice_T::getEncoding ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::Encoding_T>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -241,8 +241,8 @@ FieldDevice_T::sendc_getEncodingID (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -273,8 +273,8 @@ FieldDevice_T::sendc_getEncoding (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -374,7 +374,7 @@ FieldDevice_T::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -382,10 +382,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:FieldDevice_T:1.0",
     "FieldDevice_T");
-  
+
 ::CORBA::TypeCode_ptr const _tc_FieldDevice_T = std::addressof(_tao_tc_FieldDevice_T);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_FieldDevice_TExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -400,7 +400,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_FieldDevice_TExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TExceptionHolder = std::addressof(_tao_tc_AMH_FieldDevice_TExceptionHolder);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:53
@@ -523,27 +523,27 @@ AMH_FieldDevice_TExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_FieldDevice_TExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -707,7 +707,7 @@ AMH_FieldDevice_TResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -715,7 +715,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:AMH_FieldDevice_TResponseHandler:1.0",
     "AMH_FieldDevice_TResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TResponseHandler = std::addressof(_tao_tc_AMH_FieldDevice_TResponseHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -763,7 +763,7 @@ AMI_FieldDevice_THandler::getEncodingID (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::EncodingID_T>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -780,7 +780,7 @@ AMI_FieldDevice_THandler::getEncodingID (
       "getEncodingID",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -808,10 +808,10 @@ AMI_FieldDevice_THandler::getEncodingID_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->getEncodingID (
-          
+
           ami_return_val
         );
       break;
@@ -836,7 +836,7 @@ AMI_FieldDevice_THandler::getEncodingID_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->getEncodingID_excep (
           exception_holder_var);
@@ -859,7 +859,7 @@ AMI_FieldDevice_THandler::getEncodingID_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -876,7 +876,7 @@ AMI_FieldDevice_THandler::getEncodingID_excep (
       "getEncodingID_excep",
       19,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -892,7 +892,7 @@ AMI_FieldDevice_THandler::getEncoding (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Encoding_T>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -909,7 +909,7 @@ AMI_FieldDevice_THandler::getEncoding (
       "getEncoding",
       11,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -937,10 +937,10 @@ AMI_FieldDevice_THandler::getEncoding_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->getEncoding (
-          
+
           ami_return_val
         );
       break;
@@ -965,7 +965,7 @@ AMI_FieldDevice_THandler::getEncoding_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->getEncoding_excep (
           exception_holder_var);
@@ -988,7 +988,7 @@ AMI_FieldDevice_THandler::getEncoding_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1005,7 +1005,7 @@ AMI_FieldDevice_THandler::getEncoding_excep (
       "getEncoding_excep",
       17,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1093,7 +1093,7 @@ AMI_FieldDevice_THandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -1101,7 +1101,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:AMI_FieldDevice_THandler:1.0",
     "AMI_FieldDevice_THandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_FieldDevice_THandler = std::addressof(_tao_tc_AMI_FieldDevice_THandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:41
@@ -1516,12 +1516,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<EncodingID_T> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -1579,7 +1579,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::FieldDevice_T>::unchecked_narrow (obj.in ());
 
@@ -1598,7 +1598,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_FieldDevice_TExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -1607,7 +1607,7 @@ CORBA::add_ref (AMH_FieldDevice_TExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_FieldDevice_TExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -1692,7 +1692,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_FieldDevice_THandler>::unchecked_narrow (obj.in ());
 

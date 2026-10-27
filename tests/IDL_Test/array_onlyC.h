@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_ARRAY_ONLYC_BXVNKD_H_
-#define _TAO_IDL_ARRAY_ONLYC_BXVNKD_H_
+#ifndef _TAO_IDL_ARRAY_ONLYC_9PSPDQ_H_
+#define _TAO_IDL_ARRAY_ONLYC_9PSPDQ_H_
 
 #include /**/ "ace/pre.h"
 
@@ -59,7 +59,7 @@
 #error This file should be regenerated with TAO_IDL
 #endif
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
 
 
@@ -68,7 +68,7 @@ using TEST_TYPE_slice = ::CORBA::Char;
 struct TEST_TYPE_tag {};
 
 
-using TEST_TYPE_var = 
+using TEST_TYPE_var =
   TAO_FixedArray_Var_T<
       TEST_TYPE,
       TEST_TYPE_slice,
@@ -87,7 +87,7 @@ TAO_IDL_TEST_STUB_Export TEST_TYPE_slice *TEST_TYPE_dup (const TEST_TYPE_slice *
 
 TAO_IDL_TEST_STUB_Export void TEST_TYPE_copy (TEST_TYPE_slice *_tao_to, const TEST_TYPE_slice *_tao_from);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -98,9 +98,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -177,7 +177,7 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, ::TEST_TYP
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "array_onlyC.inl"

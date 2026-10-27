@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_TESTVERSIONEDNAMESPACE2S_GE1W8J_CPP_
-#define _TAO_IDL_TESTVERSIONEDNAMESPACE2S_GE1W8J_CPP_
+#ifndef _TAO_IDL_TESTVERSIONEDNAMESPACE2S_7SIVH3_CPP_
+#define _TAO_IDL_TESTVERSIONEDNAMESPACE2S_7SIVH3_CPP_
 
 
 #include "TestVersionedNamespace2S.h"
@@ -56,7 +56,7 @@ BEGIN_USER_VERSIONED_NAMESPACE
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M1_AMH_LI_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -141,7 +141,7 @@ static TAO_M1_AMH_LI_Perfect_Hash_OpTable tao_M1_AMH_LI_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -152,7 +152,7 @@ POA_M1::AMH_LI::AMH_LI ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_M1::AMH_LI::op_skel (
@@ -164,7 +164,7 @@ POA_M1::AMH_LI::op_skel (
     dynamic_cast<POA_M1::AMH_LI *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::M1::S1 s;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -172,28 +172,28 @@ POA_M1::AMH_LI::op_skel (
       (_tao_in >> s)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_M1::TAO_AMH_LIResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_M1::TAO_AMH_LIResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_M1::TAO_AMH_LIResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_M1::TAO_AMH_LIResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op (
       safe_rd_.get (),
       s
@@ -202,7 +202,7 @@ POA_M1::AMH_LI::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -222,7 +222,7 @@ const char* POA_M1::AMH_LI::_interface_repository_id () const
   return "IDL:M1/LI:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_M1::AMH_LI::_dispatch (
@@ -232,7 +232,7 @@ POA_M1::AMH_LI::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 M1::LI*
 POA_M1::AMH_LI::_this ()
@@ -244,12 +244,12 @@ POA_M1::AMH_LI::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::M1::LI>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M1_LI_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -334,7 +334,7 @@ static TAO_M1_LI_Perfect_Hash_OpTable tao_M1_LI_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -346,7 +346,7 @@ POA_M1::LI::LI ()
 
 namespace POA_M1
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -371,11 +371,11 @@ namespace POA_M1
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->op (
         arg_1);
     }
-  
+
   private:
     POA_M1::LI * const servant_;
     TAO_Operation_Details const * const operation_details_;
@@ -397,7 +397,7 @@ void POA_M1::LI::op_skel (
       std::addressof(retval),
       std::addressof(_tao_s)
     };
-  
+
   POA_M1::LI * const impl =
     dynamic_cast<POA_M1::LI *> (servant);
 
@@ -410,7 +410,7 @@ void POA_M1::LI::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -428,7 +428,7 @@ void POA_M1::LI::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -450,7 +450,7 @@ const char* POA_M1::LI::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -463,7 +463,7 @@ void POA_M1::LI::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -481,22 +481,22 @@ POA_M1::LI::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M1::TAO_AMH_LIResponseHandler::op ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M1::TAO_AMH_LIResponseHandler::op_excep (
@@ -512,7 +512,7 @@ POA_M1::TAO_AMH_LIResponseHandler::op_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M1_AMH_L2_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -597,7 +597,7 @@ static TAO_M1_AMH_L2_Perfect_Hash_OpTable tao_M1_AMH_L2_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -608,7 +608,7 @@ POA_M1::AMH_L2::AMH_L2 ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_M1::AMH_L2::op_skel (
@@ -620,7 +620,7 @@ POA_M1::AMH_L2::op_skel (
     dynamic_cast<POA_M1::AMH_L2 *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::M1::S1 s;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -628,28 +628,28 @@ POA_M1::AMH_L2::op_skel (
       (_tao_in >> s)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_M1::TAO_AMH_L2ResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_M1::TAO_AMH_L2ResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_M1::TAO_AMH_L2ResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_M1::TAO_AMH_L2ResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op (
       safe_rd_.get (),
       s
@@ -658,7 +658,7 @@ POA_M1::AMH_L2::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -678,7 +678,7 @@ const char* POA_M1::AMH_L2::_interface_repository_id () const
   return "IDL:M1/L2:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_M1::AMH_L2::_dispatch (
@@ -688,7 +688,7 @@ POA_M1::AMH_L2::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 M1::L2*
 POA_M1::AMH_L2::_this ()
@@ -700,12 +700,12 @@ POA_M1::AMH_L2::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::M1::L2>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M1_L2_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -790,7 +790,7 @@ static TAO_M1_L2_Perfect_Hash_OpTable tao_M1_L2_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -802,7 +802,7 @@ POA_M1::L2::L2 ()
 
 namespace POA_M1
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -827,11 +827,11 @@ namespace POA_M1
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->op (
         arg_1);
     }
-  
+
   private:
     POA_M1::L2 * const servant_;
     TAO_Operation_Details const * const operation_details_;
@@ -853,7 +853,7 @@ void POA_M1::L2::op_skel (
       std::addressof(retval),
       std::addressof(_tao_s)
     };
-  
+
   POA_M1::L2 * const impl =
     dynamic_cast<POA_M1::L2 *> (servant);
 
@@ -866,7 +866,7 @@ void POA_M1::L2::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -884,7 +884,7 @@ void POA_M1::L2::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -906,7 +906,7 @@ const char* POA_M1::L2::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -919,7 +919,7 @@ void POA_M1::L2::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -937,22 +937,22 @@ POA_M1::L2::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M1::TAO_AMH_L2ResponseHandler::op ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M1::TAO_AMH_L2ResponseHandler::op_excep (
@@ -968,7 +968,7 @@ POA_M1::TAO_AMH_L2ResponseHandler::op_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M2_M3_AMH_L3_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -1053,7 +1053,7 @@ static TAO_M2_M3_AMH_L3_Perfect_Hash_OpTable tao_M2_M3_AMH_L3_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1064,7 +1064,7 @@ POA_M2::M3::AMH_L3::AMH_L3 ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_M2::M3::AMH_L3::op_skel (
@@ -1076,7 +1076,7 @@ POA_M2::M3::AMH_L3::op_skel (
     dynamic_cast<POA_M2::M3::AMH_L3 *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::M2::M3::S2 s;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -1084,28 +1084,28 @@ POA_M2::M3::AMH_L3::op_skel (
       (_tao_in >> s)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_M2::M3::TAO_AMH_L3ResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_M2::M3::TAO_AMH_L3ResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_M2::M3::TAO_AMH_L3ResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_M2::M3::TAO_AMH_L3ResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op (
       safe_rd_.get (),
       s
@@ -1114,7 +1114,7 @@ POA_M2::M3::AMH_L3::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1134,7 +1134,7 @@ const char* POA_M2::M3::AMH_L3::_interface_repository_id () const
   return "IDL:M2/M3/L3:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_M2::M3::AMH_L3::_dispatch (
@@ -1144,7 +1144,7 @@ POA_M2::M3::AMH_L3::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 M2::M3::L3*
 POA_M2::M3::AMH_L3::_this ()
@@ -1156,12 +1156,12 @@ POA_M2::M3::AMH_L3::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::M2::M3::L3>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M2_M3_L3_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -1246,7 +1246,7 @@ static TAO_M2_M3_L3_Perfect_Hash_OpTable tao_M2_M3_L3_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1258,10 +1258,10 @@ POA_M2::M3::L3::L3 ()
 
 namespace POA_M2
 {
-  
+
   namespace M3
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1286,11 +1286,11 @@ namespace POA_M2
             this->operation_details_,
             this->args_,
             1);
-          
+
         this->servant_->op (
           arg_1);
       }
-    
+
     private:
       POA_M2::M3::L3 * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1313,7 +1313,7 @@ void POA_M2::M3::L3::op_skel (
       std::addressof(retval),
       std::addressof(_tao_s)
     };
-  
+
   POA_M2::M3::L3 * const impl =
     dynamic_cast<POA_M2::M3::L3 *> (servant);
 
@@ -1326,7 +1326,7 @@ void POA_M2::M3::L3::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1344,7 +1344,7 @@ void POA_M2::M3::L3::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1366,7 +1366,7 @@ const char* POA_M2::M3::L3::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -1379,7 +1379,7 @@ void POA_M2::M3::L3::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -1397,22 +1397,22 @@ POA_M2::M3::L3::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M2::M3::TAO_AMH_L3ResponseHandler::op ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M2::M3::TAO_AMH_L3ResponseHandler::op_excep (
@@ -1428,7 +1428,7 @@ POA_M2::M3::TAO_AMH_L3ResponseHandler::op_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M2_M3_AMH_L4_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -1513,7 +1513,7 @@ static TAO_M2_M3_AMH_L4_Perfect_Hash_OpTable tao_M2_M3_AMH_L4_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1524,7 +1524,7 @@ POA_M2::M3::AMH_L4::AMH_L4 ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_M2::M3::AMH_L4::op_skel (
@@ -1536,7 +1536,7 @@ POA_M2::M3::AMH_L4::op_skel (
     dynamic_cast<POA_M2::M3::AMH_L4 *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::M2::M3::S2 s;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -1544,28 +1544,28 @@ POA_M2::M3::AMH_L4::op_skel (
       (_tao_in >> s)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_M2::M3::TAO_AMH_L4ResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_M2::M3::TAO_AMH_L4ResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_M2::M3::TAO_AMH_L4ResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_M2::M3::TAO_AMH_L4ResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op (
       safe_rd_.get (),
       s
@@ -1574,7 +1574,7 @@ POA_M2::M3::AMH_L4::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1594,7 +1594,7 @@ const char* POA_M2::M3::AMH_L4::_interface_repository_id () const
   return "IDL:M2/M3/L4:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_M2::M3::AMH_L4::_dispatch (
@@ -1604,7 +1604,7 @@ POA_M2::M3::AMH_L4::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 M2::M3::L4*
 POA_M2::M3::AMH_L4::_this ()
@@ -1616,12 +1616,12 @@ POA_M2::M3::AMH_L4::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::M2::M3::L4>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_M2_M3_L4_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -1706,7 +1706,7 @@ static TAO_M2_M3_L4_Perfect_Hash_OpTable tao_M2_M3_L4_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1718,10 +1718,10 @@ POA_M2::M3::L4::L4 ()
 
 namespace POA_M2
 {
-  
+
   namespace M3
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1746,11 +1746,11 @@ namespace POA_M2
             this->operation_details_,
             this->args_,
             1);
-          
+
         this->servant_->op (
           arg_1);
       }
-    
+
     private:
       POA_M2::M3::L4 * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1767,11 +1767,11 @@ void POA_M2::M3::L4::op_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       M2::M3::_tc_E1
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1782,7 +1782,7 @@ void POA_M2::M3::L4::op_skel (
       std::addressof(retval),
       std::addressof(_tao_s)
     };
-  
+
   POA_M2::M3::L4 * const impl =
     dynamic_cast<POA_M2::M3::L4 *> (servant);
 
@@ -1795,7 +1795,7 @@ void POA_M2::M3::L4::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1813,7 +1813,7 @@ void POA_M2::M3::L4::op_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1835,7 +1835,7 @@ const char* POA_M2::M3::L4::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -1848,7 +1848,7 @@ void POA_M2::M3::L4::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -1866,22 +1866,22 @@ POA_M2::M3::L4::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M2::M3::TAO_AMH_L4ResponseHandler::op ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_M2::M3::TAO_AMH_L4ResponseHandler::op_excep (

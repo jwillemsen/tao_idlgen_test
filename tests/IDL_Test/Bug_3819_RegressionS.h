@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_BUG_3819_REGRESSIONS_CFEHY6_H_
-#define _TAO_IDL_BUG_3819_REGRESSIONS_CFEHY6_H_
+#ifndef _TAO_IDL_BUG_3819_REGRESSIONS_4PU8RH_H_
+#define _TAO_IDL_BUG_3819_REGRESSIONS_4PU8RH_H_
 
 #include /**/ "ace/pre.h"
 
@@ -44,7 +44,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -55,9 +55,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -76,30 +76,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
 
-#if !defined (_ORANGE_APPLE_FOO__SARG_TRAITS_)
-#define _ORANGE_APPLE_FOO__SARG_TRAITS_
-
-  template<>
-  class SArg_Traits< ::orange::apple::Foo>
-    : public
-        Object_SArg_Traits_T<
-            ::orange::apple::Foo *,
-            ::orange::apple::Foo_var,
-            ::orange::apple::Foo_out,
-            TAO::Any_Insert_Policy_Stream
-          >
-  {
-  };
-
-#endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
-
-  
 
 #if !defined (_ORANGE_APPLE_FOO__SARG_TRAITS_)
 #define _ORANGE_APPLE_FOO__SARG_TRAITS_
@@ -118,9 +97,30 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
+
+#if !defined (_ORANGE_APPLE_FOO__SARG_TRAITS_)
+#define _ORANGE_APPLE_FOO__SARG_TRAITS_
+
+  template<>
+  class SArg_Traits< ::orange::apple::Foo>
+    : public
+        Object_SArg_Traits_T<
+            ::orange::apple::Foo *,
+            ::orange::apple::Foo_var,
+            ::orange::apple::Foo_out,
+            TAO::Any_Insert_Policy_Stream
+          >
+  {
+  };
+
+#endif /* end #if !defined */
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
+
+
 
 #if !defined (_ORANGE_APPLE_BAR__SARG_TRAITS_)
 #define _ORANGE_APPLE_BAR__SARG_TRAITS_
@@ -137,9 +137,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_ORANGE_APPLE_BAR__SARG_TRAITS_)
 #define _ORANGE_APPLE_BAR__SARG_TRAITS_
@@ -165,15 +165,15 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_orange
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
   namespace apple
   {
-    
-  
-  
+
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 

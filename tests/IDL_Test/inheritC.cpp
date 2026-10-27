@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "inheritC.h"
@@ -84,7 +84,7 @@ OldInherit::one::op_one ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -120,8 +120,8 @@ OldInherit::one::sendc_op_one (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -335,27 +335,27 @@ OldInherit::AMH_oneExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_oneExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -543,7 +543,7 @@ OldInherit::AMI_oneHandler::op_one ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -585,7 +585,7 @@ OldInherit::AMI_oneHandler::op_one_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_one (
-          
+
         );
       break;
     }
@@ -609,7 +609,7 @@ OldInherit::AMI_oneHandler::op_one_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_one_excep (
           exception_holder_var);
@@ -632,7 +632,7 @@ OldInherit::AMI_oneHandler::op_one_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -649,7 +649,7 @@ OldInherit::AMI_oneHandler::op_one_excep (
       "op_one_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -781,7 +781,7 @@ OldInherit::two::op_two ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -817,8 +817,8 @@ OldInherit::two::sendc_op_two (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -1033,27 +1033,27 @@ OldInherit::AMH_twoExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_twoExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -1241,7 +1241,7 @@ OldInherit::AMI_twoHandler::op_two ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1283,7 +1283,7 @@ OldInherit::AMI_twoHandler::op_two_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_two (
-          
+
         );
       break;
     }
@@ -1307,7 +1307,7 @@ OldInherit::AMI_twoHandler::op_two_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_two_excep (
           exception_holder_var);
@@ -1330,7 +1330,7 @@ OldInherit::AMI_twoHandler::op_two_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1347,7 +1347,7 @@ OldInherit::AMI_twoHandler::op_two_excep (
       "op_two_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1480,7 +1480,7 @@ OldInherit::three::op_three ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1516,8 +1516,8 @@ OldInherit::three::sendc_op_three (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -1732,27 +1732,27 @@ OldInherit::AMH_threeExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_threeExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -1940,7 +1940,7 @@ OldInherit::AMI_threeHandler::op_three ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1982,7 +1982,7 @@ OldInherit::AMI_threeHandler::op_three_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_three (
-          
+
         );
       break;
     }
@@ -2006,7 +2006,7 @@ OldInherit::AMI_threeHandler::op_three_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_three_excep (
           exception_holder_var);
@@ -2029,7 +2029,7 @@ OldInherit::AMI_threeHandler::op_three_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2046,7 +2046,7 @@ OldInherit::AMI_threeHandler::op_three_excep (
       "op_three_excep",
       14,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2179,7 +2179,7 @@ OldInherit::four::op_four ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2215,8 +2215,8 @@ OldInherit::four::sendc_op_four (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -2433,27 +2433,27 @@ OldInherit::AMH_fourExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_fourExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -2641,7 +2641,7 @@ OldInherit::AMI_fourHandler::op_four ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2683,7 +2683,7 @@ OldInherit::AMI_fourHandler::op_four_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_four (
-          
+
         );
       break;
     }
@@ -2707,7 +2707,7 @@ OldInherit::AMI_fourHandler::op_four_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_four_excep (
           exception_holder_var);
@@ -2730,7 +2730,7 @@ OldInherit::AMI_fourHandler::op_four_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2747,7 +2747,7 @@ OldInherit::AMI_fourHandler::op_four_excep (
       "op_four_excep",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2882,7 +2882,7 @@ OldInherit::five::op_five ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2918,8 +2918,8 @@ OldInherit::five::sendc_op_five (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -3137,27 +3137,27 @@ OldInherit::AMH_fiveExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_fiveExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -3345,7 +3345,7 @@ OldInherit::AMI_fiveHandler::op_five ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -3387,7 +3387,7 @@ OldInherit::AMI_fiveHandler::op_five_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_five (
-          
+
         );
       break;
     }
@@ -3411,7 +3411,7 @@ OldInherit::AMI_fiveHandler::op_five_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_five_excep (
           exception_holder_var);
@@ -3434,7 +3434,7 @@ OldInherit::AMI_fiveHandler::op_five_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -3451,7 +3451,7 @@ OldInherit::AMI_fiveHandler::op_five_excep (
       "op_five_excep",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -3651,7 +3651,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::one>::unchecked_narrow (obj.in ());
 
@@ -3670,7 +3670,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_oneExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3679,7 +3679,7 @@ CORBA::add_ref (OldInherit::AMH_oneExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_oneExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -3764,7 +3764,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_oneHandler>::unchecked_narrow (obj.in ());
 
@@ -3798,7 +3798,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::two>::unchecked_narrow (obj.in ());
 
@@ -3817,7 +3817,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_twoExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3826,7 +3826,7 @@ CORBA::add_ref (OldInherit::AMH_twoExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_twoExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -3911,7 +3911,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_twoHandler>::unchecked_narrow (obj.in ());
 
@@ -3945,7 +3945,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::three>::unchecked_narrow (obj.in ());
 
@@ -3964,7 +3964,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_threeExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3973,7 +3973,7 @@ CORBA::add_ref (OldInherit::AMH_threeExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_threeExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4058,7 +4058,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_threeHandler>::unchecked_narrow (obj.in ());
 
@@ -4092,7 +4092,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::four>::unchecked_narrow (obj.in ());
 
@@ -4111,7 +4111,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_fourExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4120,7 +4120,7 @@ CORBA::add_ref (OldInherit::AMH_fourExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_fourExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4205,7 +4205,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_fourHandler>::unchecked_narrow (obj.in ());
 
@@ -4239,7 +4239,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::five>::unchecked_narrow (obj.in ());
 
@@ -4258,7 +4258,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4267,7 +4267,7 @@ CORBA::add_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4352,7 +4352,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_fiveHandler>::unchecked_narrow (obj.in ());
 

@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_TESTC_BRDZK9_H_
-#define _TAO_IDL_TESTC_BRDZK9_H_
+#ifndef _TAO_IDL_TESTC_YVWTPW_H_
+#define _TAO_IDL_TESTC_YVWTPW_H_
 
 #include /**/ "ace/pre.h"
 
@@ -88,7 +88,7 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ch.cpp:38
 
-  
+
 
   class  InvalidTimestamp : public ::CORBA::UserException
   {
@@ -123,7 +123,7 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ch.cpp:38
 
-  
+
 
   class  ServerOverload : public ::CORBA::UserException
   {
@@ -167,7 +167,7 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_TEST_RED_HERRING__VAR_OUT_CH_)
 #define _TEST_RED_HERRING__VAR_OUT_CH_
@@ -180,14 +180,14 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class  Red_Herring
     : public virtual ::CORBA::ValueBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = Red_Herring*;
     using _var_type = Red_Herring_var;
@@ -196,12 +196,12 @@ namespace Test
     static void _tao_any_destructor (void *);
 
     static Red_Herring* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         Red_Herring *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -209,12 +209,12 @@ namespace Test
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-    
+
   public:
     virtual ::Test::Timestamp test_method (
         ::Test::Timestamp
@@ -222,8 +222,8 @@ namespace Test
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:234
 
-    
-  
+
+
   protected:
     Red_Herring ();
     virtual ~Red_Herring ();
@@ -231,11 +231,11 @@ namespace Test
     virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
     virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
     virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-    
+
   private:
     Red_Herring (const Red_Herring &);
     void operator= (const Red_Herring &);
-    
+
   protected:
     virtual ::CORBA::Boolean
     _tao_marshal__Test_Red_Herring (TAO_OutputCDR &, TAO_ChunkInfo &) const = 0;
@@ -248,9 +248,9 @@ namespace Test
 
   extern  ::CORBA::TypeCode_ptr const _tc_Red_Herring;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_TEST_ROUNDTRIP__VAR_OUT_CH_)
 #define _TEST_ROUNDTRIP__VAR_OUT_CH_
@@ -262,11 +262,11 @@ namespace Test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  Roundtrip
     : public virtual ::CORBA::Object
@@ -274,7 +274,7 @@ namespace Test
   public:
     friend class TAO::Narrow_Utils<Roundtrip>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = Roundtrip_ptr;
     using _var_type = Roundtrip_var;
@@ -296,23 +296,23 @@ namespace Test
 
     virtual void shutdown ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     Roundtrip ();
 
     // Concrete non-local interface only.
     Roundtrip (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     Roundtrip (
         TAO_Stub *objref,
@@ -321,7 +321,7 @@ namespace Test
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~Roundtrip () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     Roundtrip (const Roundtrip &) = delete;
@@ -336,7 +336,7 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__VAR_OUT_CH_)
 #define _TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__VAR_OUT_CH_
@@ -349,14 +349,14 @@ namespace Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class  AMH_RoundtripExceptionHolder
     : public virtual ::CORBA::DefaultValueRefCountBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMH_RoundtripExceptionHolder*;
     using _var_type = AMH_RoundtripExceptionHolder_var;
@@ -372,12 +372,12 @@ namespace Test
     virtual ::CORBA::ValueBase *_copy_value ();
 
     static AMH_RoundtripExceptionHolder* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         AMH_RoundtripExceptionHolder *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -385,12 +385,12 @@ namespace Test
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-    
+
   public:
     virtual void raise_test_method ();
 
@@ -398,7 +398,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_shutdown ();
 // TAO_IDL - Generated from
@@ -411,13 +411,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_RoundtripExceptionHolder (const AMH_RoundtripExceptionHolder &);
   void operator= (const AMH_RoundtripExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__Test_AMH_RoundtripExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -430,7 +430,7 @@ protected:
 
 extern  ::CORBA::TypeCode_ptr const _tc_AMH_RoundtripExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -455,7 +455,7 @@ class  AMH_RoundtripResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_RoundtripResponseHandler_ptr;
   using _var_type = AMH_RoundtripResponseHandler_var;
@@ -483,11 +483,11 @@ public:
   virtual void shutdown_excep (
     ::Test::AMH_RoundtripExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -497,7 +497,7 @@ protected:
   // Abstract or local interface only.
   AMH_RoundtripResponseHandler ();
 
-  
+
 
   virtual ~AMH_RoundtripResponseHandler () = default;
 
@@ -520,7 +520,7 @@ extern  ::CORBA::TypeCode_ptr const _tc_AMH_RoundtripResponseHandler;
 
 } // module Test
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -531,9 +531,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_TEST_RED_HERRING__ARG_TRAITS_)
 #define _TEST_RED_HERRING__ARG_TRAITS_
@@ -553,9 +553,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TEST_ROUNDTRIP__ARG_TRAITS_)
 #define _TEST_ROUNDTRIP__ARG_TRAITS_
@@ -573,9 +573,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__ARG_TRAITS_
@@ -607,7 +607,7 @@ namespace OBV_Test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class  Red_Herring
@@ -617,7 +617,7 @@ namespace OBV_Test
 protected:
   Red_Herring () = default;
   virtual ~Red_Herring ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__Test_Red_Herring (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -645,7 +645,7 @@ class  AMH_RoundtripExceptionHolder
 protected:
   AMH_RoundtripExceptionHolder () = default;
   virtual ~AMH_RoundtripExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__Test_AMH_RoundtripExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -921,7 +921,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "TestC.inl"

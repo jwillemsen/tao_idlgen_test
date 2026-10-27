@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_STRING_VALUEC_S11NAS_H_
-#define _TAO_IDL_STRING_VALUEC_S11NAS_H_
+#ifndef _TAO_IDL_STRING_VALUEC_KOZZPM_H_
+#define _TAO_IDL_STRING_VALUEC_KOZZPM_H_
 
 #include /**/ "ace/pre.h"
 
@@ -74,7 +74,7 @@ namespace include_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_INCLUDE_TEST_STRINGTEST__VAR_OUT_CH_)
 #define _INCLUDE_TEST_STRINGTEST__VAR_OUT_CH_
@@ -87,14 +87,14 @@ namespace include_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export StringTest
     : public virtual ::CORBA::ValueBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = StringTest*;
     using _var_type = StringTest_var;
@@ -103,12 +103,12 @@ namespace include_test
     static void _tao_any_destructor (void *);
 
     static StringTest* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         StringTest *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -116,7 +116,7 @@ namespace include_test
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_ch.cpp:311
@@ -126,8 +126,8 @@ namespace include_test
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:234
 
-    
-  
+
+
   protected:
     StringTest ();
     virtual ~StringTest ();
@@ -135,11 +135,11 @@ namespace include_test
     virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
     virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
     virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-    
+
   private:
     StringTest (const StringTest &);
     void operator= (const StringTest &);
-    
+
   protected:
     virtual ::CORBA::Boolean
     _tao_marshal__include_test_StringTest (TAO_OutputCDR &, TAO_ChunkInfo &) const = 0;
@@ -163,7 +163,7 @@ namespace include_test
     // TAO-specific extensions
   public:
     virtual char const * tao_repository_id ();
-  
+
   protected:
     virtual ~StringTest_init ();
   };
@@ -179,7 +179,7 @@ namespace include_test
 
 } // module include_test
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -190,9 +190,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -212,9 +212,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_INCLUDE_TEST_STRINGTEST__ARG_TRAITS_)
 #define _INCLUDE_TEST_STRINGTEST__ARG_TRAITS_
@@ -246,7 +246,7 @@ namespace OBV_include_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class TAO_IDL_TEST_STUB_Export StringTest
@@ -270,7 +270,7 @@ public:
 
 public:
   virtual ::CORBA::ValueBase *_copy_value ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__include_test_StringTest (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -355,7 +355,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "string_valueC.inl"

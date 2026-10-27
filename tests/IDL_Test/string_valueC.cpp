@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "string_valueC.h"
@@ -45,12 +45,12 @@
 #include "string_valueC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_include_test_StringTest[] =
   {
     { "my_string_value", &CORBA::_tc_StringValue, ::CORBA::PUBLIC_MEMBER }
-    
+
   };
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
@@ -64,7 +64,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_include_test_StringTest,
     1);
-  
+
 
 namespace include_test
 {
@@ -170,32 +170,32 @@ include_test::StringTest::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = StringTest::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:60
 
 
 
@@ -268,7 +268,7 @@ OBV_include_test::StringTest::_tao_unmarshal__include_test_StringTest (TAO_Input
   return _tao_unmarshal_state (strm, ci);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:425
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:418
 
 /// Accessor to set the member.
 void
@@ -370,7 +370,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (include_test::StringTest * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -379,7 +379,7 @@ CORBA::add_ref (include_test::StringTest * vt)
 void
 CORBA::remove_ref (include_test::StringTest * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -455,7 +455,7 @@ OBV_include_test::StringTest::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_Chun
   else
     return ci.handle_chunking (strm);
 
-  
+
 }
 
 void

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_VALUETYPES_J1F61I_H_
-#define _TAO_IDL_VALUETYPES_J1F61I_H_
+#ifndef _TAO_IDL_VALUETYPES_I0TN72_H_
+#define _TAO_IDL_VALUETYPES_I0TN72_H_
 
 #include /**/ "ace/pre.h"
 
@@ -55,7 +55,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -66,9 +66,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -87,9 +87,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MYVALUETYPE__SARG_TRAITS_)
 #define _MYVALUETYPE__SARG_TRAITS_
@@ -108,9 +108,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_DEFAULTINITIALIZEDVALUE__SARG_TRAITS_)
 #define _DEFAULTINITIALIZEDVALUE__SARG_TRAITS_
@@ -129,9 +129,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:870
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:861
 
-  
+
 
   template<>
   class SArg_Traits< ::ValueSort2>
@@ -143,9 +143,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1022
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1013
 
-  
+
 
   template<>
   class SArg_Traits< ::MyValueTypeUnion>
@@ -157,9 +157,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_RECVALUETYPE__SARG_TRAITS_)
 #define _RECVALUETYPE__SARG_TRAITS_
@@ -178,9 +178,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_GETSDEPRECATEDMEMBER__SARG_TRAITS_)
 #define _GETSDEPRECATEDMEMBER__SARG_TRAITS_
@@ -199,9 +199,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_X_VALUETYPE_AXXX__SARG_TRAITS_)
 #define _X_VALUETYPE_AXXX__SARG_TRAITS_
@@ -220,9 +220,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_X_VALUETYPE_BXXX__SARG_TRAITS_)
 #define _X_VALUETYPE_BXXX__SARG_TRAITS_
@@ -241,9 +241,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class SArg_Traits< ::X_VALUETYPE::BSeq>
@@ -255,9 +255,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MODSELECTION_SELECTIONDEFNS_CRITERION__SARG_TRAITS_)
 #define _MODSELECTION_SELECTIONDEFNS_CRITERION__SARG_TRAITS_
@@ -276,9 +276,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MODSELECTION_SELECTIONDEFNS_CRITERIONEXPR__SARG_TRAITS_)
 #define _MODSELECTION_SELECTIONDEFNS_CRITERIONEXPR__SARG_TRAITS_
@@ -297,9 +297,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class SArg_Traits< ::ModSelection::SelectionDefns::CriterionExpr::RightCriterionInfos>
@@ -311,9 +311,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1022
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1013
 
-  
+
 
   template<>
   class SArg_Traits< ::ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr>
@@ -334,7 +334,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_X_VALUETYPE
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -346,15 +346,15 @@ namespace POA_X_VALUETYPE
 
 namespace POA_ModSelection
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:32
 
   namespace SelectionDefns
   {
-    
-  
-  
+
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:63
 

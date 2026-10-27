@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "old_unionC.h"
@@ -56,7 +56,7 @@
 #include "old_unionC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -182,7 +182,7 @@ void OldUnion::Foo::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion_Foo__0 (1, "x", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion_Foo__1 (2, "y", &OldUnion::_tc_Bar);
@@ -206,7 +206,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_OldUnion_Foo,
     sizeof (_tao_cases_OldUnion_Foo)/sizeof (_tao_cases_OldUnion_Foo[0]),
     2);
-  
+
 
 namespace OldUnion
 {
@@ -305,7 +305,7 @@ void OldUnion::Foo2::_reset ()
 {
   switch (_tao_member_index (this->disc_))
   {
-    
+
     case 0UL:
     break;
     case 1UL:
@@ -319,7 +319,7 @@ void OldUnion::Foo2::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion_Foo2__0 ('a', "x", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion_Foo2__1 ('b', "y", &OldUnion::_tc_Foo);
@@ -341,7 +341,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_OldUnion_Foo2,
     sizeof (_tao_cases_OldUnion_Foo2)/sizeof (_tao_cases_OldUnion_Foo2[0]),
     -1);
-  
+
 
 namespace OldUnion
 {
@@ -383,7 +383,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -433,7 +433,7 @@ OldUnion::a::opA (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::OldUnion::Foo2>::ret_val _tao_retval;
   TAO::Arg_Traits< ::OldUnion::a::astruct>::in_arg_val _tao_b (b);
 
@@ -450,7 +450,7 @@ OldUnion::a::opA (
       "opA",
       3,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -471,9 +471,9 @@ OldUnion::a::sendc_opA (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::OldUnion::a::astruct>::in_arg_val _tao_b (b);
 
@@ -579,7 +579,7 @@ OldUnion::a::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -587,14 +587,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldUnion/a:1.0",
     "a");
-  
+
 
 namespace OldUnion
 {
   ::CORBA::TypeCode_ptr const _tc_a = std::addressof(_tao_tc_OldUnion_a);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldUnion_AMH_aExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -609,7 +609,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_OldUnion_AMH_aExceptionHolder,
     0);
-  
+
 
 namespace OldUnion
 {
@@ -736,27 +736,27 @@ OldUnion::AMH_aExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_aExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -900,7 +900,7 @@ OldUnion::AMH_aResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -908,7 +908,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:OldUnion/AMH_aResponseHandler:1.0",
     "AMH_aResponseHandler");
-  
+
 
 namespace OldUnion
 {
@@ -960,7 +960,7 @@ OldUnion::AMI_aHandler::opA (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::OldUnion::Foo2>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -977,7 +977,7 @@ OldUnion::AMI_aHandler::opA (
       "opA",
       3,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1005,10 +1005,10 @@ OldUnion::AMI_aHandler::opA_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->opA (
-          
+
           ami_return_val
         );
       break;
@@ -1033,7 +1033,7 @@ OldUnion::AMI_aHandler::opA_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->opA_excep (
           exception_holder_var);
@@ -1056,7 +1056,7 @@ OldUnion::AMI_aHandler::opA_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1073,7 +1073,7 @@ OldUnion::AMI_aHandler::opA_excep (
       "opA_excep",
       9,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1161,7 +1161,7 @@ OldUnion::AMI_aHandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -1169,7 +1169,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldUnion/AMI_aHandler:1.0",
     "AMI_aHandler");
-  
+
 
 namespace OldUnion
 {
@@ -1729,7 +1729,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -1763,7 +1763,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -1825,7 +1825,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -1857,7 +1857,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -1882,7 +1882,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
             _tao_union.y (_tao_union_tmp);
             _tao_union._d (_tao_discriminant);
           }
-        
+
       }
       break;
     default:
@@ -1953,7 +1953,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldUnion::a>::unchecked_narrow (obj.in ());
 
@@ -1972,7 +1972,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldUnion::AMH_aExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -1981,7 +1981,7 @@ CORBA::add_ref (OldUnion::AMH_aExceptionHolder * vt)
 void
 CORBA::remove_ref (OldUnion::AMH_aExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -2066,7 +2066,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldUnion::AMI_aHandler>::unchecked_narrow (obj.in ());
 

@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "typedefC.h"
@@ -40,18 +40,18 @@
 #include "typedefC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:93
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:82
 
 TAO_A5_slice *
 TAO_A5_dup (const TAO_A5_slice *_tao_src_array)
 {
   TAO_A5_slice *_tao_dup_array = TAO_A5_alloc ();
-  
+
   if (_tao_dup_array)
     {
       TAO_A5_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -81,18 +81,18 @@ TAO_A5_copy (
     }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:93
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:82
 
 TAO_M5_slice *
 TAO_M5_dup (const TAO_M5_slice *_tao_src_array)
 {
   TAO_M5_slice *_tao_dup_array = TAO_M5_alloc ();
-  
+
   if (_tao_dup_array)
     {
       TAO_M5_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -123,18 +123,18 @@ TAO_M5_copy (
     }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:93
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:82
 
 TAO_Z5_slice *
 TAO_Z5_dup (const TAO_Z5_slice *_tao_src_array)
 {
   TAO_Z5_slice *_tao_dup_array = TAO_Z5_alloc ();
-  
+
   if (_tao_dup_array)
     {
       TAO_Z5_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -210,7 +210,7 @@ TestModule::TestInterface::set_typedef_1 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::typedef_1_32>::in_arg_val _tao_typ1 (typ1);
 
@@ -227,7 +227,7 @@ TestModule::TestInterface::set_typedef_1 (
       "set_typedef_1",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -243,7 +243,7 @@ TestModule::TestInterface::set_typedef_2 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::typedef_2_32>::in_arg_val _tao_typ2 (typ2);
 
@@ -260,7 +260,7 @@ TestModule::TestInterface::set_typedef_2 (
       "set_typedef_2",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -279,9 +279,9 @@ TestModule::TestInterface::sendc_set_typedef_1 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::typedef_1_32>::in_arg_val _tao_typ1 (typ1);
 
@@ -319,9 +319,9 @@ TestModule::TestInterface::sendc_set_typedef_2 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::typedef_2_32>::in_arg_val _tao_typ2 (typ2);
 
@@ -541,27 +541,27 @@ TestModule::AMH_TestInterfaceExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_TestInterfaceExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -769,7 +769,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_1 ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -811,7 +811,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_1_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->set_typedef_1 (
-          
+
         );
       break;
     }
@@ -835,7 +835,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_1_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->set_typedef_1_excep (
           exception_holder_var);
@@ -858,7 +858,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_1_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -875,7 +875,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_1_excep (
       "set_typedef_1_excep",
       19,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -890,7 +890,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_2 ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -932,7 +932,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_2_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->set_typedef_2 (
-          
+
         );
       break;
     }
@@ -956,7 +956,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_2_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->set_typedef_2_excep (
           exception_holder_var);
@@ -979,7 +979,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_2_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -996,7 +996,7 @@ TestModule::AMI_TestInterfaceHandler::set_typedef_2_excep (
       "set_typedef_2_excep",
       19,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1129,7 +1129,7 @@ bug_2124::Foo::op1 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_10>::in_arg_val _tao_s (s);
 
@@ -1146,7 +1146,7 @@ bug_2124::Foo::op1 (
       "op1",
       3,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1162,7 +1162,7 @@ bug_2124::Foo::op2 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::OtherString_10>::in_arg_val _tao_s (s);
 
@@ -1179,7 +1179,7 @@ bug_2124::Foo::op2 (
       "op2",
       3,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1198,9 +1198,9 @@ bug_2124::Foo::sendc_op1 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_10>::in_arg_val _tao_s (s);
 
@@ -1238,9 +1238,9 @@ bug_2124::Foo::sendc_op2 (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::OtherString_10>::in_arg_val _tao_s (s);
 
@@ -1460,27 +1460,27 @@ bug_2124::AMH_FooExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_FooExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -1688,7 +1688,7 @@ bug_2124::AMI_FooHandler::op1 ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1730,7 +1730,7 @@ bug_2124::AMI_FooHandler::op1_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op1 (
-          
+
         );
       break;
     }
@@ -1754,7 +1754,7 @@ bug_2124::AMI_FooHandler::op1_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op1_excep (
           exception_holder_var);
@@ -1777,7 +1777,7 @@ bug_2124::AMI_FooHandler::op1_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1794,7 +1794,7 @@ bug_2124::AMI_FooHandler::op1_excep (
       "op1_excep",
       9,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1809,7 +1809,7 @@ bug_2124::AMI_FooHandler::op2 ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1851,7 +1851,7 @@ bug_2124::AMI_FooHandler::op2_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op2 (
-          
+
         );
       break;
     }
@@ -1875,7 +1875,7 @@ bug_2124::AMI_FooHandler::op2_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op2_excep (
           exception_holder_var);
@@ -1898,7 +1898,7 @@ bug_2124::AMI_FooHandler::op2_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1915,7 +1915,7 @@ bug_2124::AMI_FooHandler::op2_excep (
       "op2_excep",
       9,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2048,7 +2048,7 @@ bug_2122::One::Whatever::someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_40>::in_arg_val _tao_s (s);
 
@@ -2065,7 +2065,7 @@ bug_2122::One::Whatever::someOp (
       "someOp",
       6,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2084,9 +2084,9 @@ bug_2122::One::Whatever::sendc_someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_40>::in_arg_val _tao_s (s);
 
@@ -2306,27 +2306,27 @@ bug_2122::One::AMH_WhateverExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_WhateverExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -2514,7 +2514,7 @@ bug_2122::One::AMI_WhateverHandler::someOp ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2556,7 +2556,7 @@ bug_2122::One::AMI_WhateverHandler::someOp_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->someOp (
-          
+
         );
       break;
     }
@@ -2580,7 +2580,7 @@ bug_2122::One::AMI_WhateverHandler::someOp_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->someOp_excep (
           exception_holder_var);
@@ -2603,7 +2603,7 @@ bug_2122::One::AMI_WhateverHandler::someOp_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2620,7 +2620,7 @@ bug_2122::One::AMI_WhateverHandler::someOp_excep (
       "someOp_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2753,7 +2753,7 @@ bug_2122::Two::WhoCares::someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_100>::in_arg_val _tao_s (s);
 
@@ -2770,7 +2770,7 @@ bug_2122::Two::WhoCares::someOp (
       "someOp",
       6,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2789,9 +2789,9 @@ bug_2122::Two::WhoCares::sendc_someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_100>::in_arg_val _tao_s (s);
 
@@ -3011,27 +3011,27 @@ bug_2122::Two::AMH_WhoCaresExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_WhoCaresExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -3219,7 +3219,7 @@ bug_2122::Two::AMI_WhoCaresHandler::someOp ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -3261,7 +3261,7 @@ bug_2122::Two::AMI_WhoCaresHandler::someOp_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->someOp (
-          
+
         );
       break;
     }
@@ -3285,7 +3285,7 @@ bug_2122::Two::AMI_WhoCaresHandler::someOp_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->someOp_excep (
           exception_holder_var);
@@ -3308,7 +3308,7 @@ bug_2122::Two::AMI_WhoCaresHandler::someOp_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -3325,7 +3325,7 @@ bug_2122::Two::AMI_WhoCaresHandler::someOp_excep (
       "someOp_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -3458,7 +3458,7 @@ bug_2122::Three::WhoCares::someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_100>::in_arg_val _tao_s (s);
 
@@ -3475,7 +3475,7 @@ bug_2122::Three::WhoCares::someOp (
       "someOp",
       6,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -3494,9 +3494,9 @@ bug_2122::Three::WhoCares::sendc_someOp (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::TAO::MyString_100>::in_arg_val _tao_s (s);
 
@@ -3716,27 +3716,27 @@ bug_2122::Three::AMH_WhoCaresExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_WhoCaresExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -3924,7 +3924,7 @@ bug_2122::Three::AMI_WhoCaresHandler::someOp ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -3966,7 +3966,7 @@ bug_2122::Three::AMI_WhoCaresHandler::someOp_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->someOp (
-          
+
         );
       break;
     }
@@ -3990,7 +3990,7 @@ bug_2122::Three::AMI_WhoCaresHandler::someOp_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->someOp_excep (
           exception_holder_var);
@@ -4013,7 +4013,7 @@ bug_2122::Three::AMI_WhoCaresHandler::someOp_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -4030,7 +4030,7 @@ bug_2122::Three::AMI_WhoCaresHandler::someOp_excep (
       "someOp_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -4363,7 +4363,7 @@ OBV_bug_2122::Three::AMH_WhoCaresExceptionHolder::_tao_unmarshal__bug_2122_Three
   return _tao_unmarshal_state (strm, ci);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:163
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4390,7 +4390,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:163
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4400,7 +4400,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     const TAO_M5_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 5 && _tao_marshal_flag; ++i0)
     {
       TAO_A5_var tmp_var (TAO_A5_dup (_tao_array[i0]));
@@ -4416,7 +4416,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     TAO_M5_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 5 && _tao_marshal_flag; ++i0)
     {
       TAO_A5_forany tmp (TAO_A5_alloc ());
@@ -4432,7 +4432,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:163
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4442,7 +4442,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     const TAO_Z5_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 5 && _tao_marshal_flag; ++i0)
     {
       TAO_M5_var tmp_var (TAO_M5_dup (_tao_array[i0]));
@@ -4458,7 +4458,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     TAO_Z5_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 5 && _tao_marshal_flag; ++i0)
     {
       TAO_M5_forany tmp (TAO_M5_alloc ());
@@ -4497,7 +4497,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::TestModule::TestInterface>::unchecked_narrow (obj.in ());
 
@@ -4516,7 +4516,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (TestModule::AMH_TestInterfaceExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4525,7 +4525,7 @@ CORBA::add_ref (TestModule::AMH_TestInterfaceExceptionHolder * vt)
 void
 CORBA::remove_ref (TestModule::AMH_TestInterfaceExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4610,7 +4610,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::TestModule::AMI_TestInterfaceHandler>::unchecked_narrow (obj.in ());
 
@@ -4644,7 +4644,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2124::Foo>::unchecked_narrow (obj.in ());
 
@@ -4663,7 +4663,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (bug_2124::AMH_FooExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4672,7 +4672,7 @@ CORBA::add_ref (bug_2124::AMH_FooExceptionHolder * vt)
 void
 CORBA::remove_ref (bug_2124::AMH_FooExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4757,7 +4757,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2124::AMI_FooHandler>::unchecked_narrow (obj.in ());
 
@@ -4791,7 +4791,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::One::Whatever>::unchecked_narrow (obj.in ());
 
@@ -4810,7 +4810,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (bug_2122::One::AMH_WhateverExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4819,7 +4819,7 @@ CORBA::add_ref (bug_2122::One::AMH_WhateverExceptionHolder * vt)
 void
 CORBA::remove_ref (bug_2122::One::AMH_WhateverExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4904,7 +4904,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::One::AMI_WhateverHandler>::unchecked_narrow (obj.in ());
 
@@ -4938,7 +4938,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::Two::WhoCares>::unchecked_narrow (obj.in ());
 
@@ -4957,7 +4957,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (bug_2122::Two::AMH_WhoCaresExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4966,7 +4966,7 @@ CORBA::add_ref (bug_2122::Two::AMH_WhoCaresExceptionHolder * vt)
 void
 CORBA::remove_ref (bug_2122::Two::AMH_WhoCaresExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -5051,7 +5051,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::Two::AMI_WhoCaresHandler>::unchecked_narrow (obj.in ());
 
@@ -5085,7 +5085,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::Three::WhoCares>::unchecked_narrow (obj.in ());
 
@@ -5104,7 +5104,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (bug_2122::Three::AMH_WhoCaresExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -5113,7 +5113,7 @@ CORBA::add_ref (bug_2122::Three::AMH_WhoCaresExceptionHolder * vt)
 void
 CORBA::remove_ref (bug_2122::Three::AMH_WhoCaresExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -5198,7 +5198,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::bug_2122::Three::AMI_WhoCaresHandler>::unchecked_narrow (obj.in ());
 

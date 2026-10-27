@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_TESTVERSIONEDNAMESPACEC_TO1ASF_H_
-#define _TAO_IDL_TESTVERSIONEDNAMESPACEC_TO1ASF_H_
+#ifndef _TAO_IDL_TESTVERSIONEDNAMESPACEC_DS5XVE_H_
+#define _TAO_IDL_TESTVERSIONEDNAMESPACEC_DS5XVE_H_
 
 #include /**/ "ace/pre.h"
 
@@ -84,29 +84,29 @@ BEGIN_USER_VERSIONED_NAMESPACE
 namespace M1
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct S1;
   using S1_var = ::TAO_Fixed_Var_T<S1>;
   using S1_out = S1&;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct  S1
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = S1_var;
     using _out_type = S1_out;
-    
+
     ::CORBA::Octet o {};
   };
   // TAO_IDL - Generated from
@@ -114,9 +114,9 @@ namespace M1
 
   extern  ::CORBA::TypeCode_ptr const _tc_S1;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_M1_LI__VAR_OUT_CH_)
 #define _M1_LI__VAR_OUT_CH_
@@ -128,18 +128,18 @@ namespace M1
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  LI
     : public virtual ::CORBA::Object
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = LI_ptr;
     using _var_type = LI_var;
@@ -157,24 +157,24 @@ namespace M1
     virtual void op (
       const ::M1::S1 & s) = 0;
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     LI ();
 
-    
+
 
     virtual ~LI () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     LI (const LI &) = delete;
@@ -189,7 +189,7 @@ namespace M1
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_M1_V__VAR_OUT_CH_)
 #define _M1_V__VAR_OUT_CH_
@@ -202,26 +202,26 @@ namespace M1
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class  V
     : public virtual ::CORBA::ValueBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = V*;
     using _var_type = V_var;
     using _out_type = V_out;
 
     static V* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         V *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -229,7 +229,7 @@ namespace M1
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_ch.cpp:596
@@ -238,7 +238,7 @@ namespace M1
     virtual void valString (char const *val) = 0;
     virtual void valString (::CORBA::String_var const &val) = 0;
     virtual char const *valString () const = 0;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_ch.cpp:661
@@ -246,7 +246,7 @@ namespace M1
     virtual void valStruct (const M1::S1 &) = 0;
     virtual const M1::S1 &valStruct () const = 0;
     virtual M1::S1 &valStruct () = 0;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_ch.cpp:227
@@ -256,8 +256,8 @@ namespace M1
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:234
 
-    
-  
+
+
   protected:
     V ();
     virtual ~V ();
@@ -265,13 +265,13 @@ namespace M1
     virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
     virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
     virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-    
+
   private:
     V (const V &);
     void operator= (const V &);
-    
+
   protected:
-    
+
   };
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_ch.cpp:54
@@ -289,7 +289,7 @@ namespace M1
     // TAO-specific extensions
   public:
     virtual char const * tao_repository_id ();
-  
+
   protected:
     virtual ~V_init ();
   };
@@ -305,7 +305,7 @@ namespace M1
 
 } // module M1
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -320,9 +320,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::M1::S1>
@@ -334,9 +334,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_M1_V__ARG_TRAITS_)
 #define _M1_V__ARG_TRAITS_
@@ -372,7 +372,7 @@ namespace OBV_M1
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class  V
@@ -470,7 +470,7 @@ BEGIN_USER_VERSIONED_NAMESPACE
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 
 

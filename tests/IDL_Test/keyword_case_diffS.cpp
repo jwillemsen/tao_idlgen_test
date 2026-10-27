@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_5VB75G_CPP_
-#define _TAO_IDL_KEYWORD_CASE_DIFFS_5VB75G_CPP_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_1X2KR6_CPP_
+#define _TAO_IDL_KEYWORD_CASE_DIFFS_1X2KR6_CPP_
 
 
 #include "keyword_case_diffS.h"
@@ -48,7 +48,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1829
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_MyModule_PortType_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -133,7 +133,7 @@ static TAO_MyModule_PortType_Perfect_Hash_OpTable tao_MyModule_PortType_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -145,7 +145,7 @@ POA_MyModule::PortType::PortType ()
 
 namespace POA_MyModule
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -163,13 +163,13 @@ namespace POA_MyModule
     {
       this->servant_->myMethod ();
     }
-  
+
   private:
     POA_MyModule::PortType * const servant_;
   };
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:165
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
 
 void POA_MyModule::PortType::myMethod_skel (
   TAO_ServerRequest & server_request,
@@ -177,11 +177,11 @@ void POA_MyModule::PortType::myMethod_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       MyModule::PortType::_tc_MyException
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -190,7 +190,7 @@ void POA_MyModule::PortType::myMethod_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_MyModule::PortType * const impl =
     dynamic_cast<POA_MyModule::PortType *> (servant);
 
@@ -201,7 +201,7 @@ void POA_MyModule::PortType::myMethod_skel (
 
   myMethod_PortType command (
     impl);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -219,7 +219,7 @@ void POA_MyModule::PortType::myMethod_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -241,7 +241,7 @@ const char* POA_MyModule::PortType::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -254,7 +254,7 @@ void POA_MyModule::PortType::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 

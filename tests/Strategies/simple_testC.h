@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_SIMPLE_TESTC_I3BZZP_H_
-#define _TAO_IDL_SIMPLE_TESTC_I3BZZP_H_
+#ifndef _TAO_IDL_SIMPLE_TESTC_KZRN5D_H_
+#define _TAO_IDL_SIMPLE_TESTC_KZRN5D_H_
 
 #include /**/ "ace/pre.h"
 
@@ -74,7 +74,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -100,7 +100,7 @@ class  Simple_Server
 public:
   friend class TAO::Narrow_Utils<Simple_Server>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = Simple_Server_ptr;
   using _var_type = Simple_Server_var;
@@ -119,11 +119,11 @@ public:
 
   virtual void shutdown ();
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -135,7 +135,7 @@ protected:
 
   // Concrete non-local interface only.
   Simple_Server (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   Simple_Server (
       TAO_Stub *objref,
@@ -153,7 +153,7 @@ private:
   Simple_Server &operator= (Simple_Server &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -164,9 +164,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_SIMPLE_SERVER__ARG_TRAITS_)
 #define _SIMPLE_SERVER__ARG_TRAITS_
@@ -232,7 +232,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "simple_testC.inl"

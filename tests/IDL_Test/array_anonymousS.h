@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_ARRAY_ANONYMOUSS_40SN0T_H_
-#define _TAO_IDL_ARRAY_ANONYMOUSS_40SN0T_H_
+#ifndef _TAO_IDL_ARRAY_ANONYMOUSS_QMXILP_H_
+#define _TAO_IDL_ARRAY_ANONYMOUSS_QMXILP_H_
 
 #include /**/ "ace/pre.h"
 
@@ -54,7 +54,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -65,9 +65,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -86,9 +86,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TDEF__SARG_TRAITS_)
 #define _TDEF__SARG_TRAITS_
@@ -116,9 +116,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class SArg_Traits< ::tdef::bytes_or_longs>
@@ -130,9 +130,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_AMH_TDEFEXCEPTIONHOLDER__SARG_TRAITS_)
 #define _AMH_TDEFEXCEPTIONHOLDER__SARG_TRAITS_
@@ -151,9 +151,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_AMI_TDEFHANDLER__SARG_TRAITS_)
 #define _AMI_TDEFHANDLER__SARG_TRAITS_
@@ -170,9 +170,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class SArg_Traits< ::ABCModule::RmtPhysicalInfo>
@@ -184,9 +184,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class SArg_Traits< ::ABCModule::bbbBubBubBubBaby>
@@ -224,7 +224,7 @@ public:
   virtual void _dispatch (
       TAO_ServerRequest &req,
       TAO::Portable_Server::Servant_Upcall *_servant_upcall);
-  
+
   tdef *_this ();
 
 virtual const char* _interface_repository_id () const;
@@ -232,7 +232,7 @@ virtual const char* _interface_repository_id () const;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
 
 
@@ -261,9 +261,9 @@ public:
   virtual void _dispatch (
       TAO_ServerRequest & req,
       TAO::Portable_Server::Servant_Upcall *servant_upcall);
-  
+
   ::tdef *_this ();
-  
+
   virtual const char* _interface_repository_id () const;
 };
 // TAO_IDL - Generated from
@@ -287,7 +287,7 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:50
 
 class POA_TAO_AMH_tdefResponseHandler;
 using POA_TAO_AMH_tdefResponseHandler_ptr = POA_TAO_AMH_tdefResponseHandler *;
@@ -303,7 +303,7 @@ public:
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
 
 
@@ -332,9 +332,9 @@ public:
   virtual void _dispatch (
       TAO_ServerRequest & req,
       TAO::Portable_Server::Servant_Upcall *servant_upcall);
-  
+
   ::AMI_tdefHandler *_this ();
-  
+
   virtual const char* _interface_repository_id () const;
 };
 // TAO_IDL - Generated from
@@ -363,7 +363,7 @@ public:
 
 namespace POA_ABCModule
 {
-  
+
 
 
 // TAO_IDL - Generated from

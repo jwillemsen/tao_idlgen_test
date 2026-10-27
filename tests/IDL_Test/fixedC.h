@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_FIXEDC_37H4HP_H_
-#define _TAO_IDL_FIXEDC_37H4HP_H_
+#ifndef _TAO_IDL_FIXEDC_H6G96I_H_
+#define _TAO_IDL_FIXEDC_H6G96I_H_
 
 #include /**/ "ace/pre.h"
 
@@ -105,31 +105,31 @@ namespace FixedPoint
 
   using MaximumScale = ::ACE_CDR::Fixed;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct FixedValues;
   using FixedValues_var = ::TAO_Var_Var_T<FixedValues>;
   using FixedValues_out = ::TAO_Out_T<FixedValues>;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct TAO_IDL_TEST_STUB_Export FixedValues
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = FixedValues_var;
     using _out_type = FixedValues_out;
 
     static void _tao_any_destructor (void *);
-    
+
     FixedPoint::WholeNumber whole_value {};
     FixedPoint::Fraction fractional_value {};
     FixedPoint::Amount monetary_value {};
@@ -137,9 +137,9 @@ namespace FixedPoint
     FixedPoint::MaximumScale maximum_scale_value {};
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_FIXEDPOINT_FIXEDOPERATIONS__VAR_OUT_CH_)
 #define _FIXEDPOINT_FIXEDOPERATIONS__VAR_OUT_CH_
@@ -154,11 +154,11 @@ namespace FixedPoint
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export FixedOperations
     : public virtual ::CORBA::Object
@@ -166,7 +166,7 @@ namespace FixedPoint
   public:
     friend class TAO::Narrow_Utils<FixedOperations>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = FixedOperations_ptr;
     using _var_type = FixedOperations_var;
@@ -195,25 +195,25 @@ namespace FixedPoint
     virtual void sendc_get_rate (
       ::FixedPoint::AMI_FixedOperationsHandler_ptr ami_handler);
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     FixedOperations ();
 
     // Concrete non-local interface only.
     FixedOperations (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     FixedOperations (
         TAO_Stub *objref,
@@ -222,7 +222,7 @@ namespace FixedPoint
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~FixedOperations () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     FixedOperations (const FixedOperations &) = delete;
@@ -233,7 +233,7 @@ namespace FixedPoint
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_FIXEDPOINT_AMH_FIXEDOPERATIONSEXCEPTIONHOLDER__VAR_OUT_CH_)
 #define _FIXEDPOINT_AMH_FIXEDOPERATIONSEXCEPTIONHOLDER__VAR_OUT_CH_
@@ -246,14 +246,14 @@ namespace FixedPoint
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export AMH_FixedOperationsExceptionHolder
     : public virtual ::CORBA::DefaultValueRefCountBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMH_FixedOperationsExceptionHolder*;
     using _var_type = AMH_FixedOperationsExceptionHolder_var;
@@ -269,12 +269,12 @@ namespace FixedPoint
     virtual ::CORBA::ValueBase *_copy_value ();
 
     static AMH_FixedOperationsExceptionHolder* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         AMH_FixedOperationsExceptionHolder *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -282,12 +282,12 @@ namespace FixedPoint
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-    
+
   public:
     virtual void raise_get_rate ();
 
@@ -295,7 +295,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_set_rate ();
 
@@ -303,7 +303,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_set_rate ();
 
@@ -311,7 +311,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_get_rate ();
 // TAO_IDL - Generated from
@@ -324,13 +324,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_FixedOperationsExceptionHolder (const AMH_FixedOperationsExceptionHolder &);
   void operator= (const AMH_FixedOperationsExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__FixedPoint_AMH_FixedOperationsExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -339,7 +339,7 @@ protected:
   _tao_unmarshal__FixedPoint_AMH_FixedOperationsExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -367,7 +367,7 @@ class TAO_IDL_TEST_STUB_Export AMH_FixedOperationsResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_FixedOperationsResponseHandler_ptr;
   using _var_type = AMH_FixedOperationsResponseHandler_var;
@@ -395,11 +395,11 @@ public:
   virtual void set_rate_excep (
     ::FixedPoint::AMH_FixedOperationsExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -411,7 +411,7 @@ protected:
   // Abstract or local interface only.
   AMH_FixedOperationsResponseHandler ();
 
-  
+
 
   virtual ~AMH_FixedOperationsResponseHandler () = default;
 
@@ -423,7 +423,7 @@ private:
   AMH_FixedOperationsResponseHandler &operator= (AMH_FixedOperationsResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -450,7 +450,7 @@ class TAO_IDL_TEST_STUB_Export AMI_FixedOperationsHandler
 public:
   friend class TAO::Narrow_Utils<AMI_FixedOperationsHandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_FixedOperationsHandler_ptr;
   using _var_type = AMI_FixedOperationsHandler_var;
@@ -490,11 +490,11 @@ public:
   virtual void set_rate_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -508,7 +508,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_FixedOperationsHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_FixedOperationsHandler (
       TAO_Stub *objref,
@@ -541,7 +541,7 @@ using AmountAlias2 = ::ACE_CDR::Fixed;
 
 } // module FixedPoint
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -552,9 +552,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -574,9 +574,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1154
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1145
 
-  
+
 
   template<>
   class Arg_Traits< ::ACE_CDR::Fixed>
@@ -587,9 +587,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::FixedPoint::FixedValues>
@@ -601,9 +601,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_FIXEDPOINT_FIXEDOPERATIONS__ARG_TRAITS_)
 #define _FIXEDPOINT_FIXEDOPERATIONS__ARG_TRAITS_
@@ -621,9 +621,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_FIXEDPOINT_AMH_FIXEDOPERATIONSEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _FIXEDPOINT_AMH_FIXEDOPERATIONSEXCEPTIONHOLDER__ARG_TRAITS_
@@ -643,9 +643,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_FIXEDPOINT_AMI_FIXEDOPERATIONSHANDLER__ARG_TRAITS_)
 #define _FIXEDPOINT_AMI_FIXEDOPERATIONSHANDLER__ARG_TRAITS_
@@ -675,7 +675,7 @@ namespace OBV_FixedPoint
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class TAO_IDL_TEST_STUB_Export AMH_FixedOperationsExceptionHolder
@@ -685,7 +685,7 @@ namespace OBV_FixedPoint
 protected:
   AMH_FixedOperationsExceptionHolder () = default;
   virtual ~AMH_FixedOperationsExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__FixedPoint_AMH_FixedOperationsExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -839,7 +839,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "fixedC.inl"

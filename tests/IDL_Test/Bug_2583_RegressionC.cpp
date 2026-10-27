@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_2583_RegressionC.h"
@@ -172,7 +172,7 @@ Test::DynAny::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -180,14 +180,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:Test/DynAny:1.0",
     "DynAny");
-  
+
 
 namespace Test
 {
   ::CORBA::TypeCode_ptr const _tc_DynAny = std::addressof(_tao_tc_Test_DynAny);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -286,7 +286,7 @@ namespace TAO
           ::CORBA::tk_sequence,
           &Test::_tc_NameDynAnyPair,
           0U);
-        
+
       ::CORBA::TypeCode_ptr const tc_Test_NameDynAnyPairSeq_0 =
         &Test_NameDynAnyPairSeq_0;
     }
@@ -305,7 +305,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:Test/NameDynAnyPairSeq:1.0",
     "NameDynAnyPairSeq",
     &TAO::TypeCode::tc_Test_NameDynAnyPairSeq_0);
-  
+
 
 namespace Test
 {

@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_ARRAY_ANONYMOUSC_1IQ77M_H_
-#define _TAO_IDL_ARRAY_ANONYMOUSC_1IQ77M_H_
+#ifndef _TAO_IDL_ARRAY_ANONYMOUSC_RXNTXO_H_
+#define _TAO_IDL_ARRAY_ANONYMOUSC_RXNTXO_H_
 
 #include /**/ "ace/pre.h"
 
@@ -85,7 +85,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -114,7 +114,7 @@ class TAO_IDL_TEST_STUB_Export tdef
 public:
   friend class TAO::Narrow_Utils<tdef>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = tdef_ptr;
   using _var_type = tdef_var;
@@ -133,20 +133,20 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_constant/constant_ch.cpp:32
 
-  
+
 
   static const CORBA::Short byteslen = 12;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-  
+
 
   using Bytes = ::CORBA::Octet[13];
   using Bytes_slice = ::CORBA::Octet;
   struct Bytes_tag {};
-  
 
-  using Bytes_var = 
+
+  using Bytes_var =
     TAO_FixedArray_Var_T<
         Bytes,
         Bytes_slice,
@@ -169,42 +169,42 @@ public:
 
   static ::CORBA::TypeCode_ptr const _tc_Bytes;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct bytes_or_longs;
   using bytes_or_longs_var = ::TAO_Fixed_Var_T<bytes_or_longs>;
   using bytes_or_longs_out = bytes_or_longs&;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct TAO_IDL_TEST_STUB_Export bytes_or_longs
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = bytes_or_longs_var;
     using _out_type = bytes_or_longs_out;
 
     static void _tao_any_destructor (void *);
-    
-    tdef::Bytes the_bytes {};
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-    
+    tdef::Bytes the_bytes {};
+
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
     using _Longs = ::CORBA::Long[12];
     using _Longs_slice = ::CORBA::Long;
     struct _Longs_tag {};
-    
+
 
     using _Longs_forany = TAO_Array_Forany_T<_Longs, _Longs_slice, _Longs_tag>;
 
@@ -223,11 +223,11 @@ public:
 
   static ::CORBA::TypeCode_ptr const _tc_bytes_or_longs;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -241,7 +241,7 @@ protected:
 
   // Concrete non-local interface only.
   tdef (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   tdef (
       TAO_Stub *objref,
@@ -285,7 +285,7 @@ class TAO_IDL_TEST_STUB_Export AMH_tdefExceptionHolder
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_tdefExceptionHolder*;
   using _var_type = AMH_tdefExceptionHolder_var;
@@ -301,12 +301,12 @@ public:
   virtual ::CORBA::ValueBase *_copy_value ();
 
   static AMH_tdefExceptionHolder* _downcast (::CORBA::ValueBase *v);
-  
+
   /// TAO extensions or internals
   static ::CORBA::Boolean _tao_unmarshal (
       TAO_InputCDR &strm,
       AMH_tdefExceptionHolder *&new_object);
-  
+
   virtual char const * _tao_obv_repository_id () const;
 
   virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -317,20 +317,20 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:234
 
-  
+
 
 protected:
   AMH_tdefExceptionHolder ();
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_tdefExceptionHolder (const AMH_tdefExceptionHolder &);
   void operator= (const AMH_tdefExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_tdefExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -363,7 +363,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_tdefExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -391,7 +391,7 @@ class TAO_IDL_TEST_STUB_Export AMH_tdefResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_tdefResponseHandler_ptr;
   using _var_type = AMH_tdefResponseHandler_var;
@@ -408,11 +408,11 @@ public:
   static AMH_tdefResponseHandler_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
   static AMH_tdefResponseHandler_ptr _nil ();
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -424,7 +424,7 @@ protected:
   // Abstract or local interface only.
   AMH_tdefResponseHandler ();
 
-  
+
 
   virtual ~AMH_tdefResponseHandler () = default;
 
@@ -440,7 +440,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_tdefResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -467,7 +467,7 @@ class TAO_IDL_TEST_STUB_Export AMI_tdefHandler
 public:
   friend class TAO::Narrow_Utils<AMI_tdefHandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_tdefHandler_ptr;
   using _var_type = AMI_tdefHandler_var;
@@ -484,11 +484,11 @@ public:
   static AMI_tdefHandler_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
   static AMI_tdefHandler_ptr _nil ();
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -502,7 +502,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_tdefHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_tdefHandler (
       TAO_Stub *objref,
@@ -529,41 +529,41 @@ extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_tdefHandler;
 namespace ABCModule
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct RmtPhysicalInfo;
   using RmtPhysicalInfo_var = ::TAO_Fixed_Var_T<RmtPhysicalInfo>;
   using RmtPhysicalInfo_out = RmtPhysicalInfo&;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct TAO_IDL_TEST_STUB_Export RmtPhysicalInfo
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = RmtPhysicalInfo_var;
     using _out_type = RmtPhysicalInfo_out;
 
     static void _tao_any_destructor (void *);
-    
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-    
+
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
     using _rmtNodeId = ::CORBA::Octet[22];
     using _rmtNodeId_slice = ::CORBA::Octet;
     struct _rmtNodeId_tag {};
-    
+
 
     using _rmtNodeId_forany = TAO_Array_Forany_T<_rmtNodeId, _rmtNodeId_slice, _rmtNodeId_tag>;
 
@@ -576,16 +576,16 @@ namespace ABCModule
     static void _rmtNodeId_copy (_rmtNodeId_slice *_tao_to, const _rmtNodeId_slice *_tao_from);
 
     _rmtNodeId rmtNodeId {};
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
     using _rmtDetails = ::CORBA::Octet[22];
     using _rmtDetails_slice = ::CORBA::Octet;
     struct _rmtDetails_tag {};
-    
+
 
     using _rmtDetails_forany = TAO_Array_Forany_T<_rmtDetails, _rmtDetails_slice, _rmtDetails_tag>;
 
@@ -604,41 +604,41 @@ namespace ABCModule
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_RmtPhysicalInfo;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct bbbBubBubBubBaby;
   using bbbBubBubBubBaby_var = ::TAO_Fixed_Var_T<bbbBubBubBubBaby>;
   using bbbBubBubBubBaby_out = bbbBubBubBubBaby&;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct TAO_IDL_TEST_STUB_Export bbbBubBubBubBaby
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = bbbBubBubBubBaby_var;
     using _out_type = bbbBubBubBubBaby_out;
 
     static void _tao_any_destructor (void *);
-    
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-    
+
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
     using _rmtNodeId = ::CORBA::Octet[22];
     using _rmtNodeId_slice = ::CORBA::Octet;
     struct _rmtNodeId_tag {};
-    
+
 
     using _rmtNodeId_forany = TAO_Array_Forany_T<_rmtNodeId, _rmtNodeId_slice, _rmtNodeId_tag>;
 
@@ -651,16 +651,16 @@ namespace ABCModule
     static void _rmtNodeId_copy (_rmtNodeId_slice *_tao_to, const _rmtNodeId_slice *_tao_from);
 
     _rmtNodeId rmtNodeId {};
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
     using _rmtDetails = ::CORBA::Octet[22];
     using _rmtDetails_slice = ::CORBA::Octet;
     struct _rmtDetails_tag {};
-    
+
 
     using _rmtDetails_forany = TAO_Array_Forany_T<_rmtDetails, _rmtDetails_slice, _rmtDetails_tag>;
 
@@ -686,7 +686,7 @@ namespace ABCModule
 
 } // module ABCModule
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -697,9 +697,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -719,9 +719,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TDEF__ARG_TRAITS_)
 #define _TDEF__ARG_TRAITS_
@@ -750,9 +750,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::tdef::bytes_or_longs>
@@ -764,9 +764,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_AMH_TDEFEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _AMH_TDEFEXCEPTIONHOLDER__ARG_TRAITS_
@@ -786,9 +786,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_AMI_TDEFHANDLER__ARG_TRAITS_)
 #define _AMI_TDEFHANDLER__ARG_TRAITS_
@@ -806,9 +806,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::ABCModule::RmtPhysicalInfo>
@@ -820,9 +820,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::ABCModule::bbbBubBubBubBaby>
@@ -855,7 +855,7 @@ public:
 
 public:
   virtual ::CORBA::ValueBase *_copy_value ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_tdefExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -1317,7 +1317,7 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, ABCModule:
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "array_anonymousC.inl"

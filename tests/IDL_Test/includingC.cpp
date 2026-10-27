@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "includingC.h"
@@ -76,7 +76,7 @@ static TAO::TypeCode::Enum<char const *,
     "choice",
     _tao_enumerators_choice,
     1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_choice = std::addressof(_tao_tc_choice);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -161,7 +161,7 @@ void myUnion::_reset ()
 {
   switch (_tao_member_index (this->disc_))
   {
-    
+
     case 0UL:
     {
       delete this->u_.cat_;
@@ -173,7 +173,7 @@ void myUnion::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 
 // TAO_IDL - Generated from
@@ -197,7 +197,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_myUnion,
     sizeof (_tao_cases_myUnion)/sizeof (_tao_cases_myUnion[0]),
     -1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_myUnion = std::addressof(_tao_tc_myUnion);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -282,7 +282,7 @@ void Bog::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<Agog, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Bog__0 (::Agog1, "bog1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<Agog, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Bog__1 (::Agog2, "bog2", &CORBA::_tc_long);
@@ -306,7 +306,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_Bog,
     sizeof (_tao_cases_Bog)/sizeof (_tao_cases_Bog[0]),
     -1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_Bog = std::addressof(_tao_tc_Bog);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -360,10 +360,10 @@ static TAO::TypeCode::Enum<char const *,
     "postal",
     _tao_enumerators_iface_postal,
     2);
-  
+
 ::CORBA::TypeCode_ptr const iface::_tc_postal = std::addressof(_tao_tc_iface_postal);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -482,7 +482,7 @@ iface::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -490,10 +490,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:iface:1.0",
     "iface");
-  
+
 ::CORBA::TypeCode_ptr const _tc_iface = std::addressof(_tao_tc_iface);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_ifaceExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -508,7 +508,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_ifaceExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_ifaceExceptionHolder = std::addressof(_tao_tc_AMH_ifaceExceptionHolder);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:53
@@ -631,32 +631,32 @@ AMH_ifaceExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_ifaceExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:60
 
 
 
@@ -810,7 +810,7 @@ AMH_ifaceResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -818,7 +818,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:AMH_ifaceResponseHandler:1.0",
     "AMH_ifaceResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_ifaceResponseHandler = std::addressof(_tao_tc_AMH_ifaceResponseHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -938,7 +938,7 @@ AMI_ifaceHandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -946,7 +946,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:AMI_ifaceHandler:1.0",
     "AMI_ifaceHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_ifaceHandler = std::addressof(_tao_tc_AMI_ifaceHandler);
 
 
@@ -1011,7 +1011,7 @@ namespace TAO
           ::CORBA::tk_sequence,
           &VT_Def::_tc_VT,
           0U);
-        
+
       ::CORBA::TypeCode_ptr const tc_VT_Test_VTSeq_0 =
         &VT_Test_VTSeq_0;
     }
@@ -1030,7 +1030,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:VT_Test/VTSeq:1.0",
     "VTSeq",
     &TAO::TypeCode::tc_VT_Test_VTSeq_0);
-  
+
 
 namespace VT_Test
 {
@@ -1137,7 +1137,7 @@ void MyException::_tao_decode (TAO_InputCDR &cdr)
   return ::_tc_MyException;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -1163,7 +1163,7 @@ _tao_tc_MyException (
 
 ::CORBA::TypeCode_ptr const _tc_MyException = std::addressof(_tao_tc_MyException);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -1293,7 +1293,7 @@ void TestUn::_reset ()
 {
   switch (_tao_member_index (this->disc_))
   {
-    
+
     case 0UL:
     break;
     case 1UL:
@@ -1307,7 +1307,7 @@ void TestUn::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_TestUn__0 (0, "value1", &A::_tc_MyStructA);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_TestUn__1 (1, "value2", &CORBA::_tc_string);
@@ -1329,7 +1329,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_TestUn,
     sizeof (_tao_cases_TestUn)/sizeof (_tao_cases_TestUn[0]),
     -1);
-  
+
 ::CORBA::TypeCode_ptr const _tc_TestUn = std::addressof(_tao_tc_TestUn);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -1377,7 +1377,7 @@ MyInt::op (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::A::MyStructA>::ret_val _tao_retval;
   TAO::Arg_Traits< ::A::MyStructA>::in_arg_val _tao_ab (ab);
 
@@ -1394,7 +1394,7 @@ MyInt::op (
       "op",
       2,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1415,9 +1415,9 @@ MyInt::sendc_op (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::A::MyStructA>::in_arg_val _tao_ab (ab);
 
@@ -1523,7 +1523,7 @@ MyInt::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -1531,10 +1531,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:MyInt:1.0",
     "MyInt");
-  
+
 ::CORBA::TypeCode_ptr const _tc_MyInt = std::addressof(_tao_tc_MyInt);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_MyIntExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -1549,7 +1549,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_MyIntExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_MyIntExceptionHolder = std::addressof(_tao_tc_AMH_MyIntExceptionHolder);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:53
@@ -1672,27 +1672,27 @@ AMH_MyIntExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_MyIntExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
@@ -1836,7 +1836,7 @@ AMH_MyIntResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -1844,7 +1844,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:AMH_MyIntResponseHandler:1.0",
     "AMH_MyIntResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_MyIntResponseHandler = std::addressof(_tao_tc_AMH_MyIntResponseHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -1892,7 +1892,7 @@ AMI_MyIntHandler::op (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::A::MyStructA>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -1909,7 +1909,7 @@ AMI_MyIntHandler::op (
       "op",
       2,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1937,10 +1937,10 @@ AMI_MyIntHandler::op_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->op (
-          
+
           ami_return_val
         );
       break;
@@ -1965,7 +1965,7 @@ AMI_MyIntHandler::op_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_excep (
           exception_holder_var);
@@ -1988,7 +1988,7 @@ AMI_MyIntHandler::op_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2005,7 +2005,7 @@ AMI_MyIntHandler::op_excep (
       "op_excep",
       8,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2093,7 +2093,7 @@ AMI_MyIntHandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -2101,7 +2101,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:AMI_MyIntHandler:1.0",
     "AMI_MyIntHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_MyIntHandler = std::addressof(_tao_tc_AMI_MyIntHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -2156,7 +2156,7 @@ static TAO::TypeCode::Enum<char const *,
     "DifferentMode",
     _tao_enumerators_RootModule_SUBMODULE1_ChildIF_DifferentMode,
     3);
-  
+
 ::CORBA::TypeCode_ptr const RootModule::SUBMODULE1::ChildIF::_tc_DifferentMode = std::addressof(_tao_tc_RootModule_SUBMODULE1_ChildIF_DifferentMode);
 
 RootModule::SUBMODULE1::ChildIF::ChildIF ()
@@ -2241,7 +2241,7 @@ RootModule::SUBMODULE1::ChildIF::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -2249,18 +2249,18 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:RootModule/SUBMODULE1/ChildIF:1.0",
     "ChildIF");
-  
+
 
 namespace RootModule
 {
-  
+
   namespace SUBMODULE1
   {
     ::CORBA::TypeCode_ptr const _tc_ChildIF = std::addressof(_tao_tc_RootModule_SUBMODULE1_ChildIF);
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_RootModule_SUBMODULE1_AMH_ChildIFExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -2275,11 +2275,11 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_RootModule_SUBMODULE1_AMH_ChildIFExceptionHolder,
     0);
-  
+
 
 namespace RootModule
 {
-  
+
   namespace SUBMODULE1
   {
     ::CORBA::TypeCode_ptr const _tc_AMH_ChildIFExceptionHolder = std::addressof(_tao_tc_RootModule_SUBMODULE1_AMH_ChildIFExceptionHolder);
@@ -2406,32 +2406,32 @@ RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_ChildIFExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:60
 
 
 
@@ -2585,7 +2585,7 @@ RootModule::SUBMODULE1::AMH_ChildIFResponseHandler::marshal (TAO_OutputCDR & /* 
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -2593,11 +2593,11 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:RootModule/SUBMODULE1/AMH_ChildIFResponseHandler:1.0",
     "AMH_ChildIFResponseHandler");
-  
+
 
 namespace RootModule
 {
-  
+
   namespace SUBMODULE1
   {
     ::CORBA::TypeCode_ptr const _tc_AMH_ChildIFResponseHandler = std::addressof(_tao_tc_RootModule_SUBMODULE1_AMH_ChildIFResponseHandler);
@@ -2722,7 +2722,7 @@ RootModule::SUBMODULE1::AMI_ChildIFHandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -2730,11 +2730,11 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:RootModule/SUBMODULE1/AMI_ChildIFHandler:1.0",
     "AMI_ChildIFHandler");
-  
+
 
 namespace RootModule
 {
-  
+
   namespace SUBMODULE1
   {
     ::CORBA::TypeCode_ptr const _tc_AMI_ChildIFHandler = std::addressof(_tao_tc_RootModule_SUBMODULE1_AMI_ChildIFHandler);
@@ -2786,7 +2786,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:B/my_b_long:1.0",
     "my_b_long",
     &AAA::_tc_my_long_type);
-  
+
 ::CORBA::TypeCode_ptr const B::_tc_my_b_long = std::addressof(_tao_tc_B_my_b_long);
 
 B::B ()
@@ -2870,7 +2870,7 @@ B::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -2878,10 +2878,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:B:1.0",
     "B");
-  
+
 ::CORBA::TypeCode_ptr const _tc_B = std::addressof(_tao_tc_B);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_BExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -2896,7 +2896,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_BExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_BExceptionHolder = std::addressof(_tao_tc_AMH_BExceptionHolder);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:53
@@ -3019,32 +3019,32 @@ AMH_BExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_BExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:60
 
 
 
@@ -3198,7 +3198,7 @@ AMH_BResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
   return false;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -3206,7 +3206,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:AMH_BResponseHandler:1.0",
     "AMH_BResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_BResponseHandler = std::addressof(_tao_tc_AMH_BResponseHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
@@ -3326,7 +3326,7 @@ AMI_BHandler::marshal (TAO_OutputCDR &cdr)
   return (cdr << this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -3334,7 +3334,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:AMI_BHandler:1.0",
     "AMI_BHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_BHandler = std::addressof(_tao_tc_AMI_BHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:41
@@ -4026,7 +4026,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);
@@ -5130,12 +5130,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<choice> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -5156,7 +5156,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -5182,7 +5182,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -5225,7 +5225,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -5261,7 +5261,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -5327,12 +5327,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<iface::postal> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -5390,7 +5390,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::iface>::unchecked_narrow (obj.in ());
 
@@ -5409,7 +5409,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_ifaceExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -5418,7 +5418,7 @@ CORBA::add_ref (AMH_ifaceExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_ifaceExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -5503,7 +5503,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_ifaceHandler>::unchecked_narrow (obj.in ());
 
@@ -5619,14 +5619,14 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
   {
     case 0:
       {
-        
+
       }
       break;
     case 1:
@@ -5650,14 +5650,14 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
   {
     case 0:
       {
-        
+
       }
       break;
     case 1:
@@ -5708,7 +5708,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::MyInt>::unchecked_narrow (obj.in ());
 
@@ -5727,7 +5727,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_MyIntExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -5736,7 +5736,7 @@ CORBA::add_ref (AMH_MyIntExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_MyIntExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -5821,7 +5821,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_MyIntHandler>::unchecked_narrow (obj.in ());
 
@@ -5846,12 +5846,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<RootModule::SUBMODULE1::ChildIF::DifferentMode> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -5882,7 +5882,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::RootModule::SUBMODULE1::ChildIF>::unchecked_narrow (obj.in ());
 
@@ -5901,7 +5901,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -5910,7 +5910,7 @@ CORBA::add_ref (RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder * vt)
 void
 CORBA::remove_ref (RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -5995,7 +5995,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::RootModule::SUBMODULE1::AMI_ChildIFHandler>::unchecked_narrow (obj.in ());
 
@@ -6029,7 +6029,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::B>::unchecked_narrow (obj.in ());
 
@@ -6048,7 +6048,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_BExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -6057,7 +6057,7 @@ CORBA::add_ref (AMH_BExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_BExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -6142,7 +6142,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_BHandler>::unchecked_narrow (obj.in ());
 

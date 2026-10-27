@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_TESTS_ZX6ZDX_H_
-#define _TAO_IDL_TESTS_ZX6ZDX_H_
+#ifndef _TAO_IDL_TESTS_XOU7PV_H_
+#define _TAO_IDL_TESTS_XOU7PV_H_
 
 #include /**/ "ace/pre.h"
 
@@ -45,7 +45,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -56,9 +56,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TEST_HELLO__SARG_TRAITS_)
 #define _TEST_HELLO__SARG_TRAITS_
@@ -84,13 +84,13 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_Test
 {
-  
 
-  
+
+
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
-  
+
 
   class Hello;
   using Hello_ptr = Hello *;
@@ -100,7 +100,7 @@ namespace POA_Test
   {
   protected:
     Hello ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::Test::Hello;
@@ -115,9 +115,9 @@ namespace POA_Test
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::Test::Hello *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33

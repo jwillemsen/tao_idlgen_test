@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "array_anon_nestedC.h"
@@ -51,7 +51,7 @@
 #include "array_anon_nestedC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 
 // TAO_IDL - Generated from
@@ -75,7 +75,7 @@ namespace TAO
           ::CORBA::tk_array,
           &CORBA::_tc_char,
           4U);
-        
+
       ::CORBA::TypeCode_ptr const tc_teststruct_b =
         &teststruct_b_4;
     }
@@ -122,18 +122,18 @@ teststruct::_tao_any_destructor (
   delete tmp;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:93
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:82
 
 teststruct::_b_slice *
 teststruct::_b_dup (const teststruct::_b_slice *_tao_src_array)
 {
   teststruct::_b_slice *_tao_dup_array = teststruct::_b_alloc ();
-  
+
   if (_tao_dup_array)
     {
       teststruct::_b_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -163,7 +163,7 @@ teststruct::_b_copy (
     }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 
 // TAO_IDL - Generated from
@@ -187,7 +187,7 @@ namespace TAO
           ::CORBA::tk_array,
           &CORBA::_tc_char,
           4U);
-        
+
       ::CORBA::TypeCode_ptr const tc_teststruct_embeddedstruct_a =
         &teststruct_embeddedstruct_a_4;
     }
@@ -233,18 +233,18 @@ teststruct::embeddedstruct::_tao_any_destructor (
   delete tmp;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:93
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:82
 
 teststruct::embeddedstruct::_a_slice *
 teststruct::embeddedstruct::_a_dup (const teststruct::embeddedstruct::_a_slice *_tao_src_array)
 {
   teststruct::embeddedstruct::_a_slice *_tao_dup_array = teststruct::embeddedstruct::_a_alloc ();
-  
+
   if (_tao_dup_array)
     {
       teststruct::embeddedstruct::_a_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -284,7 +284,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:tstruct:1.0",
     "tstruct",
     &_tc_teststruct);
-  
+
 ::CORBA::TypeCode_ptr const _tc_tstruct = std::addressof(_tao_tc_tstruct);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
@@ -379,7 +379,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:163
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -406,7 +406,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:163
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

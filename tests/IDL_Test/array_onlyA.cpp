@@ -60,7 +60,7 @@ namespace TAO
           ::CORBA::tk_array,
           &CORBA::_tc_char,
           10U);
-        
+
       ::CORBA::TypeCode_ptr const tc_TEST_TYPE =
         &TEST_TYPE_10;
     }
@@ -78,7 +78,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:TEST_TYPE:1.0",
     "TEST_TYPE",
     &TAO::TypeCode::tc_TEST_TYPE);
-  
+
 ::CORBA::TypeCode_ptr const _tc_TEST_TYPE = std::addressof(_tao_tc_TEST_TYPE);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/any_op_cs.cpp:31
@@ -90,7 +90,7 @@ namespace CORBA {
 void operator<<= (
     ::CORBA::Any &_tao_any,
     const TEST_TYPE_forany &_tao_elem)
-  
+
 {
   TAO::Any_Array_Impl_T<
       TEST_TYPE_slice,
@@ -108,7 +108,7 @@ void operator<<= (
 ::CORBA::Boolean operator>>= (
     const ::CORBA::Any &_tao_any,
     TEST_TYPE_forany &_tao_elem)
-  
+
 {
   return
     TAO::Any_Array_Impl_T<

@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_BUG_2583_REGRESSIONC_5V5BGJ_H_
-#define _TAO_IDL_BUG_2583_REGRESSIONC_5V5BGJ_H_
+#ifndef _TAO_IDL_BUG_2583_REGRESSIONC_JLSEFN_H_
+#define _TAO_IDL_BUG_2583_REGRESSIONC_JLSEFN_H_
 
 #include /**/ "ace/pre.h"
 
@@ -71,9 +71,9 @@
 namespace Test
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_TEST_DYNANY__VAR_OUT_CH_)
 #define _TEST_DYNANY__VAR_OUT_CH_
@@ -88,18 +88,18 @@ namespace Test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export DynAny
     : public virtual ::CORBA::Object
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = DynAny_ptr;
     using _var_type = DynAny_var;
@@ -116,26 +116,26 @@ namespace Test
     static DynAny_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static DynAny_ptr _nil ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     DynAny ();
 
-    
+
 
     virtual ~DynAny () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     DynAny (const DynAny &) = delete;
@@ -148,31 +148,31 @@ namespace Test
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_DynAny;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-  
+
 
   struct NameDynAnyPair;
   using NameDynAnyPair_var = ::TAO_Var_Var_T<NameDynAnyPair>;
   using NameDynAnyPair_out = ::TAO_Out_T<NameDynAnyPair>;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:45
 
-  
+
 
   struct TAO_IDL_TEST_STUB_Export NameDynAnyPair
   {
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-    
+
     using _var_type = NameDynAnyPair_var;
     using _out_type = NameDynAnyPair_out;
 
     static void _tao_any_destructor (void *);
-    
+
     ::TAO::String_Manager id {};
     Test::DynAny_var value {};
   };
@@ -181,11 +181,11 @@ namespace Test
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_NameDynAnyPair;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_TEST_NAMEDYNANYPAIRSEQ_CH_)
 #define _TEST_NAMEDYNANYPAIRSEQ_CH_
@@ -193,7 +193,7 @@ namespace Test
   class NameDynAnyPairSeq;
   using NameDynAnyPairSeq_var = ::TAO_VarSeq_Var_T<NameDynAnyPairSeq>;
   using NameDynAnyPairSeq_out = ::TAO_Seq_Out_T<NameDynAnyPairSeq>;
-  
+
 
   class TAO_IDL_TEST_STUB_Export NameDynAnyPairSeq
     : public
@@ -212,11 +212,11 @@ namespace Test
     NameDynAnyPairSeq& operator= (NameDynAnyPairSeq const &) = default;
     NameDynAnyPairSeq& operator= (NameDynAnyPairSeq &&) = default;
     virtual ~NameDynAnyPairSeq () = default;
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
     using _var_type = NameDynAnyPairSeq_var;
     using _out_type = NameDynAnyPairSeq_out;
 
@@ -236,7 +236,7 @@ namespace Test
 
 } // module Test
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -247,9 +247,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -269,9 +269,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::Test::NameDynAnyPair>
@@ -283,9 +283,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::Test::NameDynAnyPairSeq>
@@ -380,7 +380,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "Bug_2583_RegressionC.inl"

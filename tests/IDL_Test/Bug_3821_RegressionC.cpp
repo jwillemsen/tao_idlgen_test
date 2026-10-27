@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_3821_RegressionC.h"
@@ -72,7 +72,7 @@ static TAO::TypeCode::Enum<char const *,
     "Enumeration",
     _tao_enumerators_test_Enumeration,
     3);
-  
+
 
 namespace test
 {
@@ -161,7 +161,7 @@ void test::UnionAllCovered_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -185,7 +185,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCovered_EnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionAllCovered_EnumerationDiscriminant)/sizeof (_tao_cases_test_UnionAllCovered_EnumerationDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -275,7 +275,7 @@ void test::UnionAllCoveredWithDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -299,7 +299,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant)/sizeof (_tao_cases_test_UnionAllCoveredWithDefault_EnumerationDiscriminant[0]),
     2);
-  
+
 
 namespace test
 {
@@ -389,7 +389,7 @@ void test::UnionWithDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -413,7 +413,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithDefault_EnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionWithDefault_EnumerationDiscriminant)/sizeof (_tao_cases_test_UnionWithDefault_EnumerationDiscriminant[0]),
     2);
-  
+
 
 namespace test
 {
@@ -492,7 +492,7 @@ void test::UnionWithImplicitDefault_EnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -514,7 +514,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant)/sizeof (_tao_cases_test_UnionWithImplicitDefault_EnumerationDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -531,7 +531,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:test/TypedefedEnumeration:1.0",
     "TypedefedEnumeration",
     &test::_tc_Enumeration);
-  
+
 
 namespace test
 {
@@ -620,7 +620,7 @@ void test::UnionAllCovered_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -644,7 +644,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant)/sizeof (_tao_cases_test_UnionAllCovered_TypedefedEnumerationDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -734,7 +734,7 @@ void test::UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant::_reset (
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -758,7 +758,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant)/sizeof (_tao_cases_test_UnionAllCoveredWithDefault_TypedefedEnumerationDiscriminant[0]),
     2);
-  
+
 
 namespace test
 {
@@ -848,7 +848,7 @@ void test::UnionWithDefault_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -872,7 +872,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant)/sizeof (_tao_cases_test_UnionWithDefault_TypedefedEnumerationDiscriminant[0]),
     2);
-  
+
 
 namespace test
 {
@@ -951,7 +951,7 @@ void test::UnionWithImplicitDefault_TypedefedEnumerationDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant__0 (test::Enum1, "e_enum1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<test::Enumeration, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant__1 (test::Enum2, "e_enum2", &CORBA::_tc_long);
@@ -973,7 +973,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant,
     sizeof (_tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant)/sizeof (_tao_cases_test_UnionWithImplicitDefault_TypedefedEnumerationDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -1053,7 +1053,7 @@ void test::UnionAllCovered_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_BooleanDiscriminant__1 (false, "e_false", &CORBA::_tc_long);
@@ -1075,7 +1075,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCovered_BooleanDiscriminant,
     sizeof (_tao_cases_test_UnionAllCovered_BooleanDiscriminant)/sizeof (_tao_cases_test_UnionAllCovered_BooleanDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -1155,7 +1155,7 @@ void test::UnionWithDefault_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_BooleanDiscriminant__1 (false, "e_def", &CORBA::_tc_long);
@@ -1177,7 +1177,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithDefault_BooleanDiscriminant,
     sizeof (_tao_cases_test_UnionWithDefault_BooleanDiscriminant)/sizeof (_tao_cases_test_UnionWithDefault_BooleanDiscriminant[0]),
     1);
-  
+
 
 namespace test
 {
@@ -1246,7 +1246,7 @@ void test::UnionWithImplicitDefault_BooleanDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Boolean, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_BooleanDiscriminant__0 (true, "e_true", &CORBA::_tc_long);
 
@@ -1266,7 +1266,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithImplicitDefault_BooleanDiscriminant,
     sizeof (_tao_cases_test_UnionWithImplicitDefault_BooleanDiscriminant)/sizeof (_tao_cases_test_UnionWithImplicitDefault_BooleanDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -1336,7 +1336,7 @@ void test::UnionAllCovered_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionAllCovered_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -1866,7 +1866,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionAllCovered_CharDiscriminant,
     sizeof (_tao_cases_test_UnionAllCovered_CharDiscriminant)/sizeof (_tao_cases_test_UnionAllCovered_CharDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -1946,7 +1946,7 @@ void test::UnionWithDefault_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -1982,7 +1982,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithDefault_CharDiscriminant,
     sizeof (_tao_cases_test_UnionWithDefault_CharDiscriminant)/sizeof (_tao_cases_test_UnionWithDefault_CharDiscriminant[0]),
     1);
-  
+
 
 namespace test
 {
@@ -2051,7 +2051,7 @@ void test::UnionWithImplicitDefault_CharDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_CharDiscriminant__0 ('\x0', "e_chars", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Char, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_CharDiscriminant__1 ('\x1', "e_chars", &CORBA::_tc_long);
@@ -2085,7 +2085,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithImplicitDefault_CharDiscriminant,
     sizeof (_tao_cases_test_UnionWithImplicitDefault_CharDiscriminant)/sizeof (_tao_cases_test_UnionWithImplicitDefault_CharDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -2185,7 +2185,7 @@ void test::UnionWithDefault_LongDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_LongDiscriminant__0 (1, "e_case1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithDefault_LongDiscriminant__1 (2, "e_case2", &CORBA::_tc_long);
@@ -2211,7 +2211,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithDefault_LongDiscriminant,
     sizeof (_tao_cases_test_UnionWithDefault_LongDiscriminant)/sizeof (_tao_cases_test_UnionWithDefault_LongDiscriminant[0]),
     3);
-  
+
 
 namespace test
 {
@@ -2300,7 +2300,7 @@ void test::UnionWithImplicitDefault_LongDiscriminant::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_LongDiscriminant__0 (1, "e_case1", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_test_UnionWithImplicitDefault_LongDiscriminant__1 (2, "e_case2", &CORBA::_tc_long);
@@ -2324,7 +2324,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_test_UnionWithImplicitDefault_LongDiscriminant,
     sizeof (_tao_cases_test_UnionWithImplicitDefault_LongDiscriminant)/sizeof (_tao_cases_test_UnionWithImplicitDefault_LongDiscriminant[0]),
     -1);
-  
+
 
 namespace test
 {
@@ -3214,12 +3214,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<test::Enumeration> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -3240,7 +3240,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3276,7 +3276,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3341,7 +3341,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3376,7 +3376,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3437,7 +3437,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3471,7 +3471,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3531,7 +3531,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3562,7 +3562,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3616,7 +3616,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3652,7 +3652,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3717,7 +3717,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3752,7 +3752,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3813,7 +3813,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3847,7 +3847,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3907,7 +3907,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -3938,7 +3938,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -3993,19 +3993,19 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (_tao_union._d ())
     {
       result = strm << _tao_union.e_true ();
     }
-  
+
   if (!_tao_union._d ())
     {
       result = strm << _tao_union.e_false ();
     }
-  
+
   return result;
 }
 
@@ -4019,7 +4019,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (_tao_discriminant)
@@ -4032,7 +4032,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
           _tao_union._d (_tao_discriminant);
         }
     }
-  
+
   if (!_tao_discriminant)
     {
       CORBA::Long _tao_union_tmp;
@@ -4043,7 +4043,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
           _tao_union._d (_tao_discriminant);
         }
     }
-  
+
   return result;
 }
 
@@ -4065,19 +4065,19 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (_tao_union._d ())
     {
       result = strm << _tao_union.e_true ();
     }
-  
+
   if (!_tao_union._d ())
     {
       result = strm << _tao_union.e_def ();
     }
-  
+
   return result;
 }
 
@@ -4091,7 +4091,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (_tao_discriminant)
@@ -4104,7 +4104,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
           _tao_union._d (_tao_discriminant);
         }
     }
-  
+
   if (!_tao_discriminant)
     {
       CORBA::Long _tao_union_tmp;
@@ -4115,7 +4115,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
           _tao_union._d (_tao_discriminant);
         }
     }
-  
+
   return result;
 }
 
@@ -4137,14 +4137,14 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (_tao_union._d ())
     {
       result = strm << _tao_union.e_true ();
     }
-  
+
   return result;
 }
 
@@ -4158,7 +4158,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   if (!_tao_discriminant)
@@ -4176,7 +4176,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
           _tao_union._d (_tao_discriminant);
         }
     }
-  
+
   return result;
 }
 
@@ -4198,7 +4198,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -4478,7 +4478,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -4772,7 +4772,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -4809,7 +4809,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -4866,7 +4866,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -4900,7 +4900,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -4950,7 +4950,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -4989,7 +4989,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -5060,7 +5060,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -5096,7 +5096,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)

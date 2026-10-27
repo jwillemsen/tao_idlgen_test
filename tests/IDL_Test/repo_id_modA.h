@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:729
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
 
-#ifndef _TAO_IDL_REPO_ID_MODA_7G5VEE_H_
-#define _TAO_IDL_REPO_ID_MODA_7G5VEE_H_
+#ifndef _TAO_IDL_REPO_ID_MODA_XBRNXK_H_
+#define _TAO_IDL_REPO_ID_MODA_XBRNXK_H_
 
 #include /**/ "ace/pre.h"
 
@@ -117,22 +117,22 @@ namespace gleep
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
       extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_schlemazel;
-    
-    
+
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:68
 
-    
+
     } // module gleep::floop::verklempt
-    
-  
-  
+
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:68
 
-  
+
   } // module gleep::floop
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 

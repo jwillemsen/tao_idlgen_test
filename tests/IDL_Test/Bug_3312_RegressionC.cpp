@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "Bug_3312_RegressionC.h"
@@ -72,7 +72,7 @@ static TAO::TypeCode::Enum<char const *,
     "Colors",
     _tao_enumerators_CallMe_Colors,
     3);
-  
+
 
 namespace CallMe
 {
@@ -95,7 +95,7 @@ static TAO::TypeCode::Enum<char const *,
     "ColorMe",
     _tao_enumerators_CallMe_YourColorBaby_ColorMe,
     2);
-  
+
 ::CORBA::TypeCode_ptr const CallMe::YourColorBaby::_tc_ColorMe = std::addressof(_tao_tc_CallMe_YourColorBaby_ColorMe);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
@@ -114,7 +114,7 @@ static TAO::TypeCode::Enum<char const *,
     "Val",
     _tao_enumerators_CallMe_YourColorBaby_Val,
     2);
-  
+
 ::CORBA::TypeCode_ptr const CallMe::YourColorBaby::_tc_Val = std::addressof(_tao_tc_CallMe_YourColorBaby_Val);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -191,7 +191,7 @@ void CallMe::YourColorBaby::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CallMe::YourColorBaby::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourColorBaby__0 (CallMe::YourColorBaby::Red, "c_1", &CallMe::YourColorBaby::_tc_Val);
 static TAO::TypeCode::Case_T<CallMe::YourColorBaby::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourColorBaby__1 (CallMe::YourColorBaby::Blue, "c_2", &CORBA::_tc_long);
@@ -213,7 +213,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_CallMe_YourColorBaby,
     sizeof (_tao_cases_CallMe_YourColorBaby)/sizeof (_tao_cases_CallMe_YourColorBaby[0]),
     -1);
-  
+
 
 namespace CallMe
 {
@@ -236,7 +236,7 @@ static TAO::TypeCode::Enum<char const *,
     "ColorMe",
     _tao_enumerators_CallMe_YourCar_ColorMe,
     2);
-  
+
 ::CORBA::TypeCode_ptr const CallMe::YourCar::_tc_ColorMe = std::addressof(_tao_tc_CallMe_YourCar_ColorMe);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -311,7 +311,7 @@ void CallMe::YourCar::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<CallMe::YourCar::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourCar__0 (CallMe::YourCar::Green, "c_1", &CORBA::_tc_short);
 static TAO::TypeCode::Case_T<CallMe::YourCar::ColorMe, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_CallMe_YourCar__1 (CallMe::YourCar::Pink, "c_2", &CORBA::_tc_short);
@@ -333,7 +333,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_CallMe_YourCar,
     sizeof (_tao_cases_CallMe_YourCar)/sizeof (_tao_cases_CallMe_YourCar[0]),
     -1);
-  
+
 
 namespace CallMe
 {
@@ -606,12 +606,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<CallMe::Colors> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -633,12 +633,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<CallMe::YourColorBaby::ColorMe> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -660,12 +660,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<CallMe::YourColorBaby::Val> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -686,7 +686,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -717,7 +717,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -773,12 +773,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<CallMe::YourCar::ColorMe> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -799,7 +799,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -830,7 +830,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)

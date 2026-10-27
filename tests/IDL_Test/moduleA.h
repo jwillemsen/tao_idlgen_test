@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:729
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
 
-#ifndef _TAO_IDL_MODULEA_Q83WL5_H_
-#define _TAO_IDL_MODULEA_Q83WL5_H_
+#ifndef _TAO_IDL_MODULEA_W2MDC5_H_
+#define _TAO_IDL_MODULEA_W2MDC5_H_
 
 #include /**/ "ace/pre.h"
 
@@ -77,14 +77,14 @@ namespace mod1
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
 
     extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_ex2Handler;
-  
-  
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:68
 
-  
+
   } // module mod1::mod2
-  
+
 
 
 // TAO_IDL - Generated from

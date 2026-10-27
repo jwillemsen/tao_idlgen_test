@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_W9UBW3_H_
-#define _TAO_IDL_KEYWORD_CASE_DIFFS_W9UBW3_H_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_TZCNU2_H_
+#define _TAO_IDL_KEYWORD_CASE_DIFFS_TZCNU2_H_
 
 
 #include "keyword_case_diffC.h"
@@ -47,7 +47,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -58,9 +58,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MYMODULE_PORTTYPE__SARG_TRAITS_)
 #define _MYMODULE_PORTTYPE__SARG_TRAITS_
@@ -86,13 +86,13 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_MyModule
 {
-  
 
-  
+
+
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
-  
+
 
   class PortType;
   using PortType_ptr = PortType *;
@@ -102,7 +102,7 @@ namespace POA_MyModule
   {
   protected:
     PortType ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::MyModule::PortType;
@@ -117,9 +117,9 @@ namespace POA_MyModule
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::MyModule::PortType *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33

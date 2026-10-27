@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_FULLC_R8M9N0_H_
-#define _TAO_IDL_FULLC_R8M9N0_H_
+#ifndef _TAO_IDL_FULLC_N0W2R5_H_
+#define _TAO_IDL_FULLC_N0W2R5_H_
 
 #include /**/ "ace/pre.h"
 
@@ -93,9 +93,9 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace scope_test
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_SCOPE_TEST_I_SCOPE_TEST__VAR_OUT_CH_)
 #define _SCOPE_TEST_I_SCOPE_TEST__VAR_OUT_CH_
@@ -110,11 +110,11 @@ namespace scope_test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export i_scope_test
     : public virtual ::CORBA::Object
@@ -122,7 +122,7 @@ namespace scope_test
   public:
     friend class TAO::Narrow_Utils<i_scope_test>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = i_scope_test_ptr;
     using _var_type = i_scope_test_var;
@@ -139,25 +139,25 @@ namespace scope_test
     static i_scope_test_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static i_scope_test_ptr _nil ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     i_scope_test ();
 
     // Concrete non-local interface only.
     i_scope_test (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     i_scope_test (
         TAO_Stub *objref,
@@ -166,7 +166,7 @@ namespace scope_test
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~i_scope_test () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     i_scope_test (const i_scope_test &) = delete;
@@ -181,7 +181,7 @@ namespace scope_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_SCOPE_TEST_AMH_I_SCOPE_TESTEXCEPTIONHOLDER__VAR_OUT_CH_)
 #define _SCOPE_TEST_AMH_I_SCOPE_TESTEXCEPTIONHOLDER__VAR_OUT_CH_
@@ -194,14 +194,14 @@ namespace scope_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export AMH_i_scope_testExceptionHolder
     : public virtual ::CORBA::DefaultValueRefCountBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMH_i_scope_testExceptionHolder*;
     using _var_type = AMH_i_scope_testExceptionHolder_var;
@@ -217,12 +217,12 @@ namespace scope_test
     virtual ::CORBA::ValueBase *_copy_value ();
 
     static AMH_i_scope_testExceptionHolder* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         AMH_i_scope_testExceptionHolder *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -233,20 +233,20 @@ namespace scope_test
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:234
 
-    
-  
+
+
   protected:
     AMH_i_scope_testExceptionHolder ();
     virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
     virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
     virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-    
+
   private:
     AMH_i_scope_testExceptionHolder (const AMH_i_scope_testExceptionHolder &);
     void operator= (const AMH_i_scope_testExceptionHolder &);
-    
+
     ::CORBA::Exception *exception;
-    
+
   protected:
     virtual ::CORBA::Boolean
     _tao_marshal__scope_test_AMH_i_scope_testExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -270,7 +270,7 @@ namespace scope_test
     // TAO-specific extensions
   public:
     virtual char const * tao_repository_id ();
-  
+
   protected:
     virtual ~AMH_i_scope_testExceptionHolder_init ();
   };
@@ -279,9 +279,9 @@ namespace scope_test
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_i_scope_testExceptionHolder;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_SCOPE_TEST_AMH_I_SCOPE_TESTRESPONSEHANDLER__VAR_OUT_CH_)
 #define _SCOPE_TEST_AMH_I_SCOPE_TESTRESPONSEHANDLER__VAR_OUT_CH_
@@ -296,18 +296,18 @@ namespace scope_test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export AMH_i_scope_testResponseHandler
     : public virtual ::CORBA::Object
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMH_i_scope_testResponseHandler_ptr;
     using _var_type = AMH_i_scope_testResponseHandler_var;
@@ -324,26 +324,26 @@ namespace scope_test
     static AMH_i_scope_testResponseHandler_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static AMH_i_scope_testResponseHandler_ptr _nil ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     AMH_i_scope_testResponseHandler ();
 
-    
+
 
     virtual ~AMH_i_scope_testResponseHandler () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     AMH_i_scope_testResponseHandler (const AMH_i_scope_testResponseHandler &) = delete;
@@ -356,9 +356,9 @@ namespace scope_test
 
   extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_i_scope_testResponseHandler;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_SCOPE_TEST_AMI_I_SCOPE_TESTHANDLER__VAR_OUT_CH_)
 #define _SCOPE_TEST_AMI_I_SCOPE_TESTHANDLER__VAR_OUT_CH_
@@ -370,20 +370,20 @@ namespace scope_test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export AMI_i_scope_testHandler
     : public virtual ::Messaging::ReplyHandler
-  
+
   {
   public:
     friend class TAO::Narrow_Utils<AMI_i_scope_testHandler>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMI_i_scope_testHandler_ptr;
     using _var_type = AMI_i_scope_testHandler_var;
@@ -400,25 +400,25 @@ namespace scope_test
     static AMI_i_scope_testHandler_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static AMI_i_scope_testHandler_ptr _nil ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     AMI_i_scope_testHandler ();
 
     // Concrete non-local interface only.
     AMI_i_scope_testHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     AMI_i_scope_testHandler (
         TAO_Stub *objref,
@@ -427,7 +427,7 @@ namespace scope_test
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~AMI_i_scope_testHandler () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     AMI_i_scope_testHandler (const AMI_i_scope_testHandler &) = delete;
@@ -452,9 +452,9 @@ namespace scope_test
 namespace mod2
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_MOD2_FWD__VAR_OUT_CH_)
 #define _MOD2_FWD__VAR_OUT_CH_
@@ -469,9 +469,9 @@ namespace mod2
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_MOD2_FULL__VAR_OUT_CH_)
 #define _MOD2_FULL__VAR_OUT_CH_
@@ -486,11 +486,11 @@ namespace mod2
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export fwd
     : public virtual ::CORBA::Object
@@ -498,7 +498,7 @@ namespace mod2
   public:
     friend class TAO::Narrow_Utils<fwd>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = fwd_ptr;
     using _var_type = fwd_var;
@@ -520,9 +520,9 @@ namespace mod2
     virtual void attr (
       const char * attr);
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
-    
+
 
     class un;
     using un_var = ::TAO_Var_Var_T<un>;
@@ -539,14 +539,14 @@ namespace mod2
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/discriminant_ch.cpp:96
 
-      
+
 
       void _d ( ::CORBA::Short);
       ::CORBA::Short _d () const;
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-      
+
       using _var_type = un_var;
       using _out_type = un_out;
 
@@ -554,14 +554,14 @@ namespace mod2
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ch.cpp:227
 
-      
+
 
       void full_mem (mod2::full_ptr);
       mod2::full_ptr full_mem () const;
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_ch.cpp:118
 
-      
+
 
       void _default ();
     private:
@@ -574,7 +574,7 @@ namespace mod2
         // TAO_IDL - Generated from
         // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/private_ch.cpp:174
 
-        
+
         mod2::full_var *full_mem_;
       } u_;
 
@@ -586,11 +586,11 @@ namespace mod2
 
     static ::CORBA::TypeCode_ptr const _tc_un;
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-    
+
 
 #if !defined (_MOD2_FWD_FULL_SEQ_CH_)
 #define _MOD2_FWD_FULL_SEQ_CH_
@@ -598,7 +598,7 @@ namespace mod2
     class full_seq;
     using full_seq_var = ::TAO_VarSeq_Var_T<full_seq>;
     using full_seq_out = ::TAO_Seq_Out_T<full_seq>;
-    
+
 
     class TAO_IDL_TEST_STUB_Export full_seq
       : public
@@ -620,11 +620,11 @@ namespace mod2
       full_seq& operator= (full_seq const &) = default;
       full_seq& operator= (full_seq &&) = default;
       virtual ~full_seq () = default;
-      
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-      
+      // TAO_IDL - Generated from
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
       using _var_type = full_seq_var;
       using _out_type = full_seq_out;
 
@@ -639,7 +639,7 @@ namespace mod2
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ch.cpp:38
 
-    
+
 
     class TAO_IDL_TEST_STUB_Export bar : public ::CORBA::UserException
     {
@@ -690,25 +690,25 @@ namespace mod2
       const ::mod2::fwd::un & un_arg,
       const ::mod2::fwd::full_seq & full_seq_arg);
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     fwd ();
 
     // Concrete non-local interface only.
     fwd (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     fwd (
         TAO_Stub *objref,
@@ -717,7 +717,7 @@ namespace mod2
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~fwd () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     fwd (const fwd &) = delete;
@@ -732,7 +732,7 @@ namespace mod2
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-  
+
 
 #if !defined (_MOD2_AMH_FWDEXCEPTIONHOLDER__VAR_OUT_CH_)
 #define _MOD2_AMH_FWDEXCEPTIONHOLDER__VAR_OUT_CH_
@@ -745,14 +745,14 @@ namespace mod2
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export AMH_fwdExceptionHolder
     : public virtual ::CORBA::DefaultValueRefCountBase
   {
   public:
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = AMH_fwdExceptionHolder*;
     using _var_type = AMH_fwdExceptionHolder_var;
@@ -768,12 +768,12 @@ namespace mod2
     virtual ::CORBA::ValueBase *_copy_value ();
 
     static AMH_fwdExceptionHolder* _downcast (::CORBA::ValueBase *v);
-    
+
     /// TAO extensions or internals
     static ::CORBA::Boolean _tao_unmarshal (
         TAO_InputCDR &strm,
         AMH_fwdExceptionHolder *&new_object);
-    
+
     virtual char const * _tao_obv_repository_id () const;
 
     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -781,12 +781,12 @@ namespace mod2
     static char const * _tao_obv_static_repository_id ();
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-    
+
   public:
     virtual void raise_get_attr ();
 
@@ -794,7 +794,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_set_attr ();
 
@@ -802,7 +802,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_op ();
 
@@ -810,7 +810,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_set_attr ();
 
@@ -818,7 +818,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_get_attr ();
 
@@ -826,7 +826,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_op ();
 // TAO_IDL - Generated from
@@ -839,13 +839,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_fwdExceptionHolder (const AMH_fwdExceptionHolder &);
   void operator= (const AMH_fwdExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__mod2_AMH_fwdExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -858,7 +858,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_fwdExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -886,7 +886,7 @@ class TAO_IDL_TEST_STUB_Export AMH_fwdResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_fwdResponseHandler_ptr;
   using _var_type = AMH_fwdResponseHandler_var;
@@ -923,11 +923,11 @@ public:
   virtual void op_excep (
     ::mod2::AMH_fwdExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -939,7 +939,7 @@ protected:
   // Abstract or local interface only.
   AMH_fwdResponseHandler ();
 
-  
+
 
   virtual ~AMH_fwdResponseHandler () = default;
 
@@ -955,7 +955,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_fwdResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -982,7 +982,7 @@ class TAO_IDL_TEST_STUB_Export AMI_fwdHandler
 public:
   friend class TAO::Narrow_Utils<AMI_fwdHandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_fwdHandler_ptr;
   using _var_type = AMI_fwdHandler_var;
@@ -1037,11 +1037,11 @@ public:
   virtual void op_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -1055,7 +1055,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_fwdHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_fwdHandler (
       TAO_Stub *objref,
@@ -1077,7 +1077,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_fwdHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -1101,7 +1101,7 @@ using full_out = TAO_Objref_Out_T<full>;
 
 } // module mod2
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -1112,9 +1112,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -1134,9 +1134,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_SCOPE_TEST_I_SCOPE_TEST__ARG_TRAITS_)
 #define _SCOPE_TEST_I_SCOPE_TEST__ARG_TRAITS_
@@ -1154,9 +1154,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_SCOPE_TEST_AMH_I_SCOPE_TESTEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _SCOPE_TEST_AMH_I_SCOPE_TESTEXCEPTIONHOLDER__ARG_TRAITS_
@@ -1176,9 +1176,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_SCOPE_TEST_AMI_I_SCOPE_TESTHANDLER__ARG_TRAITS_)
 #define _SCOPE_TEST_AMI_I_SCOPE_TESTHANDLER__ARG_TRAITS_
@@ -1196,9 +1196,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MOD2_FWD__ARG_TRAITS_)
 #define _MOD2_FWD__ARG_TRAITS_
@@ -1216,9 +1216,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1022
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:1013
 
-  
+
 
   template<>
   class Arg_Traits< ::mod2::fwd::un>
@@ -1230,9 +1230,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MOD2_FULL__ARG_TRAITS_)
 #define _MOD2_FULL__ARG_TRAITS_
@@ -1250,9 +1250,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::mod2::fwd::full_seq>
@@ -1264,9 +1264,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MOD2_AMH_FWDEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MOD2_AMH_FWDEXCEPTIONHOLDER__ARG_TRAITS_
@@ -1286,9 +1286,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MOD2_AMI_FWDHANDLER__ARG_TRAITS_)
 #define _MOD2_AMI_FWDHANDLER__ARG_TRAITS_
@@ -1306,9 +1306,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MOD2_FULL__ARG_TRAITS_)
 #define _MOD2_FULL__ARG_TRAITS_
@@ -1338,7 +1338,7 @@ namespace OBV_scope_test
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class TAO_IDL_TEST_STUB_Export AMH_i_scope_testExceptionHolder
@@ -1352,7 +1352,7 @@ public:
 
 public:
   virtual ::CORBA::ValueBase *_copy_value ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__scope_test_AMH_i_scope_testExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -1376,7 +1376,7 @@ namespace OBV_mod2
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class TAO_IDL_TEST_STUB_Export AMH_fwdExceptionHolder
@@ -1386,7 +1386,7 @@ namespace OBV_mod2
 protected:
   AMH_fwdExceptionHolder () = default;
   virtual ~AMH_fwdExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__mod2_AMH_fwdExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -1951,7 +1951,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "fullC.inl"

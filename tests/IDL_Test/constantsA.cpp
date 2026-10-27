@@ -57,7 +57,7 @@ static TAO::TypeCode::Enum<char const *,
     "enum_a",
     _tao_enumerators_m_a_enum_a,
     5);
-  
+
 
 namespace m_a
 {
@@ -74,14 +74,14 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:m_b/enum_b:1.0",
     "enum_b",
     &m_a::_tc_enum_a);
-  
+
 
 namespace m_b
 {
   ::CORBA::TypeCode_ptr const _tc_enum_b = std::addressof(_tao_tc_m_b_enum_b);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -89,14 +89,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:ClassConstants/Iface:1.0",
     "Iface");
-  
+
 
 namespace ClassConstants
 {
   ::CORBA::TypeCode_ptr const _tc_Iface = std::addressof(_tao_tc_ClassConstants_Iface);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_ClassConstants_AMH_IfaceExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -111,7 +111,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_ClassConstants_AMH_IfaceExceptionHolder,
     0);
-  
+
 
 namespace ClassConstants
 {
@@ -124,7 +124,7 @@ namespace ClassConstants
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -132,14 +132,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:ClassConstants/AMH_IfaceResponseHandler:1.0",
     "AMH_IfaceResponseHandler");
-  
+
 
 namespace ClassConstants
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_IfaceResponseHandler = std::addressof(_tao_tc_ClassConstants_AMH_IfaceResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -147,14 +147,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:ClassConstants/AMI_IfaceHandler:1.0",
     "AMI_IfaceHandler");
-  
+
 
 namespace ClassConstants
 {
   ::CORBA::TypeCode_ptr const _tc_AMI_IfaceHandler = std::addressof(_tao_tc_ClassConstants_AMI_IfaceHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_ClassConstants_Vt = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -169,7 +169,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_ClassConstants_Vt,
     0);
-  
+
 
 namespace ClassConstants
 {
@@ -192,7 +192,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:CoercionBug/UInt16:1.0",
     "UInt16",
     &CORBA::_tc_ushort);
-  
+
 
 namespace CoercionBug
 {
@@ -209,7 +209,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:CoercionBug/CellFlags:1.0",
     "CellFlags",
     &CoercionBug::_tc_UInt16);
-  
+
 
 namespace CoercionBug
 {
@@ -226,7 +226,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:SignedGen/LongType:1.0",
     "LongType",
     &CORBA::_tc_long);
-  
+
 
 namespace SignedGen
 {
@@ -243,7 +243,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:SignedGen/ShortType:1.0",
     "ShortType",
     &CORBA::_tc_short);
-  
+
 
 namespace SignedGen
 {

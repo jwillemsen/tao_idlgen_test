@@ -103,7 +103,7 @@ MyValueTypeUnion::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:527
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:520
 
 // Accessor to set the member.
 ACE_INLINE
@@ -251,7 +251,7 @@ ModSelection::SelectionDefns::CriterionExpr::RightCriterionExpr::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:918
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:911
 
 /// Accessor to set the member.
 ACE_INLINE

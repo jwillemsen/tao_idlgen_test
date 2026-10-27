@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_AMI_TESTS_7WHPNG_H_
-#define _TAO_IDL_AMI_TESTS_7WHPNG_H_
+#ifndef _TAO_IDL_AMI_TESTS_Q29WCS_H_
+#define _TAO_IDL_AMI_TESTS_Q29WCS_H_
 
 #include /**/ "ace/pre.h"
 
@@ -50,7 +50,7 @@
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -61,9 +61,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -82,9 +82,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_A_AMI_TEST__SARG_TRAITS_)
 #define _A_AMI_TEST__SARG_TRAITS_
@@ -101,9 +101,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_A_AMI_AMI_TESTHANDLER__SARG_TRAITS_)
 #define _A_AMI_AMI_TESTHANDLER__SARG_TRAITS_
@@ -120,9 +120,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_A_TEST_CHILD__SARG_TRAITS_)
 #define _A_TEST_CHILD__SARG_TRAITS_
@@ -139,9 +139,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_A_AMI_TEST_CHILDHANDLER__SARG_TRAITS_)
 #define _A_AMI_TEST_CHILDHANDLER__SARG_TRAITS_
@@ -167,13 +167,13 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_A
 {
-  
 
-  
+
+
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
-  
+
 
   class AMI_Test;
   using AMI_Test_ptr = AMI_Test *;
@@ -183,7 +183,7 @@ namespace POA_A
   {
   protected:
     AMI_Test ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::A::AMI_Test;
@@ -198,9 +198,9 @@ namespace POA_A
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::A::AMI_Test *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
@@ -254,11 +254,11 @@ namespace POA_A
         TAO_ServantBase *servant);
   };
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+
+
 
   class AMI_AMI_TestHandler;
   using AMI_AMI_TestHandler_ptr = AMI_AMI_TestHandler *;
@@ -268,7 +268,7 @@ namespace POA_A
   {
   protected:
     AMI_AMI_TestHandler ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::A::AMI_AMI_TestHandler;
@@ -283,9 +283,9 @@ namespace POA_A
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::A::AMI_AMI_TestHandler *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
@@ -369,11 +369,11 @@ namespace POA_A
         TAO_ServantBase *servant);
   };
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+
+
 
   class Test_Child;
   using Test_Child_ptr = Test_Child *;
@@ -383,7 +383,7 @@ namespace POA_A
   {
   protected:
     Test_Child ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::A::Test_Child;
@@ -398,9 +398,9 @@ namespace POA_A
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::A::Test_Child *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
@@ -413,11 +413,11 @@ namespace POA_A
         TAO_ServantBase *servant);
   };
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
+
+
 
   class AMI_Test_ChildHandler;
   using AMI_Test_ChildHandler_ptr = AMI_Test_ChildHandler *;
@@ -427,7 +427,7 @@ namespace POA_A
   {
   protected:
     AMI_Test_ChildHandler ();
-  
+
   public:
     /// Useful for template programming.
     using _stub_type = ::A::AMI_Test_ChildHandler;
@@ -442,9 +442,9 @@ namespace POA_A
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
+
     ::A::AMI_Test_ChildHandler *_this ();
-    
+
     virtual const char* _interface_repository_id () const;
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33

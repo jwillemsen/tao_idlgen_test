@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_STRUCTS_5D1E2J_CPP_
-#define _TAO_IDL_STRUCTS_5D1E2J_CPP_
+#ifndef _TAO_IDL_STRUCTS_ORT4VJ_CPP_
+#define _TAO_IDL_STRUCTS_ORT4VJ_CPP_
 
 
 #include "structS.h"

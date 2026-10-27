@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_BUG_2582_REGRESSIONC_9U5Q1D_H_
-#define _TAO_IDL_BUG_2582_REGRESSIONC_9U5Q1D_H_
+#ifndef _TAO_IDL_BUG_2582_REGRESSIONC_X1JV8J_H_
+#define _TAO_IDL_BUG_2582_REGRESSIONC_X1JV8J_H_
 
 #include /**/ "ace/pre.h"
 
@@ -96,7 +96,7 @@ using EncodingID_T_out = EncodingID_T &;
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_EncodingID_T;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
 
 
@@ -113,14 +113,14 @@ using Encoding_T_out = Encoding_T&;
 struct TAO_IDL_TEST_STUB_Export Encoding_T
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-  
+
   using _var_type = Encoding_T_var;
   using _out_type = Encoding_T_out;
 
   static void _tao_any_destructor (void *);
-  
+
   EncodingID_T id {};
 };
 // TAO_IDL - Generated from
@@ -137,7 +137,7 @@ using EncodingID2_T_out = EncodingID_T_out;
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_EncodingID2_T;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -166,7 +166,7 @@ class TAO_IDL_TEST_STUB_Export FieldDevice_T
 public:
   friend class TAO::Narrow_Utils<FieldDevice_T>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = FieldDevice_T_ptr;
   using _var_type = FieldDevice_T_var;
@@ -193,11 +193,11 @@ public:
   virtual void sendc_getEncoding (
     ::AMI_FieldDevice_THandler_ptr ami_handler);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -211,7 +211,7 @@ protected:
 
   // Concrete non-local interface only.
   FieldDevice_T (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   FieldDevice_T (
       TAO_Stub *objref,
@@ -255,7 +255,7 @@ class TAO_IDL_TEST_STUB_Export AMH_FieldDevice_TExceptionHolder
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_FieldDevice_TExceptionHolder*;
   using _var_type = AMH_FieldDevice_TExceptionHolder_var;
@@ -271,12 +271,12 @@ public:
   virtual ::CORBA::ValueBase *_copy_value ();
 
   static AMH_FieldDevice_TExceptionHolder* _downcast (::CORBA::ValueBase *v);
-  
+
   /// TAO extensions or internals
   static ::CORBA::Boolean _tao_unmarshal (
       TAO_InputCDR &strm,
       AMH_FieldDevice_TExceptionHolder *&new_object);
-  
+
   virtual char const * _tao_obv_repository_id () const;
 
   virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -289,7 +289,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_getEncodingID ();
 
@@ -297,7 +297,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_getEncoding ();
 
@@ -305,7 +305,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_getEncodingID ();
 
@@ -313,7 +313,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_getEncoding ();
 // TAO_IDL - Generated from
@@ -326,13 +326,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_FieldDevice_TExceptionHolder (const AMH_FieldDevice_TExceptionHolder &);
   void operator= (const AMH_FieldDevice_TExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_FieldDevice_TExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -345,7 +345,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -373,7 +373,7 @@ class TAO_IDL_TEST_STUB_Export AMH_FieldDevice_TResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_FieldDevice_TResponseHandler_ptr;
   using _var_type = AMH_FieldDevice_TResponseHandler_var;
@@ -402,11 +402,11 @@ public:
   virtual void getEncoding_excep (
     ::AMH_FieldDevice_TExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -418,7 +418,7 @@ protected:
   // Abstract or local interface only.
   AMH_FieldDevice_TResponseHandler ();
 
-  
+
 
   virtual ~AMH_FieldDevice_TResponseHandler () = default;
 
@@ -434,7 +434,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -461,7 +461,7 @@ class TAO_IDL_TEST_STUB_Export AMI_FieldDevice_THandler
 public:
   friend class TAO::Narrow_Utils<AMI_FieldDevice_THandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_FieldDevice_THandler_ptr;
   using _var_type = AMI_FieldDevice_THandler_var;
@@ -502,11 +502,11 @@ public:
   virtual void getEncoding_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -520,7 +520,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_FieldDevice_THandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_FieldDevice_THandler (
       TAO_Stub *objref,
@@ -542,7 +542,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_FieldDevice_THandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -553,9 +553,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -575,9 +575,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:870
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:861
 
-  
+
 
   template<>
   class Arg_Traits< ::EncodingID_T>
@@ -589,9 +589,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::Encoding_T>
@@ -603,9 +603,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_FIELDDEVICE_T__ARG_TRAITS_)
 #define _FIELDDEVICE_T__ARG_TRAITS_
@@ -623,9 +623,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_AMH_FIELDDEVICE_TEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _AMH_FIELDDEVICE_TEXCEPTIONHOLDER__ARG_TRAITS_
@@ -645,9 +645,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_AMI_FIELDDEVICE_THANDLER__ARG_TRAITS_)
 #define _AMI_FIELDDEVICE_THANDLER__ARG_TRAITS_
@@ -682,7 +682,7 @@ class TAO_IDL_TEST_STUB_Export OBV_AMH_FieldDevice_TExceptionHolder
 protected:
   OBV_AMH_FieldDevice_TExceptionHolder () = default;
   virtual ~OBV_AMH_FieldDevice_TExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_FieldDevice_TExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -944,7 +944,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "Bug_2582_RegressionC.inl"

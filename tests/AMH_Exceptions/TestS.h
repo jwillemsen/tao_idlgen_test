@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_TESTS_UIBHLP_H_
-#define _TAO_IDL_TESTS_UIBHLP_H_
+#ifndef _TAO_IDL_TESTS_REI2ND_H_
+#define _TAO_IDL_TESTS_REI2ND_H_
 
 #include /**/ "ace/pre.h"
 
@@ -50,7 +50,7 @@
 #include "tao/PortableServer/Servant_Base.h"
 #include "tao/Messaging/AMH_Response_Handler.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -61,9 +61,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_TEST_RED_HERRING__SARG_TRAITS_)
 #define _TEST_RED_HERRING__SARG_TRAITS_
@@ -82,9 +82,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TEST_ROUNDTRIP__SARG_TRAITS_)
 #define _TEST_ROUNDTRIP__SARG_TRAITS_
@@ -101,9 +101,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__SARG_TRAITS_)
 #define _TEST_AMH_ROUNDTRIPEXCEPTIONHOLDER__SARG_TRAITS_
@@ -131,7 +131,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_Test
 {
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_sh.cpp:46
 
@@ -143,7 +143,7 @@ namespace POA_Test
   {
   protected:
     AMH_Roundtrip ();
-  
+
   public:
     AMH_Roundtrip (const AMH_Roundtrip& rhs);
     virtual ~AMH_Roundtrip () = default;
@@ -154,7 +154,7 @@ namespace POA_Test
     virtual void _dispatch (
         TAO_ServerRequest &req,
         TAO::Portable_Server::Servant_Upcall *_servant_upcall);
-    
+
     Test::Roundtrip *_this ();
 
   virtual const char* _interface_repository_id () const;
@@ -165,12 +165,12 @@ namespace POA_Test
       TAO_ServerRequest &_tao_req,
       TAO::Portable_Server::Servant_Upcall *_tao_obj,
       TAO_ServantBase *_tao_servant_upcall);
-    
+
   virtual void test_method (
       Test::AMH_RoundtripResponseHandler_ptr _tao_rh,
       ::Test::Timestamp send_time
     ) = 0;
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_sh.cpp:124
 
@@ -178,16 +178,16 @@ namespace POA_Test
       TAO_ServerRequest &_tao_req,
       TAO::Portable_Server::Servant_Upcall *_tao_obj,
       TAO_ServantBase *_tao_servant_upcall);
-    
+
   virtual void shutdown (
       Test::AMH_RoundtripResponseHandler_ptr _tao_rh
     ) = 0;
-  
+
 };
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:70
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
 
 
@@ -214,9 +214,9 @@ public:
   virtual void _dispatch (
       TAO_ServerRequest & req,
       TAO::Portable_Server::Servant_Upcall *servant_upcall);
-  
+
   ::Test::Roundtrip *_this ();
-  
+
   virtual const char* _interface_repository_id () const;
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:33
@@ -239,7 +239,7 @@ public:
       TAO_ServantBase *servant);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:49
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_sh.cpp:50
 
 class TAO_AMH_RoundtripResponseHandler;
 using TAO_AMH_RoundtripResponseHandler_ptr = TAO_AMH_RoundtripResponseHandler *;

@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_TESTC_I4V178_H_
-#define _TAO_IDL_TESTC_I4V178_H_
+#ifndef _TAO_IDL_TESTC_LZKCZR_H_
+#define _TAO_IDL_TESTC_LZKCZR_H_
 
 #include /**/ "ace/pre.h"
 
@@ -79,9 +79,9 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace Test
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_TEST_HELLO__VAR_OUT_CH_)
 #define _TEST_HELLO__VAR_OUT_CH_
@@ -93,11 +93,11 @@ namespace Test
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  Hello
     : public virtual ::CORBA::Object
@@ -105,7 +105,7 @@ namespace Test
   public:
     friend class TAO::Narrow_Utils<Hello>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = Hello_ptr;
     using _var_type = Hello_var;
@@ -124,23 +124,23 @@ namespace Test
 
     virtual void shutdown ();
 
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     Hello ();
 
     // Concrete non-local interface only.
     Hello (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     Hello (
         TAO_Stub *objref,
@@ -149,7 +149,7 @@ namespace Test
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~Hello () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     Hello (const Hello &) = delete;
@@ -165,7 +165,7 @@ namespace Test
 
 } // module Test
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -176,9 +176,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_TEST_HELLO__ARG_TRAITS_)
 #define _TEST_HELLO__ARG_TRAITS_
@@ -244,7 +244,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "TestC.inl"

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_SIMPLE2S_FA51YD_CPP_
-#define _TAO_IDL_SIMPLE2S_FA51YD_CPP_
+#ifndef _TAO_IDL_SIMPLE2S_MEYCDY_CPP_
+#define _TAO_IDL_SIMPLE2S_MEYCDY_CPP_
 
 
 #include "simple2S.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_AMH_simple3_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -145,7 +145,7 @@ static TAO_AMH_simple3_Perfect_Hash_OpTable tao_AMH_simple3_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -156,7 +156,7 @@ POA_AMH_simple3::POA_AMH_simple3 ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_AMH_simple3::op3_skel (
@@ -168,7 +168,7 @@ POA_AMH_simple3::op3_skel (
     dynamic_cast<POA_AMH_simple3 *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::CORBA::Long a;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -176,35 +176,35 @@ POA_AMH_simple3::op3_skel (
       (_tao_in >> a)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_TAO_AMH_simple3ResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_TAO_AMH_simple3ResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_TAO_AMH_simple3ResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_TAO_AMH_simple3ResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op3 (
       safe_rd_.get (),
       a
     );
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_AMH_simple3::op4_skel (
@@ -216,7 +216,7 @@ POA_AMH_simple3::op4_skel (
     dynamic_cast<POA_AMH_simple3 *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::CORBA::Any x;
   ::CORBA::Any y;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -226,28 +226,28 @@ POA_AMH_simple3::op4_skel (
       (_tao_in >> y)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_TAO_AMH_simple3ResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_TAO_AMH_simple3ResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_TAO_AMH_simple3ResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_TAO_AMH_simple3ResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op4 (
       safe_rd_.get (),
       x,
@@ -257,7 +257,7 @@ POA_AMH_simple3::op4_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -279,7 +279,7 @@ const char* POA_AMH_simple3::_interface_repository_id () const
   return "IDL:simple3:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_AMH_simple3::_dispatch (
@@ -289,7 +289,7 @@ POA_AMH_simple3::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 simple3*
 POA_AMH_simple3::_this ()
@@ -301,12 +301,12 @@ POA_AMH_simple3::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::simple3>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_simple3_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -410,15 +410,15 @@ void
 _TAO_simple3_Direct_Proxy_Impl::op3 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_simple3_ptr _tao_ptr = 
+  POA_simple3_ptr _tao_ptr =
     dynamic_cast<POA_simple3_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::CORBA::Long>::ret_val *) args[0])->arg () =
     _tao_ptr->op3 (
           ((TAO::Arg_Traits< ::CORBA::Long>::in_arg_val *) args[1])->arg (),
@@ -436,15 +436,15 @@ void
 _TAO_simple3_Direct_Proxy_Impl::op4 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_simple3_ptr _tao_ptr = 
+  POA_simple3_ptr _tao_ptr =
     dynamic_cast<POA_simple3_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::CORBA::Any>::ret_val *) args[0])->arg () =
     _tao_ptr->op4 (
           ((TAO::Arg_Traits< ::CORBA::Any>::in_arg_val *) args[1])->arg (),
@@ -461,7 +461,7 @@ _TAO_simple3_Direct_Proxy_Impl::op4 (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -494,31 +494,31 @@ public:
       TAO::Portable_Server::get_ret_arg< ::CORBA::Long> (
         this->operation_details_,
         this->args_);
-    
+
     TAO::SArg_Traits< ::CORBA::Long>::in_arg_type arg_1 =
       TAO::Portable_Server::get_in_arg< ::CORBA::Long> (
         this->operation_details_,
         this->args_,
         1);
-      
+
     TAO::SArg_Traits< ::simple3>::out_arg_type arg_2 =
       TAO::Portable_Server::get_out_arg< ::simple3> (
         this->operation_details_,
         this->args_,
         2);
-      
+
     TAO::SArg_Traits< ::simple2>::out_arg_type arg_3 =
       TAO::Portable_Server::get_out_arg< ::simple2> (
         this->operation_details_,
         this->args_,
         3);
-      
+
     TAO::SArg_Traits< ::simple>::out_arg_type arg_4 =
       TAO::Portable_Server::get_out_arg< ::simple> (
         this->operation_details_,
         this->args_,
         4);
-      
+
     retval =
       this->servant_->op3 (
         arg_1
@@ -541,13 +541,13 @@ void POA_simple3::op3_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_OverFlow,
       simple3::_tc_UnderFlow,
       simple3::_tc_BadNum
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< ::CORBA::Long>::ret_val retval;
@@ -564,7 +564,7 @@ void POA_simple3::op3_skel (
       std::addressof(_tao_c),
       std::addressof(_tao_d)
     };
-  
+
   POA_simple3 * const impl =
     dynamic_cast<POA_simple3 *> (servant);
 
@@ -577,7 +577,7 @@ void POA_simple3::op3_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -615,25 +615,25 @@ public:
       TAO::Portable_Server::get_ret_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_);
-    
+
     TAO::SArg_Traits< ::CORBA::Any>::in_arg_type arg_1 =
       TAO::Portable_Server::get_in_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_,
         1);
-      
+
     TAO::SArg_Traits< ::CORBA::Any>::inout_arg_type arg_2 =
       TAO::Portable_Server::get_inout_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_,
         2);
-      
+
     TAO::SArg_Traits< ::CORBA::Any>::out_arg_type arg_3 =
       TAO::Portable_Server::get_out_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_,
         3);
-      
+
     retval =
       this->servant_->op4 (
         arg_1
@@ -655,11 +655,11 @@ void POA_simple3::op4_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_UnderFlow
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< ::CORBA::Any>::ret_val retval;
@@ -674,7 +674,7 @@ void POA_simple3::op4_skel (
       std::addressof(_tao_y),
       std::addressof(_tao_z)
     };
-  
+
   POA_simple3 * const impl =
     dynamic_cast<POA_simple3 *> (servant);
 
@@ -687,7 +687,7 @@ void POA_simple3::op4_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -705,7 +705,7 @@ void POA_simple3::op4_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -729,7 +729,7 @@ const char* POA_simple3::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -742,7 +742,7 @@ void POA_simple3::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -760,11 +760,11 @@ POA_simple3::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_TAO_AMH_simple3ResponseHandler::op3 (
@@ -784,11 +784,11 @@ POA_TAO_AMH_simple3ResponseHandler::op3 (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_TAO_AMH_simple3ResponseHandler::op3_excep (
@@ -804,7 +804,7 @@ POA_TAO_AMH_simple3ResponseHandler::op3_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_TAO_AMH_simple3ResponseHandler::op4 (
@@ -822,11 +822,11 @@ POA_TAO_AMH_simple3ResponseHandler::op4 (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_TAO_AMH_simple3ResponseHandler::op4_excep (
@@ -842,7 +842,7 @@ POA_TAO_AMH_simple3ResponseHandler::op4_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_AMI_simple3Handler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -914,8 +914,9 @@ TAO_AMI_simple3Handler_Perfect_Hash_OpTable::lookup (const char *str, unsigned i
 
   static constexpr signed char lookup[] =
     {
-       -7,  -3,   2,   3,  -1,   4,  -1,   5,   6, -27,  10,  -1,  -1,  11, 
-       12,  13,  -1,  -1,  14, 
+       -7,  -3,   2,   3,  -1,   4,  -1,   5,   6, -27,  10,  -1,  -1,  11,
+       12,  13,  -1,  -1,  14,
+
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
@@ -968,15 +969,15 @@ void
 _TAO_AMI_simple3Handler_Direct_Proxy_Impl::op3 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_AMI_simple3Handler_ptr _tao_ptr = 
+  POA_AMI_simple3Handler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_simple3Handler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op3 (
         ((TAO::Arg_Traits< ::CORBA::Long>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::simple3>::in_arg_val *) args[2])->arg (),
@@ -993,15 +994,15 @@ void
 _TAO_AMI_simple3Handler_Direct_Proxy_Impl::op3_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_AMI_simple3Handler_ptr _tao_ptr = 
+  POA_AMI_simple3Handler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_simple3Handler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op3_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -1015,15 +1016,15 @@ void
 _TAO_AMI_simple3Handler_Direct_Proxy_Impl::op4 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_AMI_simple3Handler_ptr _tao_ptr = 
+  POA_AMI_simple3Handler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_simple3Handler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op4 (
         ((TAO::Arg_Traits< ::CORBA::Any>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::CORBA::Any>::in_arg_val *) args[2])->arg (),
@@ -1039,15 +1040,15 @@ void
 _TAO_AMI_simple3Handler_Direct_Proxy_Impl::op4_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_AMI_simple3Handler_ptr _tao_ptr = 
+  POA_AMI_simple3Handler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_simple3Handler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op4_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -1061,7 +1062,7 @@ _TAO_AMI_simple3Handler_Direct_Proxy_Impl::op4_excep (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1095,25 +1096,25 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
+
     TAO::SArg_Traits< ::simple3>::in_arg_type arg_2 =
       TAO::Portable_Server::get_in_arg< ::simple3> (
         this->operation_details_,
         this->args_,
         2);
-      
+
     TAO::SArg_Traits< ::simple2>::in_arg_type arg_3 =
       TAO::Portable_Server::get_in_arg< ::simple2> (
         this->operation_details_,
         this->args_,
         3);
-      
+
     TAO::SArg_Traits< ::simple>::in_arg_type arg_4 =
       TAO::Portable_Server::get_in_arg< ::simple> (
         this->operation_details_,
         this->args_,
         4);
-      
+
     this->servant_->op3 (
       arg_1
       , arg_2
@@ -1135,13 +1136,13 @@ void POA_AMI_simple3Handler::op3_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_OverFlow,
       simple3::_tc_UnderFlow,
       simple3::_tc_BadNum
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1158,7 +1159,7 @@ void POA_AMI_simple3Handler::op3_skel (
       std::addressof(_tao_c),
       std::addressof(_tao_d)
     };
-  
+
   POA_AMI_simple3Handler * const impl =
     dynamic_cast<POA_AMI_simple3Handler *> (servant);
 
@@ -1171,7 +1172,7 @@ void POA_AMI_simple3Handler::op3_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1210,11 +1211,11 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
-    
+
+
 
     static TAO::Exception_Data
-    _tao_AMI_simple3Handler_op3_excep_exceptiondata [] = 
+    _tao_AMI_simple3Handler_op3_excep_exceptiondata [] =
       {
         {
           "IDL:simple3/OverFlow:1.0",
@@ -1245,7 +1246,7 @@ public:
       {
         tao_excepholder->set_exception_data (_tao_AMI_simple3Handler_op3_excep_exceptiondata, 3);
       }
-    
+
     this->servant_->op3_excep (
       arg_1);
   }
@@ -1264,13 +1265,13 @@ void POA_AMI_simple3Handler::op3_excep_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_OverFlow,
       simple3::_tc_UnderFlow,
       simple3::_tc_BadNum
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1281,7 +1282,7 @@ void POA_AMI_simple3Handler::op3_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_AMI_simple3Handler * const impl =
     dynamic_cast<POA_AMI_simple3Handler *> (servant);
 
@@ -1294,7 +1295,7 @@ void POA_AMI_simple3Handler::op3_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1333,19 +1334,19 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
+
     TAO::SArg_Traits< ::CORBA::Any>::in_arg_type arg_2 =
       TAO::Portable_Server::get_in_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_,
         2);
-      
+
     TAO::SArg_Traits< ::CORBA::Any>::in_arg_type arg_3 =
       TAO::Portable_Server::get_in_arg< ::CORBA::Any> (
         this->operation_details_,
         this->args_,
         3);
-      
+
     this->servant_->op4 (
       arg_1
       , arg_2
@@ -1366,11 +1367,11 @@ void POA_AMI_simple3Handler::op4_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_UnderFlow
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1385,7 +1386,7 @@ void POA_AMI_simple3Handler::op4_skel (
       std::addressof(_tao_y),
       std::addressof(_tao_z)
     };
-  
+
   POA_AMI_simple3Handler * const impl =
     dynamic_cast<POA_AMI_simple3Handler *> (servant);
 
@@ -1398,7 +1399,7 @@ void POA_AMI_simple3Handler::op4_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1437,11 +1438,11 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
-    
+
+
 
     static TAO::Exception_Data
-    _tao_AMI_simple3Handler_op4_excep_exceptiondata [] = 
+    _tao_AMI_simple3Handler_op4_excep_exceptiondata [] =
       {
         {
           "IDL:simple3/UnderFlow:1.0",
@@ -1456,7 +1457,7 @@ public:
       {
         tao_excepholder->set_exception_data (_tao_AMI_simple3Handler_op4_excep_exceptiondata, 1);
       }
-    
+
     this->servant_->op4_excep (
       arg_1);
   }
@@ -1475,11 +1476,11 @@ void POA_AMI_simple3Handler::op4_excep_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       simple3::_tc_UnderFlow
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1490,7 +1491,7 @@ void POA_AMI_simple3Handler::op4_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_AMI_simple3Handler * const impl =
     dynamic_cast<POA_AMI_simple3Handler *> (servant);
 
@@ -1503,7 +1504,7 @@ void POA_AMI_simple3Handler::op4_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1521,7 +1522,7 @@ void POA_AMI_simple3Handler::op4_excep_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1546,7 +1547,7 @@ const char* POA_AMI_simple3Handler::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -1559,7 +1560,7 @@ void POA_AMI_simple3Handler::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 

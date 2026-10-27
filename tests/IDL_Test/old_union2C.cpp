@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:332
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
 
 
 #include "old_union2C.h"
@@ -72,7 +72,7 @@ static TAO::TypeCode::Enum<char const *,
     "FooDisc",
     _tao_enumerators_OldUnion2_FooDisc,
     2);
-  
+
 
 namespace OldUnion2
 {
@@ -151,7 +151,7 @@ void OldUnion2::Foo::_reset ()
 {
   switch (_tao_member_index (this->disc_))
   {
-    
+
     case 0UL:
     break;
     case 1UL:
@@ -165,7 +165,7 @@ void OldUnion2::Foo::_reset ()
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<OldUnion2::FooDisc, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion2_Foo__0 (OldUnion2::FOO1, "x", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<OldUnion2::FooDisc, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion2_Foo__1 (OldUnion2::FOO2, "y", &CORBA::_tc_string);
@@ -187,14 +187,14 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_OldUnion2_Foo,
     sizeof (_tao_cases_OldUnion2_Foo)/sizeof (_tao_cases_OldUnion2_Foo[0]),
     -1);
-  
+
 
 namespace OldUnion2
 {
   ::CORBA::TypeCode_ptr const _tc_Foo = std::addressof(_tao_tc_OldUnion2_Foo);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -253,7 +253,7 @@ static TAO::TypeCode::Enum<char const *,
     "BarDisc",
     _tao_enumerators_OldUnion2_Bar_BarDisc,
     2);
-  
+
 ::CORBA::TypeCode_ptr const OldUnion2::Bar::_tc_BarDisc = std::addressof(_tao_tc_OldUnion2_Bar_BarDisc);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:73
@@ -328,7 +328,7 @@ void OldUnion2::Bar::Foo::_reset ()
 {
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
 static TAO::TypeCode::Case_T<OldUnion2::Bar::BarDisc, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion2_Bar_Foo__0 (OldUnion2::Bar::BAR1, "x", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<OldUnion2::Bar::BarDisc, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_OldUnion2_Bar_Foo__1 (OldUnion2::Bar::BAR2, "y", &CORBA::_tc_long);
@@ -350,7 +350,7 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_OldUnion2_Bar_Foo,
     sizeof (_tao_cases_OldUnion2_Bar_Foo)/sizeof (_tao_cases_OldUnion2_Bar_Foo[0]),
     -1);
-  
+
 ::CORBA::TypeCode_ptr const OldUnion2::Bar::_tc_Foo = std::addressof(_tao_tc_OldUnion2_Bar_Foo);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:32
@@ -591,12 +591,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<OldUnion2::FooDisc> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -617,7 +617,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -648,7 +648,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -703,12 +703,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<OldUnion2::Bar::BarDisc> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
@@ -729,7 +729,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -760,7 +760,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)

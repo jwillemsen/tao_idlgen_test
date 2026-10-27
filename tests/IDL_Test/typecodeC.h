@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_TYPECODEC_TT7HXR_H_
-#define _TAO_IDL_TYPECODEC_TT7HXR_H_
+#ifndef _TAO_IDL_TYPECODEC_NLCP3K_H_
+#define _TAO_IDL_TYPECODEC_NLCP3K_H_
 
 #include /**/ "ace/pre.h"
 
@@ -113,11 +113,11 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace MyModule
 {
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_MYMODULE_TYPECODELIST_CH_)
 #define _MYMODULE_TYPECODELIST_CH_
@@ -125,7 +125,7 @@ namespace MyModule
   class TypeCodeList;
   using TypeCodeList_var = ::TAO_VarSeq_Var_T<TypeCodeList>;
   using TypeCodeList_out = ::TAO_Seq_Out_T<TypeCodeList>;
-  
+
 
   class TAO_IDL_TEST_STUB_Export TypeCodeList
     : public
@@ -147,11 +147,11 @@ namespace MyModule
     TypeCodeList& operator= (TypeCodeList const &) = default;
     TypeCodeList& operator= (TypeCodeList &&) = default;
     virtual ~TypeCodeList () = default;
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
     using _var_type = TypeCodeList_var;
     using _out_type = TypeCodeList_out;
 
@@ -167,7 +167,7 @@ namespace MyModule
 
 } // module MyModule
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -178,9 +178,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -200,9 +200,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::MyModule::TypeCodeList>
@@ -255,7 +255,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_MyModule_TypeCodeList_H_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "typecodeC.inl"

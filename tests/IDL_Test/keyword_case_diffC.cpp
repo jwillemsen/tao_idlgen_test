@@ -51,7 +51,7 @@
 #include "keyword_case_diffC.inl"
 #endif /* !defined INLINE */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:45
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -221,7 +221,7 @@ MyModule::PortType::myMethod ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -230,7 +230,7 @@ MyModule::PortType::myMethod ()
     };
 
   static TAO::Exception_Data
-  _tao_MyModule_PortType_myMethod_exceptiondata [] = 
+  _tao_MyModule_PortType_myMethod_exceptiondata [] =
     {
       {
         "IDL:MyModule/PortType/MyException:1.0",
@@ -339,7 +339,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:MyModule/PortType:1.0",
     "PortType");
-  
+
 
 namespace MyModule
 {
@@ -433,7 +433,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);
@@ -556,7 +556,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::MyModule::PortType>::unchecked_narrow (obj.in ());
 

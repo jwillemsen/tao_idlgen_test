@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_ANONYMOUSC_VFDPI5_H_
-#define _TAO_IDL_ANONYMOUSC_VFDPI5_H_
+#ifndef _TAO_IDL_ANONYMOUSC_MV5STF_H_
+#define _TAO_IDL_ANONYMOUSC_MV5STF_H_
 
 #include /**/ "ace/pre.h"
 
@@ -94,11 +94,11 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace Not_Anon
 {
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_NOT_ANON_SHORT_SEQ_CH_)
 #define _NOT_ANON_SHORT_SEQ_CH_
@@ -106,7 +106,7 @@ namespace Not_Anon
   class short_seq;
   using short_seq_var = ::TAO_FixedSeq_Var_T<short_seq>;
   using short_seq_out = ::TAO_Seq_Out_T<short_seq>;
-  
+
 
   class TAO_IDL_TEST_STUB_Export short_seq
     : public
@@ -125,11 +125,11 @@ namespace Not_Anon
     short_seq& operator= (short_seq const &) = default;
     short_seq& operator= (short_seq &&) = default;
     virtual ~short_seq () = default;
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
     using _var_type = short_seq_var;
     using _out_type = short_seq_out;
 
@@ -150,20 +150,20 @@ namespace Not_Anon
 namespace Half_Anon
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-  
 
-  
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_HALF_ANON__TAO_SEQ_CORBA_CHAR__CH_)
 #define _HALF_ANON__TAO_SEQ_CORBA_CHAR__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_Char_
     : public
@@ -182,7 +182,7 @@ namespace Half_Anon
     _tao_seq_CORBA_Char_& operator= (_tao_seq_CORBA_Char_ const &) = default;
     _tao_seq_CORBA_Char_& operator= (_tao_seq_CORBA_Char_ &&) = default;
     virtual ~_tao_seq_CORBA_Char_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -190,16 +190,16 @@ namespace Half_Anon
   using char_seq_array = _tao_seq_CORBA_Char_[14];
   using char_seq_array_slice = _tao_seq_CORBA_Char_;
   struct char_seq_array_tag {};
-  
 
-  using char_seq_array_var = 
+
+  using char_seq_array_var =
     TAO_VarArray_Var_T<
         char_seq_array,
         char_seq_array_slice,
         char_seq_array_tag
       >;
 
-    using char_seq_array_out = 
+    using char_seq_array_out =
       TAO_Array_Out_T<
           char_seq_array,
           char_seq_array_var,
@@ -217,20 +217,20 @@ namespace Half_Anon
 
       extern TAO_IDL_TEST_STUB_Export void char_seq_array_copy (char_seq_array_slice *_tao_to, const char_seq_array_slice *_tao_from);
       // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-      
 
-      
+
+
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-      
+
 
 #if !defined (_HALF_ANON__TAO_SEQ_CORBA_ULONG__18_CH_)
 #define _HALF_ANON__TAO_SEQ_CORBA_ULONG__18_CH_
 
-      
+
 
       class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_ULong__18
         : public
@@ -247,7 +247,7 @@ namespace Half_Anon
         _tao_seq_CORBA_ULong__18& operator= (_tao_seq_CORBA_ULong__18 const &) = default;
         _tao_seq_CORBA_ULong__18& operator= (_tao_seq_CORBA_ULong__18 &&) = default;
         virtual ~_tao_seq_CORBA_ULong__18 () = default;
-        
+
       };
 
 #endif /* end #if !defined */
@@ -255,16 +255,16 @@ namespace Half_Anon
       using bd_ulong_seq_array = _tao_seq_CORBA_ULong__18[17];
       using bd_ulong_seq_array_slice = _tao_seq_CORBA_ULong__18;
       struct bd_ulong_seq_array_tag {};
-      
 
-      using bd_ulong_seq_array_var = 
+
+      using bd_ulong_seq_array_var =
         TAO_VarArray_Var_T<
             bd_ulong_seq_array,
             bd_ulong_seq_array_slice,
             bd_ulong_seq_array_tag
           >;
 
-        using bd_ulong_seq_array_out = 
+        using bd_ulong_seq_array_out =
           TAO_Array_Out_T<
               bd_ulong_seq_array,
               bd_ulong_seq_array_var,
@@ -282,20 +282,20 @@ namespace Half_Anon
 
           extern TAO_IDL_TEST_STUB_Export void bd_ulong_seq_array_copy (bd_ulong_seq_array_slice *_tao_to, const bd_ulong_seq_array_slice *_tao_from);
           // TAO_IDL - Generated from
-          // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+          // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-          
 
-          
+
+
           // TAO_IDL - Generated from
           // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-          
+
 
 #if !defined (_HALF_ANON__TAO_SEQ_CORBA_USHORT__CH_)
 #define _HALF_ANON__TAO_SEQ_CORBA_USHORT__CH_
 
-          
+
 
           class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_UShort_
             : public
@@ -314,7 +314,7 @@ namespace Half_Anon
             _tao_seq_CORBA_UShort_& operator= (_tao_seq_CORBA_UShort_ const &) = default;
             _tao_seq_CORBA_UShort_& operator= (_tao_seq_CORBA_UShort_ &&) = default;
             virtual ~_tao_seq_CORBA_UShort_ () = default;
-            
+
           };
 
 #endif /* end #if !defined */
@@ -322,16 +322,16 @@ namespace Half_Anon
           using ushort_seq_array = _tao_seq_CORBA_UShort_[12];
           using ushort_seq_array_slice = _tao_seq_CORBA_UShort_;
           struct ushort_seq_array_tag {};
-          
 
-          using ushort_seq_array_var = 
+
+          using ushort_seq_array_var =
             TAO_VarArray_Var_T<
                 ushort_seq_array,
                 ushort_seq_array_slice,
                 ushort_seq_array_tag
               >;
 
-            using ushort_seq_array_out = 
+            using ushort_seq_array_out =
               TAO_Array_Out_T<
                   ushort_seq_array,
                   ushort_seq_array_var,
@@ -349,20 +349,20 @@ namespace Half_Anon
 
               extern TAO_IDL_TEST_STUB_Export void ushort_seq_array_copy (ushort_seq_array_slice *_tao_to, const ushort_seq_array_slice *_tao_from);
               // TAO_IDL - Generated from
-              // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+              // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-              
 
-              
+
+
               // TAO_IDL - Generated from
               // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-              
+
 
 #if !defined (_HALF_ANON__TAO_SEQ_CORBA_USHORT__7_CH_)
 #define _HALF_ANON__TAO_SEQ_CORBA_USHORT__7_CH_
 
-              
+
 
               class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_UShort__7
                 : public
@@ -379,7 +379,7 @@ namespace Half_Anon
                 _tao_seq_CORBA_UShort__7& operator= (_tao_seq_CORBA_UShort__7 const &) = default;
                 _tao_seq_CORBA_UShort__7& operator= (_tao_seq_CORBA_UShort__7 &&) = default;
                 virtual ~_tao_seq_CORBA_UShort__7 () = default;
-                
+
               };
 
 #endif /* end #if !defined */
@@ -387,16 +387,16 @@ namespace Half_Anon
               using bd_ushort_seq_array = _tao_seq_CORBA_UShort__7[11];
               using bd_ushort_seq_array_slice = _tao_seq_CORBA_UShort__7;
               struct bd_ushort_seq_array_tag {};
-              
 
-              using bd_ushort_seq_array_var = 
+
+              using bd_ushort_seq_array_var =
                 TAO_VarArray_Var_T<
                     bd_ushort_seq_array,
                     bd_ushort_seq_array_slice,
                     bd_ushort_seq_array_tag
                   >;
 
-                using bd_ushort_seq_array_out = 
+                using bd_ushort_seq_array_out =
                   TAO_Array_Out_T<
                       bd_ushort_seq_array,
                       bd_ushort_seq_array_var,
@@ -413,12 +413,12 @@ namespace Half_Anon
                   extern TAO_IDL_TEST_STUB_Export bd_ushort_seq_array_slice *bd_ushort_seq_array_dup (const bd_ushort_seq_array_slice *_tao_slice);
 
                   extern TAO_IDL_TEST_STUB_Export void bd_ushort_seq_array_copy (bd_ushort_seq_array_slice *_tao_to, const bd_ushort_seq_array_slice *_tao_from);
-                
-                
+
+
                 // TAO_IDL - Generated from
                 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:60
 
-                
+
                 } // module Half_Anon
                 // TAO_IDL - Generated from
                 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:32
@@ -426,9 +426,9 @@ namespace Half_Anon
                 namespace All_Anon
                 {
                   // TAO_IDL - Generated from
-                  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+                  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-                  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST__VAR_OUT_CH_)
 #define _ALL_ANON_ANON_BD_STRING_TEST__VAR_OUT_CH_
@@ -443,11 +443,11 @@ namespace Half_Anon
 
 #endif /* end #if !defined */
 
-                  
+
                   // TAO_IDL - Generated from
                   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-                  
+
 
                   class TAO_IDL_TEST_STUB_Export anon_bd_string_test
                     : public virtual ::CORBA::Object
@@ -455,7 +455,7 @@ namespace Half_Anon
                   public:
                     friend class TAO::Narrow_Utils<anon_bd_string_test>;
                     // TAO_IDL - Generated from
-                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
                     using _ptr_type = anon_bd_string_test_ptr;
                     using _var_type = anon_bd_string_test_var;
@@ -474,7 +474,7 @@ namespace Half_Anon
                     // TAO_IDL - Generated from
                     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_constant/constant_ch.cpp:32
 
-                    
+
 
                     static const CORBA::Long test_string_size = 25;
 
@@ -526,25 +526,25 @@ namespace Half_Anon
                       ::All_Anon::AMI_anon_bd_string_testHandler_ptr ami_handler,
                       const char * inarg);
 
-                    
+
                     // TAO_IDL - Generated from
                     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-                    
+
 
                     virtual ::CORBA::Boolean _is_a (const char *type_id);
                     virtual const char* _interface_repository_id () const;
                     static const char* _desc_repository_id ();
                     static const char* _desc_interface_name ();
                     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-                  
+
                   protected:
                     // Concrete interface only.
                     anon_bd_string_test ();
 
                     // Concrete non-local interface only.
                     anon_bd_string_test (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-                    
+
                     // Non-local interface only.
                     anon_bd_string_test (
                         TAO_Stub *objref,
@@ -553,7 +553,7 @@ namespace Half_Anon
                         TAO_ORB_Core *orb_core = nullptr);
 
                     virtual ~anon_bd_string_test () = default;
-                  
+
                   private:
                     // Private and unimplemented for concrete interfaces.
                     anon_bd_string_test (const anon_bd_string_test &) = delete;
@@ -564,7 +564,7 @@ namespace Half_Anon
                   // TAO_IDL - Generated from
                   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:556
 
-                  
+
 
 #if !defined (_ALL_ANON_AMH_ANON_BD_STRING_TESTEXCEPTIONHOLDER__VAR_OUT_CH_)
 #define _ALL_ANON_AMH_ANON_BD_STRING_TESTEXCEPTIONHOLDER__VAR_OUT_CH_
@@ -577,14 +577,14 @@ namespace Half_Anon
                   // TAO_IDL - Generated from
                   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:47
 
-                  
+
 
                   class TAO_IDL_TEST_STUB_Export AMH_anon_bd_string_testExceptionHolder
                     : public virtual ::CORBA::DefaultValueRefCountBase
                   {
                   public:
                     // TAO_IDL - Generated from
-                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
                     using _ptr_type = AMH_anon_bd_string_testExceptionHolder*;
                     using _var_type = AMH_anon_bd_string_testExceptionHolder_var;
@@ -600,12 +600,12 @@ namespace Half_Anon
                     virtual ::CORBA::ValueBase *_copy_value ();
 
                     static AMH_anon_bd_string_testExceptionHolder* _downcast (::CORBA::ValueBase *v);
-                    
+
                     /// TAO extensions or internals
                     static ::CORBA::Boolean _tao_unmarshal (
                         TAO_InputCDR &strm,
                         AMH_anon_bd_string_testExceptionHolder *&new_object);
-                    
+
                     virtual char const * _tao_obv_repository_id () const;
 
                     virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -613,76 +613,76 @@ namespace Half_Anon
                     static char const * _tao_obv_static_repository_id ();
 
                     virtual ::CORBA::TypeCode_ptr _tao_type () const;
-                  
+
                   public:
                     // TAO_IDL - Generated from
                     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-                    
+
                   public:
                     virtual void raise_TestFunc ();
-                
+
                 public:
                   // TAO_IDL - Generated from
                   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-                  
+
                 public:
                   virtual void raise_TestFunc2 ();
-              
+
               public:
                 // TAO_IDL - Generated from
                 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-                
+
               public:
                 virtual void raise_TestFunc3 ();
-            
+
             public:
               // TAO_IDL - Generated from
               // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-              
+
             public:
               virtual void raise_TestFunc23 ();
-          
+
           public:
             // TAO_IDL - Generated from
             // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-            
+
           public:
             virtual void raise_TestFunc4 ();
-        
+
         public:
           // TAO_IDL - Generated from
           // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-          
+
         public:
           virtual void raise_TestFunc41 ();
-      
+
       public:
         // TAO_IDL - Generated from
         // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-        
+
       public:
         virtual void raise_TestFunc42 ();
-    
+
     public:
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-      
+
     public:
       virtual void raise_TestFunc43 ();
-  
+
   public:
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-    
+
   public:
     virtual void raise_sendc_TestFunc ();
 
@@ -690,7 +690,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc2 ();
 
@@ -698,7 +698,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc3 ();
 
@@ -706,7 +706,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc23 ();
 
@@ -714,7 +714,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc4 ();
 
@@ -722,7 +722,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc41 ();
 
@@ -730,7 +730,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc42 ();
 
@@ -738,7 +738,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_TestFunc43 ();
 // TAO_IDL - Generated from
@@ -751,13 +751,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_anon_bd_string_testExceptionHolder (const AMH_anon_bd_string_testExceptionHolder &);
   void operator= (const AMH_anon_bd_string_testExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__All_Anon_AMH_anon_bd_string_testExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -766,7 +766,7 @@ protected:
   _tao_unmarshal__All_Anon_AMH_anon_bd_string_testExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -794,7 +794,7 @@ class TAO_IDL_TEST_STUB_Export AMH_anon_bd_string_testResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_anon_bd_string_testResponseHandler_ptr;
   using _var_type = AMH_anon_bd_string_testResponseHandler_var;
@@ -855,11 +855,11 @@ public:
   virtual void TestFunc43_excep (
     ::All_Anon::AMH_anon_bd_string_testExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -871,7 +871,7 @@ protected:
   // Abstract or local interface only.
   AMH_anon_bd_string_testResponseHandler ();
 
-  
+
 
   virtual ~AMH_anon_bd_string_testResponseHandler () = default;
 
@@ -883,7 +883,7 @@ private:
   AMH_anon_bd_string_testResponseHandler &operator= (AMH_anon_bd_string_testResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -910,7 +910,7 @@ class TAO_IDL_TEST_STUB_Export AMI_anon_bd_string_testHandler
 public:
   friend class TAO::Narrow_Utils<AMI_anon_bd_string_testHandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_anon_bd_string_testHandler_ptr;
   using _var_type = AMI_anon_bd_string_testHandler_var;
@@ -1019,11 +1019,11 @@ public:
   virtual void TestFunc43_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -1037,7 +1037,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_anon_bd_string_testHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_anon_bd_string_testHandler (
       TAO_Stub *objref,
@@ -1062,22 +1062,22 @@ private:
 class TAO_IDL_TEST_STUB_Export Nested_Anon : public ::CORBA::UserException
 {
 public:
-  
+
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-  
 
-  
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_ALL_ANON_NESTED_ANON__TAO_SEQ_CORBA_FLOAT__CH_)
 #define _ALL_ANON_NESTED_ANON__TAO_SEQ_CORBA_FLOAT__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_Float_
     : public
@@ -1096,7 +1096,7 @@ public:
     _tao_seq_CORBA_Float_& operator= (_tao_seq_CORBA_Float_ const &) = default;
     _tao_seq_CORBA_Float_& operator= (_tao_seq_CORBA_Float_ &&) = default;
     virtual ~_tao_seq_CORBA_Float_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -1104,7 +1104,7 @@ public:
   using _float_seq_array = _tao_seq_CORBA_Float_[6];
   using _float_seq_array_slice = _tao_seq_CORBA_Float_;
   struct _float_seq_array_tag {};
-  
+
 
   using _float_seq_array_forany = TAO_Array_Forany_T<_float_seq_array, _float_seq_array_slice, _float_seq_array_tag>;
 
@@ -1117,22 +1117,22 @@ public:
   static void _float_seq_array_copy (_float_seq_array_slice *_tao_to, const _float_seq_array_slice *_tao_from);
 
   _float_seq_array float_seq_array {};
-  
+
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
 
-  
 
-  
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_ALL_ANON_NESTED_ANON__TAO_SEQ_CORBA_FLOAT__CH_)
 #define _ALL_ANON_NESTED_ANON__TAO_SEQ_CORBA_FLOAT__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_Float_
     : public
@@ -1151,7 +1151,7 @@ public:
     _tao_seq_CORBA_Float_& operator= (_tao_seq_CORBA_Float_ const &) = default;
     _tao_seq_CORBA_Float_& operator= (_tao_seq_CORBA_Float_ &&) = default;
     virtual ~_tao_seq_CORBA_Float_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -1159,7 +1159,7 @@ public:
   using _another_fsa = _tao_seq_CORBA_Float_[6];
   using _another_fsa_slice = _tao_seq_CORBA_Float_;
   struct _another_fsa_tag {};
-  
+
 
   using _another_fsa_forany = TAO_Array_Forany_T<_another_fsa, _another_fsa_slice, _another_fsa_tag>;
 
@@ -1172,16 +1172,16 @@ public:
   static void _another_fsa_copy (_another_fsa_slice *_tao_to, const _another_fsa_slice *_tao_from);
 
   _another_fsa another_fsa {};
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
   using _long_array_1 = ::CORBA::Long[6];
   using _long_array_1_slice = ::CORBA::Long;
   struct _long_array_1_tag {};
-  
+
 
   using _long_array_1_forany = TAO_Array_Forany_T<_long_array_1, _long_array_1_slice, _long_array_1_tag>;
 
@@ -1194,16 +1194,16 @@ public:
   static void _long_array_1_copy (_long_array_1_slice *_tao_to, const _long_array_1_slice *_tao_from);
 
   _long_array_1 long_array_1 {};
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:49
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_ch.cpp:50
+
+
 
   using _long_array_2 = ::CORBA::Long[6];
   using _long_array_2_slice = ::CORBA::Long;
   struct _long_array_2_tag {};
-  
+
 
   using _long_array_2_forany = TAO_Array_Forany_T<_long_array_2, _long_array_2_slice, _long_array_2_tag>;
 
@@ -1239,7 +1239,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ctor.cpp:48
 
-  
+
 
   Nested_Anon (
       const _float_seq_array _tao_float_seq_array,
@@ -1275,7 +1275,7 @@ namespace Second
 
 } // module Second
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -1286,9 +1286,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -1308,9 +1308,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::Not_Anon::short_seq>
@@ -1366,9 +1366,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST__ARG_TRAITS_
@@ -1386,9 +1386,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:422
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:417
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC__ARG_TRAITS_
@@ -1407,9 +1407,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:422
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:417
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC2__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC2__ARG_TRAITS_
@@ -1428,9 +1428,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:422
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:417
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC3__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC3__ARG_TRAITS_
@@ -1449,9 +1449,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:422
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:417
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC23__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC23__ARG_TRAITS_
@@ -1470,9 +1470,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
-  
+
 
 #if !defined (_ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC4_INARG__ARG_TRAITS_)
 #define _ALL_ANON_ANON_BD_STRING_TEST_TESTFUNC4_INARG__ARG_TRAITS_
@@ -1492,7 +1492,7 @@ namespace TAO
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1514,7 +1514,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_TestFunc41_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1536,7 +1536,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_TestFunc42_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1558,7 +1558,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_TestFunc43_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1580,7 +1580,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_sendc_TestFunc4_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1602,7 +1602,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_sendc_TestFunc41_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1624,7 +1624,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_sendc_TestFunc42_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1646,7 +1646,7 @@ class Arg_Traits<All_Anon_anon_bd_string_test_sendc_TestFunc43_inarg>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
 
 
@@ -1668,7 +1668,7 @@ class Arg_Traits< ::All_Anon::AMH_anon_bd_string_testExceptionHolder>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
 
 
@@ -1688,7 +1688,7 @@ class  Arg_Traits< ::All_Anon::AMI_anon_bd_string_testHandler>
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1710,7 +1710,7 @@ class Arg_Traits<All_Anon_AMI_anon_bd_string_testHandler_TestFunc_ami_return_val
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1732,7 +1732,7 @@ class Arg_Traits<All_Anon_AMI_anon_bd_string_testHandler_TestFunc2_ami_return_va
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1754,7 +1754,7 @@ class Arg_Traits<All_Anon_AMI_anon_bd_string_testHandler_TestFunc3_ami_return_va
 
 #endif /* end #if !defined */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:580
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:573
 
 
 
@@ -1806,7 +1806,7 @@ namespace OBV_All_Anon
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:41
 
-  
+
 
   // OBV_ class
   class TAO_IDL_TEST_STUB_Export AMH_anon_bd_string_testExceptionHolder
@@ -1816,7 +1816,7 @@ namespace OBV_All_Anon
 protected:
   AMH_anon_bd_string_testExceptionHolder () = default;
   virtual ~AMH_anon_bd_string_testExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__All_Anon_AMH_anon_bd_string_testExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -2342,7 +2342,7 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, All_Anon::
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "anonymousC.inl"

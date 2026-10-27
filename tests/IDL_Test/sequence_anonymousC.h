@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_SEQUENCE_ANONYMOUSC_NB58NQ_H_
-#define _TAO_IDL_SEQUENCE_ANONYMOUSC_NB58NQ_H_
+#ifndef _TAO_IDL_SEQUENCE_ANONYMOUSC_NRPSP2_H_
+#define _TAO_IDL_SEQUENCE_ANONYMOUSC_NRPSP2_H_
 
 #include /**/ "ace/pre.h"
 
@@ -87,7 +87,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -116,7 +116,7 @@ class TAO_IDL_TEST_STUB_Export seqTest
 public:
   friend class TAO::Narrow_Utils<seqTest>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = seqTest_ptr;
   using _var_type = seqTest_var;
@@ -133,11 +133,11 @@ public:
   static seqTest_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
   static seqTest_ptr _nil ();
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_SEQTEST_DOZENS_CH_)
 #define _SEQTEST_DOZENS_CH_
@@ -145,7 +145,7 @@ public:
   class dozens;
   using dozens_var = ::TAO_VarSeq_Var_T<dozens>;
   using dozens_out = ::TAO_Seq_Out_T<dozens>;
-  
+
 
   class TAO_IDL_TEST_STUB_Export dozens
     : public
@@ -164,11 +164,11 @@ public:
     dozens& operator= (dozens const &) = default;
     dozens& operator= (dozens &&) = default;
     virtual ~dozens () = default;
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
     using _var_type = dozens_var;
     using _out_type = dozens_out;
 
@@ -188,11 +188,11 @@ public:
     ::AMI_seqTestHandler_ptr ami_handler,
     const ::seqTest::dozens & bouquets);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -206,7 +206,7 @@ protected:
 
   // Concrete non-local interface only.
   seqTest (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   seqTest (
       TAO_Stub *objref,
@@ -250,7 +250,7 @@ class TAO_IDL_TEST_STUB_Export AMH_seqTestExceptionHolder
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_seqTestExceptionHolder*;
   using _var_type = AMH_seqTestExceptionHolder_var;
@@ -266,12 +266,12 @@ public:
   virtual ::CORBA::ValueBase *_copy_value ();
 
   static AMH_seqTestExceptionHolder* _downcast (::CORBA::ValueBase *v);
-  
+
   /// TAO extensions or internals
   static ::CORBA::Boolean _tao_unmarshal (
       TAO_InputCDR &strm,
       AMH_seqTestExceptionHolder *&new_object);
-  
+
   virtual char const * _tao_obv_repository_id () const;
 
   virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
@@ -284,7 +284,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_send_dozen ();
 
@@ -292,7 +292,7 @@ public:
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:395
 
-  
+
 public:
   virtual void raise_sendc_send_dozen ();
 // TAO_IDL - Generated from
@@ -305,13 +305,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_seqTestExceptionHolder (const AMH_seqTestExceptionHolder &);
   void operator= (const AMH_seqTestExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_seqTestExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -324,7 +324,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_seqTestExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -352,7 +352,7 @@ class TAO_IDL_TEST_STUB_Export AMH_seqTestResponseHandler
 {
 public:
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMH_seqTestResponseHandler_ptr;
   using _var_type = AMH_seqTestResponseHandler_var;
@@ -375,11 +375,11 @@ public:
   virtual void send_dozen_excep (
     ::AMH_seqTestExceptionHolder * holder) = 0;
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -391,7 +391,7 @@ protected:
   // Abstract or local interface only.
   AMH_seqTestResponseHandler ();
 
-  
+
 
   virtual ~AMH_seqTestResponseHandler () = default;
 
@@ -407,7 +407,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_seqTestResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:535
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
 
 
@@ -434,7 +434,7 @@ class TAO_IDL_TEST_STUB_Export AMI_seqTestHandler
 public:
   friend class TAO::Narrow_Utils<AMI_seqTestHandler>;
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
   using _ptr_type = AMI_seqTestHandler_ptr;
   using _var_type = AMI_seqTestHandler_var;
@@ -463,11 +463,11 @@ public:
   virtual void send_dozen_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -481,7 +481,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_seqTestHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_seqTestHandler (
       TAO_Stub *objref,
@@ -503,7 +503,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_seqTestHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
 
 
@@ -520,26 +520,26 @@ using twinStruct_out = ::TAO_Out_T<twinStruct>;
 struct TAO_IDL_TEST_STUB_Export twinStruct
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-  
+
   using _var_type = twinStruct_var;
   using _out_type = twinStruct_out;
 
   static void _tao_any_destructor (void *);
-  
-  
 
-  
+
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_TWINSTRUCT__TAO_SEQ_CORBA_SHORT__CH_)
 #define _TWINSTRUCT__TAO_SEQ_CORBA_SHORT__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_Short_
     : public
@@ -558,21 +558,21 @@ struct TAO_IDL_TEST_STUB_Export twinStruct
     _tao_seq_CORBA_Short_& operator= (_tao_seq_CORBA_Short_ const &) = default;
     _tao_seq_CORBA_Short_& operator= (_tao_seq_CORBA_Short_ &&) = default;
     virtual ~_tao_seq_CORBA_Short_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_TWINSTRUCT__TAO_SEQ__TAO_SEQ_CORBA_SHORT__AND__CH_)
 #define _TWINSTRUCT__TAO_SEQ__TAO_SEQ_CORBA_SHORT__AND__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq__tao_seq_CORBA_Short__and_
     : public
@@ -591,7 +591,7 @@ struct TAO_IDL_TEST_STUB_Export twinStruct
     _tao_seq__tao_seq_CORBA_Short__and_& operator= (_tao_seq__tao_seq_CORBA_Short__and_ const &) = default;
     _tao_seq__tao_seq_CORBA_Short__and_& operator= (_tao_seq__tao_seq_CORBA_Short__and_ &&) = default;
     virtual ~_tao_seq__tao_seq_CORBA_Short__and_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -600,18 +600,18 @@ struct TAO_IDL_TEST_STUB_Export twinStruct
 
   using _and__seq = _tao_seq__tao_seq_CORBA_Short__and_;
   _tao_seq__tao_seq_CORBA_Short__and_ and_ {};
-  
 
-  
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_TWINSTRUCT__TAO_SEQ_CORBA_SHORT__CH_)
 #define _TWINSTRUCT__TAO_SEQ_CORBA_SHORT__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_CORBA_Short_
     : public
@@ -630,21 +630,21 @@ struct TAO_IDL_TEST_STUB_Export twinStruct
     _tao_seq_CORBA_Short_& operator= (_tao_seq_CORBA_Short_ const &) = default;
     _tao_seq_CORBA_Short_& operator= (_tao_seq_CORBA_Short_ &&) = default;
     virtual ~_tao_seq_CORBA_Short_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_TWINSTRUCT__TAO_SEQ__TAO_SEQ_CORBA_SHORT__OR__CH_)
 #define _TWINSTRUCT__TAO_SEQ__TAO_SEQ_CORBA_SHORT__OR__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq__tao_seq_CORBA_Short__or_
     : public
@@ -663,7 +663,7 @@ struct TAO_IDL_TEST_STUB_Export twinStruct
     _tao_seq__tao_seq_CORBA_Short__or_& operator= (_tao_seq__tao_seq_CORBA_Short__or_ const &) = default;
     _tao_seq__tao_seq_CORBA_Short__or_& operator= (_tao_seq__tao_seq_CORBA_Short__or_ &&) = default;
     virtual ~_tao_seq__tao_seq_CORBA_Short__or_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -704,7 +704,7 @@ public:
   _tao_seq_CORBA_Short__5& operator= (_tao_seq_CORBA_Short__5 const &) = default;
   _tao_seq_CORBA_Short__5& operator= (_tao_seq_CORBA_Short__5 &&) = default;
   virtual ~_tao_seq_CORBA_Short__5 () = default;
-  
+
 };
 
 #endif /* end #if !defined */
@@ -740,11 +740,11 @@ public:
   outside& operator= (outside const &) = default;
   outside& operator= (outside &&) = default;
   virtual ~outside () = default;
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
+
+
   using _var_type = outside_var;
   using _out_type = outside_out;
 
@@ -757,7 +757,7 @@ public:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_outside;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:243
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:236
 
 
 
@@ -774,26 +774,26 @@ using nestedSeqStruct_out = ::TAO_Out_T<nestedSeqStruct>;
 struct TAO_IDL_TEST_STUB_Export nestedSeqStruct
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:282
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
-  
+
   using _var_type = nestedSeqStruct_var;
   using _out_type = nestedSeqStruct_out;
 
   static void _tao_any_destructor (void *);
-  
-  
 
-  
+
+
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_NESTEDSEQSTRUCT__TAO_SEQ_OUTSIDE__CH_)
 #define _NESTEDSEQSTRUCT__TAO_SEQ_OUTSIDE__CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq_outside_
     : public
@@ -812,21 +812,21 @@ struct TAO_IDL_TEST_STUB_Export nestedSeqStruct
     _tao_seq_outside_& operator= (_tao_seq_outside_ const &) = default;
     _tao_seq_outside_& operator= (_tao_seq_outside_ &&) = default;
     virtual ~_tao_seq_outside_ () = default;
-    
+
   };
 
 #endif /* end #if !defined */
 
-  
+
   // TAO_IDL - Generated from
   // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_ch.cpp:96
 
-  
+
 
 #if !defined (_NESTEDSEQSTRUCT__TAO_SEQ__TAO_SEQ_OUTSIDE__INSIDE_7_CH_)
 #define _NESTEDSEQSTRUCT__TAO_SEQ__TAO_SEQ_OUTSIDE__INSIDE_7_CH_
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export _tao_seq__tao_seq_outside__inside_7
     : public
@@ -843,7 +843,7 @@ struct TAO_IDL_TEST_STUB_Export nestedSeqStruct
     _tao_seq__tao_seq_outside__inside_7& operator= (_tao_seq__tao_seq_outside__inside_7 const &) = default;
     _tao_seq__tao_seq_outside__inside_7& operator= (_tao_seq__tao_seq_outside__inside_7 &&) = default;
     virtual ~_tao_seq__tao_seq_outside__inside_7 () = default;
-    
+
   };
 
 #endif /* end #if !defined */
@@ -858,7 +858,7 @@ struct TAO_IDL_TEST_STUB_Export nestedSeqStruct
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_nestedSeqStruct;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -869,9 +869,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -891,9 +891,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_SEQTEST__ARG_TRAITS_)
 #define _SEQTEST__ARG_TRAITS_
@@ -911,9 +911,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::seqTest::dozens>
@@ -925,9 +925,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_AMH_SEQTESTEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _AMH_SEQTESTEXCEPTIONHOLDER__ARG_TRAITS_
@@ -947,9 +947,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:144
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_AMI_SEQTESTHANDLER__ARG_TRAITS_)
 #define _AMI_SEQTESTHANDLER__ARG_TRAITS_
@@ -967,9 +967,9 @@ namespace TAO
 
 #endif /* end #if !defined */
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::twinStruct>
@@ -981,9 +981,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:673
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:665
 
-  
+
 
   template<>
   class Arg_Traits< ::outside>
@@ -995,9 +995,9 @@ namespace TAO
   {
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:912
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:903
 
-  
+
 
   template<>
   class Arg_Traits< ::nestedSeqStruct>
@@ -1026,7 +1026,7 @@ class TAO_IDL_TEST_STUB_Export OBV_AMH_seqTestExceptionHolder
 protected:
   OBV_AMH_seqTestExceptionHolder () = default;
   virtual ~OBV_AMH_seqTestExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_seqTestExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -1521,7 +1521,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_nestedSeqStruct__tao_seq__tao_seq_outside__inside_7_H_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "sequence_anonymousC.inl"

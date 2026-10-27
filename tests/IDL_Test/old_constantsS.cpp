@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_OLD_CONSTANTSS_WXO7VQ_CPP_
-#define _TAO_IDL_OLD_CONSTANTSS_WXO7VQ_CPP_
+#ifndef _TAO_IDL_OLD_CONSTANTSS_I3B8W6_CPP_
+#define _TAO_IDL_OLD_CONSTANTSS_I3B8W6_CPP_
 
 
 #include "old_constantsS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_OldConstants_M_AMH_A_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -140,7 +140,7 @@ static TAO_OldConstants_M_AMH_A_Perfect_Hash_OpTable tao_OldConstants_M_AMH_A_op
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -151,7 +151,7 @@ POA_OldConstants::M::AMH_A::AMH_A ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_OldConstants::M::AMH_A::foo_skel (
@@ -163,7 +163,7 @@ POA_OldConstants::M::AMH_A::foo_skel (
     dynamic_cast<POA_OldConstants::M::AMH_A *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::OldConstants::M::A::N x;
   ::OldConstants::M::A::N z;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -173,28 +173,28 @@ POA_OldConstants::M::AMH_A::foo_skel (
       (_tao_in >> z)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldConstants::M::TAO_AMH_AResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldConstants::M::TAO_AMH_AResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldConstants::M::TAO_AMH_AResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldConstants::M::TAO_AMH_AResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->foo (
       safe_rd_.get (),
       x,
@@ -204,7 +204,7 @@ POA_OldConstants::M::AMH_A::foo_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -224,7 +224,7 @@ const char* POA_OldConstants::M::AMH_A::_interface_repository_id () const
   return "IDL:OldConstants/M/A:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_OldConstants::M::AMH_A::_dispatch (
@@ -234,7 +234,7 @@ POA_OldConstants::M::AMH_A::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 OldConstants::M::A*
 POA_OldConstants::M::AMH_A::_this ()
@@ -246,12 +246,12 @@ POA_OldConstants::M::AMH_A::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::OldConstants::M::A>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_OldConstants_M_A_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -350,15 +350,15 @@ void
 POA_OldConstants::M::_TAO_A_Direct_Proxy_Impl::foo (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldConstants::M::A_ptr _tao_ptr = 
+  POA_OldConstants::M::A_ptr _tao_ptr =
     dynamic_cast<POA_OldConstants::M::A_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::OldConstants::M::A::N>::ret_val *) args[0])->arg () =
     _tao_ptr->foo (
           ((TAO::Arg_Traits< ::OldConstants::M::A::N>::in_arg_val *) args[1])->arg (),
@@ -375,7 +375,7 @@ POA_OldConstants::M::_TAO_A_Direct_Proxy_Impl::foo (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -387,10 +387,10 @@ POA_OldConstants::M::A::A ()
 
 namespace POA_OldConstants
 {
-  
+
   namespace M
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -414,32 +414,32 @@ namespace POA_OldConstants
           TAO::Portable_Server::get_ret_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_);
-        
+
         TAO::SArg_Traits< ::OldConstants::M::A::N>::in_arg_type arg_1 =
           TAO::Portable_Server::get_in_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::OldConstants::M::A::N>::out_arg_type arg_2 =
           TAO::Portable_Server::get_out_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         TAO::SArg_Traits< ::OldConstants::M::A::N>::inout_arg_type arg_3 =
           TAO::Portable_Server::get_inout_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_,
             3);
-          
+
         retval =
           this->servant_->foo (
             arg_1
             , arg_2
             , arg_3);
       }
-    
+
     private:
       POA_OldConstants::M::A * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -466,7 +466,7 @@ void POA_OldConstants::M::A::foo_skel (
       std::addressof(_tao_y),
       std::addressof(_tao_z)
     };
-  
+
   POA_OldConstants::M::A * const impl =
     dynamic_cast<POA_OldConstants::M::A *> (servant);
 
@@ -479,7 +479,7 @@ void POA_OldConstants::M::A::foo_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -497,7 +497,7 @@ void POA_OldConstants::M::A::foo_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -519,7 +519,7 @@ const char* POA_OldConstants::M::A::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -532,7 +532,7 @@ void POA_OldConstants::M::A::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -550,11 +550,11 @@ POA_OldConstants::M::A::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_OldConstants::M::TAO_AMH_AResponseHandler::foo (
@@ -572,11 +572,11 @@ POA_OldConstants::M::TAO_AMH_AResponseHandler::foo (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_OldConstants::M::TAO_AMH_AResponseHandler::foo_excep (
@@ -592,7 +592,7 @@ POA_OldConstants::M::TAO_AMH_AResponseHandler::foo_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_OldConstants_M_AMI_AHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -692,15 +692,15 @@ void
 POA_OldConstants::M::_TAO_AMI_AHandler_Direct_Proxy_Impl::foo (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldConstants::M::AMI_AHandler_ptr _tao_ptr = 
+  POA_OldConstants::M::AMI_AHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldConstants::M::AMI_AHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->foo (
         ((TAO::Arg_Traits< ::OldConstants::M::A::N>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::OldConstants::M::A::N>::in_arg_val *) args[2])->arg (),
@@ -716,15 +716,15 @@ void
 POA_OldConstants::M::_TAO_AMI_AHandler_Direct_Proxy_Impl::foo_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldConstants::M::AMI_AHandler_ptr _tao_ptr = 
+  POA_OldConstants::M::AMI_AHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldConstants::M::AMI_AHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->foo_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -738,7 +738,7 @@ POA_OldConstants::M::_TAO_AMI_AHandler_Direct_Proxy_Impl::foo_excep (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -750,10 +750,10 @@ POA_OldConstants::M::AMI_AHandler::AMI_AHandler ()
 
 namespace POA_OldConstants
 {
-  
+
   namespace M
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -778,25 +778,25 @@ namespace POA_OldConstants
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::OldConstants::M::A::N>::in_arg_type arg_2 =
           TAO::Portable_Server::get_in_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         TAO::SArg_Traits< ::OldConstants::M::A::N>::in_arg_type arg_3 =
           TAO::Portable_Server::get_in_arg< ::OldConstants::M::A::N> (
             this->operation_details_,
             this->args_,
             3);
-          
+
         this->servant_->foo (
           arg_1
           , arg_2
           , arg_3);
       }
-    
+
     private:
       POA_OldConstants::M::AMI_AHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -823,7 +823,7 @@ void POA_OldConstants::M::AMI_AHandler::foo_skel (
       std::addressof(_tao_y),
       std::addressof(_tao_z)
     };
-  
+
   POA_OldConstants::M::AMI_AHandler * const impl =
     dynamic_cast<POA_OldConstants::M::AMI_AHandler *> (servant);
 
@@ -836,7 +836,7 @@ void POA_OldConstants::M::AMI_AHandler::foo_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -853,10 +853,10 @@ void POA_OldConstants::M::AMI_AHandler::foo_skel (
 
 namespace POA_OldConstants
 {
-  
+
   namespace M
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -881,11 +881,11 @@ namespace POA_OldConstants
             this->operation_details_,
             this->args_,
             1);
-          
+
         this->servant_->foo_excep (
           arg_1);
       }
-    
+
     private:
       POA_OldConstants::M::AMI_AHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -908,7 +908,7 @@ void POA_OldConstants::M::AMI_AHandler::foo_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldConstants::M::AMI_AHandler * const impl =
     dynamic_cast<POA_OldConstants::M::AMI_AHandler *> (servant);
 
@@ -921,7 +921,7 @@ void POA_OldConstants::M::AMI_AHandler::foo_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -939,7 +939,7 @@ void POA_OldConstants::M::AMI_AHandler::foo_excep_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -962,7 +962,7 @@ const char* POA_OldConstants::M::AMI_AHandler::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -975,7 +975,7 @@ void POA_OldConstants::M::AMI_AHandler::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 

@@ -81,7 +81,7 @@ CallMe::YourColorBaby::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:255
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:248
 
 /// Accessor to set the member.
 ACE_INLINE
@@ -107,7 +107,7 @@ CallMe::YourColorBaby::c_1 () const
   return this->u_.c_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:600
 
 // Accessor to set the member.
 ACE_INLINE
@@ -189,7 +189,7 @@ CallMe::YourCar::_d () const
   return this->disc_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:600
 
 // Accessor to set the member.
 ACE_INLINE
@@ -215,7 +215,7 @@ CallMe::YourCar::c_1 () const
   return this->u_.c_1_;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:607
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union_branch/public_ci.cpp:600
 
 // Accessor to set the member.
 ACE_INLINE

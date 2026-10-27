@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:593
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
 
-#ifndef _TAO_IDL_PEMNAMINGS_13SRFF_CPP_
-#define _TAO_IDL_PEMNAMINGS_13SRFF_CPP_
+#ifndef _TAO_IDL_PEMNAMINGS_EID59K_CPP_
+#define _TAO_IDL_PEMNAMINGS_EID59K_CPP_
 
 
 #include "PEMNamingS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_Plesk_Naming_AMH_ObjectResolver_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -141,7 +141,7 @@ static TAO_Plesk_Naming_AMH_ObjectResolver_Perfect_Hash_OpTable tao_Plesk_Naming
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -152,7 +152,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::AMH_ObjectResolver ()
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_Plesk::Naming::AMH_ObjectResolver::resolve_skel (
@@ -164,7 +164,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_skel (
     dynamic_cast<POA_Plesk::Naming::AMH_ObjectResolver *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::CORBA::String_var service_type;
   ::Plesk::TObjectID sc_id;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -174,28 +174,28 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_skel (
       (_tao_in >> sc_id)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->resolve (
       safe_rd_.get (),
       service_type.in (),
@@ -203,7 +203,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_skel (
     );
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:301
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_Plesk::Naming::AMH_ObjectResolver::resolve_sc_skel (
@@ -215,7 +215,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_sc_skel (
     dynamic_cast<POA_Plesk::Naming::AMH_ObjectResolver *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::CORBA::String_var service_type;
   ::CORBA::String_var version;
   ::Plesk::TObjectID sc_id;
@@ -227,28 +227,28 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_sc_skel (
       (_tao_in >> sc_id)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->resolve_sc (
       safe_rd_.get (),
       service_type.in (),
@@ -259,7 +259,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::resolve_sc_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -279,7 +279,7 @@ const char* POA_Plesk::Naming::AMH_ObjectResolver::_interface_repository_id () c
   return "IDL:Plesk/Naming/ObjectResolver:1.2";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
 
 void
 POA_Plesk::Naming::AMH_ObjectResolver::_dispatch (
@@ -289,7 +289,7 @@ POA_Plesk::Naming::AMH_ObjectResolver::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
 
 Plesk::Naming::ObjectResolver*
 POA_Plesk::Naming::AMH_ObjectResolver::_this ()
@@ -301,12 +301,12 @@ POA_Plesk::Naming::AMH_ObjectResolver::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::Plesk::Naming::ObjectResolver>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_Plesk_Naming_ObjectResolver_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -406,15 +406,15 @@ void
 POA_Plesk::Naming::_TAO_ObjectResolver_Direct_Proxy_Impl::resolve (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::ObjectResolver_ptr _tao_ptr = 
+  POA_Plesk::Naming::ObjectResolver_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::ObjectResolver_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::CORBA::Object>::ret_val *) args[0])->arg () =
     _tao_ptr->resolve (
           ((TAO::Arg_Traits< char *>::in_arg_val *) args[1])->arg (),
@@ -430,15 +430,15 @@ void
 POA_Plesk::Naming::_TAO_ObjectResolver_Direct_Proxy_Impl::resolve_sc (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::ObjectResolver_ptr _tao_ptr = 
+  POA_Plesk::Naming::ObjectResolver_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::ObjectResolver_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::CORBA::Object>::ret_val *) args[0])->arg () =
     _tao_ptr->resolve_sc (
           ((TAO::Arg_Traits< char *>::in_arg_val *) args[1])->arg (),
@@ -455,7 +455,7 @@ POA_Plesk::Naming::_TAO_ObjectResolver_Direct_Proxy_Impl::resolve_sc (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -467,10 +467,10 @@ POA_Plesk::Naming::ObjectResolver::ObjectResolver ()
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -494,25 +494,25 @@ namespace POA_Plesk
           TAO::Portable_Server::get_ret_arg< ::CORBA::Object> (
             this->operation_details_,
             this->args_);
-        
+
         TAO::SArg_Traits< char *>::in_arg_type arg_1 =
           TAO::Portable_Server::get_in_arg< char *> (
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::CORBA::Long>::inout_arg_type arg_2 =
           TAO::Portable_Server::get_inout_arg< ::CORBA::Long> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         retval =
           this->servant_->resolve (
             arg_1
             , arg_2);
       }
-    
+
     private:
       POA_Plesk::Naming::ObjectResolver * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -529,11 +529,11 @@ void POA_Plesk::Naming::ObjectResolver::resolve_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< ::CORBA::Object>::ret_val retval;
@@ -546,7 +546,7 @@ void POA_Plesk::Naming::ObjectResolver::resolve_skel (
       std::addressof(_tao_service_type),
       std::addressof(_tao_sc_id)
     };
-  
+
   POA_Plesk::Naming::ObjectResolver * const impl =
     dynamic_cast<POA_Plesk::Naming::ObjectResolver *> (servant);
 
@@ -559,7 +559,7 @@ void POA_Plesk::Naming::ObjectResolver::resolve_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -576,10 +576,10 @@ void POA_Plesk::Naming::ObjectResolver::resolve_skel (
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -603,32 +603,32 @@ namespace POA_Plesk
           TAO::Portable_Server::get_ret_arg< ::CORBA::Object> (
             this->operation_details_,
             this->args_);
-        
+
         TAO::SArg_Traits< char *>::in_arg_type arg_1 =
           TAO::Portable_Server::get_in_arg< char *> (
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< char *>::in_arg_type arg_2 =
           TAO::Portable_Server::get_in_arg< char *> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         TAO::SArg_Traits< ::CORBA::Long>::inout_arg_type arg_3 =
           TAO::Portable_Server::get_inout_arg< ::CORBA::Long> (
             this->operation_details_,
             this->args_,
             3);
-          
+
         retval =
           this->servant_->resolve_sc (
             arg_1
             , arg_2
             , arg_3);
       }
-    
+
     private:
       POA_Plesk::Naming::ObjectResolver * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -645,11 +645,11 @@ void POA_Plesk::Naming::ObjectResolver::resolve_sc_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< ::CORBA::Object>::ret_val retval;
@@ -664,7 +664,7 @@ void POA_Plesk::Naming::ObjectResolver::resolve_sc_skel (
       std::addressof(_tao_version),
       std::addressof(_tao_sc_id)
     };
-  
+
   POA_Plesk::Naming::ObjectResolver * const impl =
     dynamic_cast<POA_Plesk::Naming::ObjectResolver *> (servant);
 
@@ -677,7 +677,7 @@ void POA_Plesk::Naming::ObjectResolver::resolve_sc_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -695,7 +695,7 @@ void POA_Plesk::Naming::ObjectResolver::resolve_sc_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -717,7 +717,7 @@ const char* POA_Plesk::Naming::ObjectResolver::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -730,7 +730,7 @@ void POA_Plesk::Naming::ObjectResolver::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 
@@ -748,11 +748,11 @@ POA_Plesk::Naming::ObjectResolver::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve (
@@ -768,11 +768,11 @@ POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_excep (
@@ -788,7 +788,7 @@ POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_sc (
@@ -804,11 +804,11 @@ POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_sc (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:77
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:71
 
 void
 POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_sc_excep (
@@ -824,7 +824,7 @@ POA_Plesk::Naming::TAO_AMH_ObjectResolverResponseHandler::resolve_sc_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1634
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1635
 
 class TAO_Plesk_Naming_AMI_ObjectResolverHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -927,15 +927,15 @@ void
 POA_Plesk::Naming::_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl::resolve (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr = 
+  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->resolve (
         ((TAO::Arg_Traits< ::CORBA::Object>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::CORBA::Long>::in_arg_val *) args[2])->arg ()
@@ -950,15 +950,15 @@ void
 POA_Plesk::Naming::_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl::resolve_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr = 
+  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->resolve_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -972,15 +972,15 @@ void
 POA_Plesk::Naming::_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl::resolve_sc (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr = 
+  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->resolve_sc (
         ((TAO::Arg_Traits< ::CORBA::Object>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::CORBA::Long>::in_arg_val *) args[2])->arg ()
@@ -995,15 +995,15 @@ void
 POA_Plesk::Naming::_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl::resolve_sc_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr = 
+  POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr _tao_ptr =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->resolve_sc_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -1017,7 +1017,7 @@ POA_Plesk::Naming::_TAO_AMI_ObjectResolverHandler_Direct_Proxy_Impl::resolve_sc_
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:87
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:79
 
 
 
@@ -1029,10 +1029,10 @@ POA_Plesk::Naming::AMI_ObjectResolverHandler::AMI_ObjectResolverHandler ()
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1057,18 +1057,18 @@ namespace POA_Plesk
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::CORBA::Long>::in_arg_type arg_2 =
           TAO::Portable_Server::get_in_arg< ::CORBA::Long> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         this->servant_->resolve (
           arg_1
           , arg_2);
       }
-    
+
     private:
       POA_Plesk::Naming::AMI_ObjectResolverHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1085,11 +1085,11 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1102,7 +1102,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_skel (
       std::addressof(_tao_ami_return_val),
       std::addressof(_tao_sc_id)
     };
-  
+
   POA_Plesk::Naming::AMI_ObjectResolverHandler * const impl =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler *> (servant);
 
@@ -1115,7 +1115,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1132,10 +1132,10 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_skel (
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1160,11 +1160,11 @@ namespace POA_Plesk
             this->operation_details_,
             this->args_,
             1);
-          
-        
+
+
 
         static TAO::Exception_Data
-        _tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_excep_exceptiondata [] = 
+        _tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_excep_exceptiondata [] =
           {
             {
               "IDL:Plesk/ExSystem:1.0",
@@ -1179,11 +1179,11 @@ namespace POA_Plesk
           {
             tao_excepholder->set_exception_data (_tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_excep_exceptiondata, 1);
           }
-        
+
         this->servant_->resolve_excep (
           arg_1);
       }
-    
+
     private:
       POA_Plesk::Naming::AMI_ObjectResolverHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1200,11 +1200,11 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_excep_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1215,7 +1215,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_Plesk::Naming::AMI_ObjectResolverHandler * const impl =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler *> (servant);
 
@@ -1228,7 +1228,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1245,10 +1245,10 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_excep_skel (
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1273,18 +1273,18 @@ namespace POA_Plesk
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::CORBA::Long>::in_arg_type arg_2 =
           TAO::Portable_Server::get_in_arg< ::CORBA::Long> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         this->servant_->resolve_sc (
           arg_1
           , arg_2);
       }
-    
+
     private:
       POA_Plesk::Naming::AMI_ObjectResolverHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1301,11 +1301,11 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1318,7 +1318,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_skel (
       std::addressof(_tao_ami_return_val),
       std::addressof(_tao_sc_id)
     };
-  
+
   POA_Plesk::Naming::AMI_ObjectResolverHandler * const impl =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler *> (servant);
 
@@ -1331,7 +1331,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1348,10 +1348,10 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_skel (
 
 namespace POA_Plesk
 {
-  
+
   namespace Naming
   {
-    
+
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:76
 
@@ -1376,11 +1376,11 @@ namespace POA_Plesk
             this->operation_details_,
             this->args_,
             1);
-          
-        
+
+
 
         static TAO::Exception_Data
-        _tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_sc_excep_exceptiondata [] = 
+        _tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_sc_excep_exceptiondata [] =
           {
             {
               "IDL:Plesk/ExSystem:1.0",
@@ -1395,11 +1395,11 @@ namespace POA_Plesk
           {
             tao_excepholder->set_exception_data (_tao_Plesk_Naming_AMI_ObjectResolverHandler_resolve_sc_excep_exceptiondata, 1);
           }
-        
+
         this->servant_->resolve_sc_excep (
           arg_1);
       }
-    
+
     private:
       POA_Plesk::Naming::AMI_ObjectResolverHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -1416,11 +1416,11 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_excep_skel (
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       Plesk::_tc_ExSystem
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -1431,7 +1431,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_Plesk::Naming::AMI_ObjectResolverHandler * const impl =
     dynamic_cast<POA_Plesk::Naming::AMI_ObjectResolverHandler *> (servant);
 
@@ -1444,7 +1444,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1462,7 +1462,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::resolve_sc_excep_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:137
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:126
 
 
 
@@ -1485,7 +1485,7 @@ const char* POA_Plesk::Naming::AMI_ObjectResolverHandler::_interface_repository_
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:376
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:365
 
 
 
@@ -1498,7 +1498,7 @@ void POA_Plesk::Naming::AMI_ObjectResolverHandler::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:336
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:325
 
 
 

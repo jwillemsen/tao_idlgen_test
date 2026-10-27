@@ -36,7 +36,7 @@
 #include "tao/AnyTypeCode/Any.h"
 #include "tao/AnyTypeCode/Any_Impl_T.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -44,14 +44,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/ex1:1.0",
     "ex1");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_ex1 = std::addressof(_tao_tc_OldDif2_ex1);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldDif2_AMH_ex1ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -66,7 +66,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_OldDif2_AMH_ex1ExceptionHolder,
     0);
-  
+
 
 namespace OldDif2
 {
@@ -79,7 +79,7 @@ namespace OldDif2
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -87,14 +87,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:OldDif2/AMH_ex1ResponseHandler:1.0",
     "AMH_ex1ResponseHandler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_ex1ResponseHandler = std::addressof(_tao_tc_OldDif2_AMH_ex1ResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -102,14 +102,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/AMI_ex1Handler:1.0",
     "AMI_ex1Handler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMI_ex1Handler = std::addressof(_tao_tc_OldDif2_AMI_ex1Handler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -117,14 +117,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/ex2:1.0",
     "ex2");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_ex2 = std::addressof(_tao_tc_OldDif2_ex2);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldDif2_AMH_ex2ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -139,7 +139,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_OldDif2_AMH_ex2ExceptionHolder,
     0);
-  
+
 
 namespace OldDif2
 {
@@ -152,7 +152,7 @@ namespace OldDif2
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -160,14 +160,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:OldDif2/AMH_ex2ResponseHandler:1.0",
     "AMH_ex2ResponseHandler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_ex2ResponseHandler = std::addressof(_tao_tc_OldDif2_AMH_ex2ResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -175,14 +175,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/AMI_ex2Handler:1.0",
     "AMI_ex2Handler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMI_ex2Handler = std::addressof(_tao_tc_OldDif2_AMI_ex2Handler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -190,14 +190,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/ex3:1.0",
     "ex3");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_ex3 = std::addressof(_tao_tc_OldDif2_ex3);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldDif2_AMH_ex3ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -212,7 +212,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_OldDif2_AMH_ex3ExceptionHolder,
     0);
-  
+
 
 namespace OldDif2
 {
@@ -225,7 +225,7 @@ namespace OldDif2
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -233,14 +233,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:OldDif2/AMH_ex3ResponseHandler:1.0",
     "AMH_ex3ResponseHandler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_ex3ResponseHandler = std::addressof(_tao_tc_OldDif2_AMH_ex3ResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -248,14 +248,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/AMI_ex3Handler:1.0",
     "AMI_ex3Handler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMI_ex3Handler = std::addressof(_tao_tc_OldDif2_AMI_ex3Handler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -263,14 +263,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/ex4:1.0",
     "ex4");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_ex4 = std::addressof(_tao_tc_OldDif2_ex4);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldDif2_AMH_ex4ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -285,7 +285,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_OldDif2_AMH_ex4ExceptionHolder,
     0);
-  
+
 
 namespace OldDif2
 {
@@ -298,7 +298,7 @@ namespace OldDif2
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -306,14 +306,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:OldDif2/AMH_ex4ResponseHandler:1.0",
     "AMH_ex4ResponseHandler");
-  
+
 
 namespace OldDif2
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_ex4ResponseHandler = std::addressof(_tao_tc_OldDif2_AMH_ex4ResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -321,7 +321,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:OldDif2/AMI_ex4Handler:1.0",
     "AMI_ex4Handler");
-  
+
 
 namespace OldDif2
 {

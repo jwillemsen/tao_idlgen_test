@@ -41,7 +41,7 @@
 #include "tao/AnyTypeCode/Any_Dual_Impl_T.h"
 #include "tao/AnyTypeCode/Any_Basic_Impl_T.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -49,10 +49,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/hello:1.0",
     "hello");
-  
+
 ::CORBA::TypeCode_ptr const _tc_hello = std::addressof(_tao_tc_hello);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_helloExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -67,7 +67,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_helloExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_helloExceptionHolder = std::addressof(_tao_tc_AMH_helloExceptionHolder);// TAO extension - the virtual _type method.
 ::CORBA::TypeCode_ptr AMH_helloExceptionHolder::_tao_type () const
 {
@@ -76,7 +76,7 @@ static TAO::TypeCode::Value<char const *,
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -84,10 +84,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:anvil.com/AMH_helloResponseHandler:1.0",
     "AMH_helloResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_helloResponseHandler = std::addressof(_tao_tc_AMH_helloResponseHandler);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -95,7 +95,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/AMI_helloHandler:1.0",
     "AMI_helloHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_helloHandler = std::addressof(_tao_tc_AMI_helloHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/alias_typecode.cpp:46
@@ -108,7 +108,7 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:anvil.com/FuBar:1.0",
     "FuBar",
     &CORBA::_tc_string);
-  
+
 ::CORBA::TypeCode_ptr const _tc_FuBar = std::addressof(_tao_tc_FuBar);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
@@ -127,7 +127,7 @@ static TAO::TypeCode::Enum<char const *,
     "ClusterFu",
     _tao_enumerators_ClusterFu,
     2);
-  
+
 ::CORBA::TypeCode_ptr const _tc_ClusterFu = std::addressof(_tao_tc_ClusterFu);
 
 // TAO extension - the virtual _type method.
@@ -136,7 +136,7 @@ static TAO::TypeCode::Enum<char const *,
   return ::_tc_Riot;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -159,7 +159,7 @@ _tao_tc_Riot (
 
 ::CORBA::TypeCode_ptr const _tc_Riot = std::addressof(_tao_tc_Riot);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -167,10 +167,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/goodbye:1.0",
     "goodbye");
-  
+
 ::CORBA::TypeCode_ptr const _tc_goodbye = std::addressof(_tao_tc_goodbye);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_goodbyeExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -185,7 +185,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_goodbyeExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_goodbyeExceptionHolder = std::addressof(_tao_tc_AMH_goodbyeExceptionHolder);// TAO extension - the virtual _type method.
 ::CORBA::TypeCode_ptr AMH_goodbyeExceptionHolder::_tao_type () const
 {
@@ -194,7 +194,7 @@ static TAO::TypeCode::Value<char const *,
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -202,10 +202,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:anvil.com/AMH_goodbyeResponseHandler:1.0",
     "AMH_goodbyeResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_goodbyeResponseHandler = std::addressof(_tao_tc_AMH_goodbyeResponseHandler);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -213,7 +213,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/AMI_goodbyeHandler:1.0",
     "AMI_goodbyeHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_goodbyeHandler = std::addressof(_tao_tc_AMI_goodbyeHandler);
 
 // TAO extension - the virtual _type method.
@@ -222,7 +222,7 @@ static TAO::TypeCode::Objref<char const *,
   return ::A::_tc_my_exception;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -249,7 +249,7 @@ namespace A
   ::CORBA::TypeCode_ptr const _tc_my_exception = std::addressof(_tao_tc_A_my_exception);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -257,14 +257,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:hammer.com/salutation/sayonara:1.0",
     "sayonara");
-  
+
 
 namespace salutation
 {
   ::CORBA::TypeCode_ptr const _tc_sayonara = std::addressof(_tao_tc_salutation_sayonara);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_salutation_AMH_sayonaraExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -279,7 +279,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_salutation_AMH_sayonaraExceptionHolder,
     0);
-  
+
 
 namespace salutation
 {
@@ -292,7 +292,7 @@ namespace salutation
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -300,14 +300,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:hammer.com/salutation/AMH_sayonaraResponseHandler:1.0",
     "AMH_sayonaraResponseHandler");
-  
+
 
 namespace salutation
 {
   ::CORBA::TypeCode_ptr const _tc_AMH_sayonaraResponseHandler = std::addressof(_tao_tc_salutation_AMH_sayonaraResponseHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -315,14 +315,14 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:hammer.com/salutation/AMI_sayonaraHandler:1.0",
     "AMI_sayonaraHandler");
-  
+
 
 namespace salutation
 {
   ::CORBA::TypeCode_ptr const _tc_AMI_sayonaraHandler = std::addressof(_tao_tc_salutation_AMI_sayonaraHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -330,10 +330,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/ciao:1.0",
     "ciao");
-  
+
 ::CORBA::TypeCode_ptr const _tc_ciao = std::addressof(_tao_tc_ciao);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_ciaoExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -348,7 +348,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_ciaoExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_ciaoExceptionHolder = std::addressof(_tao_tc_AMH_ciaoExceptionHolder);// TAO extension - the virtual _type method.
 ::CORBA::TypeCode_ptr AMH_ciaoExceptionHolder::_tao_type () const
 {
@@ -357,7 +357,7 @@ static TAO::TypeCode::Value<char const *,
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -365,10 +365,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:anvil.com/AMH_ciaoResponseHandler:1.0",
     "AMH_ciaoResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_ciaoResponseHandler = std::addressof(_tao_tc_AMH_ciaoResponseHandler);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -376,10 +376,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/AMI_ciaoHandler:1.0",
     "AMI_ciaoHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_ciaoHandler = std::addressof(_tao_tc_AMI_ciaoHandler);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -387,10 +387,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/aloha:1.0",
     "aloha");
-  
+
 ::CORBA::TypeCode_ptr const _tc_aloha = std::addressof(_tao_tc_aloha);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_alohaExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -405,7 +405,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_alohaExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_alohaExceptionHolder = std::addressof(_tao_tc_AMH_alohaExceptionHolder);// TAO extension - the virtual _type method.
 ::CORBA::TypeCode_ptr AMH_alohaExceptionHolder::_tao_type () const
 {
@@ -414,7 +414,7 @@ static TAO::TypeCode::Value<char const *,
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -422,10 +422,10 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_local_interface,
     "IDL:anvil.com/AMH_alohaResponseHandler:1.0",
     "AMH_alohaResponseHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_alohaResponseHandler = std::addressof(_tao_tc_AMH_alohaResponseHandler);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:69
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:70
 
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
@@ -433,7 +433,7 @@ static TAO::TypeCode::Objref<char const *,
     ::CORBA::tk_objref,
     "IDL:anvil.com/AMI_alohaHandler:1.0",
     "AMI_alohaHandler");
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMI_alohaHandler = std::addressof(_tao_tc_AMI_alohaHandler);
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:35
@@ -790,7 +790,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);
@@ -1168,7 +1168,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);

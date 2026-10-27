@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_LOADER_CONSTS_T9BNZZ_H_
-#define _TAO_IDL_LOADER_CONSTS_T9BNZZ_H_
+#ifndef _TAO_IDL_LOADER_CONSTS_UWQTK0_H_
+#define _TAO_IDL_LOADER_CONSTS_UWQTK0_H_
 
 #include /**/ "ace/pre.h"
 
@@ -76,7 +76,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -87,9 +87,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -117,7 +117,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_Plesk
 {
-  
+
 
 
 // TAO_IDL - Generated from

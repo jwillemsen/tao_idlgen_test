@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_GDB7NM_H_
-#define _TAO_IDL_KEYWORD_CASE_DIFFC_GDB7NM_H_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_TUH380_H_
+#define _TAO_IDL_KEYWORD_CASE_DIFFC_TUH380_H_
 
 
 #include /**/ "ace/config-all.h"
@@ -82,9 +82,9 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace MyModule
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:720
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
 
-  
+
 
 #if !defined (_MYMODULE_PORTTYPE__VAR_OUT_CH_)
 #define _MYMODULE_PORTTYPE__VAR_OUT_CH_
@@ -96,11 +96,11 @@ namespace MyModule
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:37
 
-  
+  // TAO_IDL - Generated from
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
+
+
 
   class  PortType
     : public virtual ::CORBA::Object
@@ -108,7 +108,7 @@ namespace MyModule
   public:
     friend class TAO::Narrow_Utils<PortType>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:270
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:280
 
     using _ptr_type = PortType_ptr;
     using _var_type = PortType_var;
@@ -127,7 +127,7 @@ namespace MyModule
     // TAO_IDL - Generated from
     // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ch.cpp:38
 
-    
+
 
     class  MyException : public ::CORBA::UserException
     {
@@ -156,7 +156,7 @@ namespace MyModule
       // TAO_IDL - Generated from
       // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ctor.cpp:48
 
-      
+
 
       MyException (
           const char * _tao_myString);
@@ -170,23 +170,23 @@ namespace MyModule
 
     virtual void myMethod ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:133
 
-    
+    // TAO_IDL - Generated from
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
+
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     PortType ();
 
     // Concrete non-local interface only.
     PortType (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     PortType (
         TAO_Stub *objref,
@@ -195,7 +195,7 @@ namespace MyModule
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~PortType () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     PortType (const PortType &) = delete;
@@ -215,7 +215,7 @@ namespace MyModule
 
 } // module MyModule
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:65
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -226,9 +226,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:143
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:141
 
-  
+
 
 #if !defined (_MYMODULE_PORTTYPE__ARG_TRAITS_)
 #define _MYMODULE_PORTTYPE__ARG_TRAITS_
@@ -251,7 +251,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:56
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:59
 
 
 
@@ -342,7 +342,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1605
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
 
 #if defined (__ACE_INLINE__)
 #include "keyword_case_diffC.inl"

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:416
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
 
-#ifndef _TAO_IDL_EXPRESSIONSS_WCBBVQ_H_
-#define _TAO_IDL_EXPRESSIONSS_WCBBVQ_H_
+#ifndef _TAO_IDL_EXPRESSIONSS_M60ODD_H_
+#define _TAO_IDL_EXPRESSIONSS_M60ODD_H_
 
 #include /**/ "ace/pre.h"
 
@@ -44,7 +44,7 @@
 
 #include /**/ "TAO_IDL_TEST_stub_export.h"
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:66
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:63
 
 
 
@@ -55,9 +55,9 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:300
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:296
 
-  
+
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__SARG_TRAITS_
@@ -85,7 +85,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace POA_ShortValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -97,7 +97,7 @@ namespace POA_ShortValues
 
 namespace POA_LongValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -109,7 +109,7 @@ namespace POA_LongValues
 
 namespace POA_MixedIntValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -121,7 +121,7 @@ namespace POA_MixedIntValues
 
 namespace POA_FloatValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -133,7 +133,7 @@ namespace POA_FloatValues
 
 namespace POA_DoubleValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
@@ -145,7 +145,7 @@ namespace POA_DoubleValues
 
 namespace POA_MixedFloatValues
 {
-  
+
 
 
 // TAO_IDL - Generated from
