@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_INHERITC_VHJLK1_H_
-#define _TAO_IDL_INHERITC_VHJLK1_H_
+#ifndef _TAO_IDL_INHERITC_WCK632_H_
+#define _TAO_IDL_INHERITC_WCK632_H_
 
 #include /**/ "ace/pre.h"
 
@@ -84,7 +84,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace OldInherit
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -263,7 +263,7 @@ protected:
   _tao_unmarshal__OldInherit_AMH_oneExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -341,7 +341,7 @@ private:
   AMH_oneResponseHandler &operator= (AMH_oneResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -432,7 +432,7 @@ private:
   AMI_oneHandler &operator= (AMI_oneHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -612,7 +612,7 @@ protected:
   _tao_unmarshal__OldInherit_AMH_twoExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -690,7 +690,7 @@ private:
   AMH_twoResponseHandler &operator= (AMH_twoResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -781,7 +781,7 @@ private:
   AMI_twoHandler &operator= (AMI_twoHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -961,7 +961,7 @@ protected:
   _tao_unmarshal__OldInherit_AMH_threeExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1039,7 +1039,7 @@ private:
   AMH_threeResponseHandler &operator= (AMH_threeResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1130,7 +1130,7 @@ private:
   AMI_threeHandler &operator= (AMI_threeHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1311,7 +1311,7 @@ protected:
   _tao_unmarshal__OldInherit_AMH_fourExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1389,7 +1389,7 @@ private:
   AMH_fourResponseHandler &operator= (AMH_fourResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1481,7 +1481,7 @@ private:
   AMI_fourHandler &operator= (AMI_fourHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1663,7 +1663,7 @@ protected:
   _tao_unmarshal__OldInherit_AMH_fiveExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1741,7 +1741,7 @@ private:
   AMH_fiveResponseHandler &operator= (AMH_fiveResponseHandler &&) = delete;
 };
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -2904,7 +2904,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1585
 
 #if defined (__ACE_INLINE__)
 #include "inheritC.inl"

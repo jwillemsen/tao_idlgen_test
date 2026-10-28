@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_BUG_2577_REGRESSIONC_7R97GB_H_
-#define _TAO_IDL_BUG_2577_REGRESSIONC_7R97GB_H_
+#ifndef _TAO_IDL_BUG_2577_REGRESSIONC_XIR4TV_H_
+#define _TAO_IDL_BUG_2577_REGRESSIONC_XIR4TV_H_
 
 #include /**/ "ace/pre.h"
 
@@ -225,7 +225,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_Data_T;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -412,7 +412,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_User_TExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -495,7 +495,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_User_TResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1071,7 +1071,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1585
 
 #if defined (__ACE_INLINE__)
 #include "Bug_2577_RegressionC.inl"

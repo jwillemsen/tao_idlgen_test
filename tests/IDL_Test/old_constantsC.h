@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_OLD_CONSTANTSC_BKGEPU_H_
-#define _TAO_IDL_OLD_CONSTANTSC_BKGEPU_H_
+#ifndef _TAO_IDL_OLD_CONSTANTSC_I6AY7I_H_
+#define _TAO_IDL_OLD_CONSTANTSC_I6AY7I_H_
 
 #include /**/ "ace/pre.h"
 
@@ -224,7 +224,7 @@ namespace OldConstants
 
     extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_E;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -481,7 +481,7 @@ protected:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_AExceptionHolder;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -566,7 +566,7 @@ private:
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_AResponseHandler;
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -1224,7 +1224,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1585
 
 #if defined (__ACE_INLINE__)
 #include "old_constantsC.inl"

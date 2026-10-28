@@ -87,7 +87,7 @@ namespace MyModule
   ::CORBA::TypeCode_ptr const _tc_TypeCodeList = std::addressof(_tao_tc_MyModule_TypeCodeList);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_cs.cpp:41
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_cs.cpp:39
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

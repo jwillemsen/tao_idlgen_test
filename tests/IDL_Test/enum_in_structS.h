@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_ENUM_IN_STRUCTS_DUKB70_H_
-#define _TAO_IDL_ENUM_IN_STRUCTS_DUKB70_H_
+#ifndef _TAO_IDL_ENUM_IN_STRUCTS_2Q0RGJ_H_
+#define _TAO_IDL_ENUM_IN_STRUCTS_2Q0RGJ_H_
 
 #include /**/ "ace/pre.h"
 

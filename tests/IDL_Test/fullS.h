@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_FULLS_NEJPVS_H_
-#define _TAO_IDL_FULLS_NEJPVS_H_
+#ifndef _TAO_IDL_FULLS_0GF476_H_
+#define _TAO_IDL_FULLS_0GF476_H_
 
 #include /**/ "ace/pre.h"
 

@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_ARRAY_ANON_NESTEDS_I9U9P8_H_
-#define _TAO_IDL_ARRAY_ANON_NESTEDS_I9U9P8_H_
+#ifndef _TAO_IDL_ARRAY_ANON_NESTEDS_3R4M6R_H_
+#define _TAO_IDL_ARRAY_ANON_NESTEDS_3R4M6R_H_
 
 #include /**/ "ace/pre.h"
 

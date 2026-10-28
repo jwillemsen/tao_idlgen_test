@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_TUH380_H_
-#define _TAO_IDL_KEYWORD_CASE_DIFFC_TUH380_H_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_5YEK1A_H_
+#define _TAO_IDL_KEYWORD_CASE_DIFFC_5YEK1A_H_
 
 
 #include /**/ "ace/config-all.h"
@@ -82,7 +82,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 namespace MyModule
 {
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:534
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:523
 
 
 
@@ -108,7 +108,7 @@ namespace MyModule
   public:
     friend class TAO::Narrow_Utils<PortType>;
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:280
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:275
 
     using _ptr_type = PortType_ptr;
     using _var_type = PortType_var;
@@ -342,7 +342,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1611
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1585
 
 #if defined (__ACE_INLINE__)
 #include "keyword_case_diffC.inl"

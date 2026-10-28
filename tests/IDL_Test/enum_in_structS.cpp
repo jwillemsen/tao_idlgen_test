@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:592
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:577
 
-#ifndef _TAO_IDL_ENUM_IN_STRUCTS_8L8NBP_CPP_
-#define _TAO_IDL_ENUM_IN_STRUCTS_8L8NBP_CPP_
+#ifndef _TAO_IDL_ENUM_IN_STRUCTS_4019QJ_CPP_
+#define _TAO_IDL_ENUM_IN_STRUCTS_4019QJ_CPP_
 
 
 #include "enum_in_structS.h"

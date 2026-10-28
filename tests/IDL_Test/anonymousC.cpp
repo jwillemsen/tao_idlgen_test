@@ -23,7 +23,7 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:331
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:319
 
 
 #include "anonymousC.h"
@@ -43,7 +43,7 @@
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -116,7 +116,7 @@ Half_Anon::char_seq_array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -182,7 +182,7 @@ Half_Anon::bd_ulong_seq_array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -242,7 +242,7 @@ Half_Anon::ushort_seq_array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -308,7 +308,7 @@ Half_Anon::bd_ushort_seq_array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -2585,7 +2585,7 @@ All_Anon::Nested_Anon::_float_seq_array_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -2651,7 +2651,7 @@ All_Anon::Nested_Anon::_another_fsa_copy (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:100
 
 
 
@@ -2881,7 +2881,7 @@ OBV_All_Anon::AMH_anon_bd_string_testExceptionHolder::_tao_unmarshal__All_Anon_A
   return _tao_unmarshal_state (strm, ci);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_Not_Anon_short_seq_CPP_
 #define _TAO_CDR_OP_Not_Anon_short_seq_CPP_
@@ -2907,7 +2907,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_Not_Anon_short_seq_CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_Char__CPP_
 #define _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_Char__CPP_
@@ -2933,7 +2933,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_Char__CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2970,7 +2970,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_ULong__18_CPP_
 #define _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_ULong__18_CPP_
@@ -2996,7 +2996,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_ULong__18_CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3033,7 +3033,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__CPP_
 #define _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__CPP_
@@ -3059,7 +3059,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3096,7 +3096,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__7_CPP_
 #define _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__7_CPP_
@@ -3122,7 +3122,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_Half_Anon__tao_seq_CORBA_UShort__7_CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3306,7 +3306,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_
 #define _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_
@@ -3332,7 +3332,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3369,7 +3369,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:90
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:88
 
 #if !defined _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_
 #define _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_
@@ -3395,7 +3395,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_CDR_OP_All_Anon_Nested_Anon__tao_seq_CORBA_Float__CPP_ */
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3432,7 +3432,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3459,7 +3459,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:155
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:153
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

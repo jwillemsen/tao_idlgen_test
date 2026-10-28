@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_TZCNU2_H_
-#define _TAO_IDL_KEYWORD_CASE_DIFFS_TZCNU2_H_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFS_N3WQIJ_H_
+#define _TAO_IDL_KEYWORD_CASE_DIFFS_N3WQIJ_H_
 
 
 #include "keyword_case_diffC.h"

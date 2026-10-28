@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_SEQUENCE_ANONYMOUSS_JY1PQ8_H_
-#define _TAO_IDL_SEQUENCE_ANONYMOUSS_JY1PQ8_H_
+#ifndef _TAO_IDL_SEQUENCE_ANONYMOUSS_4N7TJV_H_
+#define _TAO_IDL_SEQUENCE_ANONYMOUSS_4N7TJV_H_
 
 #include /**/ "ace/pre.h"
 

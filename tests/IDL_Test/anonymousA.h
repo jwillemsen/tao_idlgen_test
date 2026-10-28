@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:728
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:713
 
-#ifndef _TAO_IDL_ANONYMOUSA_W9W96D_H_
-#define _TAO_IDL_ANONYMOUSA_W9W96D_H_
+#ifndef _TAO_IDL_ANONYMOUSA_91UZYN_H_
+#define _TAO_IDL_ANONYMOUSA_91UZYN_H_
 
 #include /**/ "ace/pre.h"
 
@@ -134,7 +134,7 @@ namespace Second
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_ch.cpp:44
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_ch.cpp:42
 
 
 

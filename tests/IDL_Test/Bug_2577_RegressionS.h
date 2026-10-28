@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:415
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:403
 
-#ifndef _TAO_IDL_BUG_2577_REGRESSIONS_0JU06X_H_
-#define _TAO_IDL_BUG_2577_REGRESSIONS_0JU06X_H_
+#ifndef _TAO_IDL_BUG_2577_REGRESSIONS_DRL8GU_H_
+#define _TAO_IDL_BUG_2577_REGRESSIONS_DRL8GU_H_
 
 #include /**/ "ace/pre.h"
 
