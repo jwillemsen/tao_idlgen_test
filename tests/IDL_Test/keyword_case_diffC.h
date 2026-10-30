@@ -25,8 +25,8 @@
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:108
 
-#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_5YEK1A_H_
-#define _TAO_IDL_KEYWORD_CASE_DIFFC_5YEK1A_H_
+#ifndef _TAO_IDL_KEYWORD_CASE_DIFFC_K88OPY_H_
+#define _TAO_IDL_KEYWORD_CASE_DIFFC_K88OPY_H_
 
 
 #include /**/ "ace/config-all.h"
@@ -164,7 +164,7 @@ namespace MyModule
       virtual ::CORBA::TypeCode_ptr _tao_type () const;
     };
     // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
+    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
 
     static ::CORBA::TypeCode_ptr const _tc_MyException;
 
@@ -204,7 +204,7 @@ namespace MyModule
     PortType &operator= (PortType &&) = delete;
   };
   // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
+  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
 
   extern  ::CORBA::TypeCode_ptr const _tc_PortType;
 

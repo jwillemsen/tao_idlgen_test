@@ -52,7 +52,7 @@ static TAO::TypeCode::Objref<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_hello = std::addressof(_tao_tc_hello);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_helloExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -136,7 +136,7 @@ static TAO::TypeCode::Enum<char const *,
   return ::_tc_Riot;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -170,7 +170,7 @@ static TAO::TypeCode::Objref<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_goodbye = std::addressof(_tao_tc_goodbye);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_goodbyeExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -222,7 +222,7 @@ static TAO::TypeCode::Objref<char const *,
   return ::A::_tc_my_exception;
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
 static TAO::TypeCode::Struct_Field<
   char const *,
@@ -264,7 +264,7 @@ namespace salutation
   ::CORBA::TypeCode_ptr const _tc_sayonara = std::addressof(_tao_tc_salutation_sayonara);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_salutation_AMH_sayonaraExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -333,7 +333,7 @@ static TAO::TypeCode::Objref<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_ciao = std::addressof(_tao_tc_ciao);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_ciaoExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -390,7 +390,7 @@ static TAO::TypeCode::Objref<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_aloha = std::addressof(_tao_tc_aloha);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_alohaExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -435,6 +435,36 @@ static TAO::TypeCode::Objref<char const *,
     "AMI_alohaHandler");
 
 ::CORBA::TypeCode_ptr const _tc_AMI_alohaHandler = std::addressof(_tao_tc_AMI_alohaHandler);
+// TAO_IDL - Generated from
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
+
+static TAO::TypeCode::Struct_Field<
+  char const *,
+  ::CORBA::TypeCode_ptr const *> const
+    _tao_fields_DCPS_Test_Sample[] =
+      {
+        { "key", &CORBA::_tc_long }
+      };
+
+static TAO::TypeCode::Struct<
+  char const *,
+  ::CORBA::TypeCode_ptr const *,
+  TAO::TypeCode::Struct_Field<
+    char const *,
+    ::CORBA::TypeCode_ptr const *> const *,
+  TAO::Null_RefCount_Policy>
+_tao_tc_DCPS_Test_Sample (
+  ::CORBA::tk_struct,
+  "IDL:anvil.com/DCPS_Test/Sample:1.0",
+  "Sample",
+  _tao_fields_DCPS_Test_Sample,
+  1);
+
+
+namespace DCPS_Test
+{
+  ::CORBA::TypeCode_ptr const _tc_Sample = std::addressof(_tao_tc_DCPS_Test_Sample);
+}
 // TAO_IDL - Generated from
 // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:35
 
@@ -2118,6 +2148,52 @@ operator>>= (
         _tao_elem);
 }
 
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+// TAO_IDL - Generated from
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
+
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+namespace CORBA {
+
+/// Copying insertion.
+void operator<<= (
+  ::CORBA::Any &_tao_any,
+  ::DCPS_Test::Sample const &_tao_elem)
+{
+  TAO::Any_Dual_Impl_T< ::DCPS_Test::Sample>::insert_copy (
+    _tao_any,
+    ::DCPS_Test::Sample::_tao_any_destructor,
+    DCPS_Test::_tc_Sample,
+    _tao_elem);
+}
+
+/// Non-copying insertion.
+void operator<<= (
+  ::CORBA::Any &_tao_any,
+  ::DCPS_Test::Sample *_tao_elem)
+{
+  TAO::Any_Dual_Impl_T< ::DCPS_Test::Sample>::insert (
+    _tao_any,
+    ::DCPS_Test::Sample::_tao_any_destructor,
+    DCPS_Test::_tc_Sample,
+    _tao_elem);
+}
+
+/// Extraction to const pointer.
+::CORBA::Boolean operator>>= (
+  ::CORBA::Any const &_tao_any,
+  ::DCPS_Test::Sample const *&_tao_elem)
+{
+  return TAO::Any_Dual_Impl_T< ::DCPS_Test::Sample>::extract (
+    _tao_any,
+    ::DCPS_Test::Sample::_tao_any_destructor,
+    DCPS_Test::_tc_Sample,
+    _tao_elem);
+}
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 

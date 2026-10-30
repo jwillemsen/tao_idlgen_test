@@ -61,7 +61,7 @@ static TAO::TypeCode::Enum<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_ObjectType = std::addressof(_tao_tc_ObjectType);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:61
 
 static TAO::TypeCode::Case_T<ObjectType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Selecter__0 (::OT_THIS, "this_object", &CORBA::_tc_Object);
 static TAO::TypeCode::Case_T<ObjectType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Selecter__1 (::OT_THAT, "that_object", &CORBA::_tc_Object);
@@ -97,7 +97,7 @@ static TAO::TypeCode::Objref<char const *,
 
 ::CORBA::TypeCode_ptr const _tc_generic = std::addressof(_tao_tc_generic);
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_genericExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -180,7 +180,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:33
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:32
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

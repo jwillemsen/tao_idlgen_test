@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:577
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:568
 
-#ifndef _TAO_IDL_ATTRIBUTES_PQC2GX_CPP_
-#define _TAO_IDL_ATTRIBUTES_PQC2GX_CPP_
+#ifndef _TAO_IDL_ATTRIBUTES_BJFMRZ_CPP_
+#define _TAO_IDL_ATTRIBUTES_BJFMRZ_CPP_
 
 
 #include "attributeS.h"
@@ -55,7 +55,7 @@
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1624
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1576
 
 class TAO_Hello_AMH_MyFoo_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -130,7 +130,6 @@ TAO_Hello_AMH_MyFoo_Perfect_Hash_OpTable::lookup (const char *str, unsigned int 
     {
        -1,  -1,  -1,  -1,  -1,   5, -10,  -3, -13,  -2,   6,  -1, -15,  -2,
         7,   8, -17,  -2,   9, -36, -35, -32,  -1, -30,
-
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
@@ -169,7 +168,7 @@ static TAO_Hello_AMH_MyFoo_Perfect_Hash_OpTable tao_Hello_AMH_MyFoo_optable;
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:81
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:84
 
 
 
@@ -577,7 +576,7 @@ POA_Hello::AMH_MyFoo::_get_ro_attrib_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:128
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:131
 
 
 
@@ -597,7 +596,7 @@ const char* POA_Hello::AMH_MyFoo::_interface_repository_id () const
   return "IDL:Hello/MyFoo:1.0";
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:102
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
 
 void
 POA_Hello::AMH_MyFoo::_dispatch (
@@ -607,7 +606,7 @@ POA_Hello::AMH_MyFoo::_dispatch (
   this->asynchronous_upcall_dispatch (req,context,this);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:62
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
 
 Hello::MyFoo*
 POA_Hello::AMH_MyFoo::_this ()
@@ -624,7 +623,7 @@ POA_Hello::AMH_MyFoo::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1624
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1576
 
 class TAO_Hello_MyFoo_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -699,7 +698,6 @@ TAO_Hello_MyFoo_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
     {
        -1,  -1,  -1,  -1,  -1,   5, -10,  -3, -13,  -2,   6,  -1, -15,  -2,
         7,   8, -17,  -2,   9, -36, -35, -32,  -1, -30,
-
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
@@ -950,7 +948,7 @@ POA_Hello::_TAO_MyFoo_Direct_Proxy_Impl::_get_ro_attrib (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:81
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:84
 
 
 
@@ -1749,7 +1747,7 @@ void POA_Hello::MyFoo::_get_ro_attrib_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:128
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:131
 
 
 
@@ -1771,7 +1769,7 @@ const char* POA_Hello::MyFoo::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:367
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:370
 
 
 
@@ -1784,7 +1782,7 @@ void POA_Hello::MyFoo::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:327
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:330
 
 
 
@@ -1802,7 +1800,7 @@ POA_Hello::MyFoo::_this ()
   return {};
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:39
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:61
 
 
 // TAO_IDL - Generated from
@@ -2084,7 +2082,7 @@ POA_Hello::TAO_AMH_MyFooResponseHandler::get_ro_attrib_excep (
   }
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1624
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1576
 
 class TAO_Hello_AMI_MyFooHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -2170,7 +2168,6 @@ TAO_Hello_AMI_MyFooHandler_Perfect_Hash_OpTable::lookup (const char *str, unsign
         8,  -1, -10,  -2,   9, -48,  12,  -1,  13,  -1,  14,  15,  16,  17,
        18,  19,  20,  21,  -1,  22,  23,  24,  -1,  -1,  25,  -1,  26,  -1,
        -1,  -1,  -1,  27,
-
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
@@ -2615,7 +2612,7 @@ POA_Hello::_TAO_AMI_MyFooHandler_Direct_Proxy_Impl::get_ro_attrib_excep (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:81
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:84
 
 
 
@@ -4314,7 +4311,7 @@ void POA_Hello::AMI_MyFooHandler::get_ro_attrib_excep_skel (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:128
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:131
 
 
 
@@ -4337,7 +4334,7 @@ const char* POA_Hello::AMI_MyFooHandler::_interface_repository_id () const
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:367
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:370
 
 
 
@@ -4350,7 +4347,7 @@ void POA_Hello::AMI_MyFooHandler::_dispatch (
 
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:327
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:330
 
 
 

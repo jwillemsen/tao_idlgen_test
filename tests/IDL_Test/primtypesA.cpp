@@ -50,7 +50,7 @@ namespace OldPrimTypes
   ::CORBA::TypeCode_ptr const _tc_ex1 = std::addressof(_tao_tc_OldPrimTypes_ex1);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldPrimTypes_AMH_ex1ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -123,7 +123,7 @@ namespace OldPrimTypes
   ::CORBA::TypeCode_ptr const _tc_ex2 = std::addressof(_tao_tc_OldPrimTypes_ex2);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldPrimTypes_AMH_ex2ExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,

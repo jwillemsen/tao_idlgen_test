@@ -213,7 +213,7 @@ static TAO::TypeCode::Fixed<TAO::Null_RefCount_Policy>
                       ::CORBA::TypeCode_ptr const _tc_MaximumScale = std::addressof(_tao_tc_FixedPoint_MaximumScale);
                     }
                     // TAO_IDL - Generated from
-                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
+                    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:82
 
                     #ifndef _TAO_TYPECODE_FIXED_3_0_GUARD
                     #define _TAO_TYPECODE_FIXED_3_0_GUARD
@@ -307,7 +307,7 @@ static TAO::TypeCode::Fixed<TAO::Null_RefCount_Policy>
                                 ::CORBA::TypeCode_ptr const _tc_FixedOperations = std::addressof(_tao_tc_FixedPoint_FixedOperations);
                               }
                               // TAO_IDL - Generated from
-                              // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+                              // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
                               static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_FixedPoint_AMH_FixedOperationsExceptionHolder = nullptr;
                               static TAO::TypeCode::Value<char const *,

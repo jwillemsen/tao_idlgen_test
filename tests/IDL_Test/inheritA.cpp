@@ -50,7 +50,7 @@ namespace OldInherit
   ::CORBA::TypeCode_ptr const _tc_one = std::addressof(_tao_tc_OldInherit_one);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldInherit_AMH_oneExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -123,7 +123,7 @@ namespace OldInherit
   ::CORBA::TypeCode_ptr const _tc_two = std::addressof(_tao_tc_OldInherit_two);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldInherit_AMH_twoExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -196,7 +196,7 @@ namespace OldInherit
   ::CORBA::TypeCode_ptr const _tc_three = std::addressof(_tao_tc_OldInherit_three);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldInherit_AMH_threeExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -269,7 +269,7 @@ namespace OldInherit
   ::CORBA::TypeCode_ptr const _tc_four = std::addressof(_tao_tc_OldInherit_four);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldInherit_AMH_fourExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -342,7 +342,7 @@ namespace OldInherit
   ::CORBA::TypeCode_ptr const _tc_five = std::addressof(_tao_tc_OldInherit_five);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_OldInherit_AMH_fiveExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,

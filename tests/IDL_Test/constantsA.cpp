@@ -96,7 +96,7 @@ namespace ClassConstants
   ::CORBA::TypeCode_ptr const _tc_Iface = std::addressof(_tao_tc_ClassConstants_Iface);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_ClassConstants_AMH_IfaceExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
@@ -154,7 +154,7 @@ namespace ClassConstants
   ::CORBA::TypeCode_ptr const _tc_AMI_IfaceHandler = std::addressof(_tao_tc_ClassConstants_AMI_IfaceHandler);
 }
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:61
 
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_ClassConstants_Vt = nullptr;
 static TAO::TypeCode::Value<char const *,

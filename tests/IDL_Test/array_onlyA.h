@@ -23,10 +23,10 @@
  **/
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:713
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:704
 
-#ifndef _TAO_IDL_ARRAY_ONLYA_IEUZJ8_H_
-#define _TAO_IDL_ARRAY_ONLYA_IEUZJ8_H_
+#ifndef _TAO_IDL_ARRAY_ONLYA_AOUM3A_H_
+#define _TAO_IDL_ARRAY_ONLYA_AOUM3A_H_
 
 #include /**/ "ace/pre.h"
 
@@ -36,7 +36,7 @@
 #include "array_onlyC.h"
 
 // TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:31
+// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
 
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_TEST_TYPE;
 // TAO_IDL - Generated from

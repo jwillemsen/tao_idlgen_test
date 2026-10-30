@@ -14,6 +14,7 @@ do
   make realclean && make -j 8
   mkdir -p $TAO_IDLGEN_ROOT/$TEST
   find . -type f \( -name '*A.h' -o -name '*A.cpp' -o -name '*S.h' -o -name '*S.cpp' -o -name '*SP.h' -o -name '*SP.cpp' -o -name '*CP.h' -o -name '*C.h' -o -name '*C.cpp' -o -name '*CP.cpp' -o -name '*C.inl' \)  -exec cp {} $TAO_IDLGEN_ROOT/$TEST \;
+  find $TAO_IDLGEN_ROOT/$TEST -type f -exec sed -i 's/[[:blank:]]*$//' {} +
  popd
 done
 popd
