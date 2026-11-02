@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_SIMPLE_TESTS_JU2V0Q_CPP_
-#define _TAO_IDL_SIMPLE_TESTS_JU2V0Q_CPP_
+#ifndef _TAO_IDL_SIMPLE_TESTS_55RS1X_CPP_
+#define _TAO_IDL_SIMPLE_TESTS_55RS1X_CPP_
 
 
 #include "simple_testS.h"
@@ -47,9 +44,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_Simple_Server_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -63,6 +57,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_Simple_Server_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_Simple_Server_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -123,7 +118,7 @@ TAO_Simple_Server_Perfect_Hash_OpTable::lookup (const char *str, unsigned int le
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -133,9 +128,6 @@ TAO_Simple_Server_Perfect_Hash_OpTable::lookup (const char *str, unsigned int le
 static TAO_Simple_Server_Perfect_Hash_OpTable tao_Simple_Server_optable;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_Simple_Server::POA_Simple_Server ()
@@ -143,9 +135,6 @@ POA_Simple_Server::POA_Simple_Server ()
   this->optable_ = std::addressof (tao_Simple_Server_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
 class print_status_Simple_Server
   : public TAO::Upcall_Command
@@ -167,7 +156,7 @@ public:
       TAO::Portable_Server::get_ret_arg< ::ACE_InputCDR::to_boolean> (
         this->operation_details_,
         this->args_);
-    
+
     retval =
       this->servant_->print_status ();
   }
@@ -177,9 +166,6 @@ private:
   TAO_Operation_Details const * const operation_details_;
   TAO::Argument * const * const args_;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_Simple_Server::print_status_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -190,7 +176,7 @@ void POA_Simple_Server::print_status_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_Simple_Server * const impl =
     dynamic_cast<POA_Simple_Server *> (servant);
 
@@ -203,7 +189,7 @@ void POA_Simple_Server::print_status_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -217,9 +203,6 @@ void POA_Simple_Server::print_status_skel (
                          );
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
 class shutdown_Simple_Server
   : public TAO::Upcall_Command
@@ -239,9 +222,6 @@ public:
 private:
   POA_Simple_Server * const servant_;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_Simple_Server::shutdown_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -252,7 +232,7 @@ void POA_Simple_Server::shutdown_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_Simple_Server * const impl =
     dynamic_cast<POA_Simple_Server *> (servant);
 
@@ -263,7 +243,7 @@ void POA_Simple_Server::shutdown_skel (
 
   shutdown_Simple_Server command (
     impl);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -279,9 +259,6 @@ void POA_Simple_Server::shutdown_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -302,9 +279,6 @@ const char* POA_Simple_Server::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_Simple_Server::_dispatch (
@@ -314,9 +288,6 @@ void POA_Simple_Server::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

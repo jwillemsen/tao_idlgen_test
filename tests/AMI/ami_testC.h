@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
-
 #ifndef _TAO_IDL_AMI_TESTC_UIHFLY_H_
 #define _TAO_IDL_AMI_TESTC_UIHFLY_H_
 
@@ -67,9 +64,6 @@
 #if TAO_MAJOR_VERSION != 4 || TAO_MINOR_VERSION != 0 || TAO_MICRO_VERSION != 8
 #error This file should be regenerated with TAO_IDL
 #endif
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:155
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -82,15 +76,9 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
 namespace A
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ch.cpp:40
 
-  
 
   class  DidTheRightThing : public ::CORBA::UserException
   {
@@ -117,10 +105,7 @@ namespace A
 
     virtual void _tao_encode (TAO_OutputCDR &cdr) const;
     virtual void _tao_decode (TAO_InputCDR &cdr);
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ctor.cpp:50
 
-    
 
     DidTheRightThing (
         ::CORBA::Long _tao_id,
@@ -128,20 +113,14 @@ namespace A
 
     virtual ::CORBA::TypeCode_ptr _tao_type () const;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
   extern  ::CORBA::TypeCode_ptr const _tc_DidTheRightThing;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_A_AMI_TEST__VAR_OUT_CH_)
 #define _A_AMI_TEST__VAR_OUT_CH_
 
   class AMI_AMI_TestHandler;
-  typedef AMI_AMI_TestHandler *AMI_AMI_TestHandler_ptr;
+  using AMI_AMI_TestHandler_ptr = AMI_AMI_TestHandler *;
 
   class AMI_Test;
   using AMI_Test_ptr = AMI_Test*;
@@ -150,20 +129,14 @@ namespace A
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  AMI_Test
     : public virtual ::CORBA::Object
   {
   public:
     friend class TAO::Narrow_Utils<AMI_Test>;
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = AMI_Test_ptr;
     using _var_type = AMI_Test_var;
     using _out_type = AMI_Test_out;
@@ -210,23 +183,20 @@ namespace A
       ::A::AMI_AMI_TestHandler_ptr ami_handler,
       const char * str);
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     AMI_Test ();
 
     // Concrete non-local interface only.
     AMI_Test (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     AMI_Test (
         TAO_Stub *objref,
@@ -235,7 +205,7 @@ namespace A
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~AMI_Test () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     AMI_Test (const AMI_Test &) = delete;
@@ -243,14 +213,8 @@ namespace A
     AMI_Test &operator= (const AMI_Test &) = delete;
     AMI_Test &operator= (AMI_Test &&) = delete;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
   extern  ::CORBA::TypeCode_ptr const _tc_AMI_Test;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_A_AMI_AMI_TESTHANDLER__VAR_OUT_CH_)
 #define _A_AMI_AMI_TESTHANDLER__VAR_OUT_CH_
@@ -262,21 +226,15 @@ namespace A
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  AMI_AMI_TestHandler
     : public virtual ::Messaging::ReplyHandler
-  
+
   {
   public:
     friend class TAO::Narrow_Utils<AMI_AMI_TestHandler>;
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = AMI_AMI_TestHandler_ptr;
     using _var_type = AMI_AMI_TestHandler_var;
     using _out_type = AMI_AMI_TestHandler_out;
@@ -340,23 +298,20 @@ namespace A
     virtual void inout_arg_test_excep (
       ::Messaging::ExceptionHolder * excep_holder);
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     AMI_AMI_TestHandler ();
 
     // Concrete non-local interface only.
     AMI_AMI_TestHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     AMI_AMI_TestHandler (
         TAO_Stub *objref,
@@ -365,7 +320,7 @@ namespace A
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~AMI_AMI_TestHandler () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     AMI_AMI_TestHandler (const AMI_AMI_TestHandler &) = delete;
@@ -373,20 +328,14 @@ namespace A
     AMI_AMI_TestHandler &operator= (const AMI_AMI_TestHandler &) = delete;
     AMI_AMI_TestHandler &operator= (AMI_AMI_TestHandler &&) = delete;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
   extern  ::CORBA::TypeCode_ptr const _tc_AMI_AMI_TestHandler;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_A_TEST_CHILD__VAR_OUT_CH_)
 #define _A_TEST_CHILD__VAR_OUT_CH_
 
   class AMI_Test_ChildHandler;
-  typedef AMI_Test_ChildHandler *AMI_Test_ChildHandler_ptr;
+  using AMI_Test_ChildHandler_ptr = AMI_Test_ChildHandler *;
 
   class Test_Child;
   using Test_Child_ptr = Test_Child*;
@@ -395,21 +344,15 @@ namespace A
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  Test_Child
     : public virtual ::A::AMI_Test
-  
+
   {
   public:
     friend class TAO::Narrow_Utils<Test_Child>;
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = Test_Child_ptr;
     using _var_type = Test_Child_var;
     using _out_type = Test_Child_out;
@@ -430,23 +373,20 @@ namespace A
     virtual void sendc_child_op (
       ::A::AMI_Test_ChildHandler_ptr ami_handler);
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     Test_Child ();
 
     // Concrete non-local interface only.
     Test_Child (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     Test_Child (
         TAO_Stub *objref,
@@ -455,7 +395,7 @@ namespace A
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~Test_Child () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     Test_Child (const Test_Child &) = delete;
@@ -463,14 +403,8 @@ namespace A
     Test_Child &operator= (const Test_Child &) = delete;
     Test_Child &operator= (Test_Child &&) = delete;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
   extern  ::CORBA::TypeCode_ptr const _tc_Test_Child;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_A_AMI_TEST_CHILDHANDLER__VAR_OUT_CH_)
 #define _A_AMI_TEST_CHILDHANDLER__VAR_OUT_CH_
@@ -482,21 +416,15 @@ namespace A
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class  AMI_Test_ChildHandler
     : public virtual ::A::AMI_AMI_TestHandler
-  
+
   {
   public:
     friend class TAO::Narrow_Utils<AMI_Test_ChildHandler>;
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = AMI_Test_ChildHandler_ptr;
     using _var_type = AMI_Test_ChildHandler_var;
     using _out_type = AMI_Test_ChildHandler_out;
@@ -523,23 +451,20 @@ namespace A
     virtual void child_op_excep (
       ::Messaging::ExceptionHolder * excep_holder);
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Concrete interface only.
     AMI_Test_ChildHandler ();
 
     // Concrete non-local interface only.
     AMI_Test_ChildHandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-    
+
     // Non-local interface only.
     AMI_Test_ChildHandler (
         TAO_Stub *objref,
@@ -548,7 +473,7 @@ namespace A
         TAO_ORB_Core *orb_core = nullptr);
 
     virtual ~AMI_Test_ChildHandler () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     AMI_Test_ChildHandler (const AMI_Test_ChildHandler &) = delete;
@@ -556,20 +481,11 @@ namespace A
     AMI_Test_ChildHandler &operator= (const AMI_Test_ChildHandler &) = delete;
     AMI_Test_ChildHandler &operator= (AMI_Test_ChildHandler &&) = delete;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
   extern  ::CORBA::TypeCode_ptr const _tc_AMI_Test_ChildHandler;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
-
 
 } // module A
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -578,10 +494,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 // Arg traits specializations.
 namespace TAO
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
 
-  
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -600,10 +513,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_A_AMI_TEST__ARG_TRAITS_)
 #define _A_AMI_TEST__ARG_TRAITS_
@@ -620,10 +530,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_A_AMI_AMI_TESTHANDLER__ARG_TRAITS_)
 #define _A_AMI_AMI_TESTHANDLER__ARG_TRAITS_
@@ -640,10 +547,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_A_TEST_CHILD__ARG_TRAITS_)
 #define _A_TEST_CHILD__ARG_TRAITS_
@@ -660,10 +564,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_A_AMI_TEST_CHILDHANDLER__ARG_TRAITS_)
 #define _A_AMI_TEST_CHILDHANDLER__ARG_TRAITS_
@@ -685,15 +586,9 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/obv_module.cpp:43
-
 namespace OBV_A
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -761,9 +656,6 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/any_op_ch.cpp:36
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -778,9 +670,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
 
 
 
@@ -797,9 +686,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
-
 
 
 
@@ -814,9 +700,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
 
 
 
@@ -833,9 +716,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
-
 
 
 
@@ -848,9 +728,6 @@ namespace CORBA {
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/cdr_op_ch.cpp:36
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -865,9 +742,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -879,9 +753,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
 
 
 
@@ -895,9 +766,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -910,9 +778,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -922,9 +787,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
 
 #if defined (__ACE_INLINE__)
 #include "ami_testC.inl"

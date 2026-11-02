@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
-
 #ifndef _TAO_IDL_REPO_ID_MODC_UBUDG4_H_
 #define _TAO_IDL_REPO_ID_MODC_UBUDG4_H_
 
@@ -57,21 +54,15 @@
 #if TAO_MAJOR_VERSION != 4 || TAO_MINOR_VERSION != 0 || TAO_MICRO_VERSION != 8
 #error This file should be regenerated with TAO_IDL
 #endif
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
 namespace gleep
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_GLEEP_SCHMOOZE__VAR_OUT_CH_)
 #define _GLEEP_SCHMOOZE__VAR_OUT_CH_
 
   class AMI_schmoozeHandler;
-  typedef AMI_schmoozeHandler *AMI_schmoozeHandler_ptr;
+  using AMI_schmoozeHandler_ptr = AMI_schmoozeHandler *;
 
   class schmooze;
   using schmooze_ptr = schmooze*;
@@ -80,19 +71,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export schmooze
     : public virtual ::CORBA::Object
   {
   public:
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = schmooze_ptr;
     using _var_type = schmooze_var;
     using _out_type = schmooze_out;
@@ -108,26 +93,23 @@ namespace gleep
     static schmooze_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static schmooze_ptr _nil ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     schmooze ();
 
-    
+
 
     virtual ~schmooze () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     schmooze (const schmooze &) = delete;
@@ -137,26 +119,17 @@ namespace gleep
   };
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
-
 
 } // module gleep
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
 namespace gleep
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_GLEEP_SCHMEER__VAR_OUT_CH_)
 #define _GLEEP_SCHMEER__VAR_OUT_CH_
 
   class AMI_schmeerHandler;
-  typedef AMI_schmeerHandler *AMI_schmeerHandler_ptr;
+  using AMI_schmeerHandler_ptr = AMI_schmeerHandler *;
 
   class schmeer;
   using schmeer_ptr = schmeer*;
@@ -165,19 +138,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export schmeer
     : public virtual ::CORBA::Object
   {
   public:
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = schmeer_ptr;
     using _var_type = schmeer_var;
     using _out_type = schmeer_out;
@@ -193,26 +160,23 @@ namespace gleep
     static schmeer_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static schmeer_ptr _nil ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     schmeer ();
 
-    
+
 
     virtual ~schmeer () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     schmeer (const schmeer &) = delete;
@@ -222,26 +186,17 @@ namespace gleep
   };
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
-
 
 } // module gleep
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
 namespace gleep
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_GLEEP_SCHLEMIEL__VAR_OUT_CH_)
 #define _GLEEP_SCHLEMIEL__VAR_OUT_CH_
 
   class AMI_schlemielHandler;
-  typedef AMI_schlemielHandler *AMI_schlemielHandler_ptr;
+  using AMI_schlemielHandler_ptr = AMI_schlemielHandler *;
 
   class schlemiel;
   using schlemiel_ptr = schlemiel*;
@@ -250,19 +205,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export schlemiel
     : public virtual ::CORBA::Object
   {
   public:
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = schlemiel_ptr;
     using _var_type = schlemiel_var;
     using _out_type = schlemiel_out;
@@ -278,26 +227,23 @@ namespace gleep
     static schlemiel_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static schlemiel_ptr _nil ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     schlemiel ();
 
-    
+
 
     virtual ~schlemiel () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     schlemiel (const schlemiel &) = delete;
@@ -307,26 +253,17 @@ namespace gleep
   };
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
-
 
 } // module gleep
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
 namespace gleep
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_GLEEP_SPILKIS__VAR_OUT_CH_)
 #define _GLEEP_SPILKIS__VAR_OUT_CH_
 
   class AMI_spilkisHandler;
-  typedef AMI_spilkisHandler *AMI_spilkisHandler_ptr;
+  using AMI_spilkisHandler_ptr = AMI_spilkisHandler *;
 
   class spilkis;
   using spilkis_ptr = spilkis*;
@@ -335,19 +272,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export spilkis
     : public virtual ::CORBA::Object
   {
   public:
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = spilkis_ptr;
     using _var_type = spilkis_var;
     using _out_type = spilkis_out;
@@ -363,26 +294,23 @@ namespace gleep
     static spilkis_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static spilkis_ptr _nil ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     spilkis ();
 
-    
+
 
     virtual ~spilkis () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     spilkis (const spilkis &) = delete;
@@ -390,21 +318,15 @@ namespace gleep
     spilkis &operator= (const spilkis &) = delete;
     spilkis &operator= (spilkis &&) = delete;
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
   namespace floop
   {
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-    
 
 #if !defined (_GLEEP_FLOOP_SCHMUCK__VAR_OUT_CH_)
 #define _GLEEP_FLOOP_SCHMUCK__VAR_OUT_CH_
 
     class AMI_schmuckHandler;
-    typedef AMI_schmuckHandler *AMI_schmuckHandler_ptr;
+    using AMI_schmuckHandler_ptr = AMI_schmuckHandler *;
 
     class schmuck;
     using schmuck_ptr = schmuck*;
@@ -413,19 +335,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-    
+
 
     class TAO_IDL_TEST_STUB_Export schmuck
       : public virtual ::CORBA::Object
     {
     public:
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
       using _ptr_type = schmuck_ptr;
       using _var_type = schmuck_var;
       using _out_type = schmuck_out;
@@ -441,26 +357,23 @@ namespace gleep
       static schmuck_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
       static schmuck_ptr _nil ();
 
-      
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-      
+
 
       virtual ::CORBA::Boolean _is_a (const char *type_id);
       virtual const char* _interface_repository_id () const;
       static const char* _desc_repository_id ();
       static const char* _desc_interface_name ();
       virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-    
+
     protected:
       // Abstract or local interface only.
       schmuck ();
 
-      
+
 
       virtual ~schmuck () = default;
-    
+
     private:
       // Private and unimplemented for concrete interfaces.
       schmuck (const schmuck &) = delete;
@@ -468,16 +381,13 @@ namespace gleep
       schmuck &operator= (const schmuck &) = delete;
       schmuck &operator= (schmuck &&) = delete;
     };
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-    
 
 #if !defined (_GLEEP_FLOOP_SCHMENDRICK__VAR_OUT_CH_)
 #define _GLEEP_FLOOP_SCHMENDRICK__VAR_OUT_CH_
 
     class AMI_schmendrickHandler;
-    typedef AMI_schmendrickHandler *AMI_schmendrickHandler_ptr;
+    using AMI_schmendrickHandler_ptr = AMI_schmendrickHandler *;
 
     class schmendrick;
     using schmendrick_ptr = schmendrick*;
@@ -486,19 +396,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-    
+
 
     class TAO_IDL_TEST_STUB_Export schmendrick
       : public virtual ::CORBA::Object
     {
     public:
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
       using _ptr_type = schmendrick_ptr;
       using _var_type = schmendrick_var;
       using _out_type = schmendrick_out;
@@ -514,26 +418,23 @@ namespace gleep
       static schmendrick_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
       static schmendrick_ptr _nil ();
 
-      
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-      
+
 
       virtual ::CORBA::Boolean _is_a (const char *type_id);
       virtual const char* _interface_repository_id () const;
       static const char* _desc_repository_id ();
       static const char* _desc_interface_name ();
       virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-    
+
     protected:
       // Abstract or local interface only.
       schmendrick ();
 
-      
+
 
       virtual ~schmendrick () = default;
-    
+
     private:
       // Private and unimplemented for concrete interfaces.
       schmendrick (const schmendrick &) = delete;
@@ -541,21 +442,15 @@ namespace gleep
       schmendrick &operator= (const schmendrick &) = delete;
       schmendrick &operator= (schmendrick &&) = delete;
     };
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:34
-
     namespace verklempt
     {
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-      
 
 #if !defined (_GLEEP_FLOOP_VERKLEMPT_SCHLEMAZEL__VAR_OUT_CH_)
 #define _GLEEP_FLOOP_VERKLEMPT_SCHLEMAZEL__VAR_OUT_CH_
 
       class AMI_schlemazelHandler;
-      typedef AMI_schlemazelHandler *AMI_schlemazelHandler_ptr;
+      using AMI_schlemazelHandler_ptr = AMI_schlemazelHandler *;
 
       class schlemazel;
       using schlemazel_ptr = schlemazel*;
@@ -564,19 +459,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-      
-      // TAO_IDL - Generated from
-      // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-      
+
 
       class TAO_IDL_TEST_STUB_Export schlemazel
         : public virtual ::CORBA::Object
       {
       public:
-        // TAO_IDL - Generated from
-        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
         using _ptr_type = schlemazel_ptr;
         using _var_type = schlemazel_var;
         using _out_type = schlemazel_out;
@@ -592,26 +481,23 @@ namespace gleep
         static schlemazel_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
         static schlemazel_ptr _nil ();
 
-        
-        // TAO_IDL - Generated from
-        // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-        
+
 
         virtual ::CORBA::Boolean _is_a (const char *type_id);
         virtual const char* _interface_repository_id () const;
         static const char* _desc_repository_id ();
         static const char* _desc_interface_name ();
         virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-      
+
       protected:
         // Abstract or local interface only.
         schlemazel ();
 
-        
+
 
         virtual ~schlemazel () = default;
-      
+
       private:
         // Private and unimplemented for concrete interfaces.
         schlemazel (const schlemazel &) = delete;
@@ -619,30 +505,21 @@ namespace gleep
         schlemazel &operator= (const schlemazel &) = delete;
         schlemazel &operator= (schlemazel &&) = delete;
       };
-    
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
 
-    
+
+
     } // module gleep::floop::verklempt
-  
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
 
-  
+
+
   } // module gleep::floop
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
 
-  
 
 #if !defined (_GLEEP_SCHMEGEGGING__VAR_OUT_CH_)
 #define _GLEEP_SCHMEGEGGING__VAR_OUT_CH_
 
   class AMI_schmegeggingHandler;
-  typedef AMI_schmegeggingHandler *AMI_schmegeggingHandler_ptr;
+  using AMI_schmegeggingHandler_ptr = AMI_schmegeggingHandler *;
 
   class schmegegging;
   using schmegegging_ptr = schmegegging*;
@@ -651,19 +528,13 @@ namespace gleep
 
 #endif /* end #if !defined */
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
 
-  
+
 
   class TAO_IDL_TEST_STUB_Export schmegegging
     : public virtual ::CORBA::Object
   {
   public:
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
     using _ptr_type = schmegegging_ptr;
     using _var_type = schmegegging_var;
     using _out_type = schmegegging_out;
@@ -679,26 +550,23 @@ namespace gleep
     static schmegegging_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
     static schmegegging_ptr _nil ();
 
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-    
+
 
     virtual ::CORBA::Boolean _is_a (const char *type_id);
     virtual const char* _interface_repository_id () const;
     static const char* _desc_repository_id ();
     static const char* _desc_interface_name ();
     virtual ::CORBA::Boolean marshal (TAO_OutputCDR &cdr);
-  
+
   protected:
     // Abstract or local interface only.
     schmegegging ();
 
-    
+
 
     virtual ~schmegegging () = default;
-  
+
   private:
     // Private and unimplemented for concrete interfaces.
     schmegegging (const schmegegging &) = delete;
@@ -708,14 +576,8 @@ namespace gleep
   };
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_ch.cpp:62
-
 
 } // module gleep
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -724,10 +586,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 // Arg traits specializations.
 namespace TAO
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
 
-  
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -750,9 +609,6 @@ namespace TAO
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
 
 
 
@@ -876,9 +732,6 @@ namespace TAO
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
 
 #if defined (__ACE_INLINE__)
 #include "repo_id_modC.inl"

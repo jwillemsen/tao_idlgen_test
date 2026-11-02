@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_PARAMSS_SN4WF0_CPP_
-#define _TAO_IDL_PARAMSS_SN4WF0_CPP_
+#ifndef _TAO_IDL_PARAMSS_Q8PTD1_CPP_
+#define _TAO_IDL_PARAMSS_Q8PTD1_CPP_
 
 
 #include "paramsS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -128,7 +123,7 @@ TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable::lookup (const char *str, unsigned i
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -138,9 +133,6 @@ TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable::lookup (const char *str, unsigned i
 static TAO_foo_bar_AMH_fooBar_Perfect_Hash_OpTable tao_foo_bar_AMH_fooBar_optable;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_foo::bar::AMH_fooBar::AMH_fooBar ()
@@ -148,9 +140,6 @@ POA_foo::bar::AMH_fooBar::AMH_fooBar ()
   this->optable_ = std::addressof (tao_foo_bar_AMH_fooBar_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_foo::bar::AMH_fooBar::getDate_skel (
@@ -162,7 +151,7 @@ POA_foo::bar::AMH_fooBar::getDate_skel (
     dynamic_cast<POA_foo::bar::AMH_fooBar *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::foo::theDate a;
   ::foo::theDate b;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -172,28 +161,28 @@ POA_foo::bar::AMH_fooBar::getDate_skel (
       (_tao_in >> b)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_foo::bar::TAO_AMH_fooBarResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_foo::bar::TAO_AMH_fooBarResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_foo::bar::TAO_AMH_fooBarResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_foo::bar::TAO_AMH_fooBarResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->getDate (
       safe_rd_.get (),
       a,
@@ -201,9 +190,6 @@ POA_foo::bar::AMH_fooBar::getDate_skel (
     );
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -222,9 +208,6 @@ const char* POA_foo::bar::AMH_fooBar::_interface_repository_id () const
 {
   return "IDL:foo/bar/fooBar:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_foo::bar::AMH_fooBar::_dispatch (
     TAO_ServerRequest &req,
@@ -232,9 +215,6 @@ POA_foo::bar::AMH_fooBar::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 foo::bar::fooBar*
 POA_foo::bar::AMH_fooBar::_this ()
 {
@@ -245,13 +225,10 @@ POA_foo::bar::AMH_fooBar::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::foo::bar::fooBar>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_foo_bar_fooBar_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -265,6 +242,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_foo_bar_fooBar_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_foo_bar_fooBar_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -323,7 +301,7 @@ TAO_foo_bar_fooBar_Perfect_Hash_OpTable::lookup (const char *str, unsigned int l
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -341,22 +319,19 @@ POA_foo::bar::_TAO_fooBar_Direct_Proxy_Impl::~_TAO_fooBar_Direct_Proxy_Impl ()
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_foo::bar::_TAO_fooBar_Direct_Proxy_Impl::getDate (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_foo::bar::fooBar_ptr _tao_ptr = 
+  POA_foo::bar::fooBar_ptr _tao_ptr =
     dynamic_cast<POA_foo::bar::fooBar_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::foo::theDate>::ret_val *) args[0])->arg () =
     _tao_ptr->getDate (
           ((TAO::Arg_Traits< ::foo::theDate>::in_arg_val *) args[1])->arg (),
@@ -372,9 +347,6 @@ POA_foo::bar::_TAO_fooBar_Direct_Proxy_Impl::getDate (
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_foo::bar::fooBar::fooBar ()
@@ -385,12 +357,9 @@ POA_foo::bar::fooBar::fooBar ()
 
 namespace POA_foo
 {
-  
+
   namespace bar
   {
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
     class getDate_fooBar
       : public TAO::Upcall_Command
@@ -412,32 +381,32 @@ namespace POA_foo
           TAO::Portable_Server::get_ret_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_);
-        
+
         TAO::SArg_Traits< ::foo::theDate>::in_arg_type arg_1 =
           TAO::Portable_Server::get_in_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::foo::theDate>::inout_arg_type arg_2 =
           TAO::Portable_Server::get_inout_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         TAO::SArg_Traits< ::foo::theDate>::out_arg_type arg_3 =
           TAO::Portable_Server::get_out_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_,
             3);
-          
+
         retval =
           this->servant_->getDate (
             arg_1
             , arg_2
             , arg_3);
       }
-    
+
     private:
       POA_foo::bar::fooBar * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -445,9 +414,6 @@ namespace POA_foo
     };
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_foo::bar::fooBar::getDate_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -464,7 +430,7 @@ void POA_foo::bar::fooBar::getDate_skel (
       std::addressof(_tao_b),
       std::addressof(_tao_c)
     };
-  
+
   POA_foo::bar::fooBar * const impl =
     dynamic_cast<POA_foo::bar::fooBar *> (servant);
 
@@ -477,7 +443,7 @@ void POA_foo::bar::fooBar::getDate_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -493,9 +459,6 @@ void POA_foo::bar::fooBar::getDate_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -516,9 +479,6 @@ const char* POA_foo::bar::fooBar::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_foo::bar::fooBar::_dispatch (
@@ -528,9 +488,6 @@ void POA_foo::bar::fooBar::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -547,12 +504,6 @@ POA_foo::bar::fooBar::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
 
 void
 POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate (
@@ -570,12 +521,9 @@ POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate_excep (
   ::foo::bar::AMH_fooBarExceptionHolder * holder)
@@ -589,9 +537,6 @@ POA_foo::bar::TAO_AMH_fooBarResponseHandler::getDate_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_foo_bar_AMI_fooBarHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -605,6 +550,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_foo_bar_AMI_fooBarHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_foo_bar_AMI_fooBarHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -665,7 +611,7 @@ TAO_foo_bar_AMI_fooBarHandler_Perfect_Hash_OpTable::lookup (const char *str, uns
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -683,22 +629,19 @@ POA_foo::bar::_TAO_AMI_fooBarHandler_Direct_Proxy_Impl::~_TAO_AMI_fooBarHandler_
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_foo::bar::_TAO_AMI_fooBarHandler_Direct_Proxy_Impl::getDate (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_foo::bar::AMI_fooBarHandler_ptr _tao_ptr = 
+  POA_foo::bar::AMI_fooBarHandler_ptr _tao_ptr =
     dynamic_cast<POA_foo::bar::AMI_fooBarHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->getDate (
         ((TAO::Arg_Traits< ::foo::theDate>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::foo::theDate>::in_arg_val *) args[2])->arg (),
@@ -707,22 +650,19 @@ POA_foo::bar::_TAO_AMI_fooBarHandler_Direct_Proxy_Impl::getDate (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_foo::bar::_TAO_AMI_fooBarHandler_Direct_Proxy_Impl::getDate_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_foo::bar::AMI_fooBarHandler_ptr _tao_ptr = 
+  POA_foo::bar::AMI_fooBarHandler_ptr _tao_ptr =
     dynamic_cast<POA_foo::bar::AMI_fooBarHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->getDate_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -735,9 +675,6 @@ POA_foo::bar::_TAO_AMI_fooBarHandler_Direct_Proxy_Impl::getDate_excep (
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_foo::bar::AMI_fooBarHandler::AMI_fooBarHandler ()
@@ -748,12 +685,9 @@ POA_foo::bar::AMI_fooBarHandler::AMI_fooBarHandler ()
 
 namespace POA_foo
 {
-  
+
   namespace bar
   {
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
     class getDate_AMI_fooBarHandler
       : public TAO::Upcall_Command
@@ -776,25 +710,25 @@ namespace POA_foo
             this->operation_details_,
             this->args_,
             1);
-          
+
         TAO::SArg_Traits< ::foo::theDate>::in_arg_type arg_2 =
           TAO::Portable_Server::get_in_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_,
             2);
-          
+
         TAO::SArg_Traits< ::foo::theDate>::in_arg_type arg_3 =
           TAO::Portable_Server::get_in_arg< ::foo::theDate> (
             this->operation_details_,
             this->args_,
             3);
-          
+
         this->servant_->getDate (
           arg_1
           , arg_2
           , arg_3);
       }
-    
+
     private:
       POA_foo::bar::AMI_fooBarHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -802,9 +736,6 @@ namespace POA_foo
     };
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_foo::bar::AMI_fooBarHandler::getDate_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -821,7 +752,7 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_skel (
       std::addressof(_tao_b),
       std::addressof(_tao_c)
     };
-  
+
   POA_foo::bar::AMI_fooBarHandler * const impl =
     dynamic_cast<POA_foo::bar::AMI_fooBarHandler *> (servant);
 
@@ -834,7 +765,7 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -851,12 +782,9 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_skel (
 
 namespace POA_foo
 {
-  
+
   namespace bar
   {
-    
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
     class getDate_excep_AMI_fooBarHandler
       : public TAO::Upcall_Command
@@ -879,11 +807,11 @@ namespace POA_foo
             this->operation_details_,
             this->args_,
             1);
-          
+
         this->servant_->getDate_excep (
           arg_1);
       }
-    
+
     private:
       POA_foo::bar::AMI_fooBarHandler * const servant_;
       TAO_Operation_Details const * const operation_details_;
@@ -891,9 +819,6 @@ namespace POA_foo
     };
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_foo::bar::AMI_fooBarHandler::getDate_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -906,7 +831,7 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_foo::bar::AMI_fooBarHandler * const impl =
     dynamic_cast<POA_foo::bar::AMI_fooBarHandler *> (servant);
 
@@ -919,7 +844,7 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -935,9 +860,6 @@ void POA_foo::bar::AMI_fooBarHandler::getDate_excep_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -959,9 +881,6 @@ const char* POA_foo::bar::AMI_fooBarHandler::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_foo::bar::AMI_fooBarHandler::_dispatch (
@@ -971,9 +890,6 @@ void POA_foo::bar::AMI_fooBarHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

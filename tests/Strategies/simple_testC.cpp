@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "simple_testC.h"
 #include <memory>
@@ -37,9 +34,6 @@
 #if !defined (__ACE_INLINE__)
 #include "simple_testC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -72,9 +66,6 @@ TAO::Objref_Traits<Simple_Server>::marshal (const Simple_Server_ptr p,TAO_Output
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 ::CORBA::Boolean
 Simple_Server::print_status ()
 {
@@ -82,7 +73,7 @@ Simple_Server::print_status ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::ACE_InputCDR::to_boolean>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -107,9 +98,6 @@ Simple_Server::print_status ()
 
   return _tao_retval.retn ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 Simple_Server::shutdown ()
 {
@@ -117,7 +105,7 @@ Simple_Server::shutdown ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -203,9 +191,6 @@ Simple_Server::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -227,7 +212,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::Simple_Server>::unchecked_narrow (obj.in ());
 

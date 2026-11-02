@@ -22,14 +22,12 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "Bug_2350_RegressionC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Struct_TypeCode_Static.h"
@@ -52,9 +50,6 @@
 #if !defined (__ACE_INLINE__)
 #include "Bug_2350_RegressionC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_cs.cpp:97
-
 something::something ()
   : ::CORBA::UserException (
         "IDL:something:1.0",
@@ -135,9 +130,6 @@ void something::_tao_decode (TAO_InputCDR &cdr)
 {
   return ::_tc_something;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
-
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const * const
@@ -158,9 +150,6 @@ _tao_tc_something (
   0);
 
 ::CORBA::TypeCode_ptr const _tc_something = std::addressof(_tao_tc_something);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
-
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const
@@ -186,9 +175,6 @@ _tao_tc_user_ExceptionHolder (
 ::CORBA::TypeCode_ptr const _tc_user_ExceptionHolder = std::addressof(_tao_tc_user_ExceptionHolder);
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
-
 void
 user_ExceptionHolder::_tao_any_destructor (
     void *_tao_void_pointer)
@@ -196,9 +182,6 @@ user_ExceptionHolder::_tao_any_destructor (
   user_ExceptionHolder *tmp = static_cast<user_ExceptionHolder *> (_tao_void_pointer);
   delete tmp;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -231,9 +214,6 @@ TAO::Objref_Traits<Bug_2350_Regression>::marshal (const Bug_2350_Regression_ptr 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 Bug_2350_Regression::Bug_2350_Regression_excep (
   const ::user_ExceptionHolder & a)
@@ -242,7 +222,7 @@ Bug_2350_Regression::Bug_2350_Regression_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::user_ExceptionHolder>::in_arg_val _tao_a (a);
 
@@ -253,7 +233,7 @@ Bug_2350_Regression::Bug_2350_Regression_excep (
     };
 
   static TAO::Exception_Data
-  _tao_Bug_2350_Regression_Bug_2350_Regression_excep_exceptiondata [] = 
+  _tao_Bug_2350_Regression_Bug_2350_Regression_excep_exceptiondata [] =
     {
       {
         "IDL:something:1.0",
@@ -271,7 +251,7 @@ Bug_2350_Regression::Bug_2350_Regression_excep (
       "Bug_2350_Regression_excep",
       25,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (
@@ -279,9 +259,6 @@ Bug_2350_Regression::Bug_2350_Regression_excep (
       1
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -293,9 +270,9 @@ Bug_2350_Regression::sendc_Bug_2350_Regression_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
-  
+
+
+
   TAO::Arg_Traits<void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::user_ExceptionHolder>::in_arg_val _tao_a (a);
 
@@ -400,21 +377,15 @@ Bug_2350_Regression::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_Bug_2350_Regression (
     ::CORBA::tk_objref,
     "IDL:Bug_2350_Regression:1.0",
     "Bug_2350_Regression");
-  
-::CORBA::TypeCode_ptr const _tc_Bug_2350_Regression = std::addressof(_tao_tc_Bug_2350_Regression);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_Bug_2350_RegressionExceptionHolder = 0;
+::CORBA::TypeCode_ptr const _tc_Bug_2350_Regression = std::addressof(_tao_tc_Bug_2350_Regression);
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_Bug_2350_RegressionExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
@@ -427,11 +398,8 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_Bug_2350_RegressionExceptionHolder,
     0);
-  
-::CORBA::TypeCode_ptr const _tc_AMH_Bug_2350_RegressionExceptionHolder = std::addressof(_tao_tc_AMH_Bug_2350_RegressionExceptionHolder);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
 
+::CORBA::TypeCode_ptr const _tc_AMH_Bug_2350_RegressionExceptionHolder = std::addressof(_tao_tc_AMH_Bug_2350_RegressionExceptionHolder);
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -465,7 +433,7 @@ AMH_Bug_2350_RegressionExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::AMH_Bug_2350_RegressionExceptionHolder *> (v);
 }
 
-const char *
+char const *
 AMH_Bug_2350_RegressionExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -550,33 +518,30 @@ AMH_Bug_2350_RegressionExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_Bug_2350_RegressionExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 AMH_Bug_2350_RegressionExceptionHolder::raise_Bug_2350_Regression_excep ()
 {
@@ -584,18 +549,12 @@ AMH_Bug_2350_RegressionExceptionHolder::raise_Bug_2350_Regression_excep ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 AMH_Bug_2350_RegressionExceptionHolder::raise_sendc_Bug_2350_Regression_excep ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -713,20 +672,14 @@ AMH_Bug_2350_RegressionResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMH_Bug_2350_RegressionResponseHandler (
     ::CORBA::tk_local_interface,
     "IDL:AMH_Bug_2350_RegressionResponseHandler:1.0",
     "AMH_Bug_2350_RegressionResponseHandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMH_Bug_2350_RegressionResponseHandler = std::addressof(_tao_tc_AMH_Bug_2350_RegressionResponseHandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
+::CORBA::TypeCode_ptr const _tc_AMH_Bug_2350_RegressionResponseHandler = std::addressof(_tao_tc_AMH_Bug_2350_RegressionResponseHandler);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -759,9 +712,6 @@ TAO::Objref_Traits<AMI_Bug_2350_RegressionHandler>::marshal (const AMI_Bug_2350_
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep ()
 {
@@ -769,7 +719,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -778,7 +728,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep ()
     };
 
   static TAO::Exception_Data
-  _tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_exceptiondata [] = 
+  _tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_exceptiondata [] =
     {
       {
         "IDL:something:1.0",
@@ -826,7 +776,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->Bug_2350_Regression_excep (
-          
+
         );
       break;
     }
@@ -834,7 +784,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_reply_stub (
     case TAO_AMI_REPLY_SYSTEM_EXCEPTION:
     {
       const ACE_Message_Block* cdr = _tao_in.start ();
-      
+
       static TAO::Exception_Data exceptions_data [] =
       {
         {
@@ -862,7 +812,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_reply_stub (
             1,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->Bug_2350_Regression_excep_excep (
           exception_holder_var);
@@ -874,9 +824,6 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -885,7 +832,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -896,7 +843,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep (
     };
 
   static TAO::Exception_Data
-  _tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_excep_exceptiondata [] = 
+  _tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_excep_exceptiondata [] =
     {
       {
         "IDL:something:1.0",
@@ -914,7 +861,7 @@ AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep (
       "Bug_2350_Regression_excep_excep",
       31,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (
@@ -1004,20 +951,14 @@ AMI_Bug_2350_RegressionHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMI_Bug_2350_RegressionHandler (
     ::CORBA::tk_objref,
     "IDL:AMI_Bug_2350_RegressionHandler:1.0",
     "AMI_Bug_2350_RegressionHandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMI_Bug_2350_RegressionHandler = std::addressof(_tao_tc_AMI_Bug_2350_RegressionHandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
 
+::CORBA::TypeCode_ptr const _tc_AMI_Bug_2350_RegressionHandler = std::addressof(_tao_tc_AMI_Bug_2350_RegressionHandler);
 OBV_AMH_Bug_2350_RegressionExceptionHolder::~OBV_AMH_Bug_2350_RegressionExceptionHolder ()
 {}
 
@@ -1032,9 +973,6 @@ OBV_AMH_Bug_2350_RegressionExceptionHolder::_tao_unmarshal__AMH_Bug_2350_Regress
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/any_op_cs.cpp:36
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1052,7 +990,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);
@@ -1112,9 +1050,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -1122,7 +1057,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::user_ExceptionHolder &_tao_elem)
+  ::user_ExceptionHolder const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::user_ExceptionHolder>::insert_copy (
     _tao_any,
@@ -1145,8 +1080,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::user_ExceptionHolder *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::user_ExceptionHolder const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::user_ExceptionHolder>::extract (
     _tao_any,
@@ -1157,9 +1092,6 @@ void operator<<= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1226,9 +1158,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:44
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1287,7 +1216,7 @@ operator<<= (
 
 ::CORBA::Boolean
 operator>>= (
-    const ::CORBA::Any &_tao_any,
+    ::CORBA::Any const &_tao_any,
     AMH_Bug_2350_RegressionExceptionHolder *&_tao_elem)
 {
   return
@@ -1302,9 +1231,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1388,9 +1314,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1456,9 +1379,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/cdr_op_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1482,15 +1402,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const user_ExceptionHolder &_tao_aggregate)
+    user_ExceptionHolder const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.a) &&
@@ -1508,9 +1425,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1533,7 +1447,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::Bug_2350_Regression>::unchecked_narrow (obj.in ());
 
@@ -1543,16 +1457,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_Bug_2350_RegressionExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -1561,7 +1472,7 @@ CORBA::add_ref (AMH_Bug_2350_RegressionExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_Bug_2350_RegressionExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -1569,9 +1480,6 @@ CORBA::remove_ref (AMH_Bug_2350_RegressionExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1600,9 +1508,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_AMH_Bug_2350_RegressionExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -1621,9 +1526,6 @@ OBV_AMH_Bug_2350_RegressionExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1646,7 +1548,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_Bug_2350_RegressionHandler>::unchecked_narrow (obj.in ());
 

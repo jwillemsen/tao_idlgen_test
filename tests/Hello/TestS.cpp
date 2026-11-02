@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_TESTS_YH5UAM_CPP_
-#define _TAO_IDL_TESTS_YH5UAM_CPP_
+#ifndef _TAO_IDL_TESTS_QTFNGK_CPP_
+#define _TAO_IDL_TESTS_QTFNGK_CPP_
 
 
 #include "TestS.h"
@@ -47,9 +44,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_Test_Hello_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -63,6 +57,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_Test_Hello_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_Test_Hello_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -124,7 +119,7 @@ TAO_Test_Hello_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -133,9 +128,6 @@ TAO_Test_Hello_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
 
 static TAO_Test_Hello_Perfect_Hash_OpTable tao_Test_Hello_optable;
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
 
 
 
@@ -147,9 +139,6 @@ POA_Test::Hello::Hello ()
 
 namespace POA_Test
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class get_string_Hello
     : public TAO::Upcall_Command
@@ -167,19 +156,16 @@ namespace POA_Test
     {
       TAO::SArg_Traits< char *>::ret_arg_type retval =
         static_cast<TAO::SArg_Traits< char *>::ret_val *> (this->args_[0])->arg ();
-      
+
       retval =
         this->servant_->get_string ();
     }
-  
+
   private:
     POA_Test::Hello * const servant_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_Test::Hello::get_string_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -190,7 +176,7 @@ void POA_Test::Hello::get_string_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_Test::Hello * const impl =
     dynamic_cast<POA_Test::Hello *> (servant);
 
@@ -202,7 +188,7 @@ void POA_Test::Hello::get_string_skel (
   get_string_Hello command (
     impl,
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -219,9 +205,6 @@ void POA_Test::Hello::get_string_skel (
 
 namespace POA_Test
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class shutdown_Hello
     : public TAO::Upcall_Command
@@ -237,14 +220,11 @@ namespace POA_Test
     {
       this->servant_->shutdown ();
     }
-  
+
   private:
     POA_Test::Hello * const servant_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_Test::Hello::shutdown_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -255,7 +235,7 @@ void POA_Test::Hello::shutdown_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_Test::Hello * const impl =
     dynamic_cast<POA_Test::Hello *> (servant);
 
@@ -266,7 +246,7 @@ void POA_Test::Hello::shutdown_skel (
 
   shutdown_Hello command (
     impl);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -282,9 +262,6 @@ void POA_Test::Hello::shutdown_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -305,9 +282,6 @@ const char* POA_Test::Hello::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_Test::Hello::_dispatch (
@@ -317,9 +291,6 @@ void POA_Test::Hello::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

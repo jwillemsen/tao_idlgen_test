@@ -22,14 +22,12 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "Bug_2582_RegressionC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
@@ -53,9 +51,6 @@
 #if !defined (__ACE_INLINE__)
 #include "Bug_2582_RegressionC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
-
 static char const * const _tao_enumerators_EncodingID_T[] =
   {
     "ENCODING_XML"
@@ -69,11 +64,8 @@ static TAO::TypeCode::Enum<char const *,
     "EncodingID_T",
     _tao_enumerators_EncodingID_T,
     1);
-  
-::CORBA::TypeCode_ptr const _tc_EncodingID_T = std::addressof(_tao_tc_EncodingID_T);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
+::CORBA::TypeCode_ptr const _tc_EncodingID_T = std::addressof(_tao_tc_EncodingID_T);
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const
@@ -99,9 +91,6 @@ _tao_tc_Encoding_T (
 ::CORBA::TypeCode_ptr const _tc_Encoding_T = std::addressof(_tao_tc_Encoding_T);
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
-
 void
 Encoding_T::_tao_any_destructor (
     void *_tao_void_pointer)
@@ -109,9 +98,6 @@ Encoding_T::_tao_any_destructor (
   Encoding_T *tmp = static_cast<Encoding_T *> (_tao_void_pointer);
   delete tmp;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/alias_typecode.cpp:46
-
 static TAO::TypeCode::Alias<char const *,
                             ::CORBA::TypeCode_ptr const *,
                             TAO::Null_RefCount_Policy>
@@ -120,11 +106,8 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:EncodingID2_T:1.0",
     "EncodingID2_T",
     &_tc_EncodingID_T);
-  
-::CORBA::TypeCode_ptr const _tc_EncodingID2_T = std::addressof(_tao_tc_EncodingID2_T);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
+::CORBA::TypeCode_ptr const _tc_EncodingID2_T = std::addressof(_tao_tc_EncodingID2_T);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -157,9 +140,6 @@ TAO::Objref_Traits<FieldDevice_T>::marshal (const FieldDevice_T_ptr p,TAO_Output
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 ::EncodingID2_T
 FieldDevice_T::getEncodingID ()
 {
@@ -167,7 +147,7 @@ FieldDevice_T::getEncodingID ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::EncodingID_T>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -192,9 +172,6 @@ FieldDevice_T::getEncodingID ()
 
   return _tao_retval.retn ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 ::Encoding_T
 FieldDevice_T::getEncoding ()
 {
@@ -202,7 +179,7 @@ FieldDevice_T::getEncoding ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< ::Encoding_T>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -227,9 +204,6 @@ FieldDevice_T::getEncoding ()
 
   return _tao_retval.retn ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -240,8 +214,8 @@ FieldDevice_T::sendc_getEncodingID (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -259,9 +233,6 @@ FieldDevice_T::sendc_getEncodingID (
       &AMI_FieldDevice_THandler::getEncodingID_reply_stub
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -272,8 +243,8 @@ FieldDevice_T::sendc_getEncoding (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -372,21 +343,15 @@ FieldDevice_T::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_FieldDevice_T (
     ::CORBA::tk_objref,
     "IDL:FieldDevice_T:1.0",
     "FieldDevice_T");
-  
-::CORBA::TypeCode_ptr const _tc_FieldDevice_T = std::addressof(_tao_tc_FieldDevice_T);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_FieldDevice_TExceptionHolder = 0;
+::CORBA::TypeCode_ptr const _tc_FieldDevice_T = std::addressof(_tao_tc_FieldDevice_T);
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_FieldDevice_TExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
@@ -399,11 +364,8 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_FieldDevice_TExceptionHolder,
     0);
-  
-::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TExceptionHolder = std::addressof(_tao_tc_AMH_FieldDevice_TExceptionHolder);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
 
+::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TExceptionHolder = std::addressof(_tao_tc_AMH_FieldDevice_TExceptionHolder);
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -437,7 +399,7 @@ AMH_FieldDevice_TExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::AMH_FieldDevice_TExceptionHolder *> (v);
 }
 
-const char *
+char const *
 AMH_FieldDevice_TExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -522,42 +484,36 @@ AMH_FieldDevice_TExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_FieldDevice_TExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 AMH_FieldDevice_TExceptionHolder::raise_getEncodingID ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
 
 void
 AMH_FieldDevice_TExceptionHolder::raise_getEncoding ()
@@ -566,9 +522,6 @@ AMH_FieldDevice_TExceptionHolder::raise_getEncoding ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 AMH_FieldDevice_TExceptionHolder::raise_sendc_getEncodingID ()
 {
@@ -576,18 +529,12 @@ AMH_FieldDevice_TExceptionHolder::raise_sendc_getEncodingID ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 AMH_FieldDevice_TExceptionHolder::raise_sendc_getEncoding ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -705,20 +652,14 @@ AMH_FieldDevice_TResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMH_FieldDevice_TResponseHandler (
     ::CORBA::tk_local_interface,
     "IDL:AMH_FieldDevice_TResponseHandler:1.0",
     "AMH_FieldDevice_TResponseHandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TResponseHandler = std::addressof(_tao_tc_AMH_FieldDevice_TResponseHandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
+::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TResponseHandler = std::addressof(_tao_tc_AMH_FieldDevice_TResponseHandler);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -751,9 +692,6 @@ TAO::Objref_Traits<AMI_FieldDevice_THandler>::marshal (const AMI_FieldDevice_THa
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_FieldDevice_THandler::getEncodingID (
   ::EncodingID2_T ami_return_val)
@@ -762,7 +700,7 @@ AMI_FieldDevice_THandler::getEncodingID (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::EncodingID_T>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -779,7 +717,7 @@ AMI_FieldDevice_THandler::getEncodingID (
       "getEncodingID",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -807,10 +745,10 @@ AMI_FieldDevice_THandler::getEncodingID_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->getEncodingID (
-          
+
           ami_return_val
         );
       break;
@@ -835,7 +773,7 @@ AMI_FieldDevice_THandler::getEncodingID_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->getEncodingID_excep (
           exception_holder_var);
@@ -847,9 +785,6 @@ AMI_FieldDevice_THandler::getEncodingID_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_FieldDevice_THandler::getEncodingID_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -858,7 +793,7 @@ AMI_FieldDevice_THandler::getEncodingID_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -875,14 +810,11 @@ AMI_FieldDevice_THandler::getEncodingID_excep (
       "getEncodingID_excep",
       19,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_FieldDevice_THandler::getEncoding (
   const ::Encoding_T & ami_return_val)
@@ -891,7 +823,7 @@ AMI_FieldDevice_THandler::getEncoding (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Encoding_T>::in_arg_val _tao_ami_return_val (ami_return_val);
 
@@ -908,7 +840,7 @@ AMI_FieldDevice_THandler::getEncoding (
       "getEncoding",
       11,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -936,10 +868,10 @@ AMI_FieldDevice_THandler::getEncoding_reply_stub (
             (_tao_in >> ami_return_val)
          ))
         throw ::CORBA::MARSHAL ();
-      
+
       // Invoke the call back method.
       _tao_reply_handler_object->getEncoding (
-          
+
           ami_return_val
         );
       break;
@@ -964,7 +896,7 @@ AMI_FieldDevice_THandler::getEncoding_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->getEncoding_excep (
           exception_holder_var);
@@ -976,9 +908,6 @@ AMI_FieldDevice_THandler::getEncoding_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 AMI_FieldDevice_THandler::getEncoding_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -987,7 +916,7 @@ AMI_FieldDevice_THandler::getEncoding_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1004,7 +933,7 @@ AMI_FieldDevice_THandler::getEncoding_excep (
       "getEncoding_excep",
       17,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1091,20 +1020,14 @@ AMI_FieldDevice_THandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMI_FieldDevice_THandler (
     ::CORBA::tk_objref,
     "IDL:AMI_FieldDevice_THandler:1.0",
     "AMI_FieldDevice_THandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMI_FieldDevice_THandler = std::addressof(_tao_tc_AMI_FieldDevice_THandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
 
+::CORBA::TypeCode_ptr const _tc_AMI_FieldDevice_THandler = std::addressof(_tao_tc_AMI_FieldDevice_THandler);
 OBV_AMH_FieldDevice_TExceptionHolder::~OBV_AMH_FieldDevice_TExceptionHolder ()
 {}
 
@@ -1119,9 +1042,6 @@ OBV_AMH_FieldDevice_TExceptionHolder::_tao_unmarshal__AMH_FieldDevice_TException
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1156,9 +1076,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -1166,7 +1083,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::Encoding_T &_tao_elem)
+  ::Encoding_T const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::Encoding_T>::insert_copy (
     _tao_any,
@@ -1189,8 +1106,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::Encoding_T *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::Encoding_T const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::Encoding_T>::extract (
     _tao_any,
@@ -1201,9 +1118,6 @@ void operator<<= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1270,9 +1184,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:44
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1331,7 +1242,7 @@ operator<<= (
 
 ::CORBA::Boolean
 operator>>= (
-    const ::CORBA::Any &_tao_any,
+    ::CORBA::Any const &_tao_any,
     AMH_FieldDevice_TExceptionHolder *&_tao_elem)
 {
   return
@@ -1346,9 +1257,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1432,9 +1340,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1500,9 +1405,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_cs.cpp:29
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1515,27 +1417,24 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<EncodingID_T> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const Encoding_T &_tao_aggregate)
+    Encoding_T const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.id) &&
@@ -1553,9 +1452,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1578,7 +1474,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::FieldDevice_T>::unchecked_narrow (obj.in ());
 
@@ -1588,16 +1484,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (AMH_FieldDevice_TExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -1606,7 +1499,7 @@ CORBA::add_ref (AMH_FieldDevice_TExceptionHolder * vt)
 void
 CORBA::remove_ref (AMH_FieldDevice_TExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -1614,9 +1507,6 @@ CORBA::remove_ref (AMH_FieldDevice_TExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1645,9 +1535,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_AMH_FieldDevice_TExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -1666,9 +1553,6 @@ OBV_AMH_FieldDevice_TExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1691,7 +1575,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::AMI_FieldDevice_THandler>::unchecked_narrow (obj.in ());
 

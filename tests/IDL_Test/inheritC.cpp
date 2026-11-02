@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "inheritC.h"
 #include <memory>
@@ -39,9 +36,6 @@
 #if !defined (__ACE_INLINE__)
 #include "inheritC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -74,9 +68,6 @@ TAO::Objref_Traits<OldInherit::one>::marshal (const OldInherit::one_ptr p,TAO_Ou
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::one::op_one ()
 {
@@ -84,7 +75,7 @@ OldInherit::one::op_one ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -107,9 +98,6 @@ OldInherit::one::op_one ()
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -120,8 +108,8 @@ OldInherit::one::sendc_op_one (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -220,9 +208,6 @@ OldInherit::one::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -256,7 +241,7 @@ OldInherit::AMH_oneExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::OldInherit::AMH_oneExceptionHolder *> (v);
 }
 
-const char *
+char const *
 OldInherit::AMH_oneExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -335,33 +320,30 @@ OldInherit::AMH_oneExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_oneExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_oneExceptionHolder::raise_op_one ()
 {
@@ -369,18 +351,12 @@ OldInherit::AMH_oneExceptionHolder::raise_op_one ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_oneExceptionHolder::raise_sendc_op_one ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -498,9 +474,6 @@ OldInherit::AMH_oneResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -533,9 +506,6 @@ TAO::Objref_Traits<OldInherit::AMI_oneHandler>::marshal (const OldInherit::AMI_o
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_oneHandler::op_one ()
 {
@@ -543,7 +513,7 @@ OldInherit::AMI_oneHandler::op_one ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -585,7 +555,7 @@ OldInherit::AMI_oneHandler::op_one_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_one (
-          
+
         );
       break;
     }
@@ -609,7 +579,7 @@ OldInherit::AMI_oneHandler::op_one_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_one_excep (
           exception_holder_var);
@@ -621,9 +591,6 @@ OldInherit::AMI_oneHandler::op_one_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_oneHandler::op_one_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -632,7 +599,7 @@ OldInherit::AMI_oneHandler::op_one_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -649,7 +616,7 @@ OldInherit::AMI_oneHandler::op_one_excep (
       "op_one_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -736,9 +703,6 @@ OldInherit::AMI_oneHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -771,9 +735,6 @@ TAO::Objref_Traits<OldInherit::two>::marshal (const OldInherit::two_ptr p,TAO_Ou
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::two::op_two ()
 {
@@ -781,7 +742,7 @@ OldInherit::two::op_two ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -804,9 +765,6 @@ OldInherit::two::op_two ()
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -817,8 +775,8 @@ OldInherit::two::sendc_op_two (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -918,9 +876,6 @@ OldInherit::two::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -954,7 +909,7 @@ OldInherit::AMH_twoExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::OldInherit::AMH_twoExceptionHolder *> (v);
 }
 
-const char *
+char const *
 OldInherit::AMH_twoExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -1033,33 +988,30 @@ OldInherit::AMH_twoExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_twoExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_twoExceptionHolder::raise_op_two ()
 {
@@ -1067,18 +1019,12 @@ OldInherit::AMH_twoExceptionHolder::raise_op_two ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_twoExceptionHolder::raise_sendc_op_two ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1196,9 +1142,6 @@ OldInherit::AMH_twoResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1231,9 +1174,6 @@ TAO::Objref_Traits<OldInherit::AMI_twoHandler>::marshal (const OldInherit::AMI_t
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_twoHandler::op_two ()
 {
@@ -1241,7 +1181,7 @@ OldInherit::AMI_twoHandler::op_two ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1283,7 +1223,7 @@ OldInherit::AMI_twoHandler::op_two_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_two (
-          
+
         );
       break;
     }
@@ -1307,7 +1247,7 @@ OldInherit::AMI_twoHandler::op_two_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_two_excep (
           exception_holder_var);
@@ -1319,9 +1259,6 @@ OldInherit::AMI_twoHandler::op_two_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_twoHandler::op_two_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -1330,7 +1267,7 @@ OldInherit::AMI_twoHandler::op_two_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -1347,7 +1284,7 @@ OldInherit::AMI_twoHandler::op_two_excep (
       "op_two_excep",
       12,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -1435,9 +1372,6 @@ OldInherit::AMI_twoHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1470,9 +1404,6 @@ TAO::Objref_Traits<OldInherit::three>::marshal (const OldInherit::three_ptr p,TA
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::three::op_three ()
 {
@@ -1480,7 +1411,7 @@ OldInherit::three::op_three ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1503,9 +1434,6 @@ OldInherit::three::op_three ()
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -1516,8 +1444,8 @@ OldInherit::three::sendc_op_three (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -1617,9 +1545,6 @@ OldInherit::three::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1653,7 +1578,7 @@ OldInherit::AMH_threeExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::OldInherit::AMH_threeExceptionHolder *> (v);
 }
 
-const char *
+char const *
 OldInherit::AMH_threeExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -1732,33 +1657,30 @@ OldInherit::AMH_threeExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_threeExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_threeExceptionHolder::raise_op_three ()
 {
@@ -1766,18 +1688,12 @@ OldInherit::AMH_threeExceptionHolder::raise_op_three ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_threeExceptionHolder::raise_sendc_op_three ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1895,9 +1811,6 @@ OldInherit::AMH_threeResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1930,9 +1843,6 @@ TAO::Objref_Traits<OldInherit::AMI_threeHandler>::marshal (const OldInherit::AMI
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_threeHandler::op_three ()
 {
@@ -1940,7 +1850,7 @@ OldInherit::AMI_threeHandler::op_three ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -1982,7 +1892,7 @@ OldInherit::AMI_threeHandler::op_three_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_three (
-          
+
         );
       break;
     }
@@ -2006,7 +1916,7 @@ OldInherit::AMI_threeHandler::op_three_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_three_excep (
           exception_holder_var);
@@ -2018,9 +1928,6 @@ OldInherit::AMI_threeHandler::op_three_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_threeHandler::op_three_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -2029,7 +1936,7 @@ OldInherit::AMI_threeHandler::op_three_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2046,7 +1953,7 @@ OldInherit::AMI_threeHandler::op_three_excep (
       "op_three_excep",
       14,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2134,9 +2041,6 @@ OldInherit::AMI_threeHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -2169,9 +2073,6 @@ TAO::Objref_Traits<OldInherit::four>::marshal (const OldInherit::four_ptr p,TAO_
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::four::op_four ()
 {
@@ -2179,7 +2080,7 @@ OldInherit::four::op_four ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2202,9 +2103,6 @@ OldInherit::four::op_four ()
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -2215,8 +2113,8 @@ OldInherit::four::sendc_op_four (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -2318,9 +2216,6 @@ OldInherit::four::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2354,7 +2249,7 @@ OldInherit::AMH_fourExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::OldInherit::AMH_fourExceptionHolder *> (v);
 }
 
-const char *
+char const *
 OldInherit::AMH_fourExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -2433,33 +2328,30 @@ OldInherit::AMH_fourExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_fourExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_fourExceptionHolder::raise_op_four ()
 {
@@ -2467,18 +2359,12 @@ OldInherit::AMH_fourExceptionHolder::raise_op_four ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_fourExceptionHolder::raise_sendc_op_four ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -2596,9 +2482,6 @@ OldInherit::AMH_fourResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -2631,9 +2514,6 @@ TAO::Objref_Traits<OldInherit::AMI_fourHandler>::marshal (const OldInherit::AMI_
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_fourHandler::op_four ()
 {
@@ -2641,7 +2521,7 @@ OldInherit::AMI_fourHandler::op_four ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2683,7 +2563,7 @@ OldInherit::AMI_fourHandler::op_four_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_four (
-          
+
         );
       break;
     }
@@ -2707,7 +2587,7 @@ OldInherit::AMI_fourHandler::op_four_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_four_excep (
           exception_holder_var);
@@ -2719,9 +2599,6 @@ OldInherit::AMI_fourHandler::op_four_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_fourHandler::op_four_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -2730,7 +2607,7 @@ OldInherit::AMI_fourHandler::op_four_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -2747,7 +2624,7 @@ OldInherit::AMI_fourHandler::op_four_excep (
       "op_four_excep",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -2837,9 +2714,6 @@ OldInherit::AMI_fourHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -2872,9 +2746,6 @@ TAO::Objref_Traits<OldInherit::five>::marshal (const OldInherit::five_ptr p,TAO_
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::five::op_five ()
 {
@@ -2882,7 +2753,7 @@ OldInherit::five::op_five ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -2905,9 +2776,6 @@ OldInherit::five::op_five ()
 
   _invocation_call.invoke (nullptr, 0);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/ami_cs.cpp:54
-
 
 
 void
@@ -2918,8 +2786,8 @@ OldInherit::five::sendc_op_five (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
-  
+
+
 
   TAO::Argument ** _the_tao_operation_signature {};
 
@@ -3022,9 +2890,6 @@ OldInherit::five::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3058,7 +2923,7 @@ OldInherit::AMH_fiveExceptionHolder::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::OldInherit::AMH_fiveExceptionHolder *> (v);
 }
 
-const char *
+char const *
 OldInherit::AMH_fiveExceptionHolder::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -3137,33 +3002,30 @@ OldInherit::AMH_fiveExceptionHolder::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_fiveExceptionHolder::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_fiveExceptionHolder::raise_op_five ()
 {
@@ -3171,18 +3033,12 @@ OldInherit::AMH_fiveExceptionHolder::raise_op_five ()
   this->exception->_raise ();
 }
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:440
-
 void
 OldInherit::AMH_fiveExceptionHolder::raise_sendc_op_five ()
 {
   std::unique_ptr< ::CORBA::Exception> safety (this->exception);
   this->exception->_raise ();
 }
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3300,9 +3156,6 @@ OldInherit::AMH_fiveResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
 {
   return false;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_cs.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -3335,9 +3188,6 @@ TAO::Objref_Traits<OldInherit::AMI_fiveHandler>::marshal (const OldInherit::AMI_
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_fiveHandler::op_five ()
 {
@@ -3345,7 +3195,7 @@ OldInherit::AMI_fiveHandler::op_five ()
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
@@ -3387,7 +3237,7 @@ OldInherit::AMI_fiveHandler::op_five_reply_stub (
       // Demarshall all the arguments.
       // Invoke the call back method.
       _tao_reply_handler_object->op_five (
-          
+
         );
       break;
     }
@@ -3411,7 +3261,7 @@ OldInherit::AMI_fiveHandler::op_five_reply_stub (
             0,
             _tao_in.char_translator (),
             _tao_in.wchar_translator ()));
-        
+
       ::Messaging::ExceptionHolder_var exception_holder_var = exception_holder_ptr;
       _tao_reply_handler_object->op_five_excep (
           exception_holder_var);
@@ -3423,9 +3273,6 @@ OldInherit::AMI_fiveHandler::op_five_reply_stub (
       break;
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_cs.cpp:87
-
 void
 OldInherit::AMI_fiveHandler::op_five_excep (
   ::Messaging::ExceptionHolder * excep_holder)
@@ -3434,7 +3281,7 @@ OldInherit::AMI_fiveHandler::op_five_excep (
     {
       ::CORBA::Object::tao_object_initialize (this);
     }
-  
+
   TAO::Arg_Traits< void>::ret_val _tao_retval;
   TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val _tao_excep_holder (excep_holder);
 
@@ -3451,7 +3298,7 @@ OldInherit::AMI_fiveHandler::op_five_excep (
       "op_five_excep",
       13,
       TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY
-      
+
     );
 
   _invocation_call.invoke (nullptr, 0);
@@ -3542,9 +3389,6 @@ OldInherit::AMI_fiveHandler::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_OldInherit::AMH_oneExceptionHolder::~AMH_oneExceptionHolder ()
 {}
 
@@ -3559,9 +3403,6 @@ OBV_OldInherit::AMH_oneExceptionHolder::_tao_unmarshal__OldInherit_AMH_oneExcept
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_OldInherit::AMH_twoExceptionHolder::~AMH_twoExceptionHolder ()
 {}
 
@@ -3576,9 +3417,6 @@ OBV_OldInherit::AMH_twoExceptionHolder::_tao_unmarshal__OldInherit_AMH_twoExcept
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_OldInherit::AMH_threeExceptionHolder::~AMH_threeExceptionHolder ()
 {}
 
@@ -3593,9 +3431,6 @@ OBV_OldInherit::AMH_threeExceptionHolder::_tao_unmarshal__OldInherit_AMH_threeEx
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_OldInherit::AMH_fourExceptionHolder::~AMH_fourExceptionHolder ()
 {}
 
@@ -3610,9 +3445,6 @@ OBV_OldInherit::AMH_fourExceptionHolder::_tao_unmarshal__OldInherit_AMH_fourExce
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_OldInherit::AMH_fiveExceptionHolder::~AMH_fiveExceptionHolder ()
 {}
 
@@ -3627,9 +3459,6 @@ OBV_OldInherit::AMH_fiveExceptionHolder::_tao_unmarshal__OldInherit_AMH_fiveExce
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -3651,7 +3480,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::one>::unchecked_narrow (obj.in ());
 
@@ -3661,16 +3490,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_oneExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3679,7 +3505,7 @@ CORBA::add_ref (OldInherit::AMH_oneExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_oneExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -3687,9 +3513,6 @@ CORBA::remove_ref (OldInherit::AMH_oneExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3718,9 +3541,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_OldInherit::AMH_oneExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -3739,9 +3559,6 @@ OBV_OldInherit::AMH_oneExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3764,7 +3581,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_oneHandler>::unchecked_narrow (obj.in ());
 
@@ -3773,9 +3590,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3798,7 +3612,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::two>::unchecked_narrow (obj.in ());
 
@@ -3808,16 +3622,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_twoExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3826,7 +3637,7 @@ CORBA::add_ref (OldInherit::AMH_twoExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_twoExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -3834,9 +3645,6 @@ CORBA::remove_ref (OldInherit::AMH_twoExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3865,9 +3673,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_OldInherit::AMH_twoExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -3886,9 +3691,6 @@ OBV_OldInherit::AMH_twoExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3911,7 +3713,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_twoHandler>::unchecked_narrow (obj.in ());
 
@@ -3920,9 +3722,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -3945,7 +3744,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::three>::unchecked_narrow (obj.in ());
 
@@ -3955,16 +3754,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_threeExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -3973,7 +3769,7 @@ CORBA::add_ref (OldInherit::AMH_threeExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_threeExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -3981,9 +3777,6 @@ CORBA::remove_ref (OldInherit::AMH_threeExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4012,9 +3805,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_OldInherit::AMH_threeExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -4033,9 +3823,6 @@ OBV_OldInherit::AMH_threeExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4058,7 +3845,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_threeHandler>::unchecked_narrow (obj.in ());
 
@@ -4067,9 +3854,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4092,7 +3876,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::four>::unchecked_narrow (obj.in ());
 
@@ -4102,16 +3886,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_fourExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4120,7 +3901,7 @@ CORBA::add_ref (OldInherit::AMH_fourExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_fourExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4128,9 +3909,6 @@ CORBA::remove_ref (OldInherit::AMH_fourExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4159,9 +3937,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_OldInherit::AMH_fourExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -4180,9 +3955,6 @@ OBV_OldInherit::AMH_fourExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4205,7 +3977,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_fourHandler>::unchecked_narrow (obj.in ());
 
@@ -4214,9 +3986,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4239,7 +4008,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::five>::unchecked_narrow (obj.in ());
 
@@ -4249,16 +4018,13 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -4267,7 +4033,7 @@ CORBA::add_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 void
 CORBA::remove_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -4275,9 +4041,6 @@ CORBA::remove_ref (OldInherit::AMH_fiveExceptionHolder * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4306,9 +4069,6 @@ operator>> (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
-
 ::CORBA::Boolean
 OBV_OldInherit::AMH_fiveExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
 {
@@ -4327,9 +4087,6 @@ OBV_OldInherit::AMH_fiveExceptionHolder::truncation_hook ()
   this->require_truncation_ = true;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_cs.cpp:50
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -4352,7 +4109,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   // Narrow to the right type.
   _tao_objref = TAO::Narrow_Utils< ::OldInherit::AMI_fiveHandler>::unchecked_narrow (obj.in ());
 

@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:767
-
 #ifndef _TAO_IDL_ARRAY_ONLYA_4SWGWG_H_
 #define _TAO_IDL_ARRAY_ONLYA_4SWGWG_H_
 
@@ -35,13 +32,7 @@
 
 #include "array_onlyC.h"
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_TEST_TYPE;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/any_op_ch.cpp:32
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {

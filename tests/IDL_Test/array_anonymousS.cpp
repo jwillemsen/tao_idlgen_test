@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_ARRAY_ANONYMOUSS_0LBSEX_CPP_
-#define _TAO_IDL_ARRAY_ANONYMOUSS_0LBSEX_CPP_
+#ifndef _TAO_IDL_ARRAY_ANONYMOUSS_CM4G1J_CPP_
+#define _TAO_IDL_ARRAY_ANONYMOUSS_CM4G1J_CPP_
 
 
 #include "array_anonymousS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_AMH_tdef_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMH_tdef_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMH_tdef_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -127,7 +122,7 @@ TAO_AMH_tdef_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -136,9 +131,6 @@ TAO_AMH_tdef_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
 
 static TAO_AMH_tdef_Perfect_Hash_OpTable tao_AMH_tdef_optable;
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
 
 
 
@@ -149,9 +141,6 @@ POA_AMH_tdef::POA_AMH_tdef ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -170,9 +159,6 @@ const char* POA_AMH_tdef::_interface_repository_id () const
 {
   return "IDL:tdef:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_AMH_tdef::_dispatch (
     TAO_ServerRequest &req,
@@ -180,9 +166,6 @@ POA_AMH_tdef::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 tdef*
 POA_AMH_tdef::_this ()
 {
@@ -193,13 +176,10 @@ POA_AMH_tdef::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::tdef>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_tdef_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -213,6 +193,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_tdef_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_tdef_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -270,7 +251,7 @@ TAO_tdef_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -294,9 +275,6 @@ _TAO_tdef_Direct_Proxy_Impl::~_TAO_tdef_Direct_Proxy_Impl ()
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_tdef::POA_tdef ()
@@ -306,9 +284,6 @@ POA_tdef::POA_tdef ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -329,9 +304,6 @@ const char* POA_tdef::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_tdef::_dispatch (
@@ -341,9 +313,6 @@ void POA_tdef::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -360,12 +329,6 @@ POA_tdef::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
 
 class TAO_AMI_tdefHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -380,6 +343,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMI_tdefHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMI_tdefHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -437,7 +401,7 @@ TAO_AMI_tdefHandler_Perfect_Hash_OpTable::lookup (const char *str, unsigned int 
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -461,9 +425,6 @@ _TAO_AMI_tdefHandler_Direct_Proxy_Impl::~_TAO_AMI_tdefHandler_Direct_Proxy_Impl 
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_AMI_tdefHandler::POA_AMI_tdefHandler ()
@@ -474,9 +435,6 @@ POA_AMI_tdefHandler::POA_AMI_tdefHandler ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -498,9 +456,6 @@ const char* POA_AMI_tdefHandler::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_AMI_tdefHandler::_dispatch (
@@ -510,9 +465,6 @@ void POA_AMI_tdefHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

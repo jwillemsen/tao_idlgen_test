@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:147
-
 #ifndef _TAO_IDL_BUG_2582_REGRESSIONC_0VRCUB_H_
 #define _TAO_IDL_BUG_2582_REGRESSIONC_0VRCUB_H_
 
@@ -67,9 +64,6 @@
 #if TAO_MAJOR_VERSION != 4 || TAO_MINOR_VERSION != 0 || TAO_MICRO_VERSION != 8
 #error This file should be regenerated with TAO_IDL
 #endif
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_root/root_ch.cpp:155
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -82,22 +76,13 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/enum_ch.cpp:39
-
 enum EncodingID_T
 {
   ENCODING_XML
 };
 
-typedef EncodingID_T &EncodingID_T_out;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
+using EncodingID_T_out = EncodingID_T &;
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_EncodingID_T;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:258
-
 
 
 struct Encoding_T;
@@ -105,47 +90,29 @@ using Encoding_T_var = ::TAO_Fixed_Var_T<Encoding_T>;
 using Encoding_T_out = Encoding_T&;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_ch.cpp:47
-
 
 
 struct TAO_IDL_TEST_STUB_Export Encoding_T
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
 
-  
   using _var_type = Encoding_T_var;
   using _out_type = Encoding_T_out;
 
   static void _tao_any_destructor (void *);
-  
+
   EncodingID_T id {};
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_Encoding_T;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typedef/typedef_ch.cpp:284
-
-typedef EncodingID_T EncodingID2_T;
-typedef EncodingID_T_out EncodingID2_T_out;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
+using EncodingID2_T = EncodingID_T;
+using EncodingID2_T_out = EncodingID_T_out;
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_EncodingID2_T;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
-
 
 
 #if !defined (_FIELDDEVICE_T__VAR_OUT_CH_)
 #define _FIELDDEVICE_T__VAR_OUT_CH_
 
 class AMI_FieldDevice_THandler;
-typedef AMI_FieldDevice_THandler *AMI_FieldDevice_THandler_ptr;
+using AMI_FieldDevice_THandler_ptr = AMI_FieldDevice_THandler *;
 
 class FieldDevice_T;
 using FieldDevice_T_ptr = FieldDevice_T*;
@@ -155,9 +122,6 @@ using FieldDevice_T_out = TAO_Objref_Out_T<FieldDevice_T>;
 #endif /* end #if !defined */
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
-
 
 
 class TAO_IDL_TEST_STUB_Export FieldDevice_T
@@ -165,9 +129,6 @@ class TAO_IDL_TEST_STUB_Export FieldDevice_T
 {
 public:
   friend class TAO::Narrow_Utils<FieldDevice_T>;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
   using _ptr_type = FieldDevice_T_ptr;
   using _var_type = FieldDevice_T_var;
   using _out_type = FieldDevice_T_out;
@@ -193,11 +154,8 @@ public:
   virtual void sendc_getEncoding (
     ::AMI_FieldDevice_THandler_ptr ami_handler);
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -211,7 +169,7 @@ protected:
 
   // Concrete non-local interface only.
   FieldDevice_T (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   FieldDevice_T (
       TAO_Stub *objref,
@@ -228,13 +186,7 @@ private:
   FieldDevice_T &operator= (const FieldDevice_T &) = delete;
   FieldDevice_T &operator= (FieldDevice_T &&) = delete;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_FieldDevice_T;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:563
-
 
 
 #if !defined (_AMH_FIELDDEVICE_TEXCEPTIONHOLDER__VAR_OUT_CH_)
@@ -245,18 +197,12 @@ using AMH_FieldDevice_TExceptionHolder_var = TAO_Value_Var_T<AMH_FieldDevice_TEx
 using AMH_FieldDevice_TExceptionHolder_out = TAO_Value_Out_T<AMH_FieldDevice_TExceptionHolder>;
 
 #endif /* end #if !defined */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:49
-
 
 
 class TAO_IDL_TEST_STUB_Export AMH_FieldDevice_TExceptionHolder
   : public virtual ::CORBA::DefaultValueRefCountBase
 {
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
   using _ptr_type = AMH_FieldDevice_TExceptionHolder*;
   using _var_type = AMH_FieldDevice_TExceptionHolder_var;
   using _out_type = AMH_FieldDevice_TExceptionHolder_out;
@@ -271,54 +217,39 @@ public:
   virtual ::CORBA::ValueBase *_copy_value ();
 
   static AMH_FieldDevice_TExceptionHolder* _downcast (::CORBA::ValueBase *v);
-  
+
   /// TAO extensions or internals
   static ::CORBA::Boolean _tao_unmarshal (
       TAO_InputCDR &strm,
       AMH_FieldDevice_TExceptionHolder *&new_object);
-  
-  virtual const char* _tao_obv_repository_id () const;
+
+  virtual char const * _tao_obv_repository_id () const;
 
   virtual void _tao_obv_truncatable_repo_ids (Repository_Id_List &) const;
 
-  static const char* _tao_obv_static_repository_id ();
+  static char const * _tao_obv_static_repository_id ();
 
   virtual ::CORBA::TypeCode_ptr _tao_type () const;
 
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:397
 
-  
 public:
   virtual void raise_getEncodingID ();
 
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:397
 
-  
 public:
   virtual void raise_getEncoding ();
 
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:397
 
-  
 public:
   virtual void raise_sendc_getEncodingID ();
 
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:397
 
-  
 public:
   virtual void raise_sendc_getEncoding ();
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ch.cpp:236
-
 
 
 protected:
@@ -326,13 +257,13 @@ protected:
   virtual ::CORBA::Boolean _tao_marshal_v (TAO_OutputCDR &) const;
   virtual ::CORBA::Boolean _tao_unmarshal_v (TAO_InputCDR &);
   virtual ::CORBA::Boolean _tao_match_formal_type (ptrdiff_t) const;
-  
+
 private:
   AMH_FieldDevice_TExceptionHolder (const AMH_FieldDevice_TExceptionHolder &);
   void operator= (const AMH_FieldDevice_TExceptionHolder &);
-  
+
   ::CORBA::Exception *exception;
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_FieldDevice_TExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -340,20 +271,14 @@ protected:
   virtual ::CORBA::Boolean
   _tao_unmarshal__AMH_FieldDevice_TExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo &);
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TExceptionHolder;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
-
 
 
 #if !defined (_AMH_FIELDDEVICE_TRESPONSEHANDLER__VAR_OUT_CH_)
 #define _AMH_FIELDDEVICE_TRESPONSEHANDLER__VAR_OUT_CH_
 
 class AMI_AMH_FieldDevice_TResponseHandlerHandler;
-typedef AMI_AMH_FieldDevice_TResponseHandlerHandler *AMI_AMH_FieldDevice_TResponseHandlerHandler_ptr;
+using AMI_AMH_FieldDevice_TResponseHandlerHandler_ptr = AMI_AMH_FieldDevice_TResponseHandlerHandler *;
 
 class AMH_FieldDevice_TResponseHandler;
 using AMH_FieldDevice_TResponseHandler_ptr = AMH_FieldDevice_TResponseHandler*;
@@ -363,18 +288,12 @@ using AMH_FieldDevice_TResponseHandler_out = TAO_Objref_Out_T<AMH_FieldDevice_TR
 #endif /* end #if !defined */
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
-
 
 
 class TAO_IDL_TEST_STUB_Export AMH_FieldDevice_TResponseHandler
   : public virtual ::CORBA::Object
 {
 public:
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
   using _ptr_type = AMH_FieldDevice_TResponseHandler_ptr;
   using _var_type = AMH_FieldDevice_TResponseHandler_var;
   using _out_type = AMH_FieldDevice_TResponseHandler_out;
@@ -402,11 +321,8 @@ public:
   virtual void getEncoding_excep (
     ::AMH_FieldDevice_TExceptionHolder * holder) = 0;
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -418,7 +334,7 @@ protected:
   // Abstract or local interface only.
   AMH_FieldDevice_TResponseHandler ();
 
-  
+
 
   virtual ~AMH_FieldDevice_TResponseHandler () = default;
 
@@ -429,13 +345,7 @@ private:
   AMH_FieldDevice_TResponseHandler &operator= (const AMH_FieldDevice_TResponseHandler &) = delete;
   AMH_FieldDevice_TResponseHandler &operator= (AMH_FieldDevice_TResponseHandler &&) = delete;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMH_FieldDevice_TResponseHandler;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:742
-
 
 
 #if !defined (_AMI_FIELDDEVICE_THANDLER__VAR_OUT_CH_)
@@ -449,9 +359,6 @@ using AMI_FieldDevice_THandler_out = TAO_Objref_Out_T<AMI_FieldDevice_THandler>;
 #endif /* end #if !defined */
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:39
-
 
 
 class TAO_IDL_TEST_STUB_Export AMI_FieldDevice_THandler
@@ -460,9 +367,6 @@ class TAO_IDL_TEST_STUB_Export AMI_FieldDevice_THandler
 {
 public:
   friend class TAO::Narrow_Utils<AMI_FieldDevice_THandler>;
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_type.cpp:297
-
   using _ptr_type = AMI_FieldDevice_THandler_ptr;
   using _var_type = AMI_FieldDevice_THandler_var;
   using _out_type = AMI_FieldDevice_THandler_out;
@@ -502,11 +406,8 @@ public:
   virtual void getEncoding_excep (
     ::Messaging::ExceptionHolder * excep_holder);
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ch.cpp:135
 
-  
+
 
   virtual ::CORBA::Boolean _is_a (const char *type_id);
   virtual const char* _interface_repository_id () const;
@@ -520,7 +421,7 @@ protected:
 
   // Concrete non-local interface only.
   AMI_FieldDevice_THandler (::IOP::IOR *ior, TAO_ORB_Core *orb_core);
-  
+
   // Non-local interface only.
   AMI_FieldDevice_THandler (
       TAO_Stub *objref,
@@ -537,13 +438,7 @@ private:
   AMI_FieldDevice_THandler &operator= (const AMI_FieldDevice_THandler &) = delete;
   AMI_FieldDevice_THandler &operator= (AMI_FieldDevice_THandler &&) = delete;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_decl.cpp:33
-
 extern TAO_IDL_TEST_STUB_Export ::CORBA::TypeCode_ptr const _tc_AMI_FieldDevice_THandler;
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -552,10 +447,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 // Arg traits specializations.
 namespace TAO
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
 
-  
 
 #if !defined (_MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_)
 #define _MESSAGING_EXCEPTIONHOLDER__ARG_TRAITS_
@@ -574,10 +466,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:889
 
-  
 
   template<>
   class Arg_Traits< ::EncodingID_T>
@@ -588,10 +477,7 @@ namespace TAO
           >
   {
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:931
 
-  
 
   template<>
   class Arg_Traits< ::Encoding_T>
@@ -602,10 +488,7 @@ namespace TAO
           >
   {
   };
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_FIELDDEVICE_T__ARG_TRAITS_)
 #define _FIELDDEVICE_T__ARG_TRAITS_
@@ -622,10 +505,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:298
 
-  
 
 #if !defined (_AMH_FIELDDEVICE_TEXCEPTIONHOLDER__ARG_TRAITS_)
 #define _AMH_FIELDDEVICE_TEXCEPTIONHOLDER__ARG_TRAITS_
@@ -644,10 +524,7 @@ namespace TAO
   };
 
 #endif /* end #if !defined */
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_AMI_FIELDDEVICE_THANDLER__ARG_TRAITS_)
 #define _AMI_FIELDDEVICE_THANDLER__ARG_TRAITS_
@@ -669,9 +546,6 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_ch.cpp:43
-
 
 
 // OBV_ class
@@ -682,7 +556,7 @@ class TAO_IDL_TEST_STUB_Export OBV_AMH_FieldDevice_TExceptionHolder
 protected:
   OBV_AMH_FieldDevice_TExceptionHolder () = default;
   virtual ~OBV_AMH_FieldDevice_TExceptionHolder ();
-  
+
 protected:
   virtual ::CORBA::Boolean
   _tao_marshal__AMH_FieldDevice_TExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo &) const;
@@ -697,9 +571,6 @@ protected:
 private:
   CORBA::Boolean require_truncation_ {false};
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_traits.cpp:58
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -766,9 +637,6 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_ch.cpp:31
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -781,24 +649,18 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, Enc
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_ch.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
-TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, const ::Encoding_T &); // copying version
+TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, ::Encoding_T const &); // copying version
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, ::Encoding_T*); // noncopying version
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, const ::Encoding_T *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, ::Encoding_T const *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
 
 
 
@@ -813,24 +675,18 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, Fie
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_ch.cpp:42
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
 
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, AMH_FieldDevice_TExceptionHolder *); // copying
 TAO_IDL_TEST_STUB_Export void operator<<= (::CORBA::Any &, AMH_FieldDevice_TExceptionHolder **); // non-copying
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, AMH_FieldDevice_TExceptionHolder *&);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (::CORBA::Any const &, AMH_FieldDevice_TExceptionHolder *&);
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
 
 
 
@@ -847,9 +703,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_ch.cpp:40
-
 
 
 
@@ -863,9 +716,6 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>>= (const ::CORBA::Any &, AMI
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_ch.cpp:33
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -875,22 +725,16 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &strm, Encodi
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_ch.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, const Encoding_T &);
+TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator<< (TAO_OutputCDR &, Encoding_T const &);
 TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, Encoding_T &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
 
 
 
@@ -901,9 +745,6 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, FieldDevic
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:452
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -916,9 +757,6 @@ namespace CORBA
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_ch.cpp:47
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -930,9 +768,6 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/cdr_op_ch.cpp:40
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -942,9 +777,6 @@ TAO_IDL_TEST_STUB_Export ::CORBA::Boolean operator>> (TAO_InputCDR &, AMI_FieldD
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:1644
 
 #if defined (__ACE_INLINE__)
 #include "Bug_2582_RegressionC.inl"

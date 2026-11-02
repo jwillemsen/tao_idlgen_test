@@ -22,15 +22,13 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "enum_in_structC.h"
 #include <memory>
 #include <new>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
@@ -56,9 +54,6 @@
 #if !defined (__ACE_INLINE__)
 #include "enum_in_structC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
-
 static char const * const _tao_enumerators_UnNamed[] =
   {
     "UNNAMED_FIRST",
@@ -74,11 +69,8 @@ static TAO::TypeCode::Enum<char const *,
     "UnNamed",
     _tao_enumerators_UnNamed,
     3);
-  
-::CORBA::TypeCode_ptr const _tc_UnNamed = std::addressof(_tao_tc_UnNamed);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
 
+::CORBA::TypeCode_ptr const _tc_UnNamed = std::addressof(_tao_tc_UnNamed);
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const
@@ -105,9 +97,6 @@ _tao_tc_HoldsEnum (
 ::CORBA::TypeCode_ptr const _tc_HoldsEnum = std::addressof(_tao_tc_HoldsEnum);
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
-
 void
 HoldsEnum::_tao_any_destructor (
     void *_tao_void_pointer)
@@ -115,9 +104,6 @@ HoldsEnum::_tao_any_destructor (
   HoldsEnum *tmp = static_cast<HoldsEnum *> (_tao_void_pointer);
   delete tmp;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
-
 static char const * const _tao_enumerators_HoldsEnum_Named[] =
   {
     "NAMED_FIRST",
@@ -133,14 +119,8 @@ static TAO::TypeCode::Enum<char const *,
     "Named",
     _tao_enumerators_HoldsEnum_Named,
     3);
-  
+
 ::CORBA::TypeCode_ptr const HoldsEnum::_tc_Named = std::addressof(_tao_tc_HoldsEnum_Named);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
 
 
 #ifndef _TAO_TYPECODE_decl_heavy_struct_m_en_GUARD
@@ -160,7 +140,7 @@ namespace TAO
           ::CORBA::tk_array,
           &decl_heavy_struct::_tc_str_en,
           10U);
-        
+
       ::CORBA::TypeCode_ptr const tc_decl_heavy_struct_m_en =
         &decl_heavy_struct_m_en_10;
     }
@@ -170,9 +150,6 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_TYPECODE_decl_heavy_struct_m_en_GUARD */
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
 
 
 #ifndef _TAO_TYPECODE_decl_heavy_struct_m_st_GUARD
@@ -192,7 +169,7 @@ namespace TAO
           ::CORBA::tk_array,
           &decl_heavy_struct::_tc_st,
           10U);
-        
+
       ::CORBA::TypeCode_ptr const tc_decl_heavy_struct_m_st =
         &decl_heavy_struct_m_st_10;
     }
@@ -202,9 +179,6 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 #endif /* _TAO_TYPECODE_decl_heavy_struct_m_st_GUARD */
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
 
 
 #ifndef _TAO_TYPECODE_decl_heavy_struct_m_un_GUARD
@@ -224,7 +198,7 @@ namespace TAO
           ::CORBA::tk_array,
           &decl_heavy_struct::_tc_un,
           10U);
-        
+
       ::CORBA::TypeCode_ptr const tc_decl_heavy_struct_m_un =
         &decl_heavy_struct_m_un_10;
     }
@@ -261,9 +235,6 @@ _tao_tc_decl_heavy_struct (
 ::CORBA::TypeCode_ptr const _tc_decl_heavy_struct = std::addressof(_tao_tc_decl_heavy_struct);
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
-
 void
 decl_heavy_struct::_tao_any_destructor (
     void *_tao_void_pointer)
@@ -271,19 +242,16 @@ decl_heavy_struct::_tao_any_destructor (
   decl_heavy_struct *tmp = static_cast<decl_heavy_struct *> (_tao_void_pointer);
   delete tmp;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:89
-
 decl_heavy_struct::_m_en_slice *
 decl_heavy_struct::_m_en_dup (const decl_heavy_struct::_m_en_slice *_tao_src_array)
 {
   decl_heavy_struct::_m_en_slice *_tao_dup_array = decl_heavy_struct::_m_en_alloc ();
-  
+
   if (_tao_dup_array)
     {
       decl_heavy_struct::_m_en_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -312,9 +280,6 @@ decl_heavy_struct::_m_en_copy (
       _tao_to[i0] = _tao_from[i0];
     }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
-
 static char const * const _tao_enumerators_decl_heavy_struct_str_en[] =
   {
     "a",
@@ -330,21 +295,18 @@ static TAO::TypeCode::Enum<char const *,
     "str_en",
     _tao_enumerators_decl_heavy_struct_str_en,
     3);
-  
-::CORBA::TypeCode_ptr const decl_heavy_struct::_tc_str_en = std::addressof(_tao_tc_decl_heavy_struct_str_en);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:89
 
+::CORBA::TypeCode_ptr const decl_heavy_struct::_tc_str_en = std::addressof(_tao_tc_decl_heavy_struct_str_en);
 decl_heavy_struct::_m_st_slice *
 decl_heavy_struct::_m_st_dup (const decl_heavy_struct::_m_st_slice *_tao_src_array)
 {
   decl_heavy_struct::_m_st_slice *_tao_dup_array = decl_heavy_struct::_m_st_alloc ();
-  
+
   if (_tao_dup_array)
     {
       decl_heavy_struct::_m_st_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -373,9 +335,6 @@ decl_heavy_struct::_m_st_copy (
       _tao_to[i0] = _tao_from[i0];
     }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
-
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const
@@ -402,9 +361,6 @@ _tao_tc_decl_heavy_struct_st (
 ::CORBA::TypeCode_ptr const decl_heavy_struct::_tc_st = std::addressof(_tao_tc_decl_heavy_struct_st);
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/structure_cs.cpp:55
-
 void
 decl_heavy_struct::st::_tao_any_destructor (
     void *_tao_void_pointer)
@@ -412,19 +368,16 @@ decl_heavy_struct::st::_tao_any_destructor (
   st *tmp = static_cast<st *> (_tao_void_pointer);
   delete tmp;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/array_cs.cpp:89
-
 decl_heavy_struct::_m_un_slice *
 decl_heavy_struct::_m_un_dup (const decl_heavy_struct::_m_un_slice *_tao_src_array)
 {
   decl_heavy_struct::_m_un_slice *_tao_dup_array = decl_heavy_struct::_m_un_alloc ();
-  
+
   if (_tao_dup_array)
     {
       decl_heavy_struct::_m_un_copy (_tao_dup_array, _tao_src_array);
     }
-  
+
   return _tao_dup_array;
 }
 
@@ -453,9 +406,6 @@ decl_heavy_struct::_m_un_copy (
       _tao_to[i0] = _tao_from[i0];
     }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/union_cs.cpp:75
-
 
 
 decl_heavy_struct::un::un ()
@@ -463,7 +413,7 @@ decl_heavy_struct::un::un ()
   this->disc_ = -2147483647;
 }
 
-decl_heavy_struct::un::un (const ::decl_heavy_struct::un &u)
+decl_heavy_struct::un::un (::decl_heavy_struct::un const &u)
 {
   this->disc_ = u.disc_;
   switch (_tao_member_index (this->disc_))
@@ -496,7 +446,7 @@ void decl_heavy_struct::un::_tao_any_destructor (void *_tao_void_pointer)
 }
 
 decl_heavy_struct::un &
-decl_heavy_struct::un::operator= (const ::decl_heavy_struct::un &u)
+decl_heavy_struct::un::operator= (::decl_heavy_struct::un const &u)
 {
   if (std::addressof(u) != this)
     {
@@ -525,9 +475,6 @@ decl_heavy_struct::un::operator= (const ::decl_heavy_struct::un &u)
 void decl_heavy_struct::un::_reset ()
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
-
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_decl_heavy_struct_un__0 (1, "a", &CORBA::_tc_long);
 static TAO::TypeCode::Case_T<CORBA::Long, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_decl_heavy_struct_un__1 (2, "b", &CORBA::_tc_char);
 
@@ -548,11 +495,8 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_decl_heavy_struct_un,
     sizeof (_tao_cases_decl_heavy_struct_un)/sizeof (_tao_cases_decl_heavy_struct_un[0]),
     -1);
-  
-::CORBA::TypeCode_ptr const decl_heavy_struct::_tc_un = std::addressof(_tao_tc_decl_heavy_struct_un);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
 
+::CORBA::TypeCode_ptr const decl_heavy_struct::_tc_un = std::addressof(_tao_tc_decl_heavy_struct_un);
 static char const * const _tao_enumerators_ErrorException_ReasonCode[] =
   {
     "RESOURCE",
@@ -571,11 +515,8 @@ static TAO::TypeCode::Enum<char const *,
     "ReasonCode",
     _tao_enumerators_ErrorException_ReasonCode,
     6);
-  
-::CORBA::TypeCode_ptr const ErrorException::_tc_ReasonCode = std::addressof(_tao_tc_ErrorException_ReasonCode);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_ctor.cpp:50
 
+::CORBA::TypeCode_ptr const ErrorException::_tc_ReasonCode = std::addressof(_tao_tc_ErrorException_ReasonCode);
 
 
 ErrorException::ErrorException (
@@ -587,9 +528,6 @@ ErrorException::ErrorException (
   this->reason = _tao_reason;
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/exception_cs.cpp:97
 
 ErrorException::ErrorException ()
   : ::CORBA::UserException (
@@ -673,9 +611,6 @@ void ErrorException::_tao_decode (TAO_InputCDR &cdr)
 {
   return ::_tc_ErrorException;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/struct_typecode.cpp:84
-
 static TAO::TypeCode::Struct_Field<
   char const *,
   ::CORBA::TypeCode_ptr const *> const
@@ -699,9 +634,6 @@ _tao_tc_ErrorException (
   1);
 
 ::CORBA::TypeCode_ptr const _tc_ErrorException = std::addressof(_tao_tc_ErrorException);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -736,9 +668,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -746,7 +675,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::HoldsEnum &_tao_elem)
+  ::HoldsEnum const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::HoldsEnum>::insert_copy (
     _tao_any,
@@ -769,8 +698,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::HoldsEnum *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::HoldsEnum const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::HoldsEnum>::extract (
     _tao_any,
@@ -781,9 +710,6 @@ void operator<<= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -819,9 +745,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -829,7 +752,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::decl_heavy_struct &_tao_elem)
+  ::decl_heavy_struct const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::decl_heavy_struct>::insert_copy (
     _tao_any,
@@ -852,8 +775,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::decl_heavy_struct *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::decl_heavy_struct const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::decl_heavy_struct>::extract (
     _tao_any,
@@ -864,9 +787,6 @@ void operator<<= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/any_op_cs.cpp:36
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -885,7 +805,7 @@ namespace TAO
       {
         return false;
       }
-    
+
     try
       {
         this->value_->_tao_decode (cdr);
@@ -945,9 +865,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_cs.cpp:29
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -960,20 +877,17 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<UnNamed> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_cs.cpp:29
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -987,27 +901,24 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<HoldsEnum::Named> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const HoldsEnum &_tao_aggregate)
+    HoldsEnum const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.named_enum) &&
@@ -1028,9 +939,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_cs.cpp:29
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1043,20 +951,17 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<decl_heavy_struct::str_en> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1066,7 +971,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     const decl_heavy_struct::_m_en_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm << _tao_array [i0]);
@@ -1080,7 +985,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     decl_heavy_struct::_m_en_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm >> _tao_array [i0]);
@@ -1092,15 +997,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const decl_heavy_struct::st &_tao_aggregate)
+    decl_heavy_struct::st const &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.a) &&
@@ -1121,9 +1023,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1132,7 +1031,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     const decl_heavy_struct::_m_st_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm << _tao_array [i0]);
@@ -1146,7 +1045,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     decl_heavy_struct::_m_st_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm >> _tao_array [i0]);
@@ -1158,21 +1057,18 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/cdr_op_cs.cpp:119
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const decl_heavy_struct::un &_tao_union)
+    decl_heavy_struct::un const &_tao_union)
 {
   if (!(strm << _tao_union._d ()))
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_union._d ())
@@ -1203,7 +1099,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     {
       return false;
     }
-  
+
   ::CORBA::Boolean result = true;
 
   switch (_tao_discriminant)
@@ -1244,9 +1140,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/cdr_op_cs.cpp:162
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1255,7 +1148,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     const decl_heavy_struct::_m_un_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm << _tao_array [i0]);
@@ -1269,7 +1162,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     decl_heavy_struct::_m_un_forany &_tao_array)
 {
   CORBA::Boolean _tao_marshal_flag = true;
-  
+
   for (::CORBA::ULong i0 = 0; i0 < 10 && _tao_marshal_flag; ++i0)
     {
       _tao_marshal_flag = (strm >> _tao_array [i0]);
@@ -1281,15 +1174,12 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_structure/cdr_op_cs.cpp:48
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const decl_heavy_struct &_tao_aggregate)
+    decl_heavy_struct const &_tao_aggregate)
 {
   decl_heavy_struct::_m_en_forany _tao_aggregate_m_en
     (const_cast<decl_heavy_struct::_m_en_slice*> (
@@ -1330,9 +1220,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/cdr_op_cs.cpp:29
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -1345,20 +1232,17 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 {
   ::CORBA::ULong _tao_temp = 0;
   ::CORBA::Boolean const _tao_success = strm >> _tao_temp;
-  
+
   if (_tao_success)
     {
       _tao_enumerator = static_cast<ErrorException::ReasonCode> (_tao_temp);
     }
-  
+
   return _tao_success;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_exception/cdr_op_cs.cpp:47
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

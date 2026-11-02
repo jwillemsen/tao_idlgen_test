@@ -26,6 +26,7 @@
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Value_TypeCode_Static.h"
@@ -34,12 +35,6 @@
 #include "tao/AnyTypeCode/Any.h"
 #include "tao/AnyTypeCode/Any_Impl_T.h"
 #include "tao/AnyTypeCode/Any_Array_Impl_T.h"
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/alias_typecode.cpp:46
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:293
 
 
 #ifndef _TAO_TYPECODE_TEST_TYPE_GUARD
@@ -59,7 +54,7 @@ namespace TAO
           ::CORBA::tk_array,
           &CORBA::_tc_char,
           10U);
-        
+
       ::CORBA::TypeCode_ptr const tc_TEST_TYPE =
         &TEST_TYPE_10;
     }
@@ -77,11 +72,8 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:TEST_TYPE:1.0",
     "TEST_TYPE",
     &TAO::TypeCode::tc_TEST_TYPE);
-  
-::CORBA::TypeCode_ptr const _tc_TEST_TYPE = std::addressof(_tao_tc_TEST_TYPE);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_array/any_op_cs.cpp:31
 
+::CORBA::TypeCode_ptr const _tc_TEST_TYPE = std::addressof(_tao_tc_TEST_TYPE);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -89,7 +81,7 @@ namespace CORBA {
 void operator<<= (
     ::CORBA::Any &_tao_any,
     const TEST_TYPE_forany &_tao_elem)
-  
+
 {
   TAO::Any_Array_Impl_T<
       TEST_TYPE_slice,
@@ -107,7 +99,7 @@ void operator<<= (
 ::CORBA::Boolean operator>>= (
     const ::CORBA::Any &_tao_any,
     TEST_TYPE_forany &_tao_elem)
-  
+
 {
   return
     TAO::Any_Array_Impl_T<

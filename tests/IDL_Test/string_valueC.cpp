@@ -22,14 +22,12 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "string_valueC.h"
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Value_TypeCode_Static.h"
 #include "tao/AnyTypeCode/TypeCode_Value_Field.h"
@@ -43,13 +41,10 @@
 #if !defined (__ACE_INLINE__)
 #include "string_valueC.inl"
 #endif /* !defined INLINE */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
-
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_include_test_StringTest[] =
   {
     { "my_string_value", &CORBA::_tc_StringValue, ::CORBA::PUBLIC_MEMBER }
-    
+
   };
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
@@ -63,15 +58,12 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_include_test_StringTest,
     1);
-  
+
 
 namespace include_test
 {
   ::CORBA::TypeCode_ptr const _tc_StringTest = std::addressof(_tao_tc_include_test_StringTest);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_cs.cpp:52
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -105,7 +97,7 @@ include_test::StringTest::_downcast (::CORBA::ValueBase *v)
   return dynamic_cast<::include_test::StringTest *> (v);
 }
 
-const char *
+char const *
 include_test::StringTest::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
@@ -169,33 +161,30 @@ include_test::StringTest::_tao_unmarshal (
         is_null_object,
         is_indirected
       );
-  
+
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
     return false;
-  
+
   if (is_null_object)
     return true;
-  
+
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
     return false;
-  
+
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = StringTest::_downcast (base);
   if (nullptr == new_object)
     return false;
-  
+
   if (is_indirected)
     new_object->_add_ref ();
-  
+
   owner._retn ();
   return true;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_init_cs.cpp:72
-
 
 
 include_test::StringTest_init::StringTest_init ()
@@ -212,7 +201,7 @@ include_test::StringTest_init::_downcast (::CORBA::ValueFactoryBase *v)
   return dynamic_cast<::include_test::StringTest_init *> (v);
 }
 
-const char*
+char const *
 include_test::StringTest_init::tao_repository_id ()
 {
   return ::include_test::StringTest::_tao_obv_static_repository_id ();
@@ -228,9 +217,6 @@ include_test::StringTest_init::create_for_unmarshal ()
       ::CORBA::NO_MEMORY ());
   return ret_val;
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_obv_cs.cpp:43
-
 OBV_include_test::StringTest::StringTest (
     ::CORBA::StringValue * _tao_init_my_string_value)
 {
@@ -266,9 +252,6 @@ OBV_include_test::StringTest::_tao_unmarshal__include_test_StringTest (TAO_Input
 {
   return _tao_unmarshal_state (strm, ci);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/field_cs.cpp:425
-
 /// Accessor to set the member.
 void
 OBV_include_test::StringTest::my_string_value (CORBA::StringValue* val)
@@ -283,9 +266,6 @@ OBV_include_test::StringTest::my_string_value () const
 {
   return this->_pd_my_string_value.in ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:44
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -344,7 +324,7 @@ operator<<= (
 
 ::CORBA::Boolean
 operator>>= (
-    const ::CORBA::Any &_tao_any,
+    ::CORBA::Any const &_tao_any,
     include_test::StringTest *&_tao_elem)
 {
   return
@@ -360,16 +340,13 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_valuetype.cpp:506
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
 CORBA::add_ref (include_test::StringTest * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_add_ref ();
     }
@@ -378,7 +355,7 @@ CORBA::add_ref (include_test::StringTest * vt)
 void
 CORBA::remove_ref (include_test::StringTest * vt)
 {
-  if (vt != 0)
+  if (vt != nullptr)
     {
       vt->_remove_ref ();
     }
@@ -386,9 +363,6 @@ CORBA::remove_ref (include_test::StringTest * vt)
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/cdr_op_cs.cpp:59
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -416,9 +390,6 @@ operator>> (
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/marshal_cs.cpp:189
 
 ::CORBA::Boolean
 OBV_include_test::StringTest::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
@@ -454,7 +425,7 @@ OBV_include_test::StringTest::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_Chun
   else
     return ci.handle_chunking (strm);
 
-  
+
 }
 
 void

@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:370
-
 
 #include "typecodeC.h"
 #include <memory>
@@ -41,9 +38,6 @@
 #include "typecodeC.inl"
 #endif /* !defined INLINE */
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/sequence_cs.cpp:104
 
 
 
@@ -78,9 +72,6 @@ void MyModule::TypeCodeList::_tao_any_destructor (
 }
 
 #endif /* end #if !defined */
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/cdr_op_cs.cpp:92
-
 #if !defined _TAO_CDR_OP_MyModule_TypeCodeList_CPP_
 #define _TAO_CDR_OP_MyModule_TypeCodeList_CPP_
 
@@ -88,7 +79,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const MyModule::TypeCodeList &_tao_sequence)
+    MyModule::TypeCodeList const &_tao_sequence)
 {
   return TAO::marshal_sequence(strm, _tao_sequence);
 }

@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_INCLUDEDS_IJLWM4_CPP_
-#define _TAO_IDL_INCLUDEDS_IJLWM4_CPP_
+#ifndef _TAO_IDL_INCLUDEDS_D9BI9S_CPP_
+#define _TAO_IDL_INCLUDEDS_D9BI9S_CPP_
 
 
 #include "includedS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -127,7 +122,7 @@ TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable::lookup (const char 
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -136,9 +131,6 @@ TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable::lookup (const char 
 
 static TAO_RootModule_SUBMODULE1_AMH_ParentIF_Perfect_Hash_OpTable tao_RootModule_SUBMODULE1_AMH_ParentIF_optable;
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
 
 
 
@@ -149,9 +141,6 @@ POA_RootModule::SUBMODULE1::AMH_ParentIF::AMH_ParentIF ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -170,9 +159,6 @@ const char* POA_RootModule::SUBMODULE1::AMH_ParentIF::_interface_repository_id (
 {
   return "IDL:RootModule/SUBMODULE1/ParentIF:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_RootModule::SUBMODULE1::AMH_ParentIF::_dispatch (
     TAO_ServerRequest &req,
@@ -180,9 +166,6 @@ POA_RootModule::SUBMODULE1::AMH_ParentIF::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 RootModule::SUBMODULE1::ParentIF*
 POA_RootModule::SUBMODULE1::AMH_ParentIF::_this ()
 {
@@ -193,13 +176,10 @@ POA_RootModule::SUBMODULE1::AMH_ParentIF::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::RootModule::SUBMODULE1::ParentIF>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_RootModule_SUBMODULE1_ParentIF_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -213,6 +193,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_RootModule_SUBMODULE1_ParentIF_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_RootModule_SUBMODULE1_ParentIF_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -270,7 +251,7 @@ TAO_RootModule_SUBMODULE1_ParentIF_Perfect_Hash_OpTable::lookup (const char *str
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -294,9 +275,6 @@ POA_RootModule::SUBMODULE1::_TAO_ParentIF_Direct_Proxy_Impl::~_TAO_ParentIF_Dire
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_RootModule::SUBMODULE1::ParentIF::ParentIF ()
@@ -306,9 +284,6 @@ POA_RootModule::SUBMODULE1::ParentIF::ParentIF ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -329,9 +304,6 @@ const char* POA_RootModule::SUBMODULE1::ParentIF::_interface_repository_id () co
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_RootModule::SUBMODULE1::ParentIF::_dispatch (
@@ -341,9 +313,6 @@ void POA_RootModule::SUBMODULE1::ParentIF::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -360,12 +329,6 @@ POA_RootModule::SUBMODULE1::ParentIF::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
 
 class TAO_RootModule_SUBMODULE1_AMI_ParentIFHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -380,6 +343,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_RootModule_SUBMODULE1_AMI_ParentIFHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_RootModule_SUBMODULE1_AMI_ParentIFHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -437,7 +401,7 @@ TAO_RootModule_SUBMODULE1_AMI_ParentIFHandler_Perfect_Hash_OpTable::lookup (cons
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -461,9 +425,6 @@ POA_RootModule::SUBMODULE1::_TAO_AMI_ParentIFHandler_Direct_Proxy_Impl::~_TAO_AM
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::AMI_ParentIFHandler ()
@@ -474,9 +435,6 @@ POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::AMI_ParentIFHandler ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -498,9 +456,6 @@ const char* POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::_interface_reposito
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::_dispatch (
@@ -510,9 +465,6 @@ void POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -529,9 +481,6 @@ POA_RootModule::SUBMODULE1::AMI_ParentIFHandler::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_AMH_AAA_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -545,6 +494,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMH_AAA_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMH_AAA_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -602,7 +552,7 @@ TAO_AMH_AAA_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -611,9 +561,6 @@ TAO_AMH_AAA_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
 
 static TAO_AMH_AAA_Perfect_Hash_OpTable tao_AMH_AAA_optable;
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
 
 
 
@@ -624,9 +571,6 @@ POA_AMH_AAA::POA_AMH_AAA ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -645,9 +589,6 @@ const char* POA_AMH_AAA::_interface_repository_id () const
 {
   return "IDL:AAA:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_AMH_AAA::_dispatch (
     TAO_ServerRequest &req,
@@ -655,9 +596,6 @@ POA_AMH_AAA::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 AAA*
 POA_AMH_AAA::_this ()
 {
@@ -668,13 +606,10 @@ POA_AMH_AAA::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::AAA>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_AAA_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -688,6 +623,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AAA_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AAA_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -745,7 +681,7 @@ TAO_AAA_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len)
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -769,9 +705,6 @@ _TAO_AAA_Direct_Proxy_Impl::~_TAO_AAA_Direct_Proxy_Impl ()
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_AAA::POA_AAA ()
@@ -781,9 +714,6 @@ POA_AAA::POA_AAA ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -804,9 +734,6 @@ const char* POA_AAA::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_AAA::_dispatch (
@@ -816,9 +743,6 @@ void POA_AAA::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -835,12 +759,6 @@ POA_AAA::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
 
 class TAO_AMI_AAAHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -855,6 +773,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMI_AAAHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMI_AAAHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -912,7 +831,7 @@ TAO_AMI_AAAHandler_Perfect_Hash_OpTable::lookup (const char *str, unsigned int l
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -936,9 +855,6 @@ _TAO_AMI_AAAHandler_Direct_Proxy_Impl::~_TAO_AMI_AAAHandler_Direct_Proxy_Impl ()
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_AMI_AAAHandler::POA_AMI_AAAHandler ()
@@ -949,9 +865,6 @@ POA_AMI_AAAHandler::POA_AMI_AAAHandler ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -973,9 +886,6 @@ const char* POA_AMI_AAAHandler::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_AMI_AAAHandler::_dispatch (
@@ -985,9 +895,6 @@ void POA_AMI_AAAHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

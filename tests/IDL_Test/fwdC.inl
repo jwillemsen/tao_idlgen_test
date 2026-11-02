@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -44,22 +41,16 @@ mod2::full::full (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
-
 ACE_INLINE
 mod2::AMH_fullExceptionHolder::AMH_fullExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 mod2::AMH_fullExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:mod2/AMH_fullExceptionHolder:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -79,9 +70,6 @@ mod2::AMI_fullHandler::AMI_fullHandler (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -101,22 +89,16 @@ fwd_mixed_intf::concrete_parent::concrete_parent (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
-
 ACE_INLINE
 fwd_mixed_intf::AMH_concrete_parentExceptionHolder::AMH_concrete_parentExceptionHolder ()
   : exception (nullptr)
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 fwd_mixed_intf::AMH_concrete_parentExceptionHolder::_tao_obv_static_repository_id ()
 {
   return "IDL:fwd_mixed_intf/AMH_concrete_parentExceptionHolder:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -136,9 +118,6 @@ fwd_mixed_intf::AMI_concrete_parentHandler::AMI_concrete_parentHandler (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -163,9 +142,6 @@ fwd_mixed_intf::abstract_parent::abstract_parent (
       )
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -195,9 +171,6 @@ fwd_mixed_intf::mixed_abs_first::mixed_abs_first (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -217,9 +190,6 @@ fwd_mixed_intf::AMI_mixed_abs_firstHandler::AMI_mixed_abs_firstHandler (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -253,9 +223,6 @@ fwd_mixed_intf::mixed_conc_first::mixed_conc_first (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ci.cpp:58
-
 
 
 ACE_INLINE
@@ -275,26 +242,20 @@ fwd_mixed_intf::AMI_mixed_conc_firstHandler::AMI_mixed_conc_firstHandler (
   : ::CORBA::Object (ior, oc)
 {
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
-
 ACE_INLINE
 obv_fwd::EnclosingType::EnclosingType ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 obv_fwd::EnclosingType::_tao_obv_static_repository_id ()
 {
   return "IDL:obv_fwd/EnclosingType:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/valuetype_ci.cpp:43
-
 ACE_INLINE
 obv_fwd::ForwardedType::ForwardedType ()
 {}
 
-ACE_INLINE const char*
+ACE_INLINE char const *
 obv_fwd::ForwardedType::_tao_obv_static_repository_id ()
 {
   return "IDL:obv_fwd/ForwardedType:1.0";

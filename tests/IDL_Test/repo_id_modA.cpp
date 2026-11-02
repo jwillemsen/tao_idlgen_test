@@ -26,6 +26,7 @@
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Value_TypeCode_Static.h"
@@ -33,145 +34,118 @@
 #include "tao/CDR.h"
 #include "tao/AnyTypeCode/Any.h"
 #include "tao/AnyTypeCode/Any_Impl_T.h"
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_schmooze (
     ::CORBA::tk_local_interface,
     "IDL:gleep_prefix/gleep/schmooze:1.0",
     "schmooze");
-  
+
 
 namespace gleep
 {
   ::CORBA::TypeCode_ptr const _tc_schmooze = std::addressof(_tao_tc_gleep_schmooze);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_schmeer (
     ::CORBA::tk_local_interface,
     "IDL:gleep_prefix/gleep/schmeer:1.0",
     "schmeer");
-  
+
 
 namespace gleep
 {
   ::CORBA::TypeCode_ptr const _tc_schmeer = std::addressof(_tao_tc_gleep_schmeer);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_schlemiel (
     ::CORBA::tk_local_interface,
     "IDL:gleep_prefix/gleep/schlemiel:1.0",
     "schlemiel");
-  
+
 
 namespace gleep
 {
   ::CORBA::TypeCode_ptr const _tc_schlemiel = std::addressof(_tao_tc_gleep_schlemiel);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_spilkis (
     ::CORBA::tk_local_interface,
     "IDL:gleep_prefix/gleep/spilkis:1.0",
     "spilkis");
-  
+
 
 namespace gleep
 {
   ::CORBA::TypeCode_ptr const _tc_spilkis = std::addressof(_tao_tc_gleep_spilkis);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_floop_schmuck (
     ::CORBA::tk_local_interface,
     "ABRA:cadabra/hocus/pocus:1.23",
     "schmuck");
-  
+
 
 namespace gleep
 {
-  
+
   namespace floop
   {
     ::CORBA::TypeCode_ptr const _tc_schmuck = std::addressof(_tao_tc_gleep_floop_schmuck);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_floop_schmendrick (
     ::CORBA::tk_local_interface,
     "IDL:floop_prefix/gleep/floop/schmendrick:524.23",
     "schmendrick");
-  
+
 
 namespace gleep
 {
-  
+
   namespace floop
   {
     ::CORBA::TypeCode_ptr const _tc_schmendrick = std::addressof(_tao_tc_gleep_floop_schmendrick);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_floop_verklempt_schlemazel (
     ::CORBA::tk_local_interface,
     "IDL:verklempt_prefix/gleep/floop/verklempt/schlemazel:1.0",
     "schlemazel");
-  
+
 
 namespace gleep
 {
-  
+
   namespace floop
   {
-    
+
     namespace verklempt
     {
       ::CORBA::TypeCode_ptr const _tc_schlemazel = std::addressof(_tao_tc_gleep_floop_verklempt_schlemazel);
     }
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_gleep_schmegegging (
     ::CORBA::tk_local_interface,
     "IDL:gleep_prefix/gleep/schmegegging:1.0",
     "schmegegging");
-  
+
 
 namespace gleep
 {
   ::CORBA::TypeCode_ptr const _tc_schmegegging = std::addressof(_tao_tc_gleep_schmegegging);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -253,9 +227,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -339,9 +310,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -423,9 +391,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -509,9 +474,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -593,9 +555,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -679,9 +638,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -763,9 +719,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

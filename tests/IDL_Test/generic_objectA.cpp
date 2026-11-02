@@ -26,6 +26,7 @@
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Enum_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
@@ -40,9 +41,6 @@
 #include "tao/AnyTypeCode/Any_Impl_T.h"
 #include "tao/AnyTypeCode/Any_Dual_Impl_T.h"
 #include "tao/AnyTypeCode/Any_Basic_Impl_T.h"
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/enum_typecode.cpp:27
-
 static char const * const _tao_enumerators_ObjectType[] =
   {
     "OT_THIS",
@@ -57,11 +55,8 @@ static TAO::TypeCode::Enum<char const *,
     "ObjectType",
     _tao_enumerators_ObjectType,
     2);
-  
-::CORBA::TypeCode_ptr const _tc_ObjectType = std::addressof(_tao_tc_ObjectType);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/union_typecode.cpp:63
 
+::CORBA::TypeCode_ptr const _tc_ObjectType = std::addressof(_tao_tc_ObjectType);
 static TAO::TypeCode::Case_T<ObjectType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Selecter__0 (::OT_THIS, "this_object", &CORBA::_tc_Object);
 static TAO::TypeCode::Case_T<ObjectType, char const *, ::CORBA::TypeCode_ptr const *> const _tao_cases_Selecter__1 (::OT_THAT, "that_object", &CORBA::_tc_Object);
 
@@ -82,23 +77,17 @@ static TAO::TypeCode::Union<char const *,
     _tao_cases_Selecter,
     sizeof (_tao_cases_Selecter)/sizeof (_tao_cases_Selecter[0]),
     -1);
-  
-::CORBA::TypeCode_ptr const _tc_Selecter = std::addressof(_tao_tc_Selecter);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
 
+::CORBA::TypeCode_ptr const _tc_Selecter = std::addressof(_tao_tc_Selecter);
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_generic (
     ::CORBA::tk_objref,
     "IDL:generic:1.0",
     "generic");
-  
-::CORBA::TypeCode_ptr const _tc_generic = std::addressof(_tao_tc_generic);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/value_typecode.cpp:63
 
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_genericExceptionHolder = 0;
+::CORBA::TypeCode_ptr const _tc_generic = std::addressof(_tao_tc_generic);
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_genericExceptionHolder = nullptr;
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
@@ -111,7 +100,7 @@ static TAO::TypeCode::Value<char const *,
     &::CORBA::_tc_null,
     _tao_fields_AMH_genericExceptionHolder,
     0);
-  
+
 ::CORBA::TypeCode_ptr const _tc_AMH_genericExceptionHolder = std::addressof(_tao_tc_AMH_genericExceptionHolder);// TAO extension - the virtual _type method.
 ::CORBA::TypeCode_ptr AMH_genericExceptionHolder::_tao_type () const
 {
@@ -119,31 +108,22 @@ static TAO::TypeCode::Value<char const *,
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
-
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMH_genericResponseHandler (
     ::CORBA::tk_local_interface,
     "IDL:AMH_genericResponseHandler:1.0",
     "AMH_genericResponseHandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMH_genericResponseHandler = std::addressof(_tao_tc_AMH_genericResponseHandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/objref_typecode.cpp:68
 
+::CORBA::TypeCode_ptr const _tc_AMH_genericResponseHandler = std::addressof(_tao_tc_AMH_genericResponseHandler);
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
   _tao_tc_AMI_genericHandler (
     ::CORBA::tk_objref,
     "IDL:AMI_genericHandler:1.0",
     "AMI_genericHandler");
-  
-::CORBA::TypeCode_ptr const _tc_AMI_genericHandler = std::addressof(_tao_tc_AMI_genericHandler);
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_enum/any_op_cs.cpp:34
 
+::CORBA::TypeCode_ptr const _tc_AMI_genericHandler = std::addressof(_tao_tc_AMI_genericHandler);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -178,9 +158,6 @@ void operator<<= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_union/any_op_cs.cpp:35
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -194,7 +171,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const Selecter &_tao_elem)
+  Selecter const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T<Selecter>::insert_copy (
     _tao_any,
@@ -217,8 +194,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const Selecter *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  Selecter const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T<Selecter>::extract (
     _tao_any,
@@ -229,9 +206,6 @@ void operator<<= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -298,9 +272,6 @@ operator>>= (
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_valuetype/any_op_cs.cpp:44
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
@@ -359,7 +330,7 @@ operator<<= (
 
 ::CORBA::Boolean
 operator>>= (
-    const ::CORBA::Any &_tao_any,
+    ::CORBA::Any const &_tao_any,
     AMH_genericExceptionHolder *&_tao_elem)
 {
   return
@@ -374,9 +345,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -459,9 +427,6 @@ operator>>= (
 }
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/any_op_cs.cpp:37
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL

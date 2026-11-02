@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_OLD_ARRAYS_6LMTO4_CPP_
-#define _TAO_IDL_OLD_ARRAYS_6LMTO4_CPP_
+#ifndef _TAO_IDL_OLD_ARRAYS_FS28XP_CPP_
+#define _TAO_IDL_OLD_ARRAYS_FS28XP_CPP_
 
 
 #include "old_arrayS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -140,7 +135,7 @@ TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable::lookup (const char *str, unsigned int
             {
               const char *s = wordlist[slot].opname;
 
-              if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+              if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
                 return &wordlist[slot];
             }
           else if (slot < 0 && slot >= -MAX_HASH_VALUE)
@@ -152,7 +147,7 @@ TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable::lookup (const char *str, unsigned int
               const TAO_operation_db_entry *ptr = base + -lookup[offset + 1];
 
               while (--ptr >= base)
-                if (*str == *ptr->opname && !ACE_OS::strncmp (str + 1, ptr->opname + 1, len - 1))
+                if (*str == *ptr->opname && !std::strncmp (str + 1, ptr->opname + 1, len - 1))
                   return ptr;
             }
         }
@@ -163,9 +158,6 @@ TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable::lookup (const char *str, unsigned int
 static TAO_OldArray_AMH_A_i_Perfect_Hash_OpTable tao_OldArray_AMH_A_i_optable;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_OldArray::AMH_A_i::AMH_A_i ()
@@ -173,9 +165,6 @@ POA_OldArray::AMH_A_i::AMH_A_i ()
   this->optable_ = std::addressof (tao_OldArray_AMH_A_i_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_OldArray::AMH_A_i::op_skel (
@@ -187,7 +176,7 @@ POA_OldArray::AMH_A_i::op_skel (
     dynamic_cast<POA_OldArray::AMH_A_i *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::OldArray::A a1;
   ::OldArray::A a2;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -197,37 +186,34 @@ POA_OldArray::AMH_A_i::op_skel (
       (_tao_in >> a2)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldArray::TAO_AMH_A_iResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldArray::TAO_AMH_A_iResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op (
       safe_rd_.get (),
       a1,
       a2
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
-
 void
 POA_OldArray::AMH_A_i::op2_skel (
     TAO_ServerRequest & _tao_server_request,
@@ -238,7 +224,7 @@ POA_OldArray::AMH_A_i::op2_skel (
     dynamic_cast<POA_OldArray::AMH_A_i *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::OldArray::str22 a1;
   ::OldArray::str22_forany _tao_forany_a1 (
       a1
@@ -254,37 +240,34 @@ POA_OldArray::AMH_A_i::op2_skel (
       (_tao_in >> _tao_forany_a2)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldArray::TAO_AMH_A_iResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldArray::TAO_AMH_A_iResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op2 (
       safe_rd_.get (),
       (const ::OldArray::str22_slice *) a1,
       (const ::OldArray::str22_slice *) a2
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
-
 void
 POA_OldArray::AMH_A_i::op4_skel (
     TAO_ServerRequest & _tao_server_request,
@@ -295,7 +278,7 @@ POA_OldArray::AMH_A_i::op4_skel (
     dynamic_cast<POA_OldArray::AMH_A_i *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::OldArray::A a1;
   ::OldArray::A a2;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
@@ -305,37 +288,34 @@ POA_OldArray::AMH_A_i::op4_skel (
       (_tao_in >> a2)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldArray::TAO_AMH_A_iResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldArray::TAO_AMH_A_iResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->op4 (
       safe_rd_.get (),
       a1,
       a2
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
-
 void
 POA_OldArray::AMH_A_i::_get_attribute_array_skel (
     TAO_ServerRequest & _tao_server_request,
@@ -346,35 +326,32 @@ POA_OldArray::AMH_A_i::_get_attribute_array_skel (
     dynamic_cast<POA_OldArray::AMH_A_i *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldArray::TAO_AMH_A_iResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldArray::TAO_AMH_A_iResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->attribute_array (
       safe_rd_.get ()
     );
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
-
 void
 POA_OldArray::AMH_A_i::_set_attribute_array_skel (
     TAO_ServerRequest & _tao_server_request,
@@ -385,7 +362,7 @@ POA_OldArray::AMH_A_i::_set_attribute_array_skel (
     dynamic_cast<POA_OldArray::AMH_A_i *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::OldArray::str22 attribute_array;
   ::OldArray::str22_forany _tao_forany_attribute_array (
       attribute_array
@@ -398,37 +375,34 @@ POA_OldArray::AMH_A_i::_set_attribute_array_skel (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_OldArray::TAO_AMH_A_iResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_OldArray::TAO_AMH_A_iResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_OldArray::TAO_AMH_A_iResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->attribute_array (
       safe_rd_.get (),
       (const ::OldArray::str22_slice *) attribute_array
     );
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -447,9 +421,6 @@ const char* POA_OldArray::AMH_A_i::_interface_repository_id () const
 {
   return "IDL:OldArray/A_i:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_OldArray::AMH_A_i::_dispatch (
     TAO_ServerRequest &req,
@@ -457,9 +428,6 @@ POA_OldArray::AMH_A_i::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 OldArray::A_i*
 POA_OldArray::AMH_A_i::_this ()
 {
@@ -470,13 +438,10 @@ POA_OldArray::AMH_A_i::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::OldArray::A_i>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_OldArray_A_i_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -490,6 +455,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_OldArray_A_i_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_OldArray_A_i_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -560,7 +526,7 @@ TAO_OldArray_A_i_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len
             {
               const char *s = wordlist[slot].opname;
 
-              if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+              if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
                 return &wordlist[slot];
             }
           else if (slot < 0 && slot >= -MAX_HASH_VALUE)
@@ -572,7 +538,7 @@ TAO_OldArray_A_i_Perfect_Hash_OpTable::lookup (const char *str, unsigned int len
               const TAO_operation_db_entry *ptr = base + -lookup[offset + 1];
 
               while (--ptr >= base)
-                if (*str == *ptr->opname && !ACE_OS::strncmp (str + 1, ptr->opname + 1, len - 1))
+                if (*str == *ptr->opname && !std::strncmp (str + 1, ptr->opname + 1, len - 1))
                   return ptr;
             }
         }
@@ -591,22 +557,19 @@ POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::~_TAO_A_i_Direct_Proxy_Impl ()
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::A_i_ptr _tao_ptr = 
+  POA_OldArray::A_i_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::A_i_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::OldArray::A>::ret_val *) args[0])->arg () =
     _tao_ptr->op (
           ((TAO::Arg_Traits< ::OldArray::A>::in_arg_val *) args[1])->arg (),
@@ -616,22 +579,19 @@ POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op2 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::A_i_ptr _tao_ptr = 
+  POA_OldArray::A_i_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::A_i_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::OldArray::str22_tag>::ret_val *) args[0])->arg () =
     _tao_ptr->op2 (
           ((TAO::Arg_Traits< ::OldArray::str22_tag>::in_arg_val *) args[1])->arg (),
@@ -641,22 +601,19 @@ POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op2 (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op4 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::A_i_ptr _tao_ptr = 
+  POA_OldArray::A_i_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::A_i_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::OldArray::A_matrix_tag>::ret_val *) args[0])->arg () =
     _tao_ptr->op4 (
           ((TAO::Arg_Traits< ::OldArray::A>::in_arg_val *) args[1])->arg (),
@@ -666,44 +623,38 @@ POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::op4 (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::_get_attribute_array (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::A_i_ptr _tao_ptr = 
+  POA_OldArray::A_i_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::A_i_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   ((TAO::Arg_Traits< ::OldArray::str22_tag>::ret_val *) args[0])->arg () =
     _tao_ptr->attribute_array (
         );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::_set_attribute_array (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::A_i_ptr _tao_ptr = 
+  POA_OldArray::A_i_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::A_i_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->attribute_array (
         ((TAO::Arg_Traits< ::OldArray::str22_tag>::in_arg_val *) args[1])->arg ()
       );
@@ -716,9 +667,6 @@ POA_OldArray::_TAO_A_i_Direct_Proxy_Impl::_set_attribute_array (
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_OldArray::A_i::A_i ()
@@ -729,9 +677,6 @@ POA_OldArray::A_i::A_i ()
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op_A_i
     : public TAO::Upcall_Command
@@ -753,41 +698,38 @@ namespace POA_OldArray
         TAO::Portable_Server::get_ret_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_);
-      
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_1 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::inout_arg_type arg_2 =
         TAO::Portable_Server::get_inout_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::out_arg_type arg_3 =
         TAO::Portable_Server::get_out_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       retval =
         this->servant_->op (
           arg_1
           , arg_2
           , arg_3);
     }
-  
+
   private:
     POA_OldArray::A_i * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::A_i::op_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -804,7 +746,7 @@ void POA_OldArray::A_i::op_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::A_i * const impl =
     dynamic_cast<POA_OldArray::A_i *> (servant);
 
@@ -817,7 +759,7 @@ void POA_OldArray::A_i::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -834,9 +776,6 @@ void POA_OldArray::A_i::op_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op2_A_i
     : public TAO::Upcall_Command
@@ -858,41 +797,38 @@ namespace POA_OldArray
         TAO::Portable_Server::get_ret_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_);
-      
+
       TAO::SArg_Traits< ::OldArray::str22_tag>::in_arg_type arg_1 =
         TAO::Portable_Server::get_in_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::str22_tag>::inout_arg_type arg_2 =
         TAO::Portable_Server::get_inout_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::str22_tag>::out_arg_type arg_3 =
         TAO::Portable_Server::get_out_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       retval =
         this->servant_->op2 (
           arg_1
           , arg_2
           , arg_3);
     }
-  
+
   private:
     POA_OldArray::A_i * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::A_i::op2_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -909,7 +845,7 @@ void POA_OldArray::A_i::op2_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::A_i * const impl =
     dynamic_cast<POA_OldArray::A_i *> (servant);
 
@@ -922,7 +858,7 @@ void POA_OldArray::A_i::op2_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -939,9 +875,6 @@ void POA_OldArray::A_i::op2_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op4_A_i
     : public TAO::Upcall_Command
@@ -963,41 +896,38 @@ namespace POA_OldArray
         TAO::Portable_Server::get_ret_arg< ::OldArray::A_matrix_tag> (
           this->operation_details_,
           this->args_);
-      
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_1 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::inout_arg_type arg_2 =
         TAO::Portable_Server::get_inout_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::out_arg_type arg_3 =
         TAO::Portable_Server::get_out_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       retval =
         this->servant_->op4 (
           arg_1
           , arg_2
           , arg_3);
     }
-  
+
   private:
     POA_OldArray::A_i * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::A_i::op4_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -1014,7 +944,7 @@ void POA_OldArray::A_i::op4_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::A_i * const impl =
     dynamic_cast<POA_OldArray::A_i *> (servant);
 
@@ -1027,7 +957,7 @@ void POA_OldArray::A_i::op4_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1044,9 +974,6 @@ void POA_OldArray::A_i::op4_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class _get_attribute_array_A_i
     : public TAO::Upcall_Command
@@ -1068,20 +995,17 @@ namespace POA_OldArray
         TAO::Portable_Server::get_ret_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_);
-      
+
       retval =
         this->servant_->attribute_array ();
     }
-  
+
   private:
     POA_OldArray::A_i * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::A_i::_get_attribute_array_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -1092,7 +1016,7 @@ void POA_OldArray::A_i::_get_attribute_array_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_OldArray::A_i * const impl =
     dynamic_cast<POA_OldArray::A_i *> (servant);
 
@@ -1105,7 +1029,7 @@ void POA_OldArray::A_i::_get_attribute_array_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1122,9 +1046,6 @@ void POA_OldArray::A_i::_get_attribute_array_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class _set_attribute_array_A_i
     : public TAO::Upcall_Command
@@ -1147,20 +1068,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->attribute_array (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::A_i * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::A_i::_set_attribute_array_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -1173,7 +1091,7 @@ void POA_OldArray::A_i::_set_attribute_array_skel (
       std::addressof(retval),
       std::addressof(_tao_attribute_array)
     };
-  
+
   POA_OldArray::A_i * const impl =
     dynamic_cast<POA_OldArray::A_i *> (servant);
 
@@ -1186,7 +1104,7 @@ void POA_OldArray::A_i::_set_attribute_array_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1202,9 +1120,6 @@ void POA_OldArray::A_i::_set_attribute_array_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -1225,9 +1140,6 @@ const char* POA_OldArray::A_i::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_OldArray::A_i::_dispatch (
@@ -1237,9 +1149,6 @@ void POA_OldArray::A_i::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -1256,12 +1165,6 @@ POA_OldArray::A_i::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
 
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op (
@@ -1279,12 +1182,9 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op_excep (
   ::OldArray::AMH_A_iExceptionHolder * holder)
@@ -1298,9 +1198,6 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op2 (
   const ::OldArray::str22 return_value,
@@ -1317,12 +1214,9 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op2 (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op2_excep (
   ::OldArray::AMH_A_iExceptionHolder * holder)
@@ -1336,9 +1230,6 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op2_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op4 (
   const ::OldArray::A_matrix return_value,
@@ -1355,12 +1246,9 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op4 (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::op4_excep (
   ::OldArray::AMH_A_iExceptionHolder * holder)
@@ -1374,9 +1262,6 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::op4_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::get_attribute_array (
   const ::OldArray::str22 return_value)
@@ -1389,12 +1274,9 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::get_attribute_array (
     {
       throw ::CORBA::MARSHAL();
     }
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::get_attribute_array_excep (
   ::OldArray::AMH_A_iExceptionHolder * holder)
@@ -1408,20 +1290,14 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::get_attribute_array_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::set_attribute_array ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_OldArray::TAO_AMH_A_iResponseHandler::set_attribute_array_excep (
   ::OldArray::AMH_A_iExceptionHolder * holder)
@@ -1435,9 +1311,6 @@ POA_OldArray::TAO_AMH_A_iResponseHandler::set_attribute_array_excep (
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_OldArray_AMI_A_iHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -1451,6 +1324,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_OldArray_AMI_A_iHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_OldArray_AMI_A_iHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -1527,7 +1401,7 @@ TAO_OldArray_AMI_A_iHandler_Perfect_Hash_OpTable::lookup (const char *str, unsig
             {
               const char *s = wordlist[slot].opname;
 
-              if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+              if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
                 return &wordlist[slot];
             }
           else if (slot < 0 && slot >= -MAX_HASH_VALUE)
@@ -1539,7 +1413,7 @@ TAO_OldArray_AMI_A_iHandler_Perfect_Hash_OpTable::lookup (const char *str, unsig
               const TAO_operation_db_entry *ptr = base + -lookup[offset + 1];
 
               while (--ptr >= base)
-                if (*str == *ptr->opname && !ACE_OS::strncmp (str + 1, ptr->opname + 1, len - 1))
+                if (*str == *ptr->opname && !std::strncmp (str + 1, ptr->opname + 1, len - 1))
                   return ptr;
             }
         }
@@ -1558,22 +1432,19 @@ POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::~_TAO_AMI_A_iHandler_Direct
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op (
         ((TAO::Arg_Traits< ::OldArray::A>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::OldArray::A>::in_arg_val *) args[2])->arg (),
@@ -1582,44 +1453,38 @@ POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op2 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op2 (
         ((TAO::Arg_Traits< ::OldArray::str22_tag>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::OldArray::str22_tag>::in_arg_val *) args[2])->arg (),
@@ -1628,44 +1493,38 @@ POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op2 (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op2_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op2_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op4 (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op4 (
         ((TAO::Arg_Traits< ::OldArray::A_matrix_tag>::in_arg_val *) args[1])->arg (),
         ((TAO::Arg_Traits< ::OldArray::A>::in_arg_val *) args[2])->arg (),
@@ -1674,109 +1533,94 @@ POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op4 (
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::op4_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->op4_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::get_attribute_array (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->get_attribute_array (
         ((TAO::Arg_Traits< ::OldArray::str22_tag>::in_arg_val *) args[1])->arg ()
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::get_attribute_array_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->get_attribute_array_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::set_attribute_array (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument **)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->set_attribute_array (
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::set_attribute_array_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr = 
+  POA_OldArray::AMI_A_iHandler_ptr _tao_ptr =
     dynamic_cast<POA_OldArray::AMI_A_iHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->set_attribute_array_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -1789,9 +1633,6 @@ POA_OldArray::_TAO_AMI_A_iHandler_Direct_Proxy_Impl::set_attribute_array_excep (
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_OldArray::AMI_A_iHandler::AMI_A_iHandler ()
@@ -1802,9 +1643,6 @@ POA_OldArray::AMI_A_iHandler::AMI_A_iHandler ()
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -1827,34 +1665,31 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_2 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_3 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       this->servant_->op (
         arg_1
         , arg_2
         , arg_3);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -1871,7 +1706,7 @@ void POA_OldArray::AMI_A_iHandler::op_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -1884,7 +1719,7 @@ void POA_OldArray::AMI_A_iHandler::op_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1901,9 +1736,6 @@ void POA_OldArray::AMI_A_iHandler::op_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op_excep_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -1926,20 +1758,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->op_excep (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -1952,7 +1781,7 @@ void POA_OldArray::AMI_A_iHandler::op_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -1965,7 +1794,7 @@ void POA_OldArray::AMI_A_iHandler::op_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -1982,9 +1811,6 @@ void POA_OldArray::AMI_A_iHandler::op_excep_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op2_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2007,34 +1833,31 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::str22_tag>::in_arg_type arg_2 =
         TAO::Portable_Server::get_in_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::str22_tag>::in_arg_type arg_3 =
         TAO::Portable_Server::get_in_arg< ::OldArray::str22_tag> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       this->servant_->op2 (
         arg_1
         , arg_2
         , arg_3);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op2_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2051,7 +1874,7 @@ void POA_OldArray::AMI_A_iHandler::op2_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2064,7 +1887,7 @@ void POA_OldArray::AMI_A_iHandler::op2_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2081,9 +1904,6 @@ void POA_OldArray::AMI_A_iHandler::op2_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op2_excep_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2106,20 +1926,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->op2_excep (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op2_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2132,7 +1949,7 @@ void POA_OldArray::AMI_A_iHandler::op2_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2145,7 +1962,7 @@ void POA_OldArray::AMI_A_iHandler::op2_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2162,9 +1979,6 @@ void POA_OldArray::AMI_A_iHandler::op2_excep_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op4_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2187,34 +2001,31 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_2 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           2);
-        
+
       TAO::SArg_Traits< ::OldArray::A>::in_arg_type arg_3 =
         TAO::Portable_Server::get_in_arg< ::OldArray::A> (
           this->operation_details_,
           this->args_,
           3);
-        
+
       this->servant_->op4 (
         arg_1
         , arg_2
         , arg_3);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op4_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2231,7 +2042,7 @@ void POA_OldArray::AMI_A_iHandler::op4_skel (
       std::addressof(_tao_a2),
       std::addressof(_tao_a3)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2244,7 +2055,7 @@ void POA_OldArray::AMI_A_iHandler::op4_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2261,9 +2072,6 @@ void POA_OldArray::AMI_A_iHandler::op4_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class op4_excep_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2286,20 +2094,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->op4_excep (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::op4_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2312,7 +2117,7 @@ void POA_OldArray::AMI_A_iHandler::op4_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2325,7 +2130,7 @@ void POA_OldArray::AMI_A_iHandler::op4_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2342,9 +2147,6 @@ void POA_OldArray::AMI_A_iHandler::op4_excep_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class get_attribute_array_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2367,20 +2169,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->get_attribute_array (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::get_attribute_array_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2393,7 +2192,7 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_skel (
       std::addressof(retval),
       std::addressof(_tao_ami_return_val)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2406,7 +2205,7 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2423,9 +2222,6 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class get_attribute_array_excep_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2448,20 +2244,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->get_attribute_array_excep (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::get_attribute_array_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2474,7 +2267,7 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2487,7 +2280,7 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2504,9 +2297,6 @@ void POA_OldArray::AMI_A_iHandler::get_attribute_array_excep_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class set_attribute_array_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2522,14 +2312,11 @@ namespace POA_OldArray
     {
       this->servant_->set_attribute_array ();
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::set_attribute_array_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2540,7 +2327,7 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2551,7 +2338,7 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_skel (
 
   set_attribute_array_AMI_A_iHandler command (
     impl);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2568,9 +2355,6 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_skel (
 
 namespace POA_OldArray
 {
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
   class set_attribute_array_excep_AMI_A_iHandler
     : public TAO::Upcall_Command
@@ -2593,20 +2377,17 @@ namespace POA_OldArray
           this->operation_details_,
           this->args_,
           1);
-        
+
       this->servant_->set_attribute_array_excep (
         arg_1);
     }
-  
+
   private:
     POA_OldArray::AMI_A_iHandler * const servant_;
     TAO_Operation_Details const * const operation_details_;
     TAO::Argument * const * const args_;
   };
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_OldArray::AMI_A_iHandler::set_attribute_array_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
@@ -2619,7 +2400,7 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_OldArray::AMI_A_iHandler * const impl =
     dynamic_cast<POA_OldArray::AMI_A_iHandler *> (servant);
 
@@ -2632,7 +2413,7 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -2648,9 +2429,6 @@ void POA_OldArray::AMI_A_iHandler::set_attribute_array_excep_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -2672,9 +2450,6 @@ const char* POA_OldArray::AMI_A_iHandler::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_OldArray::AMI_A_iHandler::_dispatch (
@@ -2684,9 +2459,6 @@ void POA_OldArray::AMI_A_iHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

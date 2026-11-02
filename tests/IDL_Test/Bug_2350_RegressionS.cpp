@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_BUG_2350_REGRESSIONS_R51FH5_CPP_
-#define _TAO_IDL_BUG_2350_REGRESSIONS_R51FH5_CPP_
+#ifndef _TAO_IDL_BUG_2350_REGRESSIONS_O788VY_CPP_
+#define _TAO_IDL_BUG_2350_REGRESSIONS_O788VY_CPP_
 
 
 #include "Bug_2350_RegressionS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -129,7 +124,7 @@ TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable::lookup (const char *str, unsig
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -139,9 +134,6 @@ TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable::lookup (const char *str, unsig
 static TAO_AMH_Bug_2350_Regression_Perfect_Hash_OpTable tao_AMH_Bug_2350_Regression_optable;
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_AMH_Bug_2350_Regression::POA_AMH_Bug_2350_Regression ()
@@ -149,9 +141,6 @@ POA_AMH_Bug_2350_Regression::POA_AMH_Bug_2350_Regression ()
   this->optable_ = std::addressof (tao_AMH_Bug_2350_Regression_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_ss.cpp:303
 
 void
 POA_AMH_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
@@ -163,7 +152,7 @@ POA_AMH_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
     dynamic_cast<POA_AMH_Bug_2350_Regression *> (_tao_servant);
   if (!_tao_impl)
     throw ::CORBA::INTERNAL ();
-  
+
   ::user_ExceptionHolder a;
   TAO_InputCDR & _tao_in = *_tao_server_request.incoming ();
 
@@ -171,37 +160,34 @@ POA_AMH_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
       (_tao_in >> a)
     ))
     throw ::CORBA::MARSHAL();
-  
+
   TAO_ORB_Core *orb_core =
     _tao_server_request.orb ()->orb_core ();
-  
+
   TAO_AMH_BUFFER_ALLOCATOR* amh_allocator =
     orb_core->lane_resources ().amh_response_handler_allocator ();
-  
+
   TAO::TAO_Buffer_Allocator<
       POA_TAO_AMH_Bug_2350_RegressionResponseHandler,
       TAO_AMH_BUFFER_ALLOCATOR
     > buffer_allocator (amh_allocator);
-  
-  POA_TAO_AMH_Bug_2350_RegressionResponseHandler_ptr _tao_rh_ptr = 
+
+  POA_TAO_AMH_Bug_2350_RegressionResponseHandler_ptr _tao_rh_ptr =
     buffer_allocator.allocate();
-  
-  if (!_tao_rh_ptr) 
+
+  if (!_tao_rh_ptr)
     throw ::CORBA::NO_MEMORY ();
-  
+
   _tao_rh_ptr->init (_tao_server_request, amh_allocator);
-  
+
   ACE_Utils::Auto_Functor <POA_TAO_AMH_Bug_2350_RegressionResponseHandler, TAO::ARH_Refcount_Functor> safe_rd_(_tao_rh_ptr);
-  
+
   _tao_impl->Bug_2350_Regression_excep (
       safe_rd_.get (),
       a
     );
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -220,9 +206,6 @@ const char* POA_AMH_Bug_2350_Regression::_interface_repository_id () const
 {
   return "IDL:Bug_2350_Regression:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_AMH_Bug_2350_Regression::_dispatch (
     TAO_ServerRequest &req,
@@ -230,9 +213,6 @@ POA_AMH_Bug_2350_Regression::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 Bug_2350_Regression*
 POA_AMH_Bug_2350_Regression::_this ()
 {
@@ -243,13 +223,10 @@ POA_AMH_Bug_2350_Regression::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::Bug_2350_Regression>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_Bug_2350_Regression_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -263,6 +240,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_Bug_2350_Regression_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_Bug_2350_Regression_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -322,7 +300,7 @@ TAO_Bug_2350_Regression_Perfect_Hash_OpTable::lookup (const char *str, unsigned 
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -340,22 +318,19 @@ _TAO_Bug_2350_Regression_Direct_Proxy_Impl::~_TAO_Bug_2350_Regression_Direct_Pro
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 _TAO_Bug_2350_Regression_Direct_Proxy_Impl::Bug_2350_Regression_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_Bug_2350_Regression_ptr _tao_ptr = 
+  POA_Bug_2350_Regression_ptr _tao_ptr =
     dynamic_cast<POA_Bug_2350_Regression_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->Bug_2350_Regression_excep (
         ((TAO::Arg_Traits< ::user_ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -368,9 +343,6 @@ _TAO_Bug_2350_Regression_Direct_Proxy_Impl::Bug_2350_Regression_excep (
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_Bug_2350_Regression::POA_Bug_2350_Regression ()
@@ -378,9 +350,6 @@ POA_Bug_2350_Regression::POA_Bug_2350_Regression ()
   this->optable_ = std::addressof (tao_Bug_2350_Regression_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
 class Bug_2350_Regression_excep_Bug_2350_Regression
   : public TAO::Upcall_Command
@@ -403,7 +372,7 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
+
     this->servant_->Bug_2350_Regression_excep (
       arg_1);
   }
@@ -413,20 +382,17 @@ private:
   TAO_Operation_Details const * const operation_details_;
   TAO::Argument * const * const args_;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       _tc_something
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -437,7 +403,7 @@ void POA_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_a)
     };
-  
+
   POA_Bug_2350_Regression * const impl =
     dynamic_cast<POA_Bug_2350_Regression *> (servant);
 
@@ -450,7 +416,7 @@ void POA_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -466,9 +432,6 @@ void POA_Bug_2350_Regression::Bug_2350_Regression_excep_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -489,9 +452,6 @@ const char* POA_Bug_2350_Regression::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_Bug_2350_Regression::_dispatch (
@@ -501,9 +461,6 @@ void POA_Bug_2350_Regression::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -520,24 +477,15 @@ POA_Bug_2350_Regression::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
 
 void
 POA_TAO_AMH_Bug_2350_RegressionResponseHandler::Bug_2350_Regression_excep ()
 {
   this->_tao_rh_init_reply ();
 
-  
+
   this->_tao_rh_send_reply ();
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/amh_rh_ss.cpp:76
-
 void
 POA_TAO_AMH_Bug_2350_RegressionResponseHandler::Bug_2350_Regression_excep_excep (
   ::AMH_Bug_2350_RegressionExceptionHolder * holder)
@@ -551,9 +499,6 @@ POA_TAO_AMH_Bug_2350_RegressionResponseHandler::Bug_2350_Regression_excep_excep 
     this->_tao_rh_send_exception (ex);
   }
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_AMI_Bug_2350_RegressionHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -567,6 +512,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_AMI_Bug_2350_RegressionHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_AMI_Bug_2350_RegressionHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -628,7 +574,7 @@ TAO_AMI_Bug_2350_RegressionHandler_Perfect_Hash_OpTable::lookup (const char *str
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -646,43 +592,37 @@ _TAO_AMI_Bug_2350_RegressionHandler_Direct_Proxy_Impl::~_TAO_AMI_Bug_2350_Regres
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 _TAO_AMI_Bug_2350_RegressionHandler_Direct_Proxy_Impl::Bug_2350_Regression_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument **)
-  
+
 {
-  POA_AMI_Bug_2350_RegressionHandler_ptr _tao_ptr = 
+  POA_AMI_Bug_2350_RegressionHandler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_Bug_2350_RegressionHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->Bug_2350_Regression_excep (
       );
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/direct_proxy_impl_ss.cpp:56
-
 void
 _TAO_AMI_Bug_2350_RegressionHandler_Direct_Proxy_Impl::Bug_2350_Regression_excep_excep (
     TAO_Abstract_ServantBase  *servant,
     TAO::Argument ** args)
-  
+
 {
-  POA_AMI_Bug_2350_RegressionHandler_ptr _tao_ptr = 
+  POA_AMI_Bug_2350_RegressionHandler_ptr _tao_ptr =
     dynamic_cast<POA_AMI_Bug_2350_RegressionHandler_ptr> (servant);
   if (!_tao_ptr)
     {
       throw ::CORBA::INTERNAL ();
     }
-  
+
   _tao_ptr->Bug_2350_Regression_excep_excep (
         ((TAO::Arg_Traits< ::Messaging::ExceptionHolder>::in_arg_val *) args[1])->arg ()
       );
@@ -695,9 +635,6 @@ _TAO_AMI_Bug_2350_RegressionHandler_Direct_Proxy_Impl::Bug_2350_Regression_excep
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_AMI_Bug_2350_RegressionHandler::POA_AMI_Bug_2350_RegressionHandler ()
@@ -705,9 +642,6 @@ POA_AMI_Bug_2350_RegressionHandler::POA_AMI_Bug_2350_RegressionHandler ()
   this->optable_ = std::addressof (tao_AMI_Bug_2350_RegressionHandler_optable);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
 class Bug_2350_Regression_excep_AMI_Bug_2350_RegressionHandler
   : public TAO::Upcall_Command
@@ -727,20 +661,17 @@ public:
 private:
   POA_AMI_Bug_2350_RegressionHandler * const servant_;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       _tc_something
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -749,7 +680,7 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_skel (
     {
       std::addressof(retval)
     };
-  
+
   POA_AMI_Bug_2350_RegressionHandler * const impl =
     dynamic_cast<POA_AMI_Bug_2350_RegressionHandler *> (servant);
 
@@ -760,7 +691,7 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_skel (
 
   Bug_2350_Regression_excep_AMI_Bug_2350_RegressionHandler command (
     impl);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -774,9 +705,6 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_skel (
                          );
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/upcall_command_ss.cpp:79
 
 class Bug_2350_Regression_excep_excep_AMI_Bug_2350_RegressionHandler
   : public TAO::Upcall_Command
@@ -799,7 +727,26 @@ public:
         this->operation_details_,
         this->args_,
         1);
-      
+
+
+
+    static TAO::Exception_Data
+    _tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_excep_exceptiondata [] =
+      {
+        {
+          "IDL:something:1.0",
+          something::_alloc
+#if TAO_HAS_INTERCEPTORS == 1
+          , _tc_something
+#endif /* TAO_HAS_INTERCEPTORS */
+        }
+      };
+    TAO::ExceptionHolder *tao_excepholder = dynamic_cast<TAO::ExceptionHolder *> (arg_1);
+    if (tao_excepholder)
+      {
+        tao_excepholder->set_exception_data (_tao_AMI_Bug_2350_RegressionHandler_Bug_2350_Regression_excep_excep_exceptiondata, 1);
+      }
+
     this->servant_->Bug_2350_Regression_excep_excep (
       arg_1);
   }
@@ -809,20 +756,17 @@ private:
   TAO_Operation_Details const * const operation_details_;
   TAO::Argument * const * const args_;
 };
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_ss.cpp:167
-
 void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
   TAO_ServantBase *servant)
 {
 #if TAO_HAS_INTERCEPTORS == 1
-  static ::CORBA::TypeCode_ptr const exceptions[] = 
+  static ::CORBA::TypeCode_ptr const exceptions[] =
     {
       _tc_something
     };
-  
+
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
@@ -833,7 +777,7 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep_skel (
       std::addressof(retval),
       std::addressof(_tao_excep_holder)
     };
-  
+
   POA_AMI_Bug_2350_RegressionHandler * const impl =
     dynamic_cast<POA_AMI_Bug_2350_RegressionHandler *> (servant);
 
@@ -846,7 +790,7 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep_skel (
     impl,
     server_request.operation_details (),
     args);
-  
+
   TAO::Upcall_Wrapper upcall_wrapper;
   upcall_wrapper.upcall (server_request
                          , args
@@ -862,9 +806,6 @@ void POA_AMI_Bug_2350_RegressionHandler::Bug_2350_Regression_excep_excep_skel (
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -886,9 +827,6 @@ const char* POA_AMI_Bug_2350_RegressionHandler::_interface_repository_id () cons
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_AMI_Bug_2350_RegressionHandler::_dispatch (
@@ -898,9 +836,6 @@ void POA_AMI_Bug_2350_RegressionHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 

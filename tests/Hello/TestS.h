@@ -22,9 +22,6 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:454
-
 #ifndef _TAO_IDL_TESTS_J1J3ZF_H_
 #define _TAO_IDL_TESTS_J1J3ZF_H_
 
@@ -44,9 +41,6 @@
 
 #include "tao/PortableServer/PortableServer.h"
 #include "tao/PortableServer/Servant_Base.h"
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:64
-
 
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -55,10 +49,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 // Arg traits specializations.
 namespace TAO
 {
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_arg_traits.cpp:142
 
-  
 
 #if !defined (_TEST_HELLO__SARG_TRAITS_)
 #define _TEST_HELLO__SARG_TRAITS_
@@ -79,33 +70,27 @@ namespace TAO
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:34
-
 namespace POA_Test
 {
-  
 
-  
-  // TAO_IDL - Generated from
-  // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_sh.cpp:72
 
-  
+
+
 
   class Hello;
-  typedef Hello *Hello_ptr;
+  using Hello_ptr = Hello *;
 
   class  Hello
     : public virtual PortableServer::ServantBase
   {
   protected:
     Hello ();
-  
+
   public:
     /// Useful for template programming.
-    typedef ::Test::Hello _stub_type;
-    typedef ::Test::Hello_ptr _stub_ptr_type;
-    typedef ::Test::Hello_var _stub_var_type;
+    using _stub_type = ::Test::Hello;
+    using _stub_ptr_type = ::Test::Hello_ptr;
+    using _stub_var_type = ::Test::Hello_var;
 
     Hello (const Hello& rhs) = default;
     virtual ~Hello () = default;
@@ -115,22 +100,16 @@ namespace POA_Test
     virtual void _dispatch (
         TAO_ServerRequest & req,
         TAO::Portable_Server::Servant_Upcall *servant_upcall);
-    
-    ::Test::Hello *_this ();
-    
-    virtual const char* _interface_repository_id () const;
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
 
+    ::Test::Hello *_this ();
+
+    virtual const char* _interface_repository_id () const;
     virtual char * get_string () = 0;
 
     static void get_string_skel (
         TAO_ServerRequest &server_request,
         TAO::Portable_Server::Servant_Upcall *servant_upcall,
         TAO_ServantBase *servant);
-    // TAO_IDL - Generated from
-    // /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_operation/operation_sh.cpp:35
-
     virtual void shutdown () = 0;
 
     static void shutdown_skel (
@@ -139,9 +118,6 @@ namespace POA_Test
         TAO_ServantBase *servant);
   };
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_module/module_sh.cpp:65
 
 } // module Test
 

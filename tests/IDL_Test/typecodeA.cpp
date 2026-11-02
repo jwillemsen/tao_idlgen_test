@@ -26,6 +26,7 @@
 #include <memory>
 #include "tao/AnyTypeCode/Null_RefCount_Policy.h"
 #include "tao/AnyTypeCode/TypeCode_Constants.h"
+#include "tao/AnyTypeCode/Fixed_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Alias_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Objref_TypeCode_Static.h"
 #include "tao/AnyTypeCode/Sequence_TypeCode_Static.h"
@@ -35,12 +36,6 @@
 #include "tao/AnyTypeCode/Any.h"
 #include "tao/AnyTypeCode/Any_Impl_T.h"
 #include "tao/AnyTypeCode/Any_Dual_Impl_T.h"
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/alias_typecode.cpp:46
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_typecode/typecode_defn.cpp:454
 
 
 #ifndef _TAO_TYPECODE_MyModule_TypeCodeList_GUARD
@@ -60,7 +55,7 @@ namespace TAO
           ::CORBA::tk_sequence,
           &CORBA::_tc_TypeCode,
           0U);
-        
+
       ::CORBA::TypeCode_ptr const tc_MyModule_TypeCodeList_0 =
         &MyModule_TypeCodeList_0;
     }
@@ -79,15 +74,12 @@ static TAO::TypeCode::Alias<char const *,
     "IDL:MyModule/TypeCodeList:1.0",
     "TypeCodeList",
     &TAO::TypeCode::tc_MyModule_TypeCodeList_0);
-  
+
 
 namespace MyModule
 {
   ::CORBA::TypeCode_ptr const _tc_TypeCodeList = std::addressof(_tao_tc_MyModule_TypeCodeList);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_sequence/any_op_cs.cpp:43
-
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace CORBA {
@@ -96,7 +88,7 @@ namespace CORBA {
 /// Copying insertion.
 void operator<<= (
   ::CORBA::Any &_tao_any,
-  const ::MyModule::TypeCodeList &_tao_elem)
+  ::MyModule::TypeCodeList const &_tao_elem)
 {
   TAO::Any_Dual_Impl_T< ::MyModule::TypeCodeList>::insert_copy (
     _tao_any,
@@ -119,8 +111,8 @@ void operator<<= (
 
 /// Extraction to const pointer.
 ::CORBA::Boolean operator>>= (
-  const ::CORBA::Any &_tao_any,
-  const ::MyModule::TypeCodeList *&_tao_elem)
+  ::CORBA::Any const &_tao_any,
+  ::MyModule::TypeCodeList const *&_tao_elem)
 {
   return TAO::Any_Dual_Impl_T< ::MyModule::TypeCodeList>::extract (
     _tao_any,

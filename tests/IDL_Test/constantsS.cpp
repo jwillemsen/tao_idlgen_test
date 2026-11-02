@@ -22,11 +22,8 @@
  *     https://www.dre.vanderbilt.edu/~schmidt/TAO.html
  **/
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_codegen.cpp:631
-
-#ifndef _TAO_IDL_CONSTANTSS_NFLXZY_CPP_
-#define _TAO_IDL_CONSTANTSS_NFLXZY_CPP_
+#ifndef _TAO_IDL_CONSTANTSS_114FC2_CPP_
+#define _TAO_IDL_CONSTANTSS_114FC2_CPP_
 
 
 #include "constantsS.h"
@@ -54,9 +51,6 @@
 #include "ace/Dynamic_Service.h"
 #include "ace/Malloc_Allocator.h"
 #include <cstring>
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -70,6 +64,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -127,7 +122,7 @@ TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable::lookup (const char *str, unsi
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -136,9 +131,6 @@ TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable::lookup (const char *str, unsi
 
 static TAO_ClassConstants_AMH_Iface_Perfect_Hash_OpTable tao_ClassConstants_AMH_Iface_optable;
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
 
 
 
@@ -149,9 +141,6 @@ POA_ClassConstants::AMH_Iface::AMH_Iface ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -170,9 +159,6 @@ const char* POA_ClassConstants::AMH_Iface::_interface_repository_id () const
 {
   return "IDL:ClassConstants/Iface:1.0";
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:106
-
 void
 POA_ClassConstants::AMH_Iface::_dispatch (
     TAO_ServerRequest &req,
@@ -180,9 +166,6 @@ POA_ClassConstants::AMH_Iface::_dispatch (
 {
   this->asynchronous_upcall_dispatch (req,context,this);
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_ss.cpp:64
-
 ClassConstants::Iface*
 POA_ClassConstants::AMH_Iface::_this ()
 {
@@ -193,13 +176,10 @@ POA_ClassConstants::AMH_Iface::_this ()
     {
       (void) stub.release ();
       return TAO::Narrow_Utils<::ClassConstants::Iface>::unchecked_narrow (obj.in ());
-      
+
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
-
 class TAO_ClassConstants_Iface_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
@@ -213,6 +193,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_ClassConstants_Iface_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_ClassConstants_Iface_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -270,7 +251,7 @@ TAO_ClassConstants_Iface_Perfect_Hash_OpTable::lookup (const char *str, unsigned
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -294,9 +275,6 @@ POA_ClassConstants::_TAO_Iface_Direct_Proxy_Impl::~_TAO_Iface_Direct_Proxy_Impl 
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_ClassConstants::Iface::Iface ()
@@ -306,9 +284,6 @@ POA_ClassConstants::Iface::Iface ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -329,9 +304,6 @@ const char* POA_ClassConstants::Iface::_interface_repository_id () const
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_ClassConstants::Iface::_dispatch (
@@ -341,9 +313,6 @@ void POA_ClassConstants::Iface::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
@@ -360,12 +329,6 @@ POA_ClassConstants::Iface::_this ()
     }
   return {};
 }
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/amh_rh_ss.cpp:67
-
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_interface.cpp:1853
 
 class TAO_ClassConstants_AMI_IfaceHandler_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
@@ -380,6 +343,7 @@ public:
 /* C++ code produced by gperf version 2.8 (ACE version) */
 /* Command-line: ace_gperf -m -M -J -c -C -D -E -T -f 0 -F 0,0 -a -o -t -p -K opname -L C++ -Z TAO_ClassConstants_AMI_IfaceHandler_Perfect_Hash_OpTable -N lookup */
 
+#include <cstring>
 unsigned int
 TAO_ClassConstants_AMI_IfaceHandler_Perfect_Hash_OpTable::hash (const char *str, unsigned int len)
 {
@@ -437,7 +401,7 @@ TAO_ClassConstants_AMI_IfaceHandler_Perfect_Hash_OpTable::lookup (const char *st
         {
           const char *s = wordlist[key].opname;
 
-          if (*str == *s && !ACE_OS::strncmp (str + 1, s + 1, len - 1))
+          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
             return &wordlist[key];
         }
     }
@@ -461,9 +425,6 @@ POA_ClassConstants::_TAO_AMI_IfaceHandler_Direct_Proxy_Impl::~_TAO_AMI_IfaceHand
 ///////////////////////////////////////////////////////////////////////
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:89
-
 
 
 POA_ClassConstants::AMI_IfaceHandler::AMI_IfaceHandler ()
@@ -474,9 +435,6 @@ POA_ClassConstants::AMI_IfaceHandler::AMI_IfaceHandler ()
 
 
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:139
 
 
 
@@ -498,9 +456,6 @@ const char* POA_ClassConstants::AMI_IfaceHandler::_interface_repository_id () co
 }
 
 
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:378
-
 
 
 void POA_ClassConstants::AMI_IfaceHandler::_dispatch (
@@ -510,9 +465,6 @@ void POA_ClassConstants::AMI_IfaceHandler::_dispatch (
   this->synchronous_upcall_dispatch (req, servant_upcall, this);
 }
 
-
-// TAO_IDL - Generated from
-// /home/johnny/ACE/trunk/TAO/TAO_IDL/be/be_visitor_interface/interface_ss.cpp:338
 
 
 
