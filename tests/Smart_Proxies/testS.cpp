@@ -51,16 +51,16 @@ class TAO_Test_Perfect_Hash_OpTable
   : public TAO_Perfect_Hash_OpTable
 {
 private:
-  std::size_t hash (char const *str, std::size_t len) override;
+  size_t hash (char const *str, size_t len) override;
 public:
-  TAO_operation_db_entry const * lookup (char const *str, std::size_t len) override;
+  TAO_operation_db_entry const * lookup (char const *str, size_t len) override;
 };
 
 /* C++ code produced by ACE gperf version 8.0.8 */
 /* Command-line: ace_gperf -m -M -J -Q -R -c -C -D -E -T -f 0 -F nullptr,nullptr -o -t -p -K opname -Z TAO_Test_Perfect_Hash_OpTable -N lookup */
 
-std::size_t
-TAO_Test_Perfect_Hash_OpTable::hash (char const *str, std::size_t len)
+size_t
+TAO_Test_Perfect_Hash_OpTable::hash (char const *str, size_t len)
 {
   static constexpr std::array<unsigned char, 128> asso_values =
     {
@@ -73,8 +73,8 @@ TAO_Test_Perfect_Hash_OpTable::hash (char const *str, std::size_t len)
      16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
      16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
      16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
-     16, 16, 16, 16, 16,  0, 16,  0, 16, 16,
-      0,  5, 16, 16, 16, 16, 16, 16, 16,  0,
+     16, 16, 16, 16, 16,  0, 16,  0,  2, 16,
+      0,  5, 16, 16, 16, 16, 16, 16, 16, 16,
       0, 16, 16, 16, 16,  0,  0, 16, 16, 16,
      16, 16, 16, 16, 16, 16, 16, 16,
     };
@@ -84,10 +84,10 @@ TAO_Test_Perfect_Hash_OpTable::hash (char const *str, std::size_t len)
 }
 
 TAO_operation_db_entry const *
-TAO_Test_Perfect_Hash_OpTable::lookup (char const *str, std::size_t len)
+TAO_Test_Perfect_Hash_OpTable::lookup (char const *str, size_t len)
 {
-  constexpr std::size_t MIN_WORD_LENGTH {5};
-  constexpr std::size_t MAX_WORD_LENGTH {14};
+  constexpr size_t MIN_WORD_LENGTH {5};
+  constexpr size_t MAX_WORD_LENGTH {14};
   constexpr int MIN_HASH_VALUE {5};
   constexpr int MAX_HASH_VALUE {15};
 
@@ -95,12 +95,13 @@ TAO_Test_Perfect_Hash_OpTable::lookup (char const *str, std::size_t len)
     {{
       {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
       {"_is_a", std::addressof(TAO_ServantBase::_is_a_thru_poa_skel), nullptr},
-      {"method", std::addressof(POA_Test::method_skel), nullptr},
       {"",nullptr,nullptr},
+      {"tickets", std::addressof(POA_Test::tickets_skel), nullptr},
       {"shutdown", std::addressof(POA_Test::shutdown_skel), nullptr},
       {"",nullptr,nullptr},
       {"_component", std::addressof(TAO_ServantBase::_component_thru_poa_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},
+      {"",nullptr,nullptr},
+      {"box_prices", std::addressof(POA_Test::box_prices_skel), nullptr},
       {"_non_existent", std::addressof(TAO_ServantBase::_non_existent_thru_poa_skel), nullptr},
       {"_repository_id", std::addressof(TAO_ServantBase::_repository_id_thru_poa_skel), nullptr},
       {"_interface", std::addressof(TAO_ServantBase::_interface_skel), nullptr},
@@ -108,7 +109,7 @@ TAO_Test_Perfect_Hash_OpTable::lookup (char const *str, std::size_t len)
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
     {
-      std::size_t const key = hash (str, len);
+      size_t const key = hash (str, len);
 
       if (key <= MAX_HASH_VALUE && key >= MIN_HASH_VALUE)
         {
@@ -128,10 +129,10 @@ POA_Test::POA_Test ()
   this->optable_ = std::addressof (tao_Test_optable);
 }
 
-class method_Test : public TAO::Upcall_Command
+class box_prices_Test : public TAO::Upcall_Command
 {
 public:
-  inline method_Test (POA_Test * servant,
+  inline box_prices_Test (POA_Test * servant,
     TAO_Operation_Details const * operation_details,
     TAO::Argument * const args[])
     : servant_ (servant)
@@ -143,15 +144,7 @@ public:
     TAO::SArg_Traits<::CORBA::Short>::ret_arg_type retval = TAO::Portable_Server::get_ret_arg<::CORBA::Short> (
       this->operation_details_,
       this->args_);
-    TAO::SArg_Traits<::CORBA::Short>::in_arg_type arg_1 =
-      TAO::Portable_Server::get_in_arg<::CORBA::Short> (
-        this->operation_details_,
-        this->args_,
-        1);
-
-    retval =
-      this->servant_->method (
-        arg_1);
+    retval = this->servant_->box_prices ();
   }
 
 private:
@@ -159,18 +152,16 @@ private:
   TAO_Operation_Details const * const operation_details_;
   TAO::Argument * const * const args_;
 };
-void POA_Test::method_skel (
+void POA_Test::box_prices_skel (
   TAO_ServerRequest & server_request,
   TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
   TAO_ServantBase *servant)
 {
   TAO::SArg_Traits<::CORBA::Short>::ret_val retval;
-  TAO::SArg_Traits<::CORBA::Short>::in_arg_val _tao_boo;
 
   TAO::Argument * const args[] =
     {
-      std::addressof(retval),
-      std::addressof(_tao_boo)
+      std::addressof(retval)
     };
 
   POA_Test * const impl = dynamic_cast<POA_Test *> (servant);
@@ -180,7 +171,77 @@ void POA_Test::method_skel (
       throw ::CORBA::INTERNAL ();
     }
 
-  method_Test command (
+  box_prices_Test command (
+    impl,
+    server_request.operation_details (),
+    args);
+
+  TAO::Upcall_Wrapper upcall_wrapper;
+  upcall_wrapper.upcall (server_request
+                         , args
+                         , 1
+                         , command
+#if TAO_HAS_INTERCEPTORS == 1
+                         , servant_upcall
+                         , nullptr
+                         , 0
+#endif  /* TAO_HAS_INTERCEPTORS == 1 */
+                         );
+}
+
+class tickets_Test : public TAO::Upcall_Command
+{
+public:
+  inline tickets_Test (POA_Test * servant,
+    TAO_Operation_Details const * operation_details,
+    TAO::Argument * const args[])
+    : servant_ (servant)
+      , operation_details_ (operation_details)
+      , args_ (args) {}
+
+  void execute () override
+  {
+    TAO::SArg_Traits<::CORBA::Long>::ret_arg_type retval = TAO::Portable_Server::get_ret_arg<::CORBA::Long> (
+      this->operation_details_,
+      this->args_);
+    TAO::SArg_Traits<::CORBA::Short>::in_arg_type arg_1 =
+      TAO::Portable_Server::get_in_arg<::CORBA::Short> (
+        this->operation_details_,
+        this->args_,
+        1);
+
+    retval =
+      this->servant_->tickets (
+        arg_1);
+  }
+
+private:
+  POA_Test * const servant_;
+  TAO_Operation_Details const * const operation_details_;
+  TAO::Argument * const * const args_;
+};
+void POA_Test::tickets_skel (
+  TAO_ServerRequest & server_request,
+  TAO::Portable_Server::Servant_Upcall *TAO_INTERCEPTOR (servant_upcall),
+  TAO_ServantBase *servant)
+{
+  TAO::SArg_Traits<::CORBA::Long>::ret_val retval;
+  TAO::SArg_Traits<::CORBA::Short>::in_arg_val _tao_number;
+
+  TAO::Argument * const args[] =
+    {
+      std::addressof(retval),
+      std::addressof(_tao_number)
+    };
+
+  POA_Test * const impl = dynamic_cast<POA_Test *> (servant);
+
+  if (!impl)
+    {
+      throw ::CORBA::INTERNAL ();
+    }
+
+  tickets_Test command (
     impl,
     server_request.operation_details (),
     args);

@@ -238,7 +238,7 @@ T_Data_T_init::tao_repository_id ()
 ::CORBA::ValueBase *
 T_Data_T_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_T_Data_T,

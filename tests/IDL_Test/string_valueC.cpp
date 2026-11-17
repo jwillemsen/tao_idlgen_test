@@ -203,7 +203,7 @@ include_test::StringTest_init::tao_repository_id ()
 ::CORBA::ValueBase *
 include_test::StringTest_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_include_test::StringTest,
@@ -227,7 +227,7 @@ OBV_include_test::StringTest::_copy_value ()
     ret_val,
     StringTest (
       (my_string_value () ?
-        CORBA::StringValue::_downcast (my_string_value ()->_copy_value ())
+        CORBA::StringValue::_downcast (::CORBA::ValueBase_var (my_string_value ()->_copy_value ()).in ())
         : 0)
     ),
     ::CORBA::NO_MEMORY ());

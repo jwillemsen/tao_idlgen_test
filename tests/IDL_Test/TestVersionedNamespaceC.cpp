@@ -339,7 +339,7 @@ M1::V_init::tao_repository_id ()
 ::CORBA::ValueBase *
 M1::V_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_M1::V,

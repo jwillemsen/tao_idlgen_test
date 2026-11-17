@@ -1366,7 +1366,7 @@ fwd_mixed_intf::AMH_concrete_parentExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 fwd_mixed_intf::AMH_concrete_parentExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_fwd_mixed_intf::AMH_concrete_parentExceptionHolder,
@@ -2429,7 +2429,7 @@ obv_fwd::EnclosingType_init::tao_repository_id ()
 ::CORBA::ValueBase *
 obv_fwd::EnclosingType_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_obv_fwd::EnclosingType,
@@ -2599,7 +2599,7 @@ obv_fwd::ForwardedType_init::tao_repository_id ()
 ::CORBA::ValueBase *
 obv_fwd::ForwardedType_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_obv_fwd::ForwardedType,
@@ -2662,7 +2662,7 @@ OBV_obv_fwd::EnclosingType::_copy_value ()
     ret_val,
     EnclosingType (
       (forwarded () ?
-        obv_fwd::ForwardedType::_downcast (forwarded ()->_copy_value ())
+        obv_fwd::ForwardedType::_downcast (::CORBA::ValueBase_var (forwarded ()->_copy_value ()).in ())
         : 0)
     ),
     ::CORBA::NO_MEMORY ());

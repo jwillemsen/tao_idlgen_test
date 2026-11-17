@@ -1362,7 +1362,7 @@ M1::V_init::tao_repository_id ()
 ::CORBA::ValueBase *
 M1::V_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_M1::V,
@@ -2598,7 +2598,7 @@ M2::M3::V2_init::tao_repository_id ()
 ::CORBA::ValueBase *
 M2::M3::V2_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_M2::M3::V2,
@@ -2778,7 +2778,7 @@ M2::M3::V3_init::tao_repository_id ()
 ::CORBA::ValueBase *
 M2::M3::V3_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_M2::M3::V3,

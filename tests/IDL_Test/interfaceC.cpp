@@ -1241,7 +1241,7 @@ AMH_DerivedExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_DerivedExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_DerivedExceptionHolder,
@@ -2544,7 +2544,7 @@ AMH_motherExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_motherExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_motherExceptionHolder,
@@ -3113,7 +3113,7 @@ AMH_fatherExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_fatherExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_fatherExceptionHolder,
@@ -3654,7 +3654,7 @@ AMH_childExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_childExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_childExceptionHolder,
@@ -4195,7 +4195,7 @@ AMH__cxx_tryExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH__cxx_tryExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH__cxx_tryExceptionHolder,
@@ -5695,7 +5695,7 @@ AMH_laterExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_laterExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_laterExceptionHolder,
@@ -6245,7 +6245,7 @@ AMH_BeginExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_BeginExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_BeginExceptionHolder,
@@ -6785,7 +6785,7 @@ AMH_MiddleExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_MiddleExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_MiddleExceptionHolder,
@@ -7327,7 +7327,7 @@ AMH_EndExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_EndExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_EndExceptionHolder,
@@ -11562,7 +11562,7 @@ AMH_AExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_AExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_AExceptionHolder,
@@ -12107,7 +12107,7 @@ M::AMH_AExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 M::AMH_AExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_M::AMH_AExceptionHolder,
@@ -14943,7 +14943,7 @@ redefs::AMH_baseExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 redefs::AMH_baseExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_redefs::AMH_baseExceptionHolder,
@@ -15635,7 +15635,7 @@ redefs::AMH_derivedExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 redefs::AMH_derivedExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_redefs::AMH_derivedExceptionHolder,
@@ -16198,7 +16198,7 @@ Rec_Arg_Traits::AMH_baseExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 Rec_Arg_Traits::AMH_baseExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_Rec_Arg_Traits::AMH_baseExceptionHolder,

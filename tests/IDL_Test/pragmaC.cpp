@@ -299,7 +299,7 @@ AMH_helloExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_helloExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_helloExceptionHolder,
@@ -863,7 +863,7 @@ AMH_goodbyeExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_goodbyeExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_goodbyeExceptionHolder,
@@ -1427,7 +1427,7 @@ salutation::AMH_sayonaraExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 salutation::AMH_sayonaraExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_salutation::AMH_sayonaraExceptionHolder,
@@ -1921,7 +1921,7 @@ AMH_ciaoExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_ciaoExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_ciaoExceptionHolder,
@@ -2415,7 +2415,7 @@ AMH_alohaExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_alohaExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_alohaExceptionHolder,

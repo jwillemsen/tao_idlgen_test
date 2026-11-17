@@ -624,7 +624,7 @@ AMH_ifaceExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_ifaceExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_ifaceExceptionHolder,
@@ -2234,7 +2234,7 @@ RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_RootModule::SUBMODULE1::AMH_ChildIFExceptionHolder,
@@ -2799,7 +2799,7 @@ AMH_BExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_BExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_BExceptionHolder,

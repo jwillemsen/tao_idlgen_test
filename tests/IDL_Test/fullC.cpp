@@ -354,7 +354,7 @@ scope_test::AMH_i_scope_testExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 scope_test::AMH_i_scope_testExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_scope_test::AMH_i_scope_testExceptionHolder,

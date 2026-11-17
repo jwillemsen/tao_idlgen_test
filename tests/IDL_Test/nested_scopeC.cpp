@@ -588,7 +588,7 @@ i_skip::i_hump::AMH_i_skipExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 i_skip::i_hump::AMH_i_skipExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_i_skip::i_hump::AMH_i_skipExceptionHolder,
@@ -1519,7 +1519,7 @@ AMH_blooExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_blooExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_blooExceptionHolder,
@@ -2202,7 +2202,7 @@ bug_1985_a::b::AMH_somethingExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 bug_1985_a::b::AMH_somethingExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_bug_1985_a::b::AMH_somethingExceptionHolder,
@@ -2770,7 +2770,7 @@ bug_1985_c::d::AMH_somethingExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 bug_1985_c::d::AMH_somethingExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_bug_1985_c::d::AMH_somethingExceptionHolder,
@@ -3330,7 +3330,7 @@ Negotiator::AMH_UAV_NegotiatorExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 Negotiator::AMH_UAV_NegotiatorExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_Negotiator::AMH_UAV_NegotiatorExceptionHolder,

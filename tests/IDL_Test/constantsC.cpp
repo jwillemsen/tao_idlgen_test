@@ -308,7 +308,7 @@ ClassConstants::AMH_IfaceExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 ClassConstants::AMH_IfaceExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_ClassConstants::AMH_IfaceExceptionHolder,
@@ -680,7 +680,7 @@ ClassConstants::Vt_init::tao_repository_id ()
 ::CORBA::ValueBase *
 ClassConstants::Vt_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_ClassConstants::Vt,

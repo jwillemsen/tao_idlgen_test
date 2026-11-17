@@ -35,14 +35,12 @@
 
 #include "tao/ORB.h"
 #include "tao/SystemException.h"
-#include "tao/UserException.h"
 #include "tao/Basic_Types.h"
 #include "tao/ORB_Constants.h"
 #include "tao/Object.h"
-#include "tao/String_Manager_T.h"
 #include "tao/SmartProxies/Smart_Proxies.h"
+#include "tao/TAO_Singleton.h"
 #include "tao/Objref_VarOut_T.h"
-#include "tao/VarOut_T.h"
 #include "tao/Arg_Traits_T.h"
 #include "tao/Basic_Arguments.h"
 #include "tao/Special_Basic_Arguments.h"
@@ -50,7 +48,6 @@
 #include "tao/Fixed_Size_Argument_T.h"
 #include "tao/Var_Size_Argument_T.h"
 #include "tao/Object_Argument_T.h"
-#include "tao/UB_String_Arguments.h"
 #include /**/ "tao/Version.h"
 #include /**/ "tao/Versioned_Namespace.h"
 
@@ -92,34 +89,10 @@ public:
   static Test_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
   static Test_ptr _nil ();
 
-  class  Oops : public ::CORBA::UserException
-  {
-  public:
-    ::TAO::String_Manager reason {};
+  virtual ::CORBA::Short box_prices ();
 
-    Oops ();
-    Oops (Oops const &);
-    ~Oops () override = default;
-
-    Oops &operator= (Oops const &);
-
-    static Oops *_downcast (::CORBA::Exception *);
-    static Oops const *_downcast (::CORBA::Exception const *);
-
-    static ::CORBA::Exception *_alloc ();
-
-    ::CORBA::Exception *_tao_duplicate () const override;
-
-    void _raise () const override;
-
-    void _tao_encode (TAO_OutputCDR &cdr) const override;
-    void _tao_decode (TAO_InputCDR &cdr) override;
-
-    Oops (char const * _tao_reason);
-  };
-
-  virtual ::CORBA::Short method (
-    ::CORBA::Short boo);
+  virtual ::CORBA::Long tickets (
+    ::CORBA::Short number);
 
   virtual void shutdown ();
 
@@ -198,8 +171,9 @@ public:
   ~TAO_Test_Smart_Proxy_Base () override;
   TAO_Stub *_stubobj () const override;
   TAO_Stub *_stubobj () override;
-  ::CORBA::Short method (
-    ::CORBA::Short boo) override;
+  ::CORBA::Short box_prices () override;
+  ::CORBA::Long tickets (
+    ::CORBA::Short number) override;
   void shutdown () override;
 
 protected:
@@ -258,13 +232,6 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (TAO_OutputCDR &, Test_ptr const);
 ::CORBA::Boolean operator>> (TAO_InputCDR &, Test_ptr &);
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
- ::CORBA::Boolean operator<< (TAO_OutputCDR &, Test::Oops const &);
- ::CORBA::Boolean operator>> (TAO_InputCDR &, Test::Oops &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 

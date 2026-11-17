@@ -2200,7 +2200,7 @@ AMH_testdataExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 AMH_testdataExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_AMH_testdataExceptionHolder,

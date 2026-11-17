@@ -96,10 +96,16 @@ public:
   ::Test *_this ();
 
   char const *_interface_repository_id () const override;
-  virtual ::CORBA::Short method (
-    ::CORBA::Short boo) = 0;
+  virtual ::CORBA::Short box_prices () = 0;
 
-  static void method_skel (
+  static void box_prices_skel (
+    TAO_ServerRequest &server_request,
+    TAO::Portable_Server::Servant_Upcall *servant_upcall,
+    TAO_ServantBase *servant);
+  virtual ::CORBA::Long tickets (
+    ::CORBA::Short number) = 0;
+
+  static void tickets_skel (
     TAO_ServerRequest &server_request,
     TAO::Portable_Server::Servant_Upcall *servant_upcall,
     TAO_ServantBase *servant);

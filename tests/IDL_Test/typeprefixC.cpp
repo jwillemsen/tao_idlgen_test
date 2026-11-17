@@ -345,7 +345,7 @@ A::AMH_BExceptionHolder_init::tao_repository_id ()
 ::CORBA::ValueBase *
 A::AMH_BExceptionHolder_init::create_for_unmarshal ()
 {
-  ::CORBA::ValueBase *ret_val = nullptr;
+  ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
       OBV_A::AMH_BExceptionHolder,
