@@ -120,8 +120,10 @@ TAO_AMH_Valuetype_Operation_Base_Perfect_Hash_OpTable::lookup (char const *str, 
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -268,8 +270,10 @@ TAO_Valuetype_Operation_Base_Perfect_Hash_OpTable::lookup (char const *str, size
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -467,8 +471,10 @@ TAO_AMI_Valuetype_Operation_BaseHandler_Perfect_Hash_OpTable::lookup (char const
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -662,358 +668,6 @@ POA_AMI_Valuetype_Operation_BaseHandler::_this ()
     }
   return {};
 }
-
-class TAO_AMH_Empty_Valuetype_Operation_Perfect_Hash_OpTable
-  : public TAO_Perfect_Hash_OpTable
-{
-private:
-  size_t hash (char const *str, size_t len) override;
-public:
-  TAO_operation_db_entry const * lookup (char const *str, size_t len) override;
-};
-
-/* C++ code produced by ACE gperf version 8.0.8 */
-/* Command-line: ace_gperf -m -M -J -Q -R -c -C -D -E -T -f 0 -F nullptr,nullptr -o -t -p -K opname -Z TAO_AMH_Empty_Valuetype_Operation_Perfect_Hash_OpTable -N lookup */
-
-size_t
-TAO_AMH_Empty_Valuetype_Operation_Perfect_Hash_OpTable::hash (char const *str, size_t len)
-{
-  static constexpr std::array<unsigned char, 128> asso_values =
-    {
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20,  0, 20,  0, 20, 20,
-      0,  5, 20, 20, 20,  0, 20, 20, 20, 20,
-      0, 20, 20, 20, 20, 20,  0, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20,
-    };
-  unsigned char const last_char = static_cast<unsigned char> (str[len - 1]);
-  unsigned char const first_char = static_cast<unsigned char> (str[0]);
-  return len + asso_values[last_char % asso_values.size ()] + asso_values[first_char % asso_values.size ()];
-}
-
-TAO_operation_db_entry const *
-TAO_AMH_Empty_Valuetype_Operation_Perfect_Hash_OpTable::lookup (char const *str, size_t len)
-{
-  constexpr size_t MIN_WORD_LENGTH {5};
-  constexpr size_t MAX_WORD_LENGTH {19};
-  constexpr int MIN_HASH_VALUE {5};
-  constexpr int MAX_HASH_VALUE {19};
-
-  static constexpr std::array<TAO_operation_db_entry, 20> wordlist =
-    {{
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_is_a", std::addressof(TAO_AMH_Skeletons::_is_a_amh_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_component", std::addressof(TAO_AMH_Skeletons::_component_amh_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_non_existent", std::addressof(TAO_AMH_Skeletons::_non_existent_amh_skel), nullptr},
-      {"_repository_id", std::addressof(TAO_AMH_Skeletons::_repository_id_amh_skel), nullptr},
-      {"_interface", std::addressof(TAO_AMH_Skeletons::_interface_amh_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"inherited_operation", std::addressof(POA_AMH_Valuetype_Operation_Base::inherited_operation_skel), std::addressof(_TAO_Valuetype_Operation_Base_Direct_Proxy_Impl::inherited_operation)},
-    }};
-
-  if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
-    {
-      size_t const key = hash (str, len);
-
-      if (key <= MAX_HASH_VALUE && key >= MIN_HASH_VALUE)
-        {
-          char const *s = wordlist[key].opname;
-
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
-        }
-    }
-  return nullptr;
-}
-
-static TAO_AMH_Empty_Valuetype_Operation_Perfect_Hash_OpTable tao_AMH_Empty_Valuetype_Operation_optable;
-
-POA_AMH_Empty_Valuetype_Operation::POA_AMH_Empty_Valuetype_Operation ()
-  : TAO_ServantBase ()
-{
-  this->optable_ = std::addressof (tao_AMH_Empty_Valuetype_Operation_optable);
-}
-
-::CORBA::Boolean POA_AMH_Empty_Valuetype_Operation::_is_a (char const *value)
-{
-  return (
-    std::strcmp (value, "IDL:Valuetype_Operation_Base:1.0") == 0 ||
-    std::strcmp (value, "IDL:Empty_Valuetype_Operation:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0);
-}
-
-char const *POA_AMH_Empty_Valuetype_Operation::_interface_repository_id () const
-{
-  return "IDL:Empty_Valuetype_Operation:1.0";
-}
-void
-POA_AMH_Empty_Valuetype_Operation::_dispatch (
-    TAO_ServerRequest &req,
-    TAO::Portable_Server::Servant_Upcall *context)
-{
-  this->asynchronous_upcall_dispatch (req,context,this);
-}
-Empty_Valuetype_Operation*
-POA_AMH_Empty_Valuetype_Operation::_this ()
-{
-  TAO_Stub_Auto_Ptr stub (this->_create_stub ());
-  bool const _tao_opt_colloc = stub->servant_orb_var ()->orb_core ()->optimize_collocation_objects ();
-  ::CORBA::Object_var obj = new (std::nothrow) ::CORBA::Object (stub.get (), _tao_opt_colloc, this);
-  if (obj.ptr ())
-    {
-      (void) stub.release ();
-      return TAO::Narrow_Utils<::Empty_Valuetype_Operation>::unchecked_narrow (obj.in ());
-
-    }
-  return {};
-}
-
-class TAO_Empty_Valuetype_Operation_Perfect_Hash_OpTable
-  : public TAO_Perfect_Hash_OpTable
-{
-private:
-  size_t hash (char const *str, size_t len) override;
-public:
-  TAO_operation_db_entry const * lookup (char const *str, size_t len) override;
-};
-
-/* C++ code produced by ACE gperf version 8.0.8 */
-/* Command-line: ace_gperf -m -M -J -Q -R -c -C -D -E -T -f 0 -F nullptr,nullptr -o -t -p -K opname -Z TAO_Empty_Valuetype_Operation_Perfect_Hash_OpTable -N lookup */
-
-size_t
-TAO_Empty_Valuetype_Operation_Perfect_Hash_OpTable::hash (char const *str, size_t len)
-{
-  static constexpr std::array<unsigned char, 128> asso_values =
-    {
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
-     20, 20, 20, 20, 20,  0, 20,  0, 20, 20,
-      0,  5, 20, 20, 20,  0, 20, 20, 20, 20,
-      0, 20, 20, 20, 20, 20,  0, 20, 20, 20,
-     20, 20, 20, 20, 20, 20, 20, 20,
-    };
-  unsigned char const last_char = static_cast<unsigned char> (str[len - 1]);
-  unsigned char const first_char = static_cast<unsigned char> (str[0]);
-  return len + asso_values[last_char % asso_values.size ()] + asso_values[first_char % asso_values.size ()];
-}
-
-TAO_operation_db_entry const *
-TAO_Empty_Valuetype_Operation_Perfect_Hash_OpTable::lookup (char const *str, size_t len)
-{
-  constexpr size_t MIN_WORD_LENGTH {5};
-  constexpr size_t MAX_WORD_LENGTH {19};
-  constexpr int MIN_HASH_VALUE {5};
-  constexpr int MAX_HASH_VALUE {19};
-
-  static constexpr std::array<TAO_operation_db_entry, 20> wordlist =
-    {{
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_is_a", std::addressof(TAO_ServantBase::_is_a_thru_poa_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_component", std::addressof(TAO_ServantBase::_component_thru_poa_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_non_existent", std::addressof(TAO_ServantBase::_non_existent_thru_poa_skel), nullptr},
-      {"_repository_id", std::addressof(TAO_ServantBase::_repository_id_thru_poa_skel), nullptr},
-      {"_interface", std::addressof(TAO_ServantBase::_interface_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"inherited_operation", std::addressof(POA_Valuetype_Operation_Base::inherited_operation_skel), std::addressof(_TAO_Valuetype_Operation_Base_Direct_Proxy_Impl::inherited_operation)},
-    }};
-
-  if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
-    {
-      size_t const key = hash (str, len);
-
-      if (key <= MAX_HASH_VALUE && key >= MIN_HASH_VALUE)
-        {
-          char const *s = wordlist[key].opname;
-
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
-        }
-    }
-  return nullptr;
-}
-
-static TAO_Empty_Valuetype_Operation_Perfect_Hash_OpTable tao_Empty_Valuetype_Operation_optable;
-
-_TAO_Empty_Valuetype_Operation_Direct_Proxy_Impl::~_TAO_Empty_Valuetype_Operation_Direct_Proxy_Impl () = default;
-
-POA_Empty_Valuetype_Operation::POA_Empty_Valuetype_Operation ()
-  : TAO_ServantBase ()
-{
-  this->optable_ = std::addressof (tao_Empty_Valuetype_Operation_optable);
-}
-
-::CORBA::Boolean POA_Empty_Valuetype_Operation::_is_a (char const *value)
-{
-  return (
-    std::strcmp (value, "IDL:Valuetype_Operation_Base:1.0") == 0 ||
-    std::strcmp (value, "IDL:Empty_Valuetype_Operation:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0);
-}
-
-char const *POA_Empty_Valuetype_Operation::_interface_repository_id () const
-{
-  return "IDL:Empty_Valuetype_Operation:1.0";
-}
-
-void POA_Empty_Valuetype_Operation::_dispatch (
-  TAO_ServerRequest & req,
-  TAO::Portable_Server::Servant_Upcall* servant_upcall)
-{
-  this->synchronous_upcall_dispatch (req, servant_upcall, this);
-}
-
-Empty_Valuetype_Operation *
-POA_Empty_Valuetype_Operation::_this ()
-{
-  TAO_Stub_Auto_Ptr stub (this->_create_stub ());
-  bool const _tao_opt_colloc = stub->servant_orb_var ()->orb_core ()->optimize_collocation_objects ();
-  ::CORBA::Object_var obj = new (std::nothrow) ::CORBA::Object (stub.get (), _tao_opt_colloc, this);
-  if (obj.ptr ())
-    {
-      (void) stub.release ();
-      return TAO::Narrow_Utils<::Empty_Valuetype_Operation>::unchecked_narrow (obj.in ());
-    }
-  return {};
-}
-
-class TAO_AMI_Empty_Valuetype_OperationHandler_Perfect_Hash_OpTable
-  : public TAO_Perfect_Hash_OpTable
-{
-private:
-  size_t hash (char const *str, size_t len) override;
-public:
-  TAO_operation_db_entry const * lookup (char const *str, size_t len) override;
-};
-
-/* C++ code produced by ACE gperf version 8.0.8 */
-/* Command-line: ace_gperf -m -M -J -Q -R -c -C -D -E -T -f 0 -F nullptr,nullptr -o -t -p -K opname -Z TAO_AMI_Empty_Valuetype_OperationHandler_Perfect_Hash_OpTable -N lookup */
-
-size_t
-TAO_AMI_Empty_Valuetype_OperationHandler_Perfect_Hash_OpTable::hash (char const *str, size_t len)
-{
-  static constexpr std::array<unsigned char, 128> asso_values =
-    {
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
-     26, 26, 26, 26, 26,  0, 26,  0, 26, 26,
-      0,  5, 26, 26, 26,  0, 26, 26, 26, 26,
-      0, 26,  0, 26, 26, 26,  0, 26, 26, 26,
-     26, 26, 26, 26, 26, 26, 26, 26,
-    };
-  unsigned char const last_char = static_cast<unsigned char> (str[len - 1]);
-  unsigned char const first_char = static_cast<unsigned char> (str[0]);
-  return len + asso_values[last_char % asso_values.size ()] + asso_values[first_char % asso_values.size ()];
-}
-
-TAO_operation_db_entry const *
-TAO_AMI_Empty_Valuetype_OperationHandler_Perfect_Hash_OpTable::lookup (char const *str, size_t len)
-{
-  constexpr size_t MIN_WORD_LENGTH {5};
-  constexpr size_t MAX_WORD_LENGTH {25};
-  constexpr int MIN_HASH_VALUE {5};
-  constexpr int MAX_HASH_VALUE {25};
-
-  static constexpr std::array<TAO_operation_db_entry, 26> wordlist =
-    {{
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_is_a", std::addressof(TAO_ServantBase::_is_a_thru_poa_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_component", std::addressof(TAO_ServantBase::_component_thru_poa_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"_non_existent", std::addressof(TAO_ServantBase::_non_existent_thru_poa_skel), nullptr},
-      {"_repository_id", std::addressof(TAO_ServantBase::_repository_id_thru_poa_skel), nullptr},
-      {"_interface", std::addressof(TAO_ServantBase::_interface_skel), nullptr},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"inherited_operation", std::addressof(POA_AMI_Valuetype_Operation_BaseHandler::inherited_operation_skel), std::addressof(_TAO_AMI_Valuetype_Operation_BaseHandler_Direct_Proxy_Impl::inherited_operation)},
-      {"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},{"",nullptr,nullptr},
-      {"inherited_operation_excep", std::addressof(POA_AMI_Valuetype_Operation_BaseHandler::inherited_operation_excep_skel), std::addressof(_TAO_AMI_Valuetype_Operation_BaseHandler_Direct_Proxy_Impl::inherited_operation_excep)},
-    }};
-
-  if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
-    {
-      size_t const key = hash (str, len);
-
-      if (key <= MAX_HASH_VALUE && key >= MIN_HASH_VALUE)
-        {
-          char const *s = wordlist[key].opname;
-
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
-        }
-    }
-  return nullptr;
-}
-
-static TAO_AMI_Empty_Valuetype_OperationHandler_Perfect_Hash_OpTable tao_AMI_Empty_Valuetype_OperationHandler_optable;
-
-_TAO_AMI_Empty_Valuetype_OperationHandler_Direct_Proxy_Impl::~_TAO_AMI_Empty_Valuetype_OperationHandler_Direct_Proxy_Impl () = default;
-
-POA_AMI_Empty_Valuetype_OperationHandler::POA_AMI_Empty_Valuetype_OperationHandler ()
-  : TAO_ServantBase ()
-{
-  this->optable_ = std::addressof (tao_AMI_Empty_Valuetype_OperationHandler_optable);
-}
-
-::CORBA::Boolean POA_AMI_Empty_Valuetype_OperationHandler::_is_a (char const *value)
-{
-  return (
-    std::strcmp (value, "IDL:omg.org/Messaging/ReplyHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:AMI_Valuetype_Operation_BaseHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:AMI_Empty_Valuetype_OperationHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0);
-}
-
-char const *POA_AMI_Empty_Valuetype_OperationHandler::_interface_repository_id () const
-{
-  return "IDL:AMI_Empty_Valuetype_OperationHandler:1.0";
-}
-
-void POA_AMI_Empty_Valuetype_OperationHandler::_dispatch (
-  TAO_ServerRequest & req,
-  TAO::Portable_Server::Servant_Upcall* servant_upcall)
-{
-  this->synchronous_upcall_dispatch (req, servant_upcall, this);
-}
-
-AMI_Empty_Valuetype_OperationHandler *
-POA_AMI_Empty_Valuetype_OperationHandler::_this ()
-{
-  TAO_Stub_Auto_Ptr stub (this->_create_stub ());
-  bool const _tao_opt_colloc = stub->servant_orb_var ()->orb_core ()->optimize_collocation_objects ();
-  ::CORBA::Object_var obj = new (std::nothrow) ::CORBA::Object (stub.get (), _tao_opt_colloc, this);
-  if (obj.ptr ())
-    {
-      (void) stub.release ();
-      return TAO::Narrow_Utils<::AMI_Empty_Valuetype_OperationHandler>::unchecked_narrow (obj.in ());
-    }
-  return {};
-}
 POA_Supports_Inherited_Operation::POA_Supports_Inherited_Operation ()
 {}
 
@@ -1084,8 +738,10 @@ TAO_AMH_Empty_Valuetype_Interface_Perfect_Hash_OpTable::lookup (char const *str,
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -1196,8 +852,10 @@ TAO_Empty_Valuetype_Interface_Perfect_Hash_OpTable::lookup (char const *str, siz
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -1310,8 +968,10 @@ TAO_AMI_Empty_Valuetype_InterfaceHandler_Perfect_Hash_OpTable::lookup (char cons
         {
           char const *s = wordlist[key].opname;
 
-          if (*str == *s && !std::strncmp (str + 1, s + 1, len - 1))
-            return std::addressof (wordlist[key]);
+          if (len == std::strlen (s) && *str == *s && !std::strncmp (str + 1, s + 1, len - 1))
+            {
+              return std::addressof (wordlist[key]);
+            }
         }
     }
   return nullptr;
@@ -1360,10 +1020,10 @@ POA_AMI_Empty_Valuetype_InterfaceHandler::_this ()
     }
   return {};
 }
-POA_Factory_Initialized_Value::POA_Factory_Initialized_Value ()
+POA_Supported_Interface_Value::POA_Supported_Interface_Value ()
 {}
 
-POA_Factory_Initialized_Value::~POA_Factory_Initialized_Value ()
+POA_Supported_Interface_Value::~POA_Supported_Interface_Value ()
 {}
 
 #endif /* ifndef */

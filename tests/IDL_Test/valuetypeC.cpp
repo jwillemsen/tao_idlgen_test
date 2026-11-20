@@ -44,6 +44,8 @@
 #include "tao/CDR.h"
 #include "tao/Exception_Data.h"
 #include "tao/Invocation_Adapter.h"
+#include "tao/Valuetype/AbstractBase_Invocation_Adapter.h"
+#include "tao/Valuetype/AbstractBase_T.h"
 #include "tao/Messaging/Asynch_Invocation_Adapter.h"
 #include "tao/Messaging/ExceptionHolder_i.h"
 #include "tao/Object_T.h"
@@ -172,22 +174,32 @@ MyValueType::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = MyValueType::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -329,22 +341,32 @@ DefaultInitializedValue::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = DefaultInitializedValue::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -686,22 +708,32 @@ AMH_Valuetype_Operation_BaseExceptionHolder::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_Valuetype_Operation_BaseExceptionHolder::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -1074,64 +1106,84 @@ static TAO::TypeCode::Objref<char const *,
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
-// Traits specializations for Empty_Valuetype_Operation.
+// Traits specializations for Abstract_Operation_Interface.
 
-Empty_Valuetype_Operation_ptr
-TAO::Objref_Traits<Empty_Valuetype_Operation>::duplicate (Empty_Valuetype_Operation_ptr p)
+Abstract_Operation_Interface_ptr
+TAO::Objref_Traits<Abstract_Operation_Interface>::duplicate (Abstract_Operation_Interface_ptr p)
 {
-  return Empty_Valuetype_Operation::_duplicate (p);
+  return Abstract_Operation_Interface::_duplicate (p);
 }
 
 void
-TAO::Objref_Traits<Empty_Valuetype_Operation>::release (Empty_Valuetype_Operation_ptr p)
+TAO::Objref_Traits<Abstract_Operation_Interface>::release (Abstract_Operation_Interface_ptr p)
 {
   ::CORBA::release (p);
 }
 
-Empty_Valuetype_Operation_ptr
-TAO::Objref_Traits<Empty_Valuetype_Operation>::nil ()
+Abstract_Operation_Interface_ptr
+TAO::Objref_Traits<Abstract_Operation_Interface>::nil ()
 {
-  return Empty_Valuetype_Operation::_nil ();
+  return Abstract_Operation_Interface::_nil ();
 }
 
 ::CORBA::Boolean
-TAO::Objref_Traits<Empty_Valuetype_Operation>::marshal (Empty_Valuetype_Operation_ptr const p, TAO_OutputCDR &cdr)
+TAO::Objref_Traits<Abstract_Operation_Interface>::marshal (Abstract_Operation_Interface_ptr const p, TAO_OutputCDR &cdr)
 {
-  return ::CORBA::Object::marshal (p, cdr);
+  return cdr << p;
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-Empty_Valuetype_Operation::Empty_Valuetype_Operation ()
-{
-}
 void
-Empty_Valuetype_Operation::_tao_any_destructor (void *_tao_void_pointer)
+Abstract_Operation_Interface::ping ()
 {
-  Empty_Valuetype_Operation *tmp = static_cast<Empty_Valuetype_Operation *> (_tao_void_pointer);
+  TAO::Arg_Traits<void>::ret_val _tao_retval;
+
+  TAO::Argument *_the_tao_operation_signature [] =
+    {
+      std::addressof (_tao_retval)
+    };
+
+  TAO::AbstractBase_Invocation_Adapter _invocation_call (
+      this,
+      _the_tao_operation_signature,
+      1,
+      "ping",
+      4,
+      TAO::TAO_CO_NONE | TAO::TAO_CO_DIRECT_STRATEGY | TAO::TAO_CO_THRU_POA_STRATEGY,
+      TAO::TAO_TWOWAY_INVOCATION,
+      TAO::TAO_SYNCHRONOUS_INVOCATION,
+      false
+    );
+
+  _invocation_call.invoke (nullptr, 0);
+}void
+Abstract_Operation_Interface::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Abstract_Operation_Interface *tmp = static_cast<Abstract_Operation_Interface *> (_tao_void_pointer);
   ::CORBA::release (tmp);
 }
 
-Empty_Valuetype_Operation_ptr
-Empty_Valuetype_Operation::_narrow (::CORBA::Object_ptr _tao_objref)
+Abstract_Operation_Interface_ptr
+Abstract_Operation_Interface::_narrow (::CORBA::AbstractBase_ptr _tao_objref)
 {
-  return TAO::Narrow_Utils<Empty_Valuetype_Operation>::narrow (_tao_objref, "IDL:Empty_Valuetype_Operation:1.0");
+  return TAO::AbstractBase_Narrow_Utils<Abstract_Operation_Interface>::narrow (_tao_objref, "IDL:Abstract_Operation_Interface:1.0");
 }
 
-Empty_Valuetype_Operation_ptr
-Empty_Valuetype_Operation::_unchecked_narrow (::CORBA::Object_ptr _tao_objref)
+Abstract_Operation_Interface_ptr
+Abstract_Operation_Interface::_unchecked_narrow (::CORBA::AbstractBase_ptr _tao_objref)
 {
-  return TAO::Narrow_Utils<Empty_Valuetype_Operation>::unchecked_narrow (_tao_objref);
+  return TAO::AbstractBase_Narrow_Utils<Abstract_Operation_Interface>::unchecked_narrow (_tao_objref);
 }
 
-Empty_Valuetype_Operation_ptr
-Empty_Valuetype_Operation::_nil ()
+Abstract_Operation_Interface_ptr
+Abstract_Operation_Interface::_nil ()
 {
   return nullptr;
 }
 
-Empty_Valuetype_Operation_ptr
-Empty_Valuetype_Operation::_duplicate (Empty_Valuetype_Operation_ptr obj)
+Abstract_Operation_Interface_ptr
+Abstract_Operation_Interface::_duplicate (Abstract_Operation_Interface_ptr obj)
 {
   if (! ::CORBA::is_nil (obj))
     {
@@ -1141,321 +1193,16 @@ Empty_Valuetype_Operation::_duplicate (Empty_Valuetype_Operation_ptr obj)
 }
 
 void
-Empty_Valuetype_Operation::_tao_release (Empty_Valuetype_Operation_ptr obj)
+Abstract_Operation_Interface::_tao_release (Abstract_Operation_Interface_ptr obj)
 {
   ::CORBA::release (obj);
 }
 
 ::CORBA::Boolean
-Empty_Valuetype_Operation::_is_a (char const *value)
+Abstract_Operation_Interface::_is_a (char const *value)
 {
-  if (std::strcmp (value, "IDL:Valuetype_Operation_Base:1.0") == 0 ||
-    std::strcmp (value, "IDL:Empty_Valuetype_Operation:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0)
-    {
-      return true; // success using local knowledge
-    }
-  else
-    {
-      return this->::CORBA::Object::_is_a (value);
-    }
-}
-
-char const *Empty_Valuetype_Operation::_interface_repository_id () const
-{
-  return "IDL:Empty_Valuetype_Operation:1.0";
-}
-
-char const *Empty_Valuetype_Operation::_desc_repository_id ()
-{
-  return "IDL:Empty_Valuetype_Operation:1.0";
-}
-
-char const *Empty_Valuetype_Operation::_desc_interface_name ()
-{
-  return "Empty_Valuetype_Operation";
-}
-
-::CORBA::Boolean
-Empty_Valuetype_Operation::marshal (TAO_OutputCDR &cdr)
-{
-  return (cdr << this);
-}
-static TAO::TypeCode::Objref<char const *,
-                             TAO::Null_RefCount_Policy>
-  _tao_tc_Empty_Valuetype_Operation (
-    ::CORBA::tk_objref,
-    "IDL:Empty_Valuetype_Operation:1.0",
-    "Empty_Valuetype_Operation");
-
-::CORBA::TypeCode_ptr const _tc_Empty_Valuetype_Operation = std::addressof(_tao_tc_Empty_Valuetype_Operation);
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_AMH_Empty_Valuetype_OperationExceptionHolder {};
-static TAO::TypeCode::Value<char const *,
-                     ::CORBA::TypeCode_ptr const *,
-                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
-                     TAO::Null_RefCount_Policy>
-  _tao_tc_AMH_Empty_Valuetype_OperationExceptionHolder (
-    ::CORBA::tk_value,
-    "IDL:AMH_Empty_Valuetype_OperationExceptionHolder:1.0",
-    "AMH_Empty_Valuetype_OperationExceptionHolder",
-    ::CORBA::VM_NONE,
-    std::addressof (::CORBA::_tc_null),
-    _tao_fields_AMH_Empty_Valuetype_OperationExceptionHolder,
-    0);
-
-::CORBA::TypeCode_ptr const _tc_AMH_Empty_Valuetype_OperationExceptionHolder = std::addressof(_tao_tc_AMH_Empty_Valuetype_OperationExceptionHolder);
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-void
-TAO::Value_Traits<AMH_Empty_Valuetype_OperationExceptionHolder>::add_ref (AMH_Empty_Valuetype_OperationExceptionHolder * p)
-{
-  ::CORBA::add_ref (p);
-}
-
-void
-TAO::Value_Traits<AMH_Empty_Valuetype_OperationExceptionHolder>::remove_ref (AMH_Empty_Valuetype_OperationExceptionHolder * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-void
-TAO::Value_Traits<AMH_Empty_Valuetype_OperationExceptionHolder>::release (AMH_Empty_Valuetype_OperationExceptionHolder * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-AMH_Empty_Valuetype_OperationExceptionHolder *
-AMH_Empty_Valuetype_OperationExceptionHolder::_downcast (::CORBA::ValueBase *v)
-{
-  return dynamic_cast<::AMH_Empty_Valuetype_OperationExceptionHolder *> (v);
-}
-
-char const *
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_obv_repository_id () const
-{
-  return this->_tao_obv_static_repository_id ();
-}
-
-void
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
-{
-  ids.push_back (this->_tao_obv_static_repository_id ());
-}
-
-void
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_any_destructor (void *_tao_void_pointer)
-{
-  AMH_Empty_Valuetype_OperationExceptionHolder *tmp = static_cast<AMH_Empty_Valuetype_OperationExceptionHolder *> (_tao_void_pointer);
-  ::CORBA::remove_ref (tmp);
-}
-
-// TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr AMH_Empty_Valuetype_OperationExceptionHolder::_tao_type () const
-{
-  return ::_tc_AMH_Empty_Valuetype_OperationExceptionHolder;
-}
-
-AMH_Empty_Valuetype_OperationExceptionHolder::~AMH_Empty_Valuetype_OperationExceptionHolder ()
-{}
-
-::CORBA::ValueBase *
-AMH_Empty_Valuetype_OperationExceptionHolder::_copy_value ()
-{
-  ::CORBA::ValueBase *ret_val {};
-  ACE_NEW_THROW_EX (
-    ret_val,
-    AMH_Empty_Valuetype_OperationExceptionHolder (),
-    ::CORBA::NO_MEMORY ());
-  return ret_val;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_marshal_v (TAO_OutputCDR &) const
-{
-  return true;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal_v (TAO_InputCDR &)
-{
-  return true;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_match_formal_type (ptrdiff_t) const
-{
-  return false;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_marshal__AMH_Empty_Valuetype_OperationExceptionHolder (TAO_OutputCDR &, TAO_ChunkInfo&) const
-{
-  return true;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal__AMH_Empty_Valuetype_OperationExceptionHolder (TAO_InputCDR &, TAO_ChunkInfo&)
-{
-  return true;
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal (
-    TAO_InputCDR &strm,
-    AMH_Empty_Valuetype_OperationExceptionHolder *&new_object)
-{
-  ::CORBA::ValueBase *base {};
-  ::CORBA::Boolean is_indirected = false;
-  ::CORBA::Boolean is_null_object = false;
-  ::CORBA::Boolean const retval =
-    ::CORBA::ValueBase::_tao_unmarshal_pre (
-        strm,
-        base,
-        AMH_Empty_Valuetype_OperationExceptionHolder::_tao_obv_static_repository_id (),
-        is_null_object,
-        is_indirected
-      );
-
-  ::CORBA::ValueBase_var owner (base);
-
-  if (!retval)
-    return false;
-
-  if (is_null_object)
-    return true;
-
-  if (!is_indirected && !base->_tao_unmarshal_v (strm))
-    return false;
-
-  // Now base must point to the unmarshaled object.
-  // Align the pointer to the right subobject.
-  new_object = AMH_Empty_Valuetype_OperationExceptionHolder::_downcast (base);
-  if (nullptr == new_object)
-    return false;
-
-  if (is_indirected)
-    new_object->_add_ref ();
-
-  owner._retn ();
-  return true;
-}
-
-AMH_Empty_Valuetype_OperationExceptionHolder_init::AMH_Empty_Valuetype_OperationExceptionHolder_init ()
-{
-}
-
-AMH_Empty_Valuetype_OperationExceptionHolder_init::~AMH_Empty_Valuetype_OperationExceptionHolder_init ()
-{
-}
-
-AMH_Empty_Valuetype_OperationExceptionHolder_init *
-AMH_Empty_Valuetype_OperationExceptionHolder_init::_downcast (::CORBA::ValueFactoryBase *v)
-{
-  return dynamic_cast<::AMH_Empty_Valuetype_OperationExceptionHolder_init *> (v);
-}
-
-char const *
-AMH_Empty_Valuetype_OperationExceptionHolder_init::tao_repository_id ()
-{
-  return ::AMH_Empty_Valuetype_OperationExceptionHolder::_tao_obv_static_repository_id ();
-}
-
-::CORBA::ValueBase *
-AMH_Empty_Valuetype_OperationExceptionHolder_init::create_for_unmarshal ()
-{
-  ::CORBA::ValueBase *ret_val {};
-  ACE_NEW_THROW_EX (
-      ret_val,
-      OBV_AMH_Empty_Valuetype_OperationExceptionHolder,
-      ::CORBA::NO_MEMORY ());
-  return ret_val;
-}
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-// Traits specializations for AMH_Empty_Valuetype_OperationResponseHandler.
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-TAO::Objref_Traits<AMH_Empty_Valuetype_OperationResponseHandler>::duplicate (AMH_Empty_Valuetype_OperationResponseHandler_ptr p)
-{
-  return AMH_Empty_Valuetype_OperationResponseHandler::_duplicate (p);
-}
-
-void
-TAO::Objref_Traits<AMH_Empty_Valuetype_OperationResponseHandler>::release (AMH_Empty_Valuetype_OperationResponseHandler_ptr p)
-{
-  ::CORBA::release (p);
-}
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-TAO::Objref_Traits<AMH_Empty_Valuetype_OperationResponseHandler>::nil ()
-{
-  return AMH_Empty_Valuetype_OperationResponseHandler::_nil ();
-}
-
-::CORBA::Boolean
-TAO::Objref_Traits<AMH_Empty_Valuetype_OperationResponseHandler>::marshal (AMH_Empty_Valuetype_OperationResponseHandler_ptr const p, TAO_OutputCDR &cdr)
-{
-  return ::CORBA::Object::marshal (p, cdr);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-AMH_Empty_Valuetype_OperationResponseHandler::AMH_Empty_Valuetype_OperationResponseHandler ()
-{}
-
-void
-AMH_Empty_Valuetype_OperationResponseHandler::_tao_any_destructor (void *_tao_void_pointer)
-{
-  AMH_Empty_Valuetype_OperationResponseHandler *tmp = static_cast<AMH_Empty_Valuetype_OperationResponseHandler *> (_tao_void_pointer);
-  ::CORBA::release (tmp);
-}
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-AMH_Empty_Valuetype_OperationResponseHandler::_narrow (::CORBA::Object_ptr _tao_objref)
-{
-  return AMH_Empty_Valuetype_OperationResponseHandler::_duplicate (
-    dynamic_cast<AMH_Empty_Valuetype_OperationResponseHandler_ptr> (_tao_objref));
-}
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-AMH_Empty_Valuetype_OperationResponseHandler::_unchecked_narrow (::CORBA::Object_ptr _tao_objref)
-{
-  return AMH_Empty_Valuetype_OperationResponseHandler::_duplicate (
-    dynamic_cast<AMH_Empty_Valuetype_OperationResponseHandler_ptr> (_tao_objref));
-}
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-AMH_Empty_Valuetype_OperationResponseHandler::_nil ()
-{
-  return nullptr;
-}
-
-AMH_Empty_Valuetype_OperationResponseHandler_ptr
-AMH_Empty_Valuetype_OperationResponseHandler::_duplicate (AMH_Empty_Valuetype_OperationResponseHandler_ptr obj)
-{
-  if (! ::CORBA::is_nil (obj))
-    {
-      obj->_add_ref ();
-    }
-  return obj;
-}
-
-void
-AMH_Empty_Valuetype_OperationResponseHandler::_tao_release (AMH_Empty_Valuetype_OperationResponseHandler_ptr obj)
-{
-  ::CORBA::release (obj);
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationResponseHandler::_is_a (char const *value)
-{
-  if (std::strcmp (value, "IDL:AMH_Empty_Valuetype_OperationResponseHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/LocalObject:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0)
+  if (std::strcmp (value, "IDL:Abstract_Operation_Interface:1.0") == 0 ||
+    std::strcmp (value, "IDL:omg.org/CORBA/AbstractBase:1.0") == 0)
     {
       return true; // success using local knowledge
     }
@@ -1465,153 +1212,229 @@ AMH_Empty_Valuetype_OperationResponseHandler::_is_a (char const *value)
     }
 }
 
-char const *AMH_Empty_Valuetype_OperationResponseHandler::_interface_repository_id () const
+char const *Abstract_Operation_Interface::_interface_repository_id () const
 {
-  return "IDL:AMH_Empty_Valuetype_OperationResponseHandler:1.0";
+  return "IDL:Abstract_Operation_Interface:1.0";
 }
 
-char const *AMH_Empty_Valuetype_OperationResponseHandler::_desc_repository_id ()
+char const *Abstract_Operation_Interface::_desc_repository_id ()
 {
-  return "IDL:AMH_Empty_Valuetype_OperationResponseHandler:1.0";
+  return "IDL:Abstract_Operation_Interface:1.0";
 }
 
-char const *AMH_Empty_Valuetype_OperationResponseHandler::_desc_interface_name ()
+char const *Abstract_Operation_Interface::_desc_interface_name ()
 {
-  return "AMH_Empty_Valuetype_OperationResponseHandler";
-}
-
-::CORBA::Boolean
-AMH_Empty_Valuetype_OperationResponseHandler::marshal (TAO_OutputCDR & /* cdr */)
-{
-  return false;
-}
-static TAO::TypeCode::Objref<char const *,
-                             TAO::Null_RefCount_Policy>
-  _tao_tc_AMH_Empty_Valuetype_OperationResponseHandler (
-    ::CORBA::tk_local_interface,
-    "IDL:AMH_Empty_Valuetype_OperationResponseHandler:1.0",
-    "AMH_Empty_Valuetype_OperationResponseHandler");
-
-::CORBA::TypeCode_ptr const _tc_AMH_Empty_Valuetype_OperationResponseHandler = std::addressof(_tao_tc_AMH_Empty_Valuetype_OperationResponseHandler);
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-// Traits specializations for AMI_Empty_Valuetype_OperationHandler.
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-TAO::Objref_Traits<AMI_Empty_Valuetype_OperationHandler>::duplicate (AMI_Empty_Valuetype_OperationHandler_ptr p)
-{
-  return AMI_Empty_Valuetype_OperationHandler::_duplicate (p);
-}
-
-void
-TAO::Objref_Traits<AMI_Empty_Valuetype_OperationHandler>::release (AMI_Empty_Valuetype_OperationHandler_ptr p)
-{
-  ::CORBA::release (p);
-}
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-TAO::Objref_Traits<AMI_Empty_Valuetype_OperationHandler>::nil ()
-{
-  return AMI_Empty_Valuetype_OperationHandler::_nil ();
+  return "Abstract_Operation_Interface";
 }
 
 ::CORBA::Boolean
-TAO::Objref_Traits<AMI_Empty_Valuetype_OperationHandler>::marshal (AMI_Empty_Valuetype_OperationHandler_ptr const p, TAO_OutputCDR &cdr)
-{
-  return ::CORBA::Object::marshal (p, cdr);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-AMI_Empty_Valuetype_OperationHandler::AMI_Empty_Valuetype_OperationHandler ()
-{
-}
-void
-AMI_Empty_Valuetype_OperationHandler::_tao_any_destructor (void *_tao_void_pointer)
-{
-  AMI_Empty_Valuetype_OperationHandler *tmp = static_cast<AMI_Empty_Valuetype_OperationHandler *> (_tao_void_pointer);
-  ::CORBA::release (tmp);
-}
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-AMI_Empty_Valuetype_OperationHandler::_narrow (::CORBA::Object_ptr _tao_objref)
-{
-  return TAO::Narrow_Utils<AMI_Empty_Valuetype_OperationHandler>::narrow (_tao_objref, "IDL:AMI_Empty_Valuetype_OperationHandler:1.0");
-}
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-AMI_Empty_Valuetype_OperationHandler::_unchecked_narrow (::CORBA::Object_ptr _tao_objref)
-{
-  return TAO::Narrow_Utils<AMI_Empty_Valuetype_OperationHandler>::unchecked_narrow (_tao_objref);
-}
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-AMI_Empty_Valuetype_OperationHandler::_nil ()
-{
-  return nullptr;
-}
-
-AMI_Empty_Valuetype_OperationHandler_ptr
-AMI_Empty_Valuetype_OperationHandler::_duplicate (AMI_Empty_Valuetype_OperationHandler_ptr obj)
-{
-  if (! ::CORBA::is_nil (obj))
-    {
-      obj->_add_ref ();
-    }
-  return obj;
-}
-
-void
-AMI_Empty_Valuetype_OperationHandler::_tao_release (AMI_Empty_Valuetype_OperationHandler_ptr obj)
-{
-  ::CORBA::release (obj);
-}
-
-::CORBA::Boolean
-AMI_Empty_Valuetype_OperationHandler::_is_a (char const *value)
-{
-  if (std::strcmp (value, "IDL:omg.org/Messaging/ReplyHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:AMI_Valuetype_Operation_BaseHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:AMI_Empty_Valuetype_OperationHandler:1.0") == 0 ||
-    std::strcmp (value, "IDL:omg.org/CORBA/Object:1.0") == 0)
-    {
-      return true; // success using local knowledge
-    }
-  else
-    {
-      return this->::CORBA::Object::_is_a (value);
-    }
-}
-
-char const *AMI_Empty_Valuetype_OperationHandler::_interface_repository_id () const
-{
-  return "IDL:AMI_Empty_Valuetype_OperationHandler:1.0";
-}
-
-char const *AMI_Empty_Valuetype_OperationHandler::_desc_repository_id ()
-{
-  return "IDL:AMI_Empty_Valuetype_OperationHandler:1.0";
-}
-
-char const *AMI_Empty_Valuetype_OperationHandler::_desc_interface_name ()
-{
-  return "AMI_Empty_Valuetype_OperationHandler";
-}
-
-::CORBA::Boolean
-AMI_Empty_Valuetype_OperationHandler::marshal (TAO_OutputCDR &cdr)
+Abstract_Operation_Interface::marshal (TAO_OutputCDR &cdr)
 {
   return (cdr << this);
 }
 static TAO::TypeCode::Objref<char const *,
                              TAO::Null_RefCount_Policy>
-  _tao_tc_AMI_Empty_Valuetype_OperationHandler (
-    ::CORBA::tk_objref,
-    "IDL:AMI_Empty_Valuetype_OperationHandler:1.0",
-    "AMI_Empty_Valuetype_OperationHandler");
+  _tao_tc_Abstract_Operation_Interface (
+    ::CORBA::tk_abstract_interface,
+    "IDL:Abstract_Operation_Interface:1.0",
+    "Abstract_Operation_Interface");
 
-::CORBA::TypeCode_ptr const _tc_AMI_Empty_Valuetype_OperationHandler = std::addressof(_tao_tc_AMI_Empty_Valuetype_OperationHandler);
+::CORBA::TypeCode_ptr const _tc_Abstract_Operation_Interface = std::addressof(_tao_tc_Abstract_Operation_Interface);
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Supports_Abstract_Operation[] =
+  {
+    { "value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
+
+  };
+static TAO::TypeCode::Value<char const *,
+                     ::CORBA::TypeCode_ptr const *,
+                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
+                     TAO::Null_RefCount_Policy>
+  _tao_tc_Supports_Abstract_Operation (
+    ::CORBA::tk_value,
+    "IDL:Supports_Abstract_Operation:1.0",
+    "Supports_Abstract_Operation",
+    ::CORBA::VM_NONE,
+    std::addressof (::CORBA::_tc_null),
+    _tao_fields_Supports_Abstract_Operation,
+    1);
+
+::CORBA::TypeCode_ptr const _tc_Supports_Abstract_Operation = std::addressof(_tao_tc_Supports_Abstract_Operation);
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+void
+TAO::Value_Traits<Supports_Abstract_Operation>::add_ref (Supports_Abstract_Operation * p)
+{
+  ::CORBA::add_ref (p);
+}
+
+void
+TAO::Value_Traits<Supports_Abstract_Operation>::remove_ref (Supports_Abstract_Operation * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+void
+TAO::Value_Traits<Supports_Abstract_Operation>::release (Supports_Abstract_Operation * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+Supports_Abstract_Operation *
+Supports_Abstract_Operation::_downcast (::CORBA::ValueBase *v)
+{
+  return dynamic_cast<::Supports_Abstract_Operation *> (v);
+}
+
+char const *
+Supports_Abstract_Operation::_tao_obv_repository_id () const
+{
+  return this->_tao_obv_static_repository_id ();
+}
+
+void
+Supports_Abstract_Operation::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+{
+  ids.push_back (this->_tao_obv_static_repository_id ());
+}
+
+void
+Supports_Abstract_Operation::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Supports_Abstract_Operation *tmp = static_cast<Supports_Abstract_Operation *> (_tao_void_pointer);
+  ::CORBA::remove_ref (tmp);
+}
+
+// TAO extension - the virtual _type method.
+::CORBA::TypeCode_ptr Supports_Abstract_Operation::_tao_type () const
+{
+  return ::_tc_Supports_Abstract_Operation;
+}
+
+Supports_Abstract_Operation::~Supports_Abstract_Operation ()
+{}
+
+::CORBA::Boolean
+Supports_Abstract_Operation::_tao_marshal_v (TAO_OutputCDR & strm) const
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
+  return this->_tao_marshal__Supports_Abstract_Operation (strm, ci);
+}
+
+::CORBA::Boolean
+Supports_Abstract_Operation::_tao_unmarshal_v (TAO_InputCDR & strm)
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
+  return this->_tao_unmarshal__Supports_Abstract_Operation (strm,ci);
+}
+
+::CORBA::Boolean
+Supports_Abstract_Operation::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+{
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Supports_Abstract_Operation::_downcast);
+}
+
+::CORBA::Boolean
+Supports_Abstract_Operation::_tao_unmarshal (
+    TAO_InputCDR &strm,
+    Supports_Abstract_Operation *&new_object)
+{
+  ::CORBA::ValueBase *base {};
+  ::CORBA::Boolean is_indirected = false;
+  ::CORBA::Boolean is_null_object = false;
+  ::CORBA::Boolean const retval =
+    ::CORBA::ValueBase::_tao_unmarshal_pre (
+        strm,
+        base,
+        Supports_Abstract_Operation::_tao_obv_static_repository_id (),
+        is_null_object,
+        is_indirected
+      );
+
+  ::CORBA::ValueBase_var owner (base);
+
+  if (!retval)
+  {
+    return false;
+  }
+
+  if (is_null_object)
+  {
+    return true;
+  }
+
+  if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
+    return false;
+  }
+
+  // Now base must point to the unmarshaled object.
+  // Align the pointer to the right subobject.
+  new_object = Supports_Abstract_Operation::_downcast (base);
+  if (nullptr == new_object)
+  {
+    return false;
+  }
+
+  if (is_indirected)
+  {
+    new_object->_add_ref ();
+  }
+
+  owner._retn ();
+  return true;
+}
+
+::CORBA::ValueBase *
+Supports_Abstract_Operation::_tao_to_value ()
+{
+  return this;
+}
+
+Supports_Abstract_Operation_init::Supports_Abstract_Operation_init ()
+{
+}
+
+Supports_Abstract_Operation_init::~Supports_Abstract_Operation_init ()
+{
+}
+
+Supports_Abstract_Operation_init *
+Supports_Abstract_Operation_init::_downcast (::CORBA::ValueFactoryBase *v)
+{
+  return dynamic_cast<::Supports_Abstract_Operation_init *> (v);
+}
+
+char const *
+Supports_Abstract_Operation_init::tao_repository_id ()
+{
+  return ::Supports_Abstract_Operation::_tao_obv_static_repository_id ();
+}
+
+::CORBA::ValueBase *
+Supports_Abstract_Operation_init::create_for_unmarshal ()
+{
+  ::CORBA::ValueBase *ret_val {};
+  ACE_NEW_THROW_EX (
+      ret_val,
+      OBV_Supports_Abstract_Operation,
+      ::CORBA::NO_MEMORY ());
+  return ret_val;
+}
+
+::CORBA::AbstractBase_ptr
+Supports_Abstract_Operation_init::create_for_unmarshal_abstract ()
+{
+  ::CORBA::AbstractBase *ret_val {};
+  ACE_NEW_THROW_EX (
+      ret_val,
+      OBV_Supports_Abstract_Operation,
+      ::CORBA::NO_MEMORY ()
+    );
+  return ret_val;
+}
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Supports_Inherited_Operation[] =
   {
     { "value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
@@ -1728,25 +1551,41 @@ Supports_Inherited_Operation::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Supports_Inherited_Operation::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
+}
+
+::CORBA::ValueBase *
+Supports_Inherited_Operation::_tao_to_value ()
+{
+  return this;
 }
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
@@ -1998,22 +1837,32 @@ AMH_Empty_Valuetype_InterfaceExceptionHolder::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AMH_Empty_Valuetype_InterfaceExceptionHolder::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -2287,231 +2136,7 @@ static TAO::TypeCode::Objref<char const *,
     "AMI_Empty_Valuetype_InterfaceHandler");
 
 ::CORBA::TypeCode_ptr const _tc_AMI_Empty_Valuetype_InterfaceHandler = std::addressof(_tao_tc_AMI_Empty_Valuetype_InterfaceHandler);
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_Abstract_Refcount_Base {};
-static TAO::TypeCode::Value<char const *,
-                     ::CORBA::TypeCode_ptr const *,
-                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
-                     TAO::Null_RefCount_Policy>
-  _tao_tc_Abstract_Refcount_Base (
-    ::CORBA::tk_value,
-    "IDL:Abstract_Refcount_Base:1.0",
-    "Abstract_Refcount_Base",
-    ::CORBA::VM_ABSTRACT,
-    std::addressof (::CORBA::_tc_null),
-    _tao_fields_Abstract_Refcount_Base,
-    0);
-
-::CORBA::TypeCode_ptr const _tc_Abstract_Refcount_Base = std::addressof(_tao_tc_Abstract_Refcount_Base);
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-void
-TAO::Value_Traits<Abstract_Refcount_Base>::add_ref (Abstract_Refcount_Base * p)
-{
-  ::CORBA::add_ref (p);
-}
-
-void
-TAO::Value_Traits<Abstract_Refcount_Base>::remove_ref (Abstract_Refcount_Base * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-void
-TAO::Value_Traits<Abstract_Refcount_Base>::release (Abstract_Refcount_Base * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-Abstract_Refcount_Base *
-Abstract_Refcount_Base::_downcast (::CORBA::ValueBase *v)
-{
-  return dynamic_cast<::Abstract_Refcount_Base *> (v);
-}
-
-char const *
-Abstract_Refcount_Base::_tao_obv_repository_id () const
-{
-  return this->_tao_obv_static_repository_id ();
-}
-
-void
-Abstract_Refcount_Base::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
-{
-  ids.push_back (this->_tao_obv_static_repository_id ());
-}
-
-void
-Abstract_Refcount_Base::_tao_any_destructor (void *_tao_void_pointer)
-{
-  Abstract_Refcount_Base *tmp = static_cast<Abstract_Refcount_Base *> (_tao_void_pointer);
-  ::CORBA::remove_ref (tmp);
-}
-
-// TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Abstract_Refcount_Base::_tao_type () const
-{
-  return ::_tc_Abstract_Refcount_Base;
-}
-
-Abstract_Refcount_Base::~Abstract_Refcount_Base ()
-{}
-
-::CORBA::Boolean
-Abstract_Refcount_Base::_tao_unmarshal (
-    TAO_InputCDR &strm,
-    Abstract_Refcount_Base *&new_object)
-{
-  ::CORBA::ValueBase *base {};
-  ::CORBA::Boolean is_indirected = false;
-  ::CORBA::Boolean is_null_object = false;
-  ::CORBA::Boolean const retval =
-    ::CORBA::ValueBase::_tao_unmarshal_pre (
-        strm,
-        base,
-        Abstract_Refcount_Base::_tao_obv_static_repository_id (),
-        is_null_object,
-        is_indirected
-      );
-
-  ::CORBA::ValueBase_var owner (base);
-
-  if (!retval)
-    return false;
-
-  if (is_null_object)
-    return true;
-
-  if (!is_indirected && !base->_tao_unmarshal_v (strm))
-    return false;
-
-  // Now base must point to the unmarshaled object.
-  // Align the pointer to the right subobject.
-  new_object = Abstract_Refcount_Base::_downcast (base);
-  if (nullptr == new_object)
-    return false;
-
-  if (is_indirected)
-    new_object->_add_ref ();
-
-  owner._retn ();
-  return true;
-}
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_Abstract_Refcount_Derived {};
-static TAO::TypeCode::Value<char const *,
-                     ::CORBA::TypeCode_ptr const *,
-                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
-                     TAO::Null_RefCount_Policy>
-  _tao_tc_Abstract_Refcount_Derived (
-    ::CORBA::tk_value,
-    "IDL:Abstract_Refcount_Derived:1.0",
-    "Abstract_Refcount_Derived",
-    ::CORBA::VM_ABSTRACT,
-    std::addressof (::CORBA::_tc_null),
-    _tao_fields_Abstract_Refcount_Derived,
-    0);
-
-::CORBA::TypeCode_ptr const _tc_Abstract_Refcount_Derived = std::addressof(_tao_tc_Abstract_Refcount_Derived);
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-void
-TAO::Value_Traits<Abstract_Refcount_Derived>::add_ref (Abstract_Refcount_Derived * p)
-{
-  ::CORBA::add_ref (p);
-}
-
-void
-TAO::Value_Traits<Abstract_Refcount_Derived>::remove_ref (Abstract_Refcount_Derived * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-void
-TAO::Value_Traits<Abstract_Refcount_Derived>::release (Abstract_Refcount_Derived * p)
-{
-  ::CORBA::remove_ref (p);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-Abstract_Refcount_Derived *
-Abstract_Refcount_Derived::_downcast (::CORBA::ValueBase *v)
-{
-  return dynamic_cast<::Abstract_Refcount_Derived *> (v);
-}
-
-char const *
-Abstract_Refcount_Derived::_tao_obv_repository_id () const
-{
-  return this->_tao_obv_static_repository_id ();
-}
-
-void
-Abstract_Refcount_Derived::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
-{
-  ids.push_back (this->_tao_obv_static_repository_id ());
-}
-
-void
-Abstract_Refcount_Derived::_tao_any_destructor (void *_tao_void_pointer)
-{
-  Abstract_Refcount_Derived *tmp = static_cast<Abstract_Refcount_Derived *> (_tao_void_pointer);
-  ::CORBA::remove_ref (tmp);
-}
-
-// TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Abstract_Refcount_Derived::_tao_type () const
-{
-  return ::_tc_Abstract_Refcount_Derived;
-}
-
-Abstract_Refcount_Derived::~Abstract_Refcount_Derived ()
-{}
-
-::CORBA::Boolean
-Abstract_Refcount_Derived::_tao_unmarshal (
-    TAO_InputCDR &strm,
-    Abstract_Refcount_Derived *&new_object)
-{
-  ::CORBA::ValueBase *base {};
-  ::CORBA::Boolean is_indirected = false;
-  ::CORBA::Boolean is_null_object = false;
-  ::CORBA::Boolean const retval =
-    ::CORBA::ValueBase::_tao_unmarshal_pre (
-        strm,
-        base,
-        Abstract_Refcount_Derived::_tao_obv_static_repository_id (),
-        is_null_object,
-        is_indirected
-      );
-
-  ::CORBA::ValueBase_var owner (base);
-
-  if (!retval)
-    return false;
-
-  if (is_null_object)
-    return true;
-
-  if (!is_indirected && !base->_tao_unmarshal_v (strm))
-    return false;
-
-  // Now base must point to the unmarshaled object.
-  // Align the pointer to the right subobject.
-  new_object = Abstract_Refcount_Derived::_downcast (base);
-  if (nullptr == new_object)
-    return false;
-
-  if (is_indirected)
-    new_object->_add_ref ();
-
-  owner._retn ();
-  return true;
-}
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Concrete_From_Abstract[] =
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Supported_Interface_Value[] =
   {
     { "value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
 
@@ -2520,97 +2145,97 @@ static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
                      TAO::Null_RefCount_Policy>
-  _tao_tc_Concrete_From_Abstract (
+  _tao_tc_Supported_Interface_Value (
     ::CORBA::tk_value,
-    "IDL:Concrete_From_Abstract:1.0",
-    "Concrete_From_Abstract",
+    "IDL:Supported_Interface_Value:1.0",
+    "Supported_Interface_Value",
     ::CORBA::VM_NONE,
     std::addressof (::CORBA::_tc_null),
-    _tao_fields_Concrete_From_Abstract,
+    _tao_fields_Supported_Interface_Value,
     1);
 
-::CORBA::TypeCode_ptr const _tc_Concrete_From_Abstract = std::addressof(_tao_tc_Concrete_From_Abstract);
+::CORBA::TypeCode_ptr const _tc_Supported_Interface_Value = std::addressof(_tao_tc_Supported_Interface_Value);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 void
-TAO::Value_Traits<Concrete_From_Abstract>::add_ref (Concrete_From_Abstract * p)
+TAO::Value_Traits<Supported_Interface_Value>::add_ref (Supported_Interface_Value * p)
 {
   ::CORBA::add_ref (p);
 }
 
 void
-TAO::Value_Traits<Concrete_From_Abstract>::remove_ref (Concrete_From_Abstract * p)
+TAO::Value_Traits<Supported_Interface_Value>::remove_ref (Supported_Interface_Value * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 void
-TAO::Value_Traits<Concrete_From_Abstract>::release (Concrete_From_Abstract * p)
+TAO::Value_Traits<Supported_Interface_Value>::release (Supported_Interface_Value * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-Concrete_From_Abstract *
-Concrete_From_Abstract::_downcast (::CORBA::ValueBase *v)
+Supported_Interface_Value *
+Supported_Interface_Value::_downcast (::CORBA::ValueBase *v)
 {
-  return dynamic_cast<::Concrete_From_Abstract *> (v);
+  return dynamic_cast<::Supported_Interface_Value *> (v);
 }
 
 char const *
-Concrete_From_Abstract::_tao_obv_repository_id () const
+Supported_Interface_Value::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
 }
 
 void
-Concrete_From_Abstract::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+Supported_Interface_Value::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
 {
   ids.push_back (this->_tao_obv_static_repository_id ());
 }
 
 void
-Concrete_From_Abstract::_tao_any_destructor (void *_tao_void_pointer)
+Supported_Interface_Value::_tao_any_destructor (void *_tao_void_pointer)
 {
-  Concrete_From_Abstract *tmp = static_cast<Concrete_From_Abstract *> (_tao_void_pointer);
+  Supported_Interface_Value *tmp = static_cast<Supported_Interface_Value *> (_tao_void_pointer);
   ::CORBA::remove_ref (tmp);
 }
 
 // TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Concrete_From_Abstract::_tao_type () const
+::CORBA::TypeCode_ptr Supported_Interface_Value::_tao_type () const
 {
-  return ::_tc_Concrete_From_Abstract;
+  return ::_tc_Supported_Interface_Value;
 }
 
-Concrete_From_Abstract::~Concrete_From_Abstract ()
+Supported_Interface_Value::~Supported_Interface_Value ()
 {}
 
 ::CORBA::Boolean
-Concrete_From_Abstract::_tao_marshal_v (TAO_OutputCDR & strm) const
+Supported_Interface_Value::_tao_marshal_v (TAO_OutputCDR & strm) const
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
-  return this->_tao_marshal__Concrete_From_Abstract (strm, ci);
+  return this->_tao_marshal__Supported_Interface_Value (strm, ci);
 }
 
 ::CORBA::Boolean
-Concrete_From_Abstract::_tao_unmarshal_v (TAO_InputCDR & strm)
+Supported_Interface_Value::_tao_unmarshal_v (TAO_InputCDR & strm)
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
-  return this->_tao_unmarshal__Concrete_From_Abstract (strm,ci);
+  return this->_tao_unmarshal__Supported_Interface_Value (strm,ci);
 }
 
 ::CORBA::Boolean
-Concrete_From_Abstract::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+Supported_Interface_Value::_tao_match_formal_type (ptrdiff_t formal_type_id) const
 {
-  return formal_type_id == reinterpret_cast<ptrdiff_t> (Concrete_From_Abstract::_downcast);
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Supported_Interface_Value::_downcast);
 }
 
 ::CORBA::Boolean
-Concrete_From_Abstract::_tao_unmarshal (
+Supported_Interface_Value::_tao_unmarshal (
     TAO_InputCDR &strm,
-    Concrete_From_Abstract *&new_object)
+    Supported_Interface_Value *&new_object)
 {
   ::CORBA::ValueBase *base {};
   ::CORBA::Boolean is_indirected = false;
@@ -2619,7 +2244,7 @@ Concrete_From_Abstract::_tao_unmarshal (
     ::CORBA::ValueBase::_tao_unmarshal_pre (
         strm,
         base,
-        Concrete_From_Abstract::_tao_obv_static_repository_id (),
+        Supported_Interface_Value::_tao_obv_static_repository_id (),
         is_null_object,
         is_indirected
       );
@@ -2627,133 +2252,149 @@ Concrete_From_Abstract::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
-  new_object = Concrete_From_Abstract::_downcast (base);
+  new_object = Supported_Interface_Value::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
 }
 
-Concrete_From_Abstract_init::Concrete_From_Abstract_init ()
+::CORBA::ValueBase *
+Supported_Interface_Value::_tao_to_value ()
+{
+  return this;
+}
+
+Supported_Interface_Value_init::Supported_Interface_Value_init ()
 {
 }
 
-Concrete_From_Abstract_init::~Concrete_From_Abstract_init ()
+Supported_Interface_Value_init::~Supported_Interface_Value_init ()
 {
 }
 
-Concrete_From_Abstract_init *
-Concrete_From_Abstract_init::_downcast (::CORBA::ValueFactoryBase *v)
+Supported_Interface_Value_init *
+Supported_Interface_Value_init::_downcast (::CORBA::ValueFactoryBase *v)
 {
-  return dynamic_cast<::Concrete_From_Abstract_init *> (v);
+  return dynamic_cast<::Supported_Interface_Value_init *> (v);
 }
 
 char const *
-Concrete_From_Abstract_init::tao_repository_id ()
+Supported_Interface_Value_init::tao_repository_id ()
 {
-  return ::Concrete_From_Abstract::_tao_obv_static_repository_id ();
+  return ::Supported_Interface_Value::_tao_obv_static_repository_id ();
 }
 
 ::CORBA::ValueBase *
-Concrete_From_Abstract_init::create_for_unmarshal ()
+Supported_Interface_Value_init::create_for_unmarshal ()
 {
   ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
       ret_val,
-      OBV_Concrete_From_Abstract,
+      OBV_Supported_Interface_Value,
       ::CORBA::NO_MEMORY ());
   return ret_val;
 }
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_Supported_Interface_Base {};
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_Abstract_Supported_Refcount_Base {};
 static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
                      TAO::Null_RefCount_Policy>
-  _tao_tc_Supported_Interface_Base (
+  _tao_tc_Abstract_Supported_Refcount_Base (
     ::CORBA::tk_value,
-    "IDL:Supported_Interface_Base:1.0",
-    "Supported_Interface_Base",
+    "IDL:Abstract_Supported_Refcount_Base:1.0",
+    "Abstract_Supported_Refcount_Base",
     ::CORBA::VM_ABSTRACT,
     std::addressof (::CORBA::_tc_null),
-    _tao_fields_Supported_Interface_Base,
+    _tao_fields_Abstract_Supported_Refcount_Base,
     0);
 
-::CORBA::TypeCode_ptr const _tc_Supported_Interface_Base = std::addressof(_tao_tc_Supported_Interface_Base);
+::CORBA::TypeCode_ptr const _tc_Abstract_Supported_Refcount_Base = std::addressof(_tao_tc_Abstract_Supported_Refcount_Base);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 void
-TAO::Value_Traits<Supported_Interface_Base>::add_ref (Supported_Interface_Base * p)
+TAO::Value_Traits<Abstract_Supported_Refcount_Base>::add_ref (Abstract_Supported_Refcount_Base * p)
 {
   ::CORBA::add_ref (p);
 }
 
 void
-TAO::Value_Traits<Supported_Interface_Base>::remove_ref (Supported_Interface_Base * p)
+TAO::Value_Traits<Abstract_Supported_Refcount_Base>::remove_ref (Abstract_Supported_Refcount_Base * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 void
-TAO::Value_Traits<Supported_Interface_Base>::release (Supported_Interface_Base * p)
+TAO::Value_Traits<Abstract_Supported_Refcount_Base>::release (Abstract_Supported_Refcount_Base * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-Supported_Interface_Base *
-Supported_Interface_Base::_downcast (::CORBA::ValueBase *v)
+Abstract_Supported_Refcount_Base *
+Abstract_Supported_Refcount_Base::_downcast (::CORBA::ValueBase *v)
 {
-  return dynamic_cast<::Supported_Interface_Base *> (v);
+  return dynamic_cast<::Abstract_Supported_Refcount_Base *> (v);
 }
 
 char const *
-Supported_Interface_Base::_tao_obv_repository_id () const
+Abstract_Supported_Refcount_Base::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
 }
 
 void
-Supported_Interface_Base::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+Abstract_Supported_Refcount_Base::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
 {
   ids.push_back (this->_tao_obv_static_repository_id ());
 }
 
 void
-Supported_Interface_Base::_tao_any_destructor (void *_tao_void_pointer)
+Abstract_Supported_Refcount_Base::_tao_any_destructor (void *_tao_void_pointer)
 {
-  Supported_Interface_Base *tmp = static_cast<Supported_Interface_Base *> (_tao_void_pointer);
+  Abstract_Supported_Refcount_Base *tmp = static_cast<Abstract_Supported_Refcount_Base *> (_tao_void_pointer);
   ::CORBA::remove_ref (tmp);
 }
 
 // TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Supported_Interface_Base::_tao_type () const
+::CORBA::TypeCode_ptr Abstract_Supported_Refcount_Base::_tao_type () const
 {
-  return ::_tc_Supported_Interface_Base;
+  return ::_tc_Abstract_Supported_Refcount_Base;
 }
 
-Supported_Interface_Base::~Supported_Interface_Base ()
+Abstract_Supported_Refcount_Base::~Abstract_Supported_Refcount_Base ()
 {}
 
 ::CORBA::Boolean
-Supported_Interface_Base::_tao_unmarshal (
+Abstract_Supported_Refcount_Base::_tao_unmarshal (
     TAO_InputCDR &strm,
-    Supported_Interface_Base *&new_object)
+    Abstract_Supported_Refcount_Base *&new_object)
 {
   ::CORBA::ValueBase *base {};
   ::CORBA::Boolean is_indirected = false;
@@ -2762,7 +2403,7 @@ Supported_Interface_Base::_tao_unmarshal (
     ::CORBA::ValueBase::_tao_unmarshal_pre (
         strm,
         base,
-        Supported_Interface_Base::_tao_obv_static_repository_id (),
+        Abstract_Supported_Refcount_Base::_tao_obv_static_repository_id (),
         is_null_object,
         is_indirected
       );
@@ -2770,27 +2411,43 @@ Supported_Interface_Base::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
-  new_object = Supported_Interface_Base::_downcast (base);
+  new_object = Abstract_Supported_Refcount_Base::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
 }
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Supported_Interface_Derived[] =
+
+::CORBA::ValueBase *
+Abstract_Supported_Refcount_Base::_tao_to_value ()
+{
+  return this;
+}
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Concrete_Supported_Refcount_Derived[] =
   {
     { "value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
 
@@ -2799,97 +2456,97 @@ static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
                      TAO::Null_RefCount_Policy>
-  _tao_tc_Supported_Interface_Derived (
+  _tao_tc_Concrete_Supported_Refcount_Derived (
     ::CORBA::tk_value,
-    "IDL:Supported_Interface_Derived:1.0",
-    "Supported_Interface_Derived",
+    "IDL:Concrete_Supported_Refcount_Derived:1.0",
+    "Concrete_Supported_Refcount_Derived",
     ::CORBA::VM_NONE,
     std::addressof (::CORBA::_tc_null),
-    _tao_fields_Supported_Interface_Derived,
+    _tao_fields_Concrete_Supported_Refcount_Derived,
     1);
 
-::CORBA::TypeCode_ptr const _tc_Supported_Interface_Derived = std::addressof(_tao_tc_Supported_Interface_Derived);
+::CORBA::TypeCode_ptr const _tc_Concrete_Supported_Refcount_Derived = std::addressof(_tao_tc_Concrete_Supported_Refcount_Derived);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 void
-TAO::Value_Traits<Supported_Interface_Derived>::add_ref (Supported_Interface_Derived * p)
+TAO::Value_Traits<Concrete_Supported_Refcount_Derived>::add_ref (Concrete_Supported_Refcount_Derived * p)
 {
   ::CORBA::add_ref (p);
 }
 
 void
-TAO::Value_Traits<Supported_Interface_Derived>::remove_ref (Supported_Interface_Derived * p)
+TAO::Value_Traits<Concrete_Supported_Refcount_Derived>::remove_ref (Concrete_Supported_Refcount_Derived * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 void
-TAO::Value_Traits<Supported_Interface_Derived>::release (Supported_Interface_Derived * p)
+TAO::Value_Traits<Concrete_Supported_Refcount_Derived>::release (Concrete_Supported_Refcount_Derived * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-Supported_Interface_Derived *
-Supported_Interface_Derived::_downcast (::CORBA::ValueBase *v)
+Concrete_Supported_Refcount_Derived *
+Concrete_Supported_Refcount_Derived::_downcast (::CORBA::ValueBase *v)
 {
-  return dynamic_cast<::Supported_Interface_Derived *> (v);
+  return dynamic_cast<::Concrete_Supported_Refcount_Derived *> (v);
 }
 
 char const *
-Supported_Interface_Derived::_tao_obv_repository_id () const
+Concrete_Supported_Refcount_Derived::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
 }
 
 void
-Supported_Interface_Derived::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+Concrete_Supported_Refcount_Derived::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
 {
   ids.push_back (this->_tao_obv_static_repository_id ());
 }
 
 void
-Supported_Interface_Derived::_tao_any_destructor (void *_tao_void_pointer)
+Concrete_Supported_Refcount_Derived::_tao_any_destructor (void *_tao_void_pointer)
 {
-  Supported_Interface_Derived *tmp = static_cast<Supported_Interface_Derived *> (_tao_void_pointer);
+  Concrete_Supported_Refcount_Derived *tmp = static_cast<Concrete_Supported_Refcount_Derived *> (_tao_void_pointer);
   ::CORBA::remove_ref (tmp);
 }
 
 // TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Supported_Interface_Derived::_tao_type () const
+::CORBA::TypeCode_ptr Concrete_Supported_Refcount_Derived::_tao_type () const
 {
-  return ::_tc_Supported_Interface_Derived;
+  return ::_tc_Concrete_Supported_Refcount_Derived;
 }
 
-Supported_Interface_Derived::~Supported_Interface_Derived ()
+Concrete_Supported_Refcount_Derived::~Concrete_Supported_Refcount_Derived ()
 {}
 
 ::CORBA::Boolean
-Supported_Interface_Derived::_tao_marshal_v (TAO_OutputCDR & strm) const
+Concrete_Supported_Refcount_Derived::_tao_marshal_v (TAO_OutputCDR & strm) const
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
-  return this->_tao_marshal__Supported_Interface_Derived (strm, ci);
+  return this->_tao_marshal__Concrete_Supported_Refcount_Derived (strm, ci);
 }
 
 ::CORBA::Boolean
-Supported_Interface_Derived::_tao_unmarshal_v (TAO_InputCDR & strm)
+Concrete_Supported_Refcount_Derived::_tao_unmarshal_v (TAO_InputCDR & strm)
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
-  return this->_tao_unmarshal__Supported_Interface_Derived (strm,ci);
+  return this->_tao_unmarshal__Concrete_Supported_Refcount_Derived (strm,ci);
 }
 
 ::CORBA::Boolean
-Supported_Interface_Derived::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+Concrete_Supported_Refcount_Derived::_tao_match_formal_type (ptrdiff_t formal_type_id) const
 {
-  return formal_type_id == reinterpret_cast<ptrdiff_t> (Supported_Interface_Derived::_downcast);
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Concrete_Supported_Refcount_Derived::_downcast);
 }
 
 ::CORBA::Boolean
-Supported_Interface_Derived::_tao_unmarshal (
+Concrete_Supported_Refcount_Derived::_tao_unmarshal (
     TAO_InputCDR &strm,
-    Supported_Interface_Derived *&new_object)
+    Concrete_Supported_Refcount_Derived *&new_object)
 {
   ::CORBA::ValueBase *base {};
   ::CORBA::Boolean is_indirected = false;
@@ -2898,7 +2555,7 @@ Supported_Interface_Derived::_tao_unmarshal (
     ::CORBA::ValueBase::_tao_unmarshal_pre (
         strm,
         base,
-        Supported_Interface_Derived::_tao_obv_static_repository_id (),
+        Concrete_Supported_Refcount_Derived::_tao_obv_static_repository_id (),
         is_null_object,
         is_indirected
       );
@@ -2906,47 +2563,68 @@ Supported_Interface_Derived::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
-  new_object = Supported_Interface_Derived::_downcast (base);
+  new_object = Concrete_Supported_Refcount_Derived::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
 }
 
-Supported_Interface_Derived_init::Supported_Interface_Derived_init ()
+Concrete_Supported_Refcount_Derived_init::Concrete_Supported_Refcount_Derived_init ()
 {
 }
 
-Supported_Interface_Derived_init::~Supported_Interface_Derived_init ()
+Concrete_Supported_Refcount_Derived_init::~Concrete_Supported_Refcount_Derived_init ()
 {
 }
 
-Supported_Interface_Derived_init *
-Supported_Interface_Derived_init::_downcast (::CORBA::ValueFactoryBase *v)
+Concrete_Supported_Refcount_Derived_init *
+Concrete_Supported_Refcount_Derived_init::_downcast (::CORBA::ValueFactoryBase *v)
 {
-  return dynamic_cast<::Supported_Interface_Derived_init *> (v);
+  return dynamic_cast<::Concrete_Supported_Refcount_Derived_init *> (v);
 }
 
 char const *
-Supported_Interface_Derived_init::tao_repository_id ()
+Concrete_Supported_Refcount_Derived_init::tao_repository_id ()
 {
-  return ::Supported_Interface_Derived::_tao_obv_static_repository_id ();
+  return ::Concrete_Supported_Refcount_Derived::_tao_obv_static_repository_id ();
 }
-static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Factory_Initialized_Value[] =
+
+::CORBA::ValueBase *
+Concrete_Supported_Refcount_Derived_init::create_for_unmarshal ()
+{
+  ::CORBA::ValueBase *ret_val {};
+  ACE_NEW_THROW_EX (
+      ret_val,
+      OBV_Concrete_Supported_Refcount_Derived,
+      ::CORBA::NO_MEMORY ());
+  return ret_val;
+}
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Application_Factory_Value[] =
   {
     { "value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
 
@@ -2955,97 +2633,97 @@ static TAO::TypeCode::Value<char const *,
                      ::CORBA::TypeCode_ptr const *,
                      TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
                      TAO::Null_RefCount_Policy>
-  _tao_tc_Factory_Initialized_Value (
+  _tao_tc_Application_Factory_Value (
     ::CORBA::tk_value,
-    "IDL:Factory_Initialized_Value:1.0",
-    "Factory_Initialized_Value",
+    "IDL:Application_Factory_Value:1.0",
+    "Application_Factory_Value",
     ::CORBA::VM_NONE,
     std::addressof (::CORBA::_tc_null),
-    _tao_fields_Factory_Initialized_Value,
+    _tao_fields_Application_Factory_Value,
     1);
 
-::CORBA::TypeCode_ptr const _tc_Factory_Initialized_Value = std::addressof(_tao_tc_Factory_Initialized_Value);
+::CORBA::TypeCode_ptr const _tc_Application_Factory_Value = std::addressof(_tao_tc_Application_Factory_Value);
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 void
-TAO::Value_Traits<Factory_Initialized_Value>::add_ref (Factory_Initialized_Value * p)
+TAO::Value_Traits<Application_Factory_Value>::add_ref (Application_Factory_Value * p)
 {
   ::CORBA::add_ref (p);
 }
 
 void
-TAO::Value_Traits<Factory_Initialized_Value>::remove_ref (Factory_Initialized_Value * p)
+TAO::Value_Traits<Application_Factory_Value>::remove_ref (Application_Factory_Value * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 void
-TAO::Value_Traits<Factory_Initialized_Value>::release (Factory_Initialized_Value * p)
+TAO::Value_Traits<Application_Factory_Value>::release (Application_Factory_Value * p)
 {
   ::CORBA::remove_ref (p);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
-Factory_Initialized_Value *
-Factory_Initialized_Value::_downcast (::CORBA::ValueBase *v)
+Application_Factory_Value *
+Application_Factory_Value::_downcast (::CORBA::ValueBase *v)
 {
-  return dynamic_cast<::Factory_Initialized_Value *> (v);
+  return dynamic_cast<::Application_Factory_Value *> (v);
 }
 
 char const *
-Factory_Initialized_Value::_tao_obv_repository_id () const
+Application_Factory_Value::_tao_obv_repository_id () const
 {
   return this->_tao_obv_static_repository_id ();
 }
 
 void
-Factory_Initialized_Value::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+Application_Factory_Value::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
 {
   ids.push_back (this->_tao_obv_static_repository_id ());
 }
 
 void
-Factory_Initialized_Value::_tao_any_destructor (void *_tao_void_pointer)
+Application_Factory_Value::_tao_any_destructor (void *_tao_void_pointer)
 {
-  Factory_Initialized_Value *tmp = static_cast<Factory_Initialized_Value *> (_tao_void_pointer);
+  Application_Factory_Value *tmp = static_cast<Application_Factory_Value *> (_tao_void_pointer);
   ::CORBA::remove_ref (tmp);
 }
 
 // TAO extension - the virtual _type method.
-::CORBA::TypeCode_ptr Factory_Initialized_Value::_tao_type () const
+::CORBA::TypeCode_ptr Application_Factory_Value::_tao_type () const
 {
-  return ::_tc_Factory_Initialized_Value;
+  return ::_tc_Application_Factory_Value;
 }
 
-Factory_Initialized_Value::~Factory_Initialized_Value ()
+Application_Factory_Value::~Application_Factory_Value ()
 {}
 
 ::CORBA::Boolean
-Factory_Initialized_Value::_tao_marshal_v (TAO_OutputCDR & strm) const
+Application_Factory_Value::_tao_marshal_v (TAO_OutputCDR & strm) const
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
-  return this->_tao_marshal__Factory_Initialized_Value (strm, ci);
+  return this->_tao_marshal__Application_Factory_Value (strm, ci);
 }
 
 ::CORBA::Boolean
-Factory_Initialized_Value::_tao_unmarshal_v (TAO_InputCDR & strm)
+Application_Factory_Value::_tao_unmarshal_v (TAO_InputCDR & strm)
 {
   TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
-  return this->_tao_unmarshal__Factory_Initialized_Value (strm,ci);
+  return this->_tao_unmarshal__Application_Factory_Value (strm,ci);
 }
 
 ::CORBA::Boolean
-Factory_Initialized_Value::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+Application_Factory_Value::_tao_match_formal_type (ptrdiff_t formal_type_id) const
 {
-  return formal_type_id == reinterpret_cast<ptrdiff_t> (Factory_Initialized_Value::_downcast);
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Application_Factory_Value::_downcast);
 }
 
 ::CORBA::Boolean
-Factory_Initialized_Value::_tao_unmarshal (
+Application_Factory_Value::_tao_unmarshal (
     TAO_InputCDR &strm,
-    Factory_Initialized_Value *&new_object)
+    Application_Factory_Value *&new_object)
 {
   ::CORBA::ValueBase *base {};
   ::CORBA::Boolean is_indirected = false;
@@ -3054,7 +2732,7 @@ Factory_Initialized_Value::_tao_unmarshal (
     ::CORBA::ValueBase::_tao_unmarshal_pre (
         strm,
         base,
-        Factory_Initialized_Value::_tao_obv_static_repository_id (),
+        Application_Factory_Value::_tao_obv_static_repository_id (),
         is_null_object,
         is_indirected
       );
@@ -3062,45 +2740,55 @@ Factory_Initialized_Value::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
-  new_object = Factory_Initialized_Value::_downcast (base);
+  new_object = Application_Factory_Value::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
 }
 
-Factory_Initialized_Value_init::Factory_Initialized_Value_init ()
+Application_Factory_Value_init::Application_Factory_Value_init ()
 {
 }
 
-Factory_Initialized_Value_init::~Factory_Initialized_Value_init ()
+Application_Factory_Value_init::~Application_Factory_Value_init ()
 {
 }
 
-Factory_Initialized_Value_init *
-Factory_Initialized_Value_init::_downcast (::CORBA::ValueFactoryBase *v)
+Application_Factory_Value_init *
+Application_Factory_Value_init::_downcast (::CORBA::ValueFactoryBase *v)
 {
-  return dynamic_cast<::Factory_Initialized_Value_init *> (v);
+  return dynamic_cast<::Application_Factory_Value_init *> (v);
 }
 
 char const *
-Factory_Initialized_Value_init::tao_repository_id ()
+Application_Factory_Value_init::tao_repository_id ()
 {
-  return ::Factory_Initialized_Value::_tao_obv_static_repository_id ();
+  return ::Application_Factory_Value::_tao_obv_static_repository_id ();
 }
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Copy_Base[] =
   {
@@ -3218,22 +2906,32 @@ Copy_Base::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Base::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -3257,6 +2955,17 @@ char const *
 Copy_Base_init::tao_repository_id ()
 {
   return ::Copy_Base::_tao_obv_static_repository_id ();
+}
+
+::CORBA::ValueBase *
+Copy_Base_init::create_for_unmarshal ()
+{
+  ::CORBA::ValueBase *ret_val {};
+  ACE_NEW_THROW_EX (
+      ret_val,
+      OBV_Copy_Base,
+      ::CORBA::NO_MEMORY ());
+  return ret_val;
 }
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Copy_Derived[] =
   {
@@ -3374,22 +3083,32 @@ Copy_Derived::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Derived::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -3537,22 +3256,340 @@ Copy_Operation_Derived::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Operation_Derived::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
+
+  owner._retn ();
+  return true;
+}
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Copy_Factory_Derived[] =
+  {
+    { "derived_value", std::addressof (CORBA::_tc_long), ::CORBA::PUBLIC_MEMBER }
+
+  };
+static TAO::TypeCode::Value<char const *,
+                     ::CORBA::TypeCode_ptr const *,
+                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
+                     TAO::Null_RefCount_Policy>
+  _tao_tc_Copy_Factory_Derived (
+    ::CORBA::tk_value,
+    "IDL:Copy_Factory_Derived:1.0",
+    "Copy_Factory_Derived",
+    ::CORBA::VM_NONE,
+    std::addressof (_tc_Copy_Base),
+    _tao_fields_Copy_Factory_Derived,
+    1);
+
+::CORBA::TypeCode_ptr const _tc_Copy_Factory_Derived = std::addressof(_tao_tc_Copy_Factory_Derived);
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+void
+TAO::Value_Traits<Copy_Factory_Derived>::add_ref (Copy_Factory_Derived * p)
+{
+  ::CORBA::add_ref (p);
+}
+
+void
+TAO::Value_Traits<Copy_Factory_Derived>::remove_ref (Copy_Factory_Derived * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+void
+TAO::Value_Traits<Copy_Factory_Derived>::release (Copy_Factory_Derived * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+Copy_Factory_Derived *
+Copy_Factory_Derived::_downcast (::CORBA::ValueBase *v)
+{
+  return dynamic_cast<::Copy_Factory_Derived *> (v);
+}
+
+char const *
+Copy_Factory_Derived::_tao_obv_repository_id () const
+{
+  return this->_tao_obv_static_repository_id ();
+}
+
+void
+Copy_Factory_Derived::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+{
+  ids.push_back (this->_tao_obv_static_repository_id ());
+}
+
+void
+Copy_Factory_Derived::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Copy_Factory_Derived *tmp = static_cast<Copy_Factory_Derived *> (_tao_void_pointer);
+  ::CORBA::remove_ref (tmp);
+}
+
+// TAO extension - the virtual _type method.
+::CORBA::TypeCode_ptr Copy_Factory_Derived::_tao_type () const
+{
+  return ::_tc_Copy_Factory_Derived;
+}
+
+Copy_Factory_Derived::~Copy_Factory_Derived ()
+{}
+
+::CORBA::Boolean
+Copy_Factory_Derived::_tao_marshal_v (TAO_OutputCDR & strm) const
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
+  return this->_tao_marshal__Copy_Factory_Derived (strm, ci);
+}
+
+::CORBA::Boolean
+Copy_Factory_Derived::_tao_unmarshal_v (TAO_InputCDR & strm)
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
+  return this->_tao_unmarshal__Copy_Factory_Derived (strm,ci);
+}
+
+::CORBA::Boolean
+Copy_Factory_Derived::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+{
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Copy_Factory_Derived::_downcast);
+}
+
+::CORBA::Boolean
+Copy_Factory_Derived::_tao_unmarshal (
+    TAO_InputCDR &strm,
+    Copy_Factory_Derived *&new_object)
+{
+  ::CORBA::ValueBase *base {};
+  ::CORBA::Boolean is_indirected = false;
+  ::CORBA::Boolean is_null_object = false;
+  ::CORBA::Boolean const retval =
+    ::CORBA::ValueBase::_tao_unmarshal_pre (
+        strm,
+        base,
+        Copy_Factory_Derived::_tao_obv_static_repository_id (),
+        is_null_object,
+        is_indirected
+      );
+
+  ::CORBA::ValueBase_var owner (base);
+
+  if (!retval)
+  {
+    return false;
+  }
+
+  if (is_null_object)
+  {
+    return true;
+  }
+
+  if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
+    return false;
+  }
+
+  // Now base must point to the unmarshaled object.
+  // Align the pointer to the right subobject.
+  new_object = Copy_Factory_Derived::_downcast (base);
+  if (nullptr == new_object)
+  {
+    return false;
+  }
+
+  if (is_indirected)
+  {
+    new_object->_add_ref ();
+  }
+
+  owner._retn ();
+  return true;
+}
+
+Copy_Factory_Derived_init::Copy_Factory_Derived_init ()
+{
+}
+
+Copy_Factory_Derived_init::~Copy_Factory_Derived_init ()
+{
+}
+
+Copy_Factory_Derived_init *
+Copy_Factory_Derived_init::_downcast (::CORBA::ValueFactoryBase *v)
+{
+  return dynamic_cast<::Copy_Factory_Derived_init *> (v);
+}
+
+char const *
+Copy_Factory_Derived_init::tao_repository_id ()
+{
+  return ::Copy_Factory_Derived::_tao_obv_static_repository_id ();
+}
+static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const * const _tao_fields_Copy_Factory_Operation_Derived {};
+static TAO::TypeCode::Value<char const *,
+                     ::CORBA::TypeCode_ptr const *,
+                     TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const *,
+                     TAO::Null_RefCount_Policy>
+  _tao_tc_Copy_Factory_Operation_Derived (
+    ::CORBA::tk_value,
+    "IDL:Copy_Factory_Operation_Derived:1.0",
+    "Copy_Factory_Operation_Derived",
+    ::CORBA::VM_NONE,
+    std::addressof (_tc_Copy_Factory_Derived),
+    _tao_fields_Copy_Factory_Operation_Derived,
+    0);
+
+::CORBA::TypeCode_ptr const _tc_Copy_Factory_Operation_Derived = std::addressof(_tao_tc_Copy_Factory_Operation_Derived);
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+void
+TAO::Value_Traits<Copy_Factory_Operation_Derived>::add_ref (Copy_Factory_Operation_Derived * p)
+{
+  ::CORBA::add_ref (p);
+}
+
+void
+TAO::Value_Traits<Copy_Factory_Operation_Derived>::remove_ref (Copy_Factory_Operation_Derived * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+void
+TAO::Value_Traits<Copy_Factory_Operation_Derived>::release (Copy_Factory_Operation_Derived * p)
+{
+  ::CORBA::remove_ref (p);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+Copy_Factory_Operation_Derived *
+Copy_Factory_Operation_Derived::_downcast (::CORBA::ValueBase *v)
+{
+  return dynamic_cast<::Copy_Factory_Operation_Derived *> (v);
+}
+
+char const *
+Copy_Factory_Operation_Derived::_tao_obv_repository_id () const
+{
+  return this->_tao_obv_static_repository_id ();
+}
+
+void
+Copy_Factory_Operation_Derived::_tao_obv_truncatable_repo_ids (Repository_Id_List& ids) const
+{
+  ids.push_back (this->_tao_obv_static_repository_id ());
+}
+
+void
+Copy_Factory_Operation_Derived::_tao_any_destructor (void *_tao_void_pointer)
+{
+  Copy_Factory_Operation_Derived *tmp = static_cast<Copy_Factory_Operation_Derived *> (_tao_void_pointer);
+  ::CORBA::remove_ref (tmp);
+}
+
+// TAO extension - the virtual _type method.
+::CORBA::TypeCode_ptr Copy_Factory_Operation_Derived::_tao_type () const
+{
+  return ::_tc_Copy_Factory_Operation_Derived;
+}
+
+Copy_Factory_Operation_Derived::~Copy_Factory_Operation_Derived ()
+{}
+
+::CORBA::Boolean
+Copy_Factory_Operation_Derived::_tao_marshal_v (TAO_OutputCDR & strm) const
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_);
+  return this->_tao_marshal__Copy_Factory_Operation_Derived (strm, ci);
+}
+
+::CORBA::Boolean
+Copy_Factory_Operation_Derived::_tao_unmarshal_v (TAO_InputCDR & strm)
+{
+  TAO_ChunkInfo ci (this->is_truncatable_ || this->chunking_, 1);
+  return this->_tao_unmarshal__Copy_Factory_Operation_Derived (strm,ci);
+}
+
+::CORBA::Boolean
+Copy_Factory_Operation_Derived::_tao_match_formal_type (ptrdiff_t formal_type_id) const
+{
+  return formal_type_id == reinterpret_cast<ptrdiff_t> (Copy_Factory_Operation_Derived::_downcast);
+}
+
+::CORBA::Boolean
+Copy_Factory_Operation_Derived::_tao_unmarshal (
+    TAO_InputCDR &strm,
+    Copy_Factory_Operation_Derived *&new_object)
+{
+  ::CORBA::ValueBase *base {};
+  ::CORBA::Boolean is_indirected = false;
+  ::CORBA::Boolean is_null_object = false;
+  ::CORBA::Boolean const retval =
+    ::CORBA::ValueBase::_tao_unmarshal_pre (
+        strm,
+        base,
+        Copy_Factory_Operation_Derived::_tao_obv_static_repository_id (),
+        is_null_object,
+        is_indirected
+      );
+
+  ::CORBA::ValueBase_var owner (base);
+
+  if (!retval)
+  {
+    return false;
+  }
+
+  if (is_null_object)
+  {
+    return true;
+  }
+
+  if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
+    return false;
+  }
+
+  // Now base must point to the unmarshaled object.
+  // Align the pointer to the right subobject.
+  new_object = Copy_Factory_Operation_Derived::_downcast (base);
+  if (nullptr == new_object)
+  {
+    return false;
+  }
+
+  if (is_indirected)
+  {
+    new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -3673,22 +3710,32 @@ Copy_Leaf::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Leaf::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -3827,16 +3874,6 @@ void Copy_Leaf_Struct::_tao_any_destructor (void *_tao_void_pointer)
   Copy_Leaf_Struct *tmp = static_cast<Copy_Leaf_Struct *> (_tao_void_pointer);
   delete tmp;
 }
-static TAO::TypeCode::Alias<char const *,
-                            ::CORBA::TypeCode_ptr const *,
-                            TAO::Null_RefCount_Policy>
-  _tao_tc_Copy_Leaf_Struct_Alias (
-    ::CORBA::tk_alias,
-    "IDL:Copy_Leaf_Struct_Alias:1.0",
-    "Copy_Leaf_Struct_Alias",
-    std::addressof (_tc_Copy_Leaf_Struct));
-
-::CORBA::TypeCode_ptr const _tc_Copy_Leaf_Struct_Alias = std::addressof(_tao_tc_Copy_Leaf_Struct_Alias);
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Copy_Alias_Holder[] =
   {
     { "leaf", std::addressof (_tc_Copy_Leaf_Alias), ::CORBA::PUBLIC_MEMBER }
@@ -3953,22 +3990,32 @@ Copy_Alias_Holder::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Alias_Holder::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -4121,22 +4168,32 @@ Copy_Sequence_Holder::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Sequence_Holder::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -4174,7 +4231,7 @@ Copy_Sequence_Holder_init::create_for_unmarshal ()
 }
 static TAO::TypeCode::Value_Field<char const *, ::CORBA::TypeCode_ptr const *> const _tao_fields_Copy_Struct_Holder[] =
   {
-    { "value", std::addressof (_tc_Copy_Leaf_Struct_Alias), ::CORBA::PUBLIC_MEMBER }
+    { "value", std::addressof (_tc_Copy_Leaf_Struct), ::CORBA::PUBLIC_MEMBER }
 
   };
 static TAO::TypeCode::Value<char const *,
@@ -4288,22 +4345,32 @@ Copy_Struct_Holder::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Copy_Struct_Holder::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -4638,22 +4705,32 @@ RecValueType::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = RecValueType::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -4805,22 +4882,32 @@ GetsDeprecatedMember::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = GetsDeprecatedMember::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -4951,22 +5038,32 @@ X_VALUETYPE::AXXX::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = AXXX::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -5066,22 +5163,32 @@ X_VALUETYPE::BXXX::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = BXXX::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -5252,22 +5359,32 @@ ModSelection::SelectionDefns::Criterion::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = Criterion::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -5396,22 +5513,32 @@ ModSelection::SelectionDefns::CriterionExpr::_tao_unmarshal (
   ::CORBA::ValueBase_var owner (base);
 
   if (!retval)
+  {
     return false;
+  }
 
   if (is_null_object)
+  {
     return true;
+  }
 
   if (!is_indirected && !base->_tao_unmarshal_v (strm))
+  {
     return false;
+  }
 
   // Now base must point to the unmarshaled object.
   // Align the pointer to the right subobject.
   new_object = CriterionExpr::_downcast (base);
   if (nullptr == new_object)
+  {
     return false;
+  }
 
   if (is_indirected)
+  {
     new_object->_add_ref ();
+  }
 
   owner._retn ();
   return true;
@@ -5565,19 +5692,6 @@ OBV_MyValueType::OBV_MyValueType (
 OBV_MyValueType::~OBV_MyValueType ()
 {}
 
-::CORBA::ValueBase *
-OBV_MyValueType::_copy_value ()
-{
-  ::CORBA::ValueBase *ret_val {};
-  ACE_NEW_THROW_EX (
-    ret_val,
-    OBV_MyValueType (
-      my_string_value ()
-    ),
-    ::CORBA::NO_MEMORY ());
-  return ret_val;
-}
-
 ::CORBA::Boolean
 OBV_MyValueType::_tao_marshal__MyValueType (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
 {
@@ -5695,30 +5809,64 @@ OBV_AMH_Valuetype_Operation_BaseExceptionHolder::_tao_unmarshal__AMH_Valuetype_O
 {
   return _tao_unmarshal_state (strm, ci);
 }
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::~OBV_AMH_Empty_Valuetype_OperationExceptionHolder ()
+OBV_Supports_Abstract_Operation::OBV_Supports_Abstract_Operation (
+    ::CORBA::Long _tao_init_value)
+{
+  value (_tao_init_value);
+}
+
+OBV_Supports_Abstract_Operation::~OBV_Supports_Abstract_Operation ()
 {}
 
 ::CORBA::ValueBase *
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::_copy_value ()
+OBV_Supports_Abstract_Operation::_copy_value ()
 {
   ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
     ret_val,
-    OBV_AMH_Empty_Valuetype_OperationExceptionHolder (),
+    OBV_Supports_Abstract_Operation (
+      value ()
+    ),
     ::CORBA::NO_MEMORY ());
   return ret_val;
 }
 
 ::CORBA::Boolean
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::_tao_marshal__AMH_Empty_Valuetype_OperationExceptionHolder (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+OBV_Supports_Abstract_Operation::_tao_marshal__Supports_Abstract_Operation (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
 {
   return _tao_marshal_state (strm, ci);
 }
 
 ::CORBA::Boolean
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal__AMH_Empty_Valuetype_OperationExceptionHolder (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+OBV_Supports_Abstract_Operation::_tao_unmarshal__Supports_Abstract_Operation (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
 {
   return _tao_unmarshal_state (strm, ci);
+}
+/// Accessor to set the member.
+void
+OBV_Supports_Abstract_Operation::value (CORBA::Long const val)
+{
+  // Set the value.
+  this->_pd_value = val;
+}
+
+// Retrieve the member
+::CORBA::Long
+OBV_Supports_Abstract_Operation::value () const
+{
+  return this->_pd_value;
+}
+
+void
+OBV_Supports_Abstract_Operation::_add_ref ()
+{
+  this->::CORBA::DefaultValueRefCountBase::_add_ref ();
+}
+
+void
+OBV_Supports_Abstract_Operation::_remove_ref ()
+{
+  this->::CORBA::DefaultValueRefCountBase::_remove_ref ();
 }
 OBV_Supports_Inherited_Operation::OBV_Supports_Inherited_Operation (
     ::CORBA::Long _tao_init_value)
@@ -5791,22 +5939,22 @@ OBV_AMH_Empty_Valuetype_InterfaceExceptionHolder::_tao_unmarshal__AMH_Empty_Valu
 {
   return _tao_unmarshal_state (strm, ci);
 }
-OBV_Concrete_From_Abstract::OBV_Concrete_From_Abstract (
+OBV_Supported_Interface_Value::OBV_Supported_Interface_Value (
     ::CORBA::Long _tao_init_value)
 {
   value (_tao_init_value);
 }
 
-OBV_Concrete_From_Abstract::~OBV_Concrete_From_Abstract ()
+OBV_Supported_Interface_Value::~OBV_Supported_Interface_Value ()
 {}
 
 ::CORBA::ValueBase *
-OBV_Concrete_From_Abstract::_copy_value ()
+OBV_Supported_Interface_Value::_copy_value ()
 {
   ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
     ret_val,
-    OBV_Concrete_From_Abstract (
+    OBV_Supported_Interface_Value (
       value ()
     ),
     ::CORBA::NO_MEMORY ());
@@ -5814,19 +5962,19 @@ OBV_Concrete_From_Abstract::_copy_value ()
 }
 
 ::CORBA::Boolean
-OBV_Concrete_From_Abstract::_tao_marshal__Concrete_From_Abstract (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+OBV_Supported_Interface_Value::_tao_marshal__Supported_Interface_Value (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
 {
   return _tao_marshal_state (strm, ci);
 }
 
 ::CORBA::Boolean
-OBV_Concrete_From_Abstract::_tao_unmarshal__Concrete_From_Abstract (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+OBV_Supported_Interface_Value::_tao_unmarshal__Supported_Interface_Value (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
 {
   return _tao_unmarshal_state (strm, ci);
 }
 /// Accessor to set the member.
 void
-OBV_Concrete_From_Abstract::value (CORBA::Long const val)
+OBV_Supported_Interface_Value::value (CORBA::Long const val)
 {
   // Set the value.
   this->_pd_value = val;
@@ -5834,85 +5982,38 @@ OBV_Concrete_From_Abstract::value (CORBA::Long const val)
 
 // Retrieve the member
 ::CORBA::Long
-OBV_Concrete_From_Abstract::value () const
-{
-  return this->_pd_value;
-}
-OBV_Supported_Interface_Derived::OBV_Supported_Interface_Derived (
-    ::CORBA::Long _tao_init_value)
-{
-  value (_tao_init_value);
-}
-
-OBV_Supported_Interface_Derived::~OBV_Supported_Interface_Derived ()
-{}
-
-::CORBA::ValueBase *
-OBV_Supported_Interface_Derived::_copy_value ()
-{
-  ::CORBA::ValueBase *ret_val {};
-  ACE_NEW_THROW_EX (
-    ret_val,
-    OBV_Supported_Interface_Derived (
-      value ()
-    ),
-    ::CORBA::NO_MEMORY ());
-  return ret_val;
-}
-
-::CORBA::Boolean
-OBV_Supported_Interface_Derived::_tao_marshal__Supported_Interface_Derived (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
-{
-  return _tao_marshal_state (strm, ci);
-}
-
-::CORBA::Boolean
-OBV_Supported_Interface_Derived::_tao_unmarshal__Supported_Interface_Derived (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
-{
-  return _tao_unmarshal_state (strm, ci);
-}
-/// Accessor to set the member.
-void
-OBV_Supported_Interface_Derived::value (CORBA::Long const val)
-{
-  // Set the value.
-  this->_pd_value = val;
-}
-
-// Retrieve the member
-::CORBA::Long
-OBV_Supported_Interface_Derived::value () const
+OBV_Supported_Interface_Value::value () const
 {
   return this->_pd_value;
 }
 
 void
-OBV_Supported_Interface_Derived::_add_ref ()
+OBV_Supported_Interface_Value::_add_ref ()
 {
   this->::CORBA::DefaultValueRefCountBase::_add_ref ();
 }
 
 void
-OBV_Supported_Interface_Derived::_remove_ref ()
+OBV_Supported_Interface_Value::_remove_ref ()
 {
   this->::CORBA::DefaultValueRefCountBase::_remove_ref ();
 }
-OBV_Factory_Initialized_Value::OBV_Factory_Initialized_Value (
+OBV_Concrete_Supported_Refcount_Derived::OBV_Concrete_Supported_Refcount_Derived (
     ::CORBA::Long _tao_init_value)
 {
   value (_tao_init_value);
 }
 
-OBV_Factory_Initialized_Value::~OBV_Factory_Initialized_Value ()
+OBV_Concrete_Supported_Refcount_Derived::~OBV_Concrete_Supported_Refcount_Derived ()
 {}
 
 ::CORBA::ValueBase *
-OBV_Factory_Initialized_Value::_copy_value ()
+OBV_Concrete_Supported_Refcount_Derived::_copy_value ()
 {
   ::CORBA::ValueBase *ret_val {};
   ACE_NEW_THROW_EX (
     ret_val,
-    OBV_Factory_Initialized_Value (
+    OBV_Concrete_Supported_Refcount_Derived (
       value ()
     ),
     ::CORBA::NO_MEMORY ());
@@ -5920,19 +6021,19 @@ OBV_Factory_Initialized_Value::_copy_value ()
 }
 
 ::CORBA::Boolean
-OBV_Factory_Initialized_Value::_tao_marshal__Factory_Initialized_Value (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+OBV_Concrete_Supported_Refcount_Derived::_tao_marshal__Concrete_Supported_Refcount_Derived (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
 {
   return _tao_marshal_state (strm, ci);
 }
 
 ::CORBA::Boolean
-OBV_Factory_Initialized_Value::_tao_unmarshal__Factory_Initialized_Value (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+OBV_Concrete_Supported_Refcount_Derived::_tao_unmarshal__Concrete_Supported_Refcount_Derived (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
 {
   return _tao_unmarshal_state (strm, ci);
 }
 /// Accessor to set the member.
 void
-OBV_Factory_Initialized_Value::value (CORBA::Long const val)
+OBV_Concrete_Supported_Refcount_Derived::value (CORBA::Long const val)
 {
   // Set the value.
   this->_pd_value = val;
@@ -5940,21 +6041,55 @@ OBV_Factory_Initialized_Value::value (CORBA::Long const val)
 
 // Retrieve the member
 ::CORBA::Long
-OBV_Factory_Initialized_Value::value () const
+OBV_Concrete_Supported_Refcount_Derived::value () const
 {
   return this->_pd_value;
 }
 
 void
-OBV_Factory_Initialized_Value::_add_ref ()
+OBV_Concrete_Supported_Refcount_Derived::_add_ref ()
 {
   this->::CORBA::DefaultValueRefCountBase::_add_ref ();
 }
 
 void
-OBV_Factory_Initialized_Value::_remove_ref ()
+OBV_Concrete_Supported_Refcount_Derived::_remove_ref ()
 {
   this->::CORBA::DefaultValueRefCountBase::_remove_ref ();
+}
+OBV_Application_Factory_Value::OBV_Application_Factory_Value (
+    ::CORBA::Long _tao_init_value)
+{
+  value (_tao_init_value);
+}
+
+OBV_Application_Factory_Value::~OBV_Application_Factory_Value ()
+{}
+
+::CORBA::Boolean
+OBV_Application_Factory_Value::_tao_marshal__Application_Factory_Value (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+{
+  return _tao_marshal_state (strm, ci);
+}
+
+::CORBA::Boolean
+OBV_Application_Factory_Value::_tao_unmarshal__Application_Factory_Value (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+{
+  return _tao_unmarshal_state (strm, ci);
+}
+/// Accessor to set the member.
+void
+OBV_Application_Factory_Value::value (CORBA::Long const val)
+{
+  // Set the value.
+  this->_pd_value = val;
+}
+
+// Retrieve the member
+::CORBA::Long
+OBV_Application_Factory_Value::value () const
+{
+  return this->_pd_value;
 }
 OBV_Copy_Base::OBV_Copy_Base (
     ::CORBA::Long _tao_init_base_value)
@@ -6073,6 +6208,64 @@ OBV_Copy_Operation_Derived::_tao_unmarshal__Copy_Operation_Derived (TAO_InputCDR
 {
   return _tao_unmarshal_state (strm, ci);
 }
+OBV_Copy_Factory_Derived::OBV_Copy_Factory_Derived (
+    ::CORBA::Long _tao_init_base_value,
+    ::CORBA::Long _tao_init_derived_value)
+{
+  base_value (_tao_init_base_value);
+  derived_value (_tao_init_derived_value);
+}
+
+OBV_Copy_Factory_Derived::~OBV_Copy_Factory_Derived ()
+{}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Derived::_tao_marshal__Copy_Factory_Derived (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+{
+  return _tao_marshal_state (strm, ci);
+}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Derived::_tao_unmarshal__Copy_Factory_Derived (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+{
+  return _tao_unmarshal_state (strm, ci);
+}
+/// Accessor to set the member.
+void
+OBV_Copy_Factory_Derived::derived_value (CORBA::Long const val)
+{
+  // Set the value.
+  this->_pd_derived_value = val;
+}
+
+// Retrieve the member
+::CORBA::Long
+OBV_Copy_Factory_Derived::derived_value () const
+{
+  return this->_pd_derived_value;
+}
+OBV_Copy_Factory_Operation_Derived::OBV_Copy_Factory_Operation_Derived (
+    ::CORBA::Long _tao_init_base_value,
+    ::CORBA::Long _tao_init_derived_value)
+{
+  base_value (_tao_init_base_value);
+  derived_value (_tao_init_derived_value);
+}
+
+OBV_Copy_Factory_Operation_Derived::~OBV_Copy_Factory_Operation_Derived ()
+{}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Operation_Derived::_tao_marshal__Copy_Factory_Operation_Derived (TAO_OutputCDR &strm, TAO_ChunkInfo& ci) const
+{
+  return _tao_marshal_state (strm, ci);
+}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Operation_Derived::_tao_unmarshal__Copy_Factory_Operation_Derived (TAO_InputCDR &strm, TAO_ChunkInfo& ci)
+{
+  return _tao_unmarshal_state (strm, ci);
+}
 OBV_Copy_Leaf::OBV_Copy_Leaf (
     ::CORBA::Long _tao_init_leaf_value)
 {
@@ -6185,19 +6378,7 @@ OBV_Copy_Sequence_Holder::_copy_value ()
   ACE_NEW_THROW_EX (
     ret_val,
     OBV_Copy_Sequence_Holder (
-      [&] ()
-      {
-        auto _tao_copy = leaves ();
-        for (::CORBA::ULong i {}; i < _tao_copy.length (); ++i)
-          {
-            if (_tao_copy[i] != nullptr)
-              {
-                ::CORBA::ValueBase_var _tao_value (_tao_copy[i]->_copy_value ());
-                _tao_copy[i] = Copy_Leaf::_downcast (_tao_value._retn ());
-              }
-          }
-        return _tao_copy;
-      } ()
+      leaves ()
     ),
     ::CORBA::NO_MEMORY ());
   return ret_val;
@@ -6235,7 +6416,7 @@ OBV_Copy_Sequence_Holder::leaves ()
   return this->_pd_leaves;
 }
 OBV_Copy_Struct_Holder::OBV_Copy_Struct_Holder (
-    ::Copy_Leaf_Struct_Alias const & _tao_init_value)
+    ::Copy_Leaf_Struct const & _tao_init_value)
 {
   value (_tao_init_value);
 }
@@ -6250,16 +6431,7 @@ OBV_Copy_Struct_Holder::_copy_value ()
   ACE_NEW_THROW_EX (
     ret_val,
     OBV_Copy_Struct_Holder (
-      [&] ()
-      {
-        auto _tao_copy = value ();
-        if (_tao_copy.leaf != nullptr)
-          {
-            ::CORBA::ValueBase_var _tao_value (_tao_copy.leaf->_copy_value ());
-            _tao_copy.leaf = Copy_Leaf::_downcast (_tao_value._retn ());
-          }
-        return _tao_copy;
-      } ()
+      value ()
     ),
     ::CORBA::NO_MEMORY ());
   return ret_val;
@@ -6278,18 +6450,18 @@ OBV_Copy_Struct_Holder::_tao_unmarshal__Copy_Struct_Holder (TAO_InputCDR &strm, 
 }
 /// Accessor to set the member.
 void
-OBV_Copy_Struct_Holder::value (Copy_Leaf_Struct_Alias const &val)
+OBV_Copy_Struct_Holder::value (Copy_Leaf_Struct const &val)
 {
   this->_pd_value = val;
 }
 /// Readonly get method.
-Copy_Leaf_Struct_Alias const &
+Copy_Leaf_Struct const &
 OBV_Copy_Struct_Holder::value () const
 {
   return this->_pd_value;
 }
 /// Read/write get method.
-Copy_Leaf_Struct_Alias &
+Copy_Leaf_Struct &
 OBV_Copy_Struct_Holder::value ()
 {
   return this->_pd_value;
@@ -6312,32 +6484,8 @@ OBV_RecValueType::_copy_value ()
   ACE_NEW_THROW_EX (
     ret_val,
     OBV_RecValueType (
-      [&] ()
-      {
-        auto _tao_copy = rec_value_types ();
-        for (::CORBA::ULong i {}; i < _tao_copy.length (); ++i)
-          {
-            if (_tao_copy[i] != nullptr)
-              {
-                ::CORBA::ValueBase_var _tao_value (_tao_copy[i]->_copy_value ());
-                _tao_copy[i] = RecValueType::_downcast (_tao_value._retn ());
-              }
-          }
-        return _tao_copy;
-      } (),
-      [&] ()
-      {
-        auto _tao_copy = rec_value_types2 ();
-        for (::CORBA::ULong i {}; i < _tao_copy.length (); ++i)
-          {
-            if (_tao_copy[i] != nullptr)
-              {
-                ::CORBA::ValueBase_var _tao_value (_tao_copy[i]->_copy_value ());
-                _tao_copy[i] = RecValueType::_downcast (_tao_value._retn ());
-              }
-          }
-        return _tao_copy;
-      } ()
+      rec_value_types (),
+      rec_value_types2 ()
     ),
     ::CORBA::NO_MEMORY ());
   return ret_val;
@@ -6949,10 +7097,10 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<Empty_Valuetype_Operation>::to_object (
-      ::CORBA::Object_ptr &_tao_elem) const
+  Any_Impl_T<Abstract_Operation_Interface>::to_abstract_base (
+      ::CORBA::AbstractBase_ptr &_tao_elem) const
   {
-    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
+    _tao_elem = ::CORBA::AbstractBase::_duplicate (this->value_);
     return true;
   }
 }
@@ -6965,10 +7113,10 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Empty_Valuetype_Operation_ptr _tao_elem)
+  Abstract_Operation_Interface_ptr _tao_elem)
 {
-  Empty_Valuetype_Operation_ptr _tao_objptr =
-    Empty_Valuetype_Operation::_duplicate (_tao_elem);
+  Abstract_Operation_Interface_ptr _tao_objptr =
+    Abstract_Operation_Interface::_duplicate (_tao_elem);
   _tao_any <<= std::addressof(_tao_objptr);
 }
 
@@ -6976,25 +7124,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Empty_Valuetype_Operation_ptr *_tao_elem)
+  Abstract_Operation_Interface_ptr *_tao_elem)
 {
-  TAO::Any_Impl_T<Empty_Valuetype_Operation>::insert (
+  TAO::Any_Impl_T<Abstract_Operation_Interface>::insert (
     _tao_any,
-    Empty_Valuetype_Operation::_tao_any_destructor,
-    _tc_Empty_Valuetype_Operation,
+    Abstract_Operation_Interface::_tao_any_destructor,
+    _tc_Abstract_Operation_Interface,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    Empty_Valuetype_Operation_ptr &_tao_elem)
+    Abstract_Operation_Interface_ptr &_tao_elem)
 {
   return
-    TAO::Any_Impl_T<Empty_Valuetype_Operation>::extract (
+    TAO::Any_Impl_T<Abstract_Operation_Interface>::extract (
         _tao_any,
-        Empty_Valuetype_Operation::_tao_any_destructor,
-        _tc_Empty_Valuetype_Operation,
+        Abstract_Operation_Interface::_tao_any_destructor,
+        _tc_Abstract_Operation_Interface,
         _tao_elem);
 }
 
@@ -7007,7 +7155,7 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<AMH_Empty_Valuetype_OperationExceptionHolder>::to_value (
+  Any_Impl_T<Supports_Abstract_Operation>::to_value (
       ::CORBA::ValueBase *&_tao_elem) const
   {
     ::CORBA::add_ref (this->value_);
@@ -7025,12 +7173,12 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  AMH_Empty_Valuetype_OperationExceptionHolder *_tao_elem)
+  Supports_Abstract_Operation *_tao_elem)
 {
   #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    AMH_Empty_Valuetype_OperationExceptionHolder *_tao_copy =
+    Supports_Abstract_Operation *_tao_copy =
       _tao_elem ?
-        AMH_Empty_Valuetype_OperationExceptionHolder::_downcast (_tao_elem->_copy_value ())
+        Supports_Abstract_Operation::_downcast (_tao_elem->_copy_value ())
         : nullptr;
     _tao_any <<= std::addressof(_tao_copy);
   #else
@@ -7043,158 +7191,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  AMH_Empty_Valuetype_OperationExceptionHolder **_tao_elem)
+  Supports_Abstract_Operation **_tao_elem)
 {
-  TAO::Any_Impl_T<AMH_Empty_Valuetype_OperationExceptionHolder>::insert (
+  TAO::Any_Impl_T<Supports_Abstract_Operation>::insert (
     _tao_any,
-    AMH_Empty_Valuetype_OperationExceptionHolder::_tao_any_destructor,
-    _tc_AMH_Empty_Valuetype_OperationExceptionHolder,
+    Supports_Abstract_Operation::_tao_any_destructor,
+    _tc_Supports_Abstract_Operation,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    AMH_Empty_Valuetype_OperationExceptionHolder *&_tao_elem)
+    Supports_Abstract_Operation *&_tao_elem)
 {
   return
-    TAO::Any_Impl_T<AMH_Empty_Valuetype_OperationExceptionHolder>::extract (
+    TAO::Any_Impl_T<Supports_Abstract_Operation>::extract (
         _tao_any,
-        AMH_Empty_Valuetype_OperationExceptionHolder::_tao_any_destructor,
-        _tc_AMH_Empty_Valuetype_OperationExceptionHolder,
-        _tao_elem);
-}
-
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-namespace TAO
-{
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<AMH_Empty_Valuetype_OperationResponseHandler>::to_object (
-      ::CORBA::Object_ptr &_tao_elem) const
-  {
-    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
-    return true;
-  }
-}
-
-namespace TAO
-{
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<AMH_Empty_Valuetype_OperationResponseHandler>::marshal_value (TAO_OutputCDR &)
-  {
-    return false;
-  }
-
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<AMH_Empty_Valuetype_OperationResponseHandler>::demarshal_value (TAO_InputCDR &)
-  {
-    return false;
-  }
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-namespace CORBA {
-
-/// Copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  AMH_Empty_Valuetype_OperationResponseHandler_ptr _tao_elem)
-{
-  AMH_Empty_Valuetype_OperationResponseHandler_ptr _tao_objptr =
-    AMH_Empty_Valuetype_OperationResponseHandler::_duplicate (_tao_elem);
-  _tao_any <<= std::addressof(_tao_objptr);
-}
-
-/// Non-copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  AMH_Empty_Valuetype_OperationResponseHandler_ptr *_tao_elem)
-{
-  TAO::Any_Impl_T<AMH_Empty_Valuetype_OperationResponseHandler>::insert (
-    _tao_any,
-    AMH_Empty_Valuetype_OperationResponseHandler::_tao_any_destructor,
-    _tc_AMH_Empty_Valuetype_OperationResponseHandler,
-    *_tao_elem);
-}
-
-::CORBA::Boolean
-operator>>= (
-    ::CORBA::Any const &_tao_any,
-    AMH_Empty_Valuetype_OperationResponseHandler_ptr &_tao_elem)
-{
-  return
-    TAO::Any_Impl_T<AMH_Empty_Valuetype_OperationResponseHandler>::extract (
-        _tao_any,
-        AMH_Empty_Valuetype_OperationResponseHandler::_tao_any_destructor,
-        _tc_AMH_Empty_Valuetype_OperationResponseHandler,
-        _tao_elem);
-}
-
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-namespace TAO
-{
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<AMI_Empty_Valuetype_OperationHandler>::to_object (
-      ::CORBA::Object_ptr &_tao_elem) const
-  {
-    _tao_elem = ::CORBA::Object::_duplicate (this->value_);
-    return true;
-  }
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-namespace CORBA {
-
-/// Copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  AMI_Empty_Valuetype_OperationHandler_ptr _tao_elem)
-{
-  AMI_Empty_Valuetype_OperationHandler_ptr _tao_objptr =
-    AMI_Empty_Valuetype_OperationHandler::_duplicate (_tao_elem);
-  _tao_any <<= std::addressof(_tao_objptr);
-}
-
-/// Non-copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  AMI_Empty_Valuetype_OperationHandler_ptr *_tao_elem)
-{
-  TAO::Any_Impl_T<AMI_Empty_Valuetype_OperationHandler>::insert (
-    _tao_any,
-    AMI_Empty_Valuetype_OperationHandler::_tao_any_destructor,
-    _tc_AMI_Empty_Valuetype_OperationHandler,
-    *_tao_elem);
-}
-
-::CORBA::Boolean
-operator>>= (
-    ::CORBA::Any const &_tao_any,
-    AMI_Empty_Valuetype_OperationHandler_ptr &_tao_elem)
-{
-  return
-    TAO::Any_Impl_T<AMI_Empty_Valuetype_OperationHandler>::extract (
-        _tao_any,
-        AMI_Empty_Valuetype_OperationHandler::_tao_any_destructor,
-        _tc_AMI_Empty_Valuetype_OperationHandler,
+        Supports_Abstract_Operation::_tao_any_destructor,
+        _tc_Supports_Abstract_Operation,
         _tao_elem);
 }
 
@@ -7532,7 +7547,7 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<Abstract_Refcount_Base>::to_value (
+  Any_Impl_T<Supported_Interface_Value>::to_value (
       ::CORBA::ValueBase *&_tao_elem) const
   {
     ::CORBA::add_ref (this->value_);
@@ -7550,12 +7565,12 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Abstract_Refcount_Base *_tao_elem)
+  Supported_Interface_Value *_tao_elem)
 {
   #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Abstract_Refcount_Base *_tao_copy =
+    Supported_Interface_Value *_tao_copy =
       _tao_elem ?
-        Abstract_Refcount_Base::_downcast (_tao_elem->_copy_value ())
+        Supported_Interface_Value::_downcast (_tao_elem->_copy_value ())
         : nullptr;
     _tao_any <<= std::addressof(_tao_copy);
   #else
@@ -7568,25 +7583,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Abstract_Refcount_Base **_tao_elem)
+  Supported_Interface_Value **_tao_elem)
 {
-  TAO::Any_Impl_T<Abstract_Refcount_Base>::insert (
+  TAO::Any_Impl_T<Supported_Interface_Value>::insert (
     _tao_any,
-    Abstract_Refcount_Base::_tao_any_destructor,
-    _tc_Abstract_Refcount_Base,
+    Supported_Interface_Value::_tao_any_destructor,
+    _tc_Supported_Interface_Value,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    Abstract_Refcount_Base *&_tao_elem)
+    Supported_Interface_Value *&_tao_elem)
 {
   return
-    TAO::Any_Impl_T<Abstract_Refcount_Base>::extract (
+    TAO::Any_Impl_T<Supported_Interface_Value>::extract (
         _tao_any,
-        Abstract_Refcount_Base::_tao_any_destructor,
-        _tc_Abstract_Refcount_Base,
+        Supported_Interface_Value::_tao_any_destructor,
+        _tc_Supported_Interface_Value,
         _tao_elem);
 }
 
@@ -7599,7 +7614,7 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<Abstract_Refcount_Derived>::to_value (
+  Any_Impl_T<Abstract_Supported_Refcount_Base>::to_value (
       ::CORBA::ValueBase *&_tao_elem) const
   {
     ::CORBA::add_ref (this->value_);
@@ -7617,12 +7632,12 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Abstract_Refcount_Derived *_tao_elem)
+  Abstract_Supported_Refcount_Base *_tao_elem)
 {
   #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Abstract_Refcount_Derived *_tao_copy =
+    Abstract_Supported_Refcount_Base *_tao_copy =
       _tao_elem ?
-        Abstract_Refcount_Derived::_downcast (_tao_elem->_copy_value ())
+        Abstract_Supported_Refcount_Base::_downcast (_tao_elem->_copy_value ())
         : nullptr;
     _tao_any <<= std::addressof(_tao_copy);
   #else
@@ -7635,25 +7650,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Abstract_Refcount_Derived **_tao_elem)
+  Abstract_Supported_Refcount_Base **_tao_elem)
 {
-  TAO::Any_Impl_T<Abstract_Refcount_Derived>::insert (
+  TAO::Any_Impl_T<Abstract_Supported_Refcount_Base>::insert (
     _tao_any,
-    Abstract_Refcount_Derived::_tao_any_destructor,
-    _tc_Abstract_Refcount_Derived,
+    Abstract_Supported_Refcount_Base::_tao_any_destructor,
+    _tc_Abstract_Supported_Refcount_Base,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    Abstract_Refcount_Derived *&_tao_elem)
+    Abstract_Supported_Refcount_Base *&_tao_elem)
 {
   return
-    TAO::Any_Impl_T<Abstract_Refcount_Derived>::extract (
+    TAO::Any_Impl_T<Abstract_Supported_Refcount_Base>::extract (
         _tao_any,
-        Abstract_Refcount_Derived::_tao_any_destructor,
-        _tc_Abstract_Refcount_Derived,
+        Abstract_Supported_Refcount_Base::_tao_any_destructor,
+        _tc_Abstract_Supported_Refcount_Base,
         _tao_elem);
 }
 
@@ -7666,7 +7681,7 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<Concrete_From_Abstract>::to_value (
+  Any_Impl_T<Concrete_Supported_Refcount_Derived>::to_value (
       ::CORBA::ValueBase *&_tao_elem) const
   {
     ::CORBA::add_ref (this->value_);
@@ -7684,12 +7699,12 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Concrete_From_Abstract *_tao_elem)
+  Concrete_Supported_Refcount_Derived *_tao_elem)
 {
   #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Concrete_From_Abstract *_tao_copy =
+    Concrete_Supported_Refcount_Derived *_tao_copy =
       _tao_elem ?
-        Concrete_From_Abstract::_downcast (_tao_elem->_copy_value ())
+        Concrete_Supported_Refcount_Derived::_downcast (_tao_elem->_copy_value ())
         : nullptr;
     _tao_any <<= std::addressof(_tao_copy);
   #else
@@ -7702,25 +7717,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Concrete_From_Abstract **_tao_elem)
+  Concrete_Supported_Refcount_Derived **_tao_elem)
 {
-  TAO::Any_Impl_T<Concrete_From_Abstract>::insert (
+  TAO::Any_Impl_T<Concrete_Supported_Refcount_Derived>::insert (
     _tao_any,
-    Concrete_From_Abstract::_tao_any_destructor,
-    _tc_Concrete_From_Abstract,
+    Concrete_Supported_Refcount_Derived::_tao_any_destructor,
+    _tc_Concrete_Supported_Refcount_Derived,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    Concrete_From_Abstract *&_tao_elem)
+    Concrete_Supported_Refcount_Derived *&_tao_elem)
 {
   return
-    TAO::Any_Impl_T<Concrete_From_Abstract>::extract (
+    TAO::Any_Impl_T<Concrete_Supported_Refcount_Derived>::extract (
         _tao_any,
-        Concrete_From_Abstract::_tao_any_destructor,
-        _tc_Concrete_From_Abstract,
+        Concrete_Supported_Refcount_Derived::_tao_any_destructor,
+        _tc_Concrete_Supported_Refcount_Derived,
         _tao_elem);
 }
 
@@ -7733,7 +7748,7 @@ namespace TAO
 {
   template<>
   ::CORBA::Boolean
-  Any_Impl_T<Supported_Interface_Base>::to_value (
+  Any_Impl_T<Application_Factory_Value>::to_value (
       ::CORBA::ValueBase *&_tao_elem) const
   {
     ::CORBA::add_ref (this->value_);
@@ -7751,12 +7766,12 @@ namespace CORBA {
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Supported_Interface_Base *_tao_elem)
+  Application_Factory_Value *_tao_elem)
 {
   #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Supported_Interface_Base *_tao_copy =
+    Application_Factory_Value *_tao_copy =
       _tao_elem ?
-        Supported_Interface_Base::_downcast (_tao_elem->_copy_value ())
+        Application_Factory_Value::_downcast (_tao_elem->_copy_value ())
         : nullptr;
     _tao_any <<= std::addressof(_tao_copy);
   #else
@@ -7769,159 +7784,25 @@ operator<<= (
 void
 operator<<= (
   ::CORBA::Any &_tao_any,
-  Supported_Interface_Base **_tao_elem)
+  Application_Factory_Value **_tao_elem)
 {
-  TAO::Any_Impl_T<Supported_Interface_Base>::insert (
+  TAO::Any_Impl_T<Application_Factory_Value>::insert (
     _tao_any,
-    Supported_Interface_Base::_tao_any_destructor,
-    _tc_Supported_Interface_Base,
+    Application_Factory_Value::_tao_any_destructor,
+    _tc_Application_Factory_Value,
     *_tao_elem);
 }
 
 ::CORBA::Boolean
 operator>>= (
     ::CORBA::Any const &_tao_any,
-    Supported_Interface_Base *&_tao_elem)
+    Application_Factory_Value *&_tao_elem)
 {
   return
-    TAO::Any_Impl_T<Supported_Interface_Base>::extract (
+    TAO::Any_Impl_T<Application_Factory_Value>::extract (
         _tao_any,
-        Supported_Interface_Base::_tao_any_destructor,
-        _tc_Supported_Interface_Base,
-        _tao_elem);
-}
-
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-namespace TAO
-{
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<Supported_Interface_Derived>::to_value (
-      ::CORBA::ValueBase *&_tao_elem) const
-  {
-    ::CORBA::add_ref (this->value_);
-    _tao_elem = this->value_;
-    return true;
-  }
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-namespace CORBA {
-
-/// Copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  Supported_Interface_Derived *_tao_elem)
-{
-  #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Supported_Interface_Derived *_tao_copy =
-      _tao_elem ?
-        Supported_Interface_Derived::_downcast (_tao_elem->_copy_value ())
-        : nullptr;
-    _tao_any <<= std::addressof(_tao_copy);
-  #else
-    ::CORBA::add_ref (_tao_elem);
-    _tao_any <<= std::addressof(_tao_elem);
-  #endif
-}
-
-/// Non-copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  Supported_Interface_Derived **_tao_elem)
-{
-  TAO::Any_Impl_T<Supported_Interface_Derived>::insert (
-    _tao_any,
-    Supported_Interface_Derived::_tao_any_destructor,
-    _tc_Supported_Interface_Derived,
-    *_tao_elem);
-}
-
-::CORBA::Boolean
-operator>>= (
-    ::CORBA::Any const &_tao_any,
-    Supported_Interface_Derived *&_tao_elem)
-{
-  return
-    TAO::Any_Impl_T<Supported_Interface_Derived>::extract (
-        _tao_any,
-        Supported_Interface_Derived::_tao_any_destructor,
-        _tc_Supported_Interface_Derived,
-        _tao_elem);
-}
-
-}
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-namespace TAO
-{
-  template<>
-  ::CORBA::Boolean
-  Any_Impl_T<Factory_Initialized_Value>::to_value (
-      ::CORBA::ValueBase *&_tao_elem) const
-  {
-    ::CORBA::add_ref (this->value_);
-    _tao_elem = this->value_;
-    return true;
-  }
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-namespace CORBA {
-
-/// Copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  Factory_Initialized_Value *_tao_elem)
-{
-  #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
-    Factory_Initialized_Value *_tao_copy =
-      _tao_elem ?
-        Factory_Initialized_Value::_downcast (_tao_elem->_copy_value ())
-        : nullptr;
-    _tao_any <<= std::addressof(_tao_copy);
-  #else
-    ::CORBA::add_ref (_tao_elem);
-    _tao_any <<= std::addressof(_tao_elem);
-  #endif
-}
-
-/// Non-copying insertion.
-void
-operator<<= (
-  ::CORBA::Any &_tao_any,
-  Factory_Initialized_Value **_tao_elem)
-{
-  TAO::Any_Impl_T<Factory_Initialized_Value>::insert (
-    _tao_any,
-    Factory_Initialized_Value::_tao_any_destructor,
-    _tc_Factory_Initialized_Value,
-    *_tao_elem);
-}
-
-::CORBA::Boolean
-operator>>= (
-    ::CORBA::Any const &_tao_any,
-    Factory_Initialized_Value *&_tao_elem)
-{
-  return
-    TAO::Any_Impl_T<Factory_Initialized_Value>::extract (
-        _tao_any,
-        Factory_Initialized_Value::_tao_any_destructor,
-        _tc_Factory_Initialized_Value,
+        Application_Factory_Value::_tao_any_destructor,
+        _tc_Application_Factory_Value,
         _tao_elem);
 }
 
@@ -8123,6 +8004,140 @@ operator>>= (
         _tao_any,
         Copy_Operation_Derived::_tao_any_destructor,
         _tc_Copy_Operation_Derived,
+        _tao_elem);
+}
+
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<Copy_Factory_Derived>::to_value (
+      ::CORBA::ValueBase *&_tao_elem) const
+  {
+    ::CORBA::add_ref (this->value_);
+    _tao_elem = this->value_;
+    return true;
+  }
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+namespace CORBA {
+
+/// Copying insertion.
+void
+operator<<= (
+  ::CORBA::Any &_tao_any,
+  Copy_Factory_Derived *_tao_elem)
+{
+  #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
+    Copy_Factory_Derived *_tao_copy =
+      _tao_elem ?
+        Copy_Factory_Derived::_downcast (_tao_elem->_copy_value ())
+        : nullptr;
+    _tao_any <<= std::addressof(_tao_copy);
+  #else
+    ::CORBA::add_ref (_tao_elem);
+    _tao_any <<= std::addressof(_tao_elem);
+  #endif
+}
+
+/// Non-copying insertion.
+void
+operator<<= (
+  ::CORBA::Any &_tao_any,
+  Copy_Factory_Derived **_tao_elem)
+{
+  TAO::Any_Impl_T<Copy_Factory_Derived>::insert (
+    _tao_any,
+    Copy_Factory_Derived::_tao_any_destructor,
+    _tc_Copy_Factory_Derived,
+    *_tao_elem);
+}
+
+::CORBA::Boolean
+operator>>= (
+    ::CORBA::Any const &_tao_any,
+    Copy_Factory_Derived *&_tao_elem)
+{
+  return
+    TAO::Any_Impl_T<Copy_Factory_Derived>::extract (
+        _tao_any,
+        Copy_Factory_Derived::_tao_any_destructor,
+        _tc_Copy_Factory_Derived,
+        _tao_elem);
+}
+
+}
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+namespace TAO
+{
+  template<>
+  ::CORBA::Boolean
+  Any_Impl_T<Copy_Factory_Operation_Derived>::to_value (
+      ::CORBA::ValueBase *&_tao_elem) const
+  {
+    ::CORBA::add_ref (this->value_);
+    _tao_elem = this->value_;
+    return true;
+  }
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+namespace CORBA {
+
+/// Copying insertion.
+void
+operator<<= (
+  ::CORBA::Any &_tao_any,
+  Copy_Factory_Operation_Derived *_tao_elem)
+{
+  #ifdef TAO_VALUETYPE_COPYING_ANY_INSERTION_USES_COPY_VALUE
+    Copy_Factory_Operation_Derived *_tao_copy =
+      _tao_elem ?
+        Copy_Factory_Operation_Derived::_downcast (_tao_elem->_copy_value ())
+        : nullptr;
+    _tao_any <<= std::addressof(_tao_copy);
+  #else
+    ::CORBA::add_ref (_tao_elem);
+    _tao_any <<= std::addressof(_tao_elem);
+  #endif
+}
+
+/// Non-copying insertion.
+void
+operator<<= (
+  ::CORBA::Any &_tao_any,
+  Copy_Factory_Operation_Derived **_tao_elem)
+{
+  TAO::Any_Impl_T<Copy_Factory_Operation_Derived>::insert (
+    _tao_any,
+    Copy_Factory_Operation_Derived::_tao_any_destructor,
+    _tc_Copy_Factory_Operation_Derived,
+    *_tao_elem);
+}
+
+::CORBA::Boolean
+operator>>= (
+    ::CORBA::Any const &_tao_any,
+    Copy_Factory_Operation_Derived *&_tao_elem)
+{
+  return
+    TAO::Any_Impl_T<Copy_Factory_Operation_Derived>::extract (
+        _tao_any,
+        Copy_Factory_Operation_Derived::_tao_any_destructor,
+        _tc_Copy_Factory_Operation_Derived,
         _tao_elem);
 }
 
@@ -9298,17 +9313,17 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    Empty_Valuetype_Operation_ptr const _tao_objref)
+    Abstract_Operation_Interface_ptr const _tao_objref)
 {
-  ::CORBA::Object_ptr _tao_corba_obj = _tao_objref;
+  ::CORBA::AbstractBase_ptr _tao_corba_obj = _tao_objref;
   return (strm << _tao_corba_obj);
 }
 
 ::CORBA::Boolean operator>> (
     TAO_InputCDR &strm,
-    Empty_Valuetype_Operation_ptr &_tao_objref)
+    Abstract_Operation_Interface_ptr &_tao_objref)
 {
-  ::CORBA::Object_var obj;
+  ::CORBA::AbstractBase_var obj;
 
   if (!(strm >> obj.inout ()))
     {
@@ -9316,7 +9331,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
     }
 
   // Narrow to the right type.
-  _tao_objref = TAO::Narrow_Utils<::Empty_Valuetype_Operation>::unchecked_narrow (obj.in ());
+  _tao_objref = TAO::AbstractBase_Narrow_Utils<::Abstract_Operation_Interface>::unchecked_narrow (obj.in ());
 
   return true;
 }
@@ -9325,7 +9340,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
-CORBA::add_ref (AMH_Empty_Valuetype_OperationExceptionHolder * vt)
+CORBA::add_ref (Supports_Abstract_Operation * vt)
 {
   if (vt != nullptr)
     {
@@ -9334,7 +9349,7 @@ CORBA::add_ref (AMH_Empty_Valuetype_OperationExceptionHolder * vt)
 }
 
 void
-CORBA::remove_ref (AMH_Empty_Valuetype_OperationExceptionHolder * vt)
+CORBA::remove_ref (Supports_Abstract_Operation * vt)
 {
   if (vt != nullptr)
     {
@@ -9349,71 +9364,66 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 ::CORBA::Boolean
 operator<< (
     TAO_OutputCDR &strm,
-    AMH_Empty_Valuetype_OperationExceptionHolder const *_tao_valuetype)
+    Supports_Abstract_Operation const *_tao_valuetype)
 {
   return
     ::CORBA::ValueBase::_tao_marshal (
         strm,
         _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&AMH_Empty_Valuetype_OperationExceptionHolder::_downcast));
+        reinterpret_cast<ptrdiff_t> (&Supports_Abstract_Operation::_downcast));
 }
 
 ::CORBA::Boolean
 operator>> (
     TAO_InputCDR &strm,
-    AMH_Empty_Valuetype_OperationExceptionHolder *&_tao_valuetype)
+    Supports_Abstract_Operation *&_tao_valuetype)
 {
-  return AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal (strm, _tao_valuetype);
+  return Supports_Abstract_Operation::_tao_unmarshal (strm, _tao_valuetype);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::_tao_marshal_state (TAO_OutputCDR &, TAO_ChunkInfo &) const
+OBV_Supports_Abstract_Operation::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
 {
+  if (! ci.start_chunk (strm))
+    return false;
+
+  CORBA::Boolean const ret =
+      (strm << _pd_value);
+  if (!ret)
+    return false;
+
+  if (! ci.end_chunk (strm))
+    return false;
+
   return true;
 }
 
 ::CORBA::Boolean
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::_tao_unmarshal_state (TAO_InputCDR &, TAO_ChunkInfo &)
+OBV_Supports_Abstract_Operation::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
 {
-  return true;
+  if (!ci.handle_chunking (strm))
+    return false;
+
+  CORBA::Boolean const ret =
+      (strm >> _pd_value);
+  if (!ret)
+    return false;
+
+  if (this->require_truncation_)
+    return ci.skip_chunks (strm);
+
+  else
+    return ci.handle_chunking (strm);
+
 }
 
 void
-OBV_AMH_Empty_Valuetype_OperationExceptionHolder::truncation_hook ()
+OBV_Supports_Abstract_Operation::truncation_hook ()
 {
   this->require_truncation_ = true;
 }
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-::CORBA::Boolean operator<< (
-    TAO_OutputCDR &strm,
-    AMI_Empty_Valuetype_OperationHandler_ptr const _tao_objref)
-{
-  ::CORBA::Object_ptr _tao_corba_obj = _tao_objref;
-  return (strm << _tao_corba_obj);
-}
-
-::CORBA::Boolean operator>> (
-    TAO_InputCDR &strm,
-    AMI_Empty_Valuetype_OperationHandler_ptr &_tao_objref)
-{
-  ::CORBA::Object_var obj;
-
-  if (!(strm >> obj.inout ()))
-    {
-      return false;
-    }
-
-  // Narrow to the right type.
-  _tao_objref = TAO::Narrow_Utils<::AMI_Empty_Valuetype_OperationHandler>::unchecked_narrow (obj.in ());
-
-  return true;
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
@@ -9625,7 +9635,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
-CORBA::add_ref (Abstract_Refcount_Base * vt)
+CORBA::add_ref (Supported_Interface_Value * vt)
 {
   if (vt != nullptr)
     {
@@ -9634,7 +9644,7 @@ CORBA::add_ref (Abstract_Refcount_Base * vt)
 }
 
 void
-CORBA::remove_ref (Abstract_Refcount_Base * vt)
+CORBA::remove_ref (Supported_Interface_Value * vt)
 {
   if (vt != nullptr)
     {
@@ -9649,117 +9659,27 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 ::CORBA::Boolean
 operator<< (
     TAO_OutputCDR &strm,
-    Abstract_Refcount_Base const *_tao_valuetype)
+    Supported_Interface_Value const *_tao_valuetype)
 {
   return
     ::CORBA::ValueBase::_tao_marshal (
         strm,
         _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Abstract_Refcount_Base::_downcast));
+        reinterpret_cast<ptrdiff_t> (&Supported_Interface_Value::_downcast));
 }
 
 ::CORBA::Boolean
 operator>> (
     TAO_InputCDR &strm,
-    Abstract_Refcount_Base *&_tao_valuetype)
+    Supported_Interface_Value *&_tao_valuetype)
 {
-  return Abstract_Refcount_Base::_tao_unmarshal (strm, _tao_valuetype);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-void
-CORBA::add_ref (Abstract_Refcount_Derived * vt)
-{
-  if (vt != nullptr)
-    {
-      vt->_add_ref ();
-    }
-}
-
-void
-CORBA::remove_ref (Abstract_Refcount_Derived * vt)
-{
-  if (vt != nullptr)
-    {
-      vt->_remove_ref ();
-    }
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-::CORBA::Boolean
-operator<< (
-    TAO_OutputCDR &strm,
-    Abstract_Refcount_Derived const *_tao_valuetype)
-{
-  return
-    ::CORBA::ValueBase::_tao_marshal (
-        strm,
-        _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Abstract_Refcount_Derived::_downcast));
-}
-
-::CORBA::Boolean
-operator>> (
-    TAO_InputCDR &strm,
-    Abstract_Refcount_Derived *&_tao_valuetype)
-{
-  return Abstract_Refcount_Derived::_tao_unmarshal (strm, _tao_valuetype);
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-void
-CORBA::add_ref (Concrete_From_Abstract * vt)
-{
-  if (vt != nullptr)
-    {
-      vt->_add_ref ();
-    }
-}
-
-void
-CORBA::remove_ref (Concrete_From_Abstract * vt)
-{
-  if (vt != nullptr)
-    {
-      vt->_remove_ref ();
-    }
-}
-
-TAO_END_VERSIONED_NAMESPACE_DECL
-
-TAO_BEGIN_VERSIONED_NAMESPACE_DECL
-
-::CORBA::Boolean
-operator<< (
-    TAO_OutputCDR &strm,
-    Concrete_From_Abstract const *_tao_valuetype)
-{
-  return
-    ::CORBA::ValueBase::_tao_marshal (
-        strm,
-        _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Concrete_From_Abstract::_downcast));
-}
-
-::CORBA::Boolean
-operator>> (
-    TAO_InputCDR &strm,
-    Concrete_From_Abstract *&_tao_valuetype)
-{
-  return Concrete_From_Abstract::_tao_unmarshal (strm, _tao_valuetype);
+  return Supported_Interface_Value::_tao_unmarshal (strm, _tao_valuetype);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean
-OBV_Concrete_From_Abstract::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
+OBV_Supported_Interface_Value::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
 {
   if (! ci.start_chunk (strm))
     return false;
@@ -9776,7 +9696,7 @@ OBV_Concrete_From_Abstract::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkIn
 }
 
 ::CORBA::Boolean
-OBV_Concrete_From_Abstract::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
+OBV_Supported_Interface_Value::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
 {
   if (!ci.handle_chunking (strm))
     return false;
@@ -9795,14 +9715,14 @@ OBV_Concrete_From_Abstract::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkI
 }
 
 void
-OBV_Concrete_From_Abstract::truncation_hook ()
+OBV_Supported_Interface_Value::truncation_hook ()
 {
   this->require_truncation_ = true;
 }
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
-CORBA::add_ref (Supported_Interface_Base * vt)
+CORBA::add_ref (Abstract_Supported_Refcount_Base * vt)
 {
   if (vt != nullptr)
     {
@@ -9811,7 +9731,7 @@ CORBA::add_ref (Supported_Interface_Base * vt)
 }
 
 void
-CORBA::remove_ref (Supported_Interface_Base * vt)
+CORBA::remove_ref (Abstract_Supported_Refcount_Base * vt)
 {
   if (vt != nullptr)
     {
@@ -9826,28 +9746,28 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 ::CORBA::Boolean
 operator<< (
     TAO_OutputCDR &strm,
-    Supported_Interface_Base const *_tao_valuetype)
+    Abstract_Supported_Refcount_Base const *_tao_valuetype)
 {
   return
     ::CORBA::ValueBase::_tao_marshal (
         strm,
         _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Supported_Interface_Base::_downcast));
+        reinterpret_cast<ptrdiff_t> (&Abstract_Supported_Refcount_Base::_downcast));
 }
 
 ::CORBA::Boolean
 operator>> (
     TAO_InputCDR &strm,
-    Supported_Interface_Base *&_tao_valuetype)
+    Abstract_Supported_Refcount_Base *&_tao_valuetype)
 {
-  return Supported_Interface_Base::_tao_unmarshal (strm, _tao_valuetype);
+  return Abstract_Supported_Refcount_Base::_tao_unmarshal (strm, _tao_valuetype);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
-CORBA::add_ref (Supported_Interface_Derived * vt)
+CORBA::add_ref (Concrete_Supported_Refcount_Derived * vt)
 {
   if (vt != nullptr)
     {
@@ -9856,7 +9776,7 @@ CORBA::add_ref (Supported_Interface_Derived * vt)
 }
 
 void
-CORBA::remove_ref (Supported_Interface_Derived * vt)
+CORBA::remove_ref (Concrete_Supported_Refcount_Derived * vt)
 {
   if (vt != nullptr)
     {
@@ -9871,27 +9791,27 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 ::CORBA::Boolean
 operator<< (
     TAO_OutputCDR &strm,
-    Supported_Interface_Derived const *_tao_valuetype)
+    Concrete_Supported_Refcount_Derived const *_tao_valuetype)
 {
   return
     ::CORBA::ValueBase::_tao_marshal (
         strm,
         _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Supported_Interface_Derived::_downcast));
+        reinterpret_cast<ptrdiff_t> (&Concrete_Supported_Refcount_Derived::_downcast));
 }
 
 ::CORBA::Boolean
 operator>> (
     TAO_InputCDR &strm,
-    Supported_Interface_Derived *&_tao_valuetype)
+    Concrete_Supported_Refcount_Derived *&_tao_valuetype)
 {
-  return Supported_Interface_Derived::_tao_unmarshal (strm, _tao_valuetype);
+  return Concrete_Supported_Refcount_Derived::_tao_unmarshal (strm, _tao_valuetype);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean
-OBV_Supported_Interface_Derived::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
+OBV_Concrete_Supported_Refcount_Derived::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
 {
   if (! ci.start_chunk (strm))
     return false;
@@ -9908,7 +9828,7 @@ OBV_Supported_Interface_Derived::_tao_marshal_state (TAO_OutputCDR &strm, TAO_Ch
 }
 
 ::CORBA::Boolean
-OBV_Supported_Interface_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
+OBV_Concrete_Supported_Refcount_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
 {
   if (!ci.handle_chunking (strm))
     return false;
@@ -9927,14 +9847,14 @@ OBV_Supported_Interface_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_C
 }
 
 void
-OBV_Supported_Interface_Derived::truncation_hook ()
+OBV_Concrete_Supported_Refcount_Derived::truncation_hook ()
 {
   this->require_truncation_ = true;
 }
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 void
-CORBA::add_ref (Factory_Initialized_Value * vt)
+CORBA::add_ref (Application_Factory_Value * vt)
 {
   if (vt != nullptr)
     {
@@ -9943,7 +9863,7 @@ CORBA::add_ref (Factory_Initialized_Value * vt)
 }
 
 void
-CORBA::remove_ref (Factory_Initialized_Value * vt)
+CORBA::remove_ref (Application_Factory_Value * vt)
 {
   if (vt != nullptr)
     {
@@ -9958,27 +9878,27 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 ::CORBA::Boolean
 operator<< (
     TAO_OutputCDR &strm,
-    Factory_Initialized_Value const *_tao_valuetype)
+    Application_Factory_Value const *_tao_valuetype)
 {
   return
     ::CORBA::ValueBase::_tao_marshal (
         strm,
         _tao_valuetype,
-        reinterpret_cast<ptrdiff_t> (&Factory_Initialized_Value::_downcast));
+        reinterpret_cast<ptrdiff_t> (&Application_Factory_Value::_downcast));
 }
 
 ::CORBA::Boolean
 operator>> (
     TAO_InputCDR &strm,
-    Factory_Initialized_Value *&_tao_valuetype)
+    Application_Factory_Value *&_tao_valuetype)
 {
-  return Factory_Initialized_Value::_tao_unmarshal (strm, _tao_valuetype);
+  return Application_Factory_Value::_tao_unmarshal (strm, _tao_valuetype);
 }
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean
-OBV_Factory_Initialized_Value::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
+OBV_Application_Factory_Value::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
 {
   if (! ci.start_chunk (strm))
     return false;
@@ -9995,7 +9915,7 @@ OBV_Factory_Initialized_Value::_tao_marshal_state (TAO_OutputCDR &strm, TAO_Chun
 }
 
 ::CORBA::Boolean
-OBV_Factory_Initialized_Value::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
+OBV_Application_Factory_Value::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
 {
   if (!ci.handle_chunking (strm))
     return false;
@@ -10014,7 +9934,7 @@ OBV_Factory_Initialized_Value::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_Chu
 }
 
 void
-OBV_Factory_Initialized_Value::truncation_hook ()
+OBV_Application_Factory_Value::truncation_hook ()
 {
   this->require_truncation_ = true;
 }
@@ -10290,6 +10210,194 @@ OBV_Copy_Operation_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkI
 
 void
 OBV_Copy_Operation_Derived::truncation_hook ()
+{
+  this->require_truncation_ = true;
+}
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+void
+CORBA::add_ref (Copy_Factory_Derived * vt)
+{
+  if (vt != nullptr)
+    {
+      vt->_add_ref ();
+    }
+}
+
+void
+CORBA::remove_ref (Copy_Factory_Derived * vt)
+{
+  if (vt != nullptr)
+    {
+      vt->_remove_ref ();
+    }
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+::CORBA::Boolean
+operator<< (
+    TAO_OutputCDR &strm,
+    Copy_Factory_Derived const *_tao_valuetype)
+{
+  return
+    ::CORBA::ValueBase::_tao_marshal (
+        strm,
+        _tao_valuetype,
+        reinterpret_cast<ptrdiff_t> (&Copy_Factory_Derived::_downcast));
+}
+
+::CORBA::Boolean
+operator>> (
+    TAO_InputCDR &strm,
+    Copy_Factory_Derived *&_tao_valuetype)
+{
+  return Copy_Factory_Derived::_tao_unmarshal (strm, _tao_valuetype);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+::CORBA::Boolean
+OBV_Copy_Factory_Derived::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
+{
+  if (! ci.start_chunk (strm))
+    return false;
+
+  if (! this->_tao_marshal__Copy_Base (strm, ci))
+    {
+      return false;
+    }
+
+  if (! ci.start_chunk (strm))
+    return false;
+
+  CORBA::Boolean const ret =
+      (strm << _pd_derived_value);
+  if (!ret)
+    return false;
+
+  if (! ci.end_chunk (strm))
+    return false;
+
+  if (! ci.end_chunk (strm))
+    return false;
+
+  return true;
+}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
+{
+  if (!ci.handle_chunking (strm))
+    return false;
+
+  if (!this->_tao_unmarshal__Copy_Base (strm, ci))
+    {
+      return false;
+    }
+
+  if (!ci.handle_chunking (strm))
+    return false;
+
+  CORBA::Boolean const ret =
+      (strm >> _pd_derived_value);
+  if (!ret)
+    return false;
+
+  if (this->require_truncation_)
+    return ci.skip_chunks (strm);
+
+  else
+    return ci.handle_chunking (strm);
+
+}
+
+void
+OBV_Copy_Factory_Derived::truncation_hook ()
+{
+  this->require_truncation_ = true;
+}
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+void
+CORBA::add_ref (Copy_Factory_Operation_Derived * vt)
+{
+  if (vt != nullptr)
+    {
+      vt->_add_ref ();
+    }
+}
+
+void
+CORBA::remove_ref (Copy_Factory_Operation_Derived * vt)
+{
+  if (vt != nullptr)
+    {
+      vt->_remove_ref ();
+    }
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+::CORBA::Boolean
+operator<< (
+    TAO_OutputCDR &strm,
+    Copy_Factory_Operation_Derived const *_tao_valuetype)
+{
+  return
+    ::CORBA::ValueBase::_tao_marshal (
+        strm,
+        _tao_valuetype,
+        reinterpret_cast<ptrdiff_t> (&Copy_Factory_Operation_Derived::_downcast));
+}
+
+::CORBA::Boolean
+operator>> (
+    TAO_InputCDR &strm,
+    Copy_Factory_Operation_Derived *&_tao_valuetype)
+{
+  return Copy_Factory_Operation_Derived::_tao_unmarshal (strm, _tao_valuetype);
+}
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+::CORBA::Boolean
+OBV_Copy_Factory_Operation_Derived::_tao_marshal_state (TAO_OutputCDR &strm, TAO_ChunkInfo &ci) const
+{
+  if (! ci.start_chunk (strm))
+    return false;
+
+  if (! this->_tao_marshal__Copy_Factory_Derived (strm, ci))
+    {
+      return false;
+    }
+
+  if (! ci.end_chunk (strm))
+    return false;
+
+  return true;
+}
+
+::CORBA::Boolean
+OBV_Copy_Factory_Operation_Derived::_tao_unmarshal_state (TAO_InputCDR &strm, TAO_ChunkInfo &ci)
+{
+  if (!ci.handle_chunking (strm))
+    return false;
+
+  if (!this->_tao_unmarshal__Copy_Factory_Derived (strm, ci))
+    {
+      return false;
+    }
+
+  return true;
+}
+
+void
+OBV_Copy_Factory_Operation_Derived::truncation_hook ()
 {
   this->require_truncation_ = true;
 }

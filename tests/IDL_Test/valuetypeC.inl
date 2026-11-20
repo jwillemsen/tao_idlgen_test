@@ -80,39 +80,32 @@ AMI_Valuetype_Operation_BaseHandler::AMI_Valuetype_Operation_BaseHandler (::IOP:
 }
 
 ACE_INLINE
-Empty_Valuetype_Operation::Empty_Valuetype_Operation (
-  TAO_Stub *objref, ::CORBA::Boolean _tao_collocated, TAO_Abstract_ServantBase *servant, TAO_ORB_Core *oc)
-  : ::CORBA::Object (objref, _tao_collocated, servant, oc)
-{
-}
+Abstract_Operation_Interface::Abstract_Operation_Interface ()
+{}
 
 ACE_INLINE
-Empty_Valuetype_Operation::Empty_Valuetype_Operation (::IOP::IOR *ior, TAO_ORB_Core *oc)
-  : ::CORBA::Object (ior, oc)
+Abstract_Operation_Interface::Abstract_Operation_Interface (Abstract_Operation_Interface const &rhs)
+  : ::CORBA::AbstractBase (rhs)
+{}
+
+ACE_INLINE
+Abstract_Operation_Interface::Abstract_Operation_Interface (
+  TAO_Stub *objref, ::CORBA::Boolean _tao_collocated, TAO_Abstract_ServantBase *servant, TAO_ORB_Core *)
+  : ::CORBA::AbstractBase (
+        objref,
+        _tao_collocated,
+        servant
+      )
 {
 }
 ACE_INLINE
-AMH_Empty_Valuetype_OperationExceptionHolder::AMH_Empty_Valuetype_OperationExceptionHolder ()
-  : exception (nullptr)
+Supports_Abstract_Operation::Supports_Abstract_Operation ()
 {}
 
 ACE_INLINE char const *
-AMH_Empty_Valuetype_OperationExceptionHolder::_tao_obv_static_repository_id ()
+Supports_Abstract_Operation::_tao_obv_static_repository_id ()
 {
-  return "IDL:AMH_Empty_Valuetype_OperationExceptionHolder:1.0";
-}
-
-ACE_INLINE
-AMI_Empty_Valuetype_OperationHandler::AMI_Empty_Valuetype_OperationHandler (
-  TAO_Stub *objref, ::CORBA::Boolean _tao_collocated, TAO_Abstract_ServantBase *servant, TAO_ORB_Core *oc)
-  : ::CORBA::Object (objref, _tao_collocated, servant, oc)
-{
-}
-
-ACE_INLINE
-AMI_Empty_Valuetype_OperationHandler::AMI_Empty_Valuetype_OperationHandler (::IOP::IOR *ior, TAO_ORB_Core *oc)
-  : ::CORBA::Object (ior, oc)
-{
+  return "IDL:Supports_Abstract_Operation:1.0";
 }
 ACE_INLINE
 Supports_Inherited_Operation::Supports_Inherited_Operation ()
@@ -160,58 +153,40 @@ AMI_Empty_Valuetype_InterfaceHandler::AMI_Empty_Valuetype_InterfaceHandler (::IO
 {
 }
 ACE_INLINE
-Abstract_Refcount_Base::Abstract_Refcount_Base ()
+Supported_Interface_Value::Supported_Interface_Value ()
 {}
 
 ACE_INLINE char const *
-Abstract_Refcount_Base::_tao_obv_static_repository_id ()
+Supported_Interface_Value::_tao_obv_static_repository_id ()
 {
-  return "IDL:Abstract_Refcount_Base:1.0";
+  return "IDL:Supported_Interface_Value:1.0";
 }
 ACE_INLINE
-Abstract_Refcount_Derived::Abstract_Refcount_Derived ()
+Abstract_Supported_Refcount_Base::Abstract_Supported_Refcount_Base ()
 {}
 
 ACE_INLINE char const *
-Abstract_Refcount_Derived::_tao_obv_static_repository_id ()
+Abstract_Supported_Refcount_Base::_tao_obv_static_repository_id ()
 {
-  return "IDL:Abstract_Refcount_Derived:1.0";
+  return "IDL:Abstract_Supported_Refcount_Base:1.0";
 }
 ACE_INLINE
-Concrete_From_Abstract::Concrete_From_Abstract ()
+Concrete_Supported_Refcount_Derived::Concrete_Supported_Refcount_Derived ()
 {}
 
 ACE_INLINE char const *
-Concrete_From_Abstract::_tao_obv_static_repository_id ()
+Concrete_Supported_Refcount_Derived::_tao_obv_static_repository_id ()
 {
-  return "IDL:Concrete_From_Abstract:1.0";
+  return "IDL:Concrete_Supported_Refcount_Derived:1.0";
 }
 ACE_INLINE
-Supported_Interface_Base::Supported_Interface_Base ()
+Application_Factory_Value::Application_Factory_Value ()
 {}
 
 ACE_INLINE char const *
-Supported_Interface_Base::_tao_obv_static_repository_id ()
+Application_Factory_Value::_tao_obv_static_repository_id ()
 {
-  return "IDL:Supported_Interface_Base:1.0";
-}
-ACE_INLINE
-Supported_Interface_Derived::Supported_Interface_Derived ()
-{}
-
-ACE_INLINE char const *
-Supported_Interface_Derived::_tao_obv_static_repository_id ()
-{
-  return "IDL:Supported_Interface_Derived:1.0";
-}
-ACE_INLINE
-Factory_Initialized_Value::Factory_Initialized_Value ()
-{}
-
-ACE_INLINE char const *
-Factory_Initialized_Value::_tao_obv_static_repository_id ()
-{
-  return "IDL:Factory_Initialized_Value:1.0";
+  return "IDL:Application_Factory_Value:1.0";
 }
 ACE_INLINE
 Copy_Base::Copy_Base ()
@@ -239,6 +214,24 @@ ACE_INLINE char const *
 Copy_Operation_Derived::_tao_obv_static_repository_id ()
 {
   return "IDL:Copy_Operation_Derived:1.0";
+}
+ACE_INLINE
+Copy_Factory_Derived::Copy_Factory_Derived ()
+{}
+
+ACE_INLINE char const *
+Copy_Factory_Derived::_tao_obv_static_repository_id ()
+{
+  return "IDL:Copy_Factory_Derived:1.0";
+}
+ACE_INLINE
+Copy_Factory_Operation_Derived::Copy_Factory_Operation_Derived ()
+{}
+
+ACE_INLINE char const *
+Copy_Factory_Operation_Derived::_tao_obv_static_repository_id ()
+{
+  return "IDL:Copy_Factory_Operation_Derived:1.0";
 }
 ACE_INLINE
 Copy_Leaf::Copy_Leaf ()
